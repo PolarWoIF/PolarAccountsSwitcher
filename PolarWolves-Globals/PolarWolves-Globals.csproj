@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <RootNamespace>PolarWolves_Globals</RootNamespace>
+    <Copyright>Copyright (c) PolarWolves Team 2026</Copyright>
+    <Authors>PolarWolves Team</Authors>
+    <Company>PolarWolves Team</Company>
+    <PackageProjectUrl>https://discord.gg/PLR</PackageProjectUrl>
+    <PackageIcon>PolarWolves-Icon-100x100.png</PackageIcon>
+    <RepositoryUrl>https://discord.gg/PLR</RepositoryUrl>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+    <Platforms>x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.12.4" />
+    <PackageReference Include="IconLib.Unofficial" Version="0.73.0">
+     <NoWarn>NU1701</NoWarn>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    <PackageReference Include="securifybv.ShellLink" Version="0.1.0" />
+    <PackageReference Include="SevenZipExtractor" Version="1.0.19" />
+    <PackageReference Include="Squid-Box.SevenZipSharp" Version="1.6.2.24" />
+    <PackageReference Include="System.Drawing.Common" Version="9.0.10" />
+    <PackageReference Include="System.Management" Version="9.0.10" />
+    <PackageReference Include="System.ServiceProcess.ServiceController" Version="9.0.10" />
+    <PackageReference Include="YamlDotNet" Version="16.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Strings.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Strings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\PolarWolves-Server\wwwroot\img\PolarWolves-Icon-100x100.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
+

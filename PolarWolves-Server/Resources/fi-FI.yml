@@ -1,0 +1,513 @@
+﻿---
+Update: PÃ¤ivitys saatavilla! Napsauta tÃ¤stÃ¤ aloittaaksesi sen.
+Header_ChooseLanguage: 'Valitse kieli:'
+Steam_ShowSteamID: SteamID
+Steam_ShowVac: VAC-tila
+Steam_ShowLastLogin: Viimeisin kirjautumisaika
+Steam_ShowLimited: Rajoitettu tila
+Steam_ShowAccUsername: KÃ¤yttÃ¤jÃ¤tunnus
+Steam_Tray_AccountName: NÃ¤ytÃ¤ tilin nimi [ei ystÃ¤vÃ¤n nimi]
+Steam_CheckVac: Tarkista tilin VAC-tila
+Steam_OverrideDefaultState: "Ohita oletuskirjautumistila:"
+Steam_StartSilent: "Avaa Steam to Task -alusta kytkimellÃ¤ (KÃ¤ynnistÃ¤ Steam '-hiljaisella')"
+Steam_OldUi: "KÃ¤ytÃ¤ vanhaa kÃ¤yttÃ¶liittymÃ¤Ã¤ SteamissÃ¤ (-vgui)"
+Steam_CollectInfo: KerÃ¤Ã¤ profiilikuvat ja VAC-kieltotila Steamista
+Button_AddNew: LisÃ¤Ã¤ uusi
+Button_SaveCurrent: Tallenna nykyinen
+Button_SaveFile: Tallenna tiedosto
+Button_Cancel: Peruuta
+Button_Login: Kirjaudu sisÃ¤Ã¤n
+Button_Close: Sulje
+Button_RefreshImages: PÃ¤ivitÃ¤ kuvat
+Button_ResetSettings: Nollaa asetukset
+Button_AdvancedCleaning: Edistyksellinen siivous...
+Button_ClearLog: TyhjennÃ¤ loki
+Button_WikiInfo: LisÃ¤tietoja (Wiki)
+Button_ManagePlatforms: Hallinnoi alustoja
+Button_Backup: Varmuuskopioida
+Button_BackupAll: Varmuuskopioi kaikki
+Button_Restore: Palauttaa
+Button_OpenBackup: Avaa varmuuskopiokansio
+Button_Back: Takaisin
+Button_RestartAdmin: Aloita uudelleen jÃ¤rjestelmÃ¤nvalvojana
+Button_SetPassword: Aseta sovelluksen salasana
+Settings_SteamCollectInfo: KerÃ¤Ã¤ Steam-profiilikuva ja VAC-tila Steamista
+Settings_Shortcut: '{platform} Vaihtajan tyÃ¶pÃ¶ydÃ¤n pikakuvake'
+Settings_Admin: Suorita {platform} yllÃ¤pitÃ¤jÃ¤nÃ¤
+Settings_ImageExpiry: 'PÃ¤ivÃ¤Ã¤ ennen profiilikuvien vanhentumista:'
+Settings_SteamAPIKey: "Steam Web API avain (valinnainen)"
+Settings_SteamAPIKey_Note: API-avaimen asettaminen saa Rajoitettu-indikaattorin (keltainen reunaviiva) nÃ¤kyviin tileille, jotka ovat yhteisÃ¶n kiellettyjÃ¤.
+Settings_Header_AppWide: Sovelluksen laajuiset asetukset
+Settings_Header_GeneralSettings: Yleiset asetukset
+Settings_Header_AccountDisplay: Tilin nÃ¤yttÃ¶asetukset
+Settings_Header_ExtraPlatforms: Alusta-asetukset
+Settings_Header_GeneralTools: Yleiset tyÃ¶kalut
+Settings_Header_OtherTools: Muut tyÃ¶kalut
+Settings_Header_TraySettings: Pakkausasetukset
+Settings_Header_OpenGameFolders: Avaa pelikansiot
+Settings_Header_BackupRestore: Varmuuskopioi ja palauta alustan asetukset
+Settings_Header_Language: Kieli
+Settings_Header_System: JÃ¤rjestelmÃ¤
+Settings_Header_Theme: Teema
+Settings_Header_Program: Ohjelma
+Settings_Header_StatsSharing: Tilastot ja jakaminen
+Settings_Header_Platform: "{platformName} asetusta"
+Settings_Header_GameStats: Yleiset pelitilastoasetukset
+Settings_GameStats: MitÃ¤Ã¤n tÃ¤ssÃ¤ valittua EI nÃ¤ytetÃ¤ kÃ¤yttÃ¤jÃ¤nimellÃ¤si missÃ¤Ã¤n tilissÃ¤. KÃ¤ytÃ¤ tÃ¤tÃ¤, jos piilotat usein tiettyjÃ¤ kohteita pelitilastoistasi.
+Settings_TrayMax: 'Muistavien tilien enimmÃ¤ismÃ¤Ã¤rÃ¤:'
+Settings_ExtraPlatformsDisabled: KÃ¤ytÃ¶stÃ¤ poistetut alustat. Ota ne kÃ¤yttÃ¶Ã¶n napsauttamalla.
+Settings_ExtraPlatformsEnabled: NÃ¤kyvÃ¤t alustat. Poista ne kÃ¤ytÃ¶stÃ¤ napsauttamalla.
+Settings_RTL: NÃ¤ytÃ¤ teksti oikealta vasemmalle
+Settings_CollectStats: KerÃ¤Ã¤ tilastoja
+Settings_ShareStats: Jaa tilastot anonyymisti (suositus)
+Settings_DiscordRpc: Poikkeamarikas lÃ¤snÃ¤olo (RPC)
+Settings_DiscordRpcShare: Jaa kokonaiskytkimet
+Settings_ViewStats: NÃ¤ytÃ¤ tilastot
+Preview: Esikatselu
+Settings_ClearStats: Nollaa
+Settings_CurrentLocation: 'Nykyinen asennuspaikka: {path}'
+Settings_CurrentDataLocation: 'Nykyinen kÃ¤yttÃ¤jÃ¤tietojen sijainti: {path}'
+Settings_SetDataLocation: "[Aseta mukautettu kÃ¤yttÃ¤jÃ¤tietojen sijainti]"
+Settings_PickFolder: Valitse {platform} kansiota
+Settings_OpenFolder: Avaa {platform} -kansio
+Settings_ClearForgotten: TyhjennÃ¤ unohdettu
+Settings_ClearAccounts: TyhjennÃ¤ tilit
+Settings_StreamerMode: Ota suoratoistotila kÃ¤yttÃ¶Ã¶n
+Settings_ExitToTray: Poistuminen minimoi alustaan
+Settings_DesktopShortcut: TyÃ¶pÃ¶ydÃ¤n pikakuvake
+Settings_StartMenu_ProgramTray: Ohjelma & pakkaus
+Settings_StartMenu_Platform: Alusta
+Settings_Tray_StartWindows: KÃ¤ynnistÃ¤ pakkaus Windowsilla
+Settings_Tray_StartNow: '[KÃ¤ynnistÃ¤ tarjotin nyt]'
+Settings_CurrentStyle: Nykyinen tyyli
+Settings_ThemeBackground: '[Aseta tausta]'
+Settings_ThemeOpenFolder: '[Avaa teemakansio]'
+Settings_Protocol: 'Ota kÃ¤yttÃ¶Ã¶n polarwolves:\\\\ protocol (Suositeltava)'
+Settings_StartCentered: KÃ¤ynnistÃ¤ ohjelma keskitetysti
+Settings_OfflineMode: Offline-tila (ei verkkotoimintaa)
+Settings_WindowsAccent: KÃ¤ytÃ¤ Windowsin korostusvÃ¤riÃ¤
+Settings_HelpTranslate: "[Apua kÃ¤Ã¤ntÃ¤mÃ¤Ã¤n]"
+Settings_ViewTranslators: "[Credits]"
+Settings_Header_ActiveBrowser: "(Advanced) Aseta renderÃ¶intimoottori:"
+Settings_Header_ClosingMethod: "(Advanced) Aseta menetelmÃ¤ sulkemaan {platform}"
+Settings_Header_StartingMethod: "(LisÃ¤asetukset) MÃ¤Ã¤ritÃ¤ tapa aloittaa {platform}"
+Settings_AutoStart: "KÃ¤ynnistÃ¤ {platform} automaattisesti tilikytkimessÃ¤"
+Settings_ShowSteamSwitcher: "NÃ¤ytÃ¤ Steamin tilin vaihtaja (Ã„LÃ„ kÃ¤ytÃ¤ tÃ¤tÃ¤ tai se voi rikkoa PolarWolves-tilin vaihtajan)"
+Settings_NoPlatforms: TÃ¤llÃ¤ hetkellÃ¤ ei ole kÃ¤ytÃ¶ssÃ¤ alustoja. Ota ne kÃ¤yttÃ¶Ã¶n valitsemalla valinnaiset alustat alta tai poista kÃ¤ytÃ¶stÃ¤ poistettujen alustojen valinta.
+Settings_MinimizeOnSwitch: Minimoi tilikytkimen kytkin
+Settings_ShowShortNotes: Muistiinpanon esikatselu kÃ¤yttÃ¤jÃ¤nimellÃ¤
+Settings_Header_AppPassword: "EstÃ¤ muita kÃ¤yttÃ¤mÃ¤stÃ¤ kytkintÃ¤:"
+PreviewCss: 'Esikatsele CSS: Ã¤Ã¤'
+Settings_PreviewCss: TÃ¤mÃ¤ on CSS-esikatselusivu. Voit tarkastella joitakin elementtejÃ¤, jotka ponnahtavat ohjelmaan ja nÃ¤hdÃ¤, miltÃ¤ ne nÃ¤yttÃ¤vÃ¤t teeman kanssa. TÃ¤mÃ¤ sivu on hyÃ¶dyllinen niille, jotka luovat teemoja!
+Settings_PreviewCssHeader: CSS-esikatselusivu
+Settings_AutoUpdatePlatforms: PÃ¤ivitÃ¤ alustaluettelo automaattisesti
+Settings_CheckForUpdates: Tarkista pÃ¤ivitykset kÃ¤ynnistyksen yhteydessÃ¤
+Stats_Disabled: "Tilastojen kerÃ¤Ã¤minen on poistettu kÃ¤ytÃ¶stÃ¤."
+Stats_InDepth: Perusteellinen tilastoerittely
+Stats_ShareEnabled: "NÃ¤mÃ¤ tilastot jaetaan nimettÃ¶minÃ¤, ja ne lisÃ¤tÃ¤Ã¤n kokonaissummaan <a onclick=\"{WebsiteLink}\" class=\"fancyLink\">tÃ¤ssÃ¤</a>."
+Stats_ShareDisabled: "NÃ¤itÃ¤ tilastoja EI jaeta anonyymisti, eikÃ¤ niitÃ¤ lisÃ¤tÃ¤ kokonaissummaan <a onclick=\"{WebsiteLink}\" class=\"fancyLink\">tÃ¤ssÃ¤</a>."
+Stats_OperatingSystem: "KÃ¤yttÃ¶jÃ¤rjestelmÃ¤: "
+Stats_FirstLaunch: "EnsimmÃ¤inen laukaisu: "
+Stats_LaunchCount: "Laukaisujen mÃ¤Ã¤rÃ¤: "
+Stats_CrashCount: "Onnettomuuksien mÃ¤Ã¤rÃ¤: "
+Stats_MostUsedPlatform: "Eniten kÃ¤ytetty alusta: "
+Stats_TotalTime: "Sovelluksessa vietetty kokonaisaika: "
+Stats_TotalSwitches: "Tilikytkimet yhteensÃ¤: "
+Stats_TotalGamesLaunched: "Vaihtajan kautta kÃ¤ynnistettyjen sovellusten/pelien kokonaismÃ¤Ã¤rÃ¤: "
+Stats_UniqueDaysLong: "YksittÃ¤iset pÃ¤ivÃ¤t, jolloin tilit on vaihdettu: "
+Stats_LastUpload: "Viimeisin lÃ¤hetys: "
+Stats_SwitcherStats: "Vaihtajan tilastot: "
+Stats_PageStats: "Sivun tilastot: "
+Stats_VisitsTotalTime: "{visits} kÃ¤yntiÃ¤ yhteensÃ¤, {hours} kokonaisaika"
+Stats_Accounts: "Tilit: "
+Stats_Switches: "Kytkimet: "
+Stats_FirstActive: "EnsimmÃ¤inen aktiivinen: "
+Stats_LastActive: "Viimeisin aktiivinen: "
+Stats_UniqueDays: "YksittÃ¤iset pÃ¤ivÃ¤t: "
+Stats_GameShortcuts: "Pelin pikakuvakkeet: "
+Stats_GameShortcutsHotbar: "Pelin pikakuvakkeet (pikanÃ¤ppÃ¤inrivissÃ¤): "
+Stats_GamesLaunched: "KÃ¤ynnistetyt pelit: "
+Stats_MetricsToShow: "NÃ¤ytetyt tiedot:"
+Stats_AccountId: "Tilin tunnus:"
+Auth_LoginRequired: Salasana on aiemmin asetettu, ja se on pakollinen. Anna salasana alla.
+Auth_EnterPassword: "SyÃ¶tÃ¤ salasana:"
+Auth_PassIncorrect: Salasana on virheellinen.
+Locked: Lukittu
+Cleaning_Header_StartMenuShortcuts: 'Aloitusvalikon pikanÃ¤ppÃ¤imet:'
+Cleaning_Header_General: Yleinen puhdistus
+Cleaning_Header_LoginHistory: Puhdista kirjautumishistoriani
+Cleaning_Header_PlatformCleaning: '{platform} Vaihtaja'
+Cleaning_ImportantInfoHeader: 'TÃ¤rkeÃ¤Ã¤ tietoa:'
+Cleaning_ImportantInfo: >
+  Painikkeen napsauttaminen poistaa liittyvÃ¤t tiedostotSteam-asennuksesta.<br /> KÃ¤yttÃ¤jÃ¤tunnuksen poistaminen.vdf johtaa siihen, ettÃ¤ tÃ¤mÃ¤ tilivaihtaja ei nÃ¤ytÃ¤ tilejÃ¤.<br /> Sinun on kirjauduttava niihin SteamillÃ¤ saadaksesi ne takaisin.
+Cleaning_Button_KillProcess: Kill {platform} -prosessi
+Cleaning_Button_ForgottenBackups: Unohtuneet tilin varmuuskopiot
+Cleaning_Understand: YmmÃ¤rrÃ¤n, mitÃ¤ nÃ¤mÃ¤ napit tekevÃ¤t.
+Restore_Info: >
+  Jos olet aiemmin "unohtanut" tilin, voit palauttaa ne tÃ¤Ã¤llÃ¤.<br /> TÃ¤mÃ¤ lisÃ¤Ã¤ ne takaisin sisÃ¤Ã¤nkirjautujat.vdf-tiedostoon, jolloin voit vaihtaa niihin.
+Restore_Button_Restore: Palauta valitut
+Ignored_RemoveAccounts: Poista tilit ohitusluettelosta
+Ignored_Description: Jos olet aiemmin "ohittanut" tilin, voit nÃ¤yttÃ¤Ã¤ sen uudelleen tÃ¤Ã¤llÃ¤
+Ignored_Stop: Lopeta valittujen jÃ¤ttÃ¤minen huomiotta
+Toast_UpdatesDownloading: PÃ¤ivitykset latautuvat taustalla. Voit jatkaa ohjelman kÃ¤yttÃ¶Ã¤.
+Toast_UpdatesDownloaded: PÃ¤ivitysten lataus on valmis. Sulje tÃ¤mÃ¤ sovellus aloittaaksesi pÃ¤ivityksen.
+Toast_DataLocationCopying: (1/2) Kopioidaan olemassa olevia tiedostoja uuteen kÃ¤yttÃ¤jÃ¤tietokansioon!
+Toast_DataLocationNotCopying: (1/2) Kansiolla on jo tiedostoja! Ei siirrÃ¤ kÃ¤yttÃ¤jÃ¤tietoja.
+Toast_DataLocationSet: (2/2) KÃ¤ynnistÃ¤ tilin vaihtaja uudelleen kÃ¤yttÃ¤Ã¤ksesi uutta kansiota!
+Toast_PlaceShortcutFiles: Kansio avautuu. Aseta pelin pikakuvakkeet kyseiseen kansioon ja kÃ¤ynnistÃ¤ tilin vaihtaja uudelleen.
+Toast_TrayStarted: Tarjotin kÃ¤ynnistetty!
+Toast_TrayRunning: Pakkaus on jo auki
+Toast_TrayUsersMissing: Pakkauksen kÃ¤yttÃ¤jiÃ¤ ei tallennettu
+Toast_TrayFail: Pakkaussovellusta ei voitu kÃ¤ynnistÃ¤Ã¤!
+Toast_TrayPosition: "Klikkaamalla Poistu-painiketta: olen Windows-tarjottimella! (Aloituspalkin oikealla puolella)"
+Toast_TrayHint: "Vihje: Ctrl+Napsauta 'X' sulkeaksesi minut kokonaan, tai ilmoitusalueen > 'Poistu' kautta"
+Toast_Copied: Kopioitu
+Toast_AlreadyProcessing: KÃ¤sitellÃ¤Ã¤n jo tilejÃ¤...
+Toast_FailedRestore: Tilien palauttaminen epÃ¤onnistui (katso konsoli)
+Toast_Restored: Palautetut tilit!
+Toast_ProtocolEnabled: TÃ¤mÃ¤ ohjelma vastaa nyt polarwolves:\\\\ Windowsissa
+Toast_ProtocolEnabledTitle: Protokolla lisÃ¤tty
+Toast_ProtocolDisabled: TÃ¤mÃ¤ ohjelma ei enÃ¤Ã¤ vastaa tiedostolle polarwolves:\\\\
+Toast_ProtocolDisabledTitle: Protokolla poistettu
+Toast_RestartAsAdmin: Aloita jÃ¤rjestelmÃ¤nvalvojana ja yritÃ¤ uudelleen.
+Toast_RestartAfterClose: KÃ¤ynnistÃ¤ ohjelma uudelleen napsautettuasi Sulje.
+Toast_RestartAfterCloseTitle: KorostusvÃ¤ri poistettu kÃ¤ytÃ¶stÃ¤
+Toast_RestartRequired: KÃ¤ynnistÃ¤ uudelleen ottaaksesi muutokset kÃ¤yttÃ¶Ã¶n
+Toast_LoadStylesheetFailed: Tyylisivun lataaminen epÃ¤onnistui! Katso lisÃ¤tietoja kÃ¤yttÃ¤jÃ¤n tietokansiosta.
+Toast_LoadingStats: Yksi tai useampi profiili on pÃ¤ivittÃ¤vÃ¤ tilasto. Odota.
+Toast_ItemNotFound: "{item} ei lÃ¶ytynyt"
+Toast_DeletedTotal: "{files} / {totalFiles} poistettu. YhteensÃ¤: {totalSize}"
+Toast_CantChangeUsername: KÃ¤yttÃ¤jÃ¤nimeÃ¤ ei voitu muuttaa
+Toast_CantClearLoginFiles: Vanhojen kirjautumistiedostojen tyhjentÃ¤minen epÃ¤onnistui
+Toast_AccountIdReg: Tilitunnuksen saaminen rekisteristÃ¤ epÃ¤onnistui!
+Toast_RegFailWrite: Kirjoittaminen Windows Regsitryyn epÃ¤onnistui!
+Toast_RegFailRead: Lukeminen Windows RegsitrystÃ¤ epÃ¤onnistui!
+Toast_RegFailReadSaved: Tallennetun rekisterimerkinnÃ¤n lukeminen epÃ¤onnistui. YritÃ¤ poistaa ja lisÃ¤tÃ¤ tili uudelleen, jos se ei onnistu.
+Toast_RegSaveMissing: Tallennettujen rekisteritiedostojen tietojen etsiminen tai lukeminen epÃ¤onnistui!
+Toast_DuplicateNames: Ei voitu vaihtaa. Kaksoistilit samalla kÃ¤yttÃ¤jÃ¤tunnuksella?
+Toast_MissingUserId: "Ei voitu vaihtaa. KÃ¤yttÃ¤jÃ¤tunnus puuttuu. Tarkista wiki 'Yleiset virheet'."
+Toast_CouldNotLocate: Kirjautunutta kÃ¤yttÃ¤jÃ¤Ã¤ ei lÃ¶ytynyt
+Toast_StreamerModeHint: Yksityiset tiedot on piilotettu! - Katso asetukset
+Toast_StreamerModeTitle: Suoratoistotila
+Toast_AddAccountsFirst: Avaa alusta luettelosta ja lisÃ¤Ã¤ muutama tili ensin
+Toast_AddAccountsFirstTitle: Ei tallennettuja tilejÃ¤
+Toast_CantFindImage: KÃ¤yttÃ¤jien kuvan lÃ¶ytÃ¤minen epÃ¤onnistui.
+Toast_CantCreateShortcut: PikanÃ¤ppÃ¤intÃ¤ ei voi luoda
+Toast_ShortcutCreated: Pikakuvake luotu!
+Toast_SettingsCopied: Asetusten kopiointi nykyiselle tilille onnistui.
+Toast_GameDataRestored: Pelin tietojen palauttaminen tÃ¤lle tilille onnistui.
+Toast_NoValidSteamId: Voimassa olevaa Steam-tunnusta ei lÃ¶ydy.
+Toast_FailedUpdateCheck: PÃ¤ivitysten tarkistaminen epÃ¤onnistui
+Toast_UpdateVerifyFail: PÃ¤ivitystiedostoja ei voida vahvistaa. Lataa uusin versio ja korvaa hakemistosi tiedostot.
+Toast_StartedGame: Aloitettu {program}
+Toast_SteamCantLoadXml: Ei saatu XML-tietoja kohteelle {steamId}. Katso lisÃ¤tiedot lokista.
+Toast_Steam_VacCleared: Tilien VAC-tila tyhjennettiin
+Toast_Steam_CantDeleteVacCache: '''LoginCache/Steam/VACCache/SteamVACCache.json'' ei voitu poistaa'
+Toast_NoFindSteamUserdata: Steam\\ userdata -kansiota ei lÃ¶ytynyt
+Toast_NoFindGameBackup: TÃ¤lle tilille ei lÃ¶ydy varmuuskopioituja pelitietokansioita.
+Toast_GameBackupDone: "Pelitiedostokansion varmuuskopiointi onnistui: {folderLocation}"
+Toast_Steam_VdfLast: Lataus vdf_lastista onnistui. Joitakin tilejÃ¤ saattaa puuttua.
+Toast_PartiallyFixed: Osittain kiinteÃ¤
+Toast_Steam_FailedLoginusers: HÃ¶yryn/config/loginusers.vdf lataaminen epÃ¤onnistui
+Toast_Steam_CantLocateLoginusers: '''.../Steam/config/loginusers.vdf'' ei lÃ¶ydy. YritÃ¤ kirjautua tiliin ensin.'
+Toast_CantClearImages: Kuvien tyhjentÃ¤minen epÃ¤onnistui
+Toast_RefreshedImages: PÃ¤ivitetyt kuvat
+Toast_ClearForgottenCheck: Haluatko varmasti tyhjentÃ¤Ã¤ unohdettujen tilien varmuuskopiot?
+Toast_ForgotAccount: Unohtunut tili
+Toast_ClearedPlatformSettings: "Tyhjennetty {platform} Switcher-asetuksia"
+Toast_ClearedImages: "Poistetut kuvat"
+Toast_SavedItem: "Tallennettu: {item}"
+Toast_ChangedUsername: KÃ¤yttÃ¤jÃ¤nimi vaihdettu
+Toast_SetUsername: Aseta kÃ¤yttÃ¤jÃ¤tunnus
+Toast_AlreadyLoggedIn: Olet jo kirjautunut sisÃ¤Ã¤n tÃ¤llÃ¤ tilillÃ¤! (Ei muutoksia tehty)
+Toast_BackupCopy: (1/3) Kopioidaan tiedostoja vÃ¤liaikaiseen sijaintiin...
+Toast_BackupCompress: (2/3) Tiedostojen pakkaaminen ({size}). TÃ¤mÃ¤ kestÃ¤Ã¤ jonkin aikaa...
+Toast_BackupComplete: (3/3) Pakkaaminen valmis! ({size} - {compressedSize})
+Toast_BackupProgress: "Varmuuskopiointi kÃ¤ynnissÃ¤ (pakattu koko: {compressedSize})"
+Toast_BackupFail: Varmuuskopiointi epÃ¤onnistui - katso lokia!
+Toast_BackupBusy: Varmuuskopiointi on jo kÃ¤ynnissÃ¤!
+Toast_RestoreBusy: Palautus on jo kÃ¤ynnissÃ¤!
+Toast_RestoreExt: Puretaan arkistoa.
+Toast_RestoreCopying: Tiedostojen siirtÃ¤minen takaisin alustalle
+Toast_RestoreDeleting: VÃ¤liaikaisten tiedostojen poistaminen
+Toast_RestoreComplete: Palautus valmis!
+Toast_FailedLoad: '{platform}:n lataus epÃ¤onnistui! Napsauta alustaa nÃ¤hdÃ¤ksesi virheen.'
+Toast_FailedPlatformsLoad: Platforms.jsonin lataaminen epÃ¤onnistui! Varmista, ettÃ¤ tÃ¤mÃ¤ tiedosto on olemassa.
+Toast_FailedLoadSettings: "Asetusten lataaminen epÃ¤onnistui! Ladataan sen sijaan oletusasetuksia. LisÃ¤tÃ¤Ã¤n 'old' olemassa olevaan asetustiedoston nimeen."
+Toast_FailedLoadStats: "Tilastojen lataaminen epÃ¤onnistui! Aloitetaan alusta."
+Toast_FailedStatsLoad: GameStats.jsonin lataaminen epÃ¤onnistui! Vahvista, ettÃ¤ tÃ¤mÃ¤ tiedosto on olemassa.
+Toast_GameStatsLoadFail: "Pelitilastojen noutaminen verkosta epÃ¤onnistui kohteelle {Game}"
+Toast_GameStatsEmpty: "Pelitilastoja ei lÃ¶ytynyt nettisivuilta {Game}: lle. Luuletko, ettÃ¤ se on virhe? Tarkista kÃ¤yttÃ¤jÃ¤tietokansiosta ja 'temp\\download-{AccoundId}-{Game}.html' nÃ¤hdÃ¤ksesi, oliko sivulla virhe!"
+Toast_FileCopyFail: Tiedostojen kopiointi epÃ¤onnistui! Katso lisÃ¤tietoja lokista.
+Toast_UserDataLoadFail: KÃ¤yttÃ¤jÃ¤tietojen {UserData}\\ WindowSettings.json lataaminen epÃ¤onnistui. Peruuta ja nollaa! Tallennettu virhe lokiin.
+Toast_UpdateCheckFail: Ei saatu yhteyttÃ¤ osoitteeseen https://discord.gg/PLR/ pÃ¤ivitysten tarkistamiseksi. TÃ¤mÃ¤ viesti nÃ¤ytetÃ¤Ã¤n kerran pÃ¤ivÃ¤ssÃ¤.
+Toast_FailedCreateIcon: Kuvakkeen luominen epÃ¤onnistui. Katso lisÃ¤tietoja lokista.
+Toast_SameAccount: Tiedostoja ei voi kopioida samalle tilille/samalta tililtÃ¤. Kokeile toista tiliÃ¤ tai katso lisÃ¤tietoja WikistÃ¤.
+Toast_Steam_DownloadingAppIds: Ladataan Steam AppId -luetteloa...
+Toast_Steam_DownloadingAppIdsComplete: Lataus valmis. Pelitiedon alivalikko on pÃ¤ivitetty.
+Toast_SteamWebKeyInvalid: Steam Web API avain nÃ¤yttÃ¤Ã¤ olevan virheellinen. Ole hyvÃ¤ ja aseta uusi.
+Toast_DownloadingProfileData: Profiilitietojen lataaminen
+Toast_PasswordChanged: Salasana vaihdettu
+Toast_JsonFailModify: JSON-tiedoston muokkaaminen epÃ¤onnistui. Katso lokia.
+Toast_DifferentClosingMethod: "SulkemismenetelmÃ¤ on eri kuin oletusasetus. Jos pelit sulkeutuvat ja lisÃ¤Ã¤, tarkista, auttaako tÃ¤mÃ¤n vaihtoehdon muuttaminen. Oletus: {defaultMethod}, Nykyinen: {currentMethod}"
+Toast_NameEmpty: KÃ¤yttÃ¤jÃ¤tunnus ei voi olla tyhjÃ¤ (eikÃ¤ saa sisÃ¤ltÃ¤Ã¤ vain vÃ¤lilyÃ¶ntejÃ¤)
+Toast_NewPlatforms: "PÃ¤ivitetty! Uusia alustoja lisÃ¤tty: {listOfNames}. HylkÃ¤Ã¤ napsauttamalla."
+Toast_FoundExeViaShortcut: "LÃ¶ysimme asennetun polun KÃ¤ynnistÃ¤-valikon pikakuvakkeesta. Vahvista sen sijainti napsauttamalla Asetukset nyt. HylkÃ¤Ã¤ napsauttamalla."
+Modal_Crowdin_Header: Crowdinin kÃ¤Ã¤ntÃ¤jÃ¤t
+Modal_Crowdin_Info: "TÃ¤ssÃ¤ ovat kaikki, jotka auttoivat kÃ¤Ã¤ntÃ¤mÃ¤Ã¤n tÃ¤mÃ¤n ohjelmiston.<br>KÃ¤yttÃ¤jÃ¤t, joiden kieli on vieressÃ¤, auttoivat paljon kÃ¤Ã¤ntÃ¤misessÃ¤ (oikolukijan rooli)."
+Modal_Info_Creator: Luonut PolarWolves Team [Wesley Pyburn]
+Modal_Info_Version: Versio
+Modal_Info_ViewGitHub: NÃ¤ytÃ¤ GitHubissa
+Modal_Info_ViewPatreon: Tuki Patreonin kautta
+Modal_Info_ViewKofi: Tuki Ko-Fin kautta
+Modal_Info_BugReport: Vikailmoitus/OminaisuuspyyntÃ¶
+Modal_Info_VisitSite: KÃ¤y osoitteessa discord.gg/PLR
+Modal_Info_Disclaimer: Vastuuvapauslauseke
+Modal_Title_Info: PolarWolves Tilinvaihtajan tiedot
+Modal_Title_ChangeUsername: Vaihda kÃ¤yttÃ¤jÃ¤nimi
+Modal_Title_ConfirmAction: PolarWolves Tilinvaihtaja Vahvista Toiminto
+Modal_Title_LocatePlatform: Etsi {platform} -hakemisto
+Modal_Title_AddNew: LisÃ¤Ã¤ uusi {platform} tili
+Modal_Title_Background: Aseta taustakuva
+Modal_Title_Userdata: Aseta kÃ¤yttÃ¤jÃ¤tietokansio
+Modal_Title_GameStats: Ota kÃ¤yttÃ¶Ã¶n/poista kÃ¤ytÃ¶stÃ¤ pelitilastot
+Modal_GameStats_Header: "Ota kÃ¤yttÃ¶Ã¶n/poista kÃ¤ytÃ¶stÃ¤ pelitilastot kohteelle: {accountName}"
+Modal_Title_Stats: Tilastosi
+Modal_Title_GameVars: "SyÃ¶ttÃ¶tiedot {game}: lle"
+Modal_GameVars_Header: "Anna seuraavat tiedot {game} -tilillesi, {username} on {platform}"
+Modal_Title_AccountNotes: "Tilin liitetiedot: {accountName}"
+Modal_Title_SetPassword: Aseta salasana
+Modal_SetBackground: 'Valitse kuva tai kirjoita URL-osoite alle.<br>JÃ¤tÃ¤ tyhjÃ¤ksi ja aseta palautus.<br>(Katso lisÃ¤ohjausta Wikin teemasta):'
+Modal_SetBackground_Button: Aseta tausta
+Modal_SetBackground_ChooseImage: Valitse paikallinen kuva
+Modal_SetUserdata: Kirjoita kansion polku alle ja napsauta Aseta.
+Modal_SetUserdata_ChooseFolder: Valitse kansio
+Modal_SetUserdata_Button: Aseta kÃ¤yttÃ¤jÃ¤tiedot
+Modal_ChangeUsername: Anna tilillesi uusi kÃ¤yttÃ¤jÃ¤tunnus
+Modal_ChangeUsernameType: Muuta {platform} kÃ¤yttÃ¤jÃ¤tunnusta
+Modal_SetPassword: SyÃ¶tÃ¤ salasana PolarWolves -tilinvaihtajalle
+Modal_SetPassword_Button: Aseta salasana
+Modal_SetPassword_Info: "HUOMAA: TÃ¤mÃ¤ ei salaa tilejÃ¤si. Tilien vaihtaminen on yhtÃ¤ yksinkertaista kuin tiedostojen korvaaminen tai tiedoston kÃ¤yttÃ¤jÃ¤nimen vaihtaminen. Salasana voidaan nollata muokkaamalla myÃ¶s tiedoston tekstiÃ¤. TÃ¤mÃ¤ on yksinkertainen turvajÃ¤rjestely. Se estÃ¤Ã¤ yksinkertaisen kÃ¤yttÃ¶liittymÃ¤n kÃ¤ytÃ¶n. Voit laittaa tÃ¤mÃ¤n sovelluksen irrotettavalle USB: lle, asettaa UserData-kansion samalle USB: lle ja poistaa sen fyysisesti turvallisuuden parantamiseksi. <a class=\"fancyLink\" onclick=\"OpenLinkInBrowser('{link}');return false;\" href=\"\">Siirtyminen ulkoisen aseman oppaaseen</a><br><br>TyhjentÃ¤Ã¤ksesi jÃ¤tÃ¤ yllÃ¤ oleva tyhjÃ¤ksi ja napsauta Aseta."
+Modal_EnterDirectory: "Anna {platform}: n hakemisto, kuten: C:\\Program Files\\{platform}"
+Modal_LocatePlatform: Etsi {platformExe}
+Modal_LocatePlatformFolder: Valitse {platform} -kansio
+Modal_ConfirmAction: Vahvista toiminto
+Modal_AddNew: Anna nimi sille {platform} -tilille, johon olet kirjautunut.
+Modal_AddCurrentAccount: LisÃ¤Ã¤ nykyinen {platform} -tili
+Modal_SetImageHeader: Aseta profiilikuva
+Modal_SetImage: Aseta kuva
+Status_SelectedAccount: "Valittu: {name}"
+Status_Init: "Tila: alustetaan"
+Status_ClosingPlatform: Sulkeminen {platform}
+Status_ClosingPlatformFailed: '{platform}sulkeminen epÃ¤onnistui'
+Status_StartingPlatform: Alkaen {platform}
+Toast_StartingPlatformFailed: Ei kÃ¤ynnistynyt {platform}! Katso lisÃ¤tiedot lokista.
+Toast_UrlAdminErr: Et voi kÃ¤yttÃ¤Ã¤ .url-tiedostoja jÃ¤rjestelmÃ¤nvalvojana. Kokeile toista pikakuvaketyyppiÃ¤. KÃ¤ynnistetÃ¤Ã¤n tavallisena kÃ¤yttÃ¤jÃ¤nÃ¤.
+Status_UpdatingFile: "PÃ¤ivitetÃ¤Ã¤n {file}"
+Status_UpdatingRegistry: Windowsin rekisterin pÃ¤ivittÃ¤minen
+Status_FailedLog: Toiminto epÃ¤onnistui. Katso lisÃ¤tietoja lokista.
+Status_WaitingForClose: "Odotetaan {processName} :n sulkemista ({timeout}{timeLimit})"
+Status_WaitingForMultipleClose: "Odotetaan, ettÃ¤ {processName} ja {count} muu sulkeutuvat ({timeout}sekuntia{timeLimit}"
+Status_GetUniqueId: KerÃ¤Ã¤ yksilÃ¶llistÃ¤ kÃ¤yttÃ¤jÃ¤tunnusta
+Status_CopyingFiles: Kopioidaan kÃ¤yttÃ¤jÃ¤tiedostoja...
+Status_HandlingImage: Tilin profiilikuvan kÃ¤sittely
+Context_SwapTo: Vaihda tilille
+Context_CreateShortcut: Luo pikanÃ¤ppÃ¤in
+Context_ChangeImage: Vaihda kuva
+Context_ChangeName: Vaihda vaihtajan nimi
+Context_LoginAsSubmenu: Kirjaudu sisÃ¤Ã¤n nimellÃ¤
+Context_UsernameSubmenu: KÃ¤yttÃ¤jÃ¤tunnus
+Context_RefreshName: PÃ¤ivitÃ¤ nimi
+Context_CopySubmenu: Kopioi
+Context_DataSubmenu: Data
+Context_CopyProfileSubmenu: Kopioi profiili
+Context_CommunityUrl: YhteisÃ¶n URL-osoite
+Context_CommunityUsername: YhteisÃ¶n kÃ¤yttÃ¤jÃ¤tunnus
+Context_LoginUsername: Kirjaudu sisÃ¤Ã¤n kÃ¤yttÃ¤jÃ¤tunnuksella
+Context_CopySteamIdSubmenu: Kopioi SteamID
+Context_Steam_Id: HÃ¶yryID [STEAM0:~]
+Context_Steam_Id3: HÃ¶yryID3 [U:1:~]
+Context_Steam_Id32: SteamID32
+Context_Steam_Id64: SteamID64 7656~
+Context_Steam_OpenUserdata: Avaa kÃ¤yttÃ¤jÃ¤tiedot
+Context_ManageSubmenu: Hallinnoi
+Context_GameDataSubmenu: Pelin tiedot
+Context_ManageGameStats: Hallitse pelitilastoja
+Context_Game_CopySettingsFrom: Kopioi asetukset nykyiseen
+Context_Game_RestoreSettingsTo: Palauta pelitiedot
+Context_Game_BackupData: Varmuuskopioi pelitiedot
+Context_CopyOtherSubmenu: Kopioi muu
+Context_HidePlatform: Piilota alusta
+Context_ExportAccList: Vie tililuettelo
+Context_RunAdmin: Suorita jÃ¤rjestelmÃ¤nvalvojana
+Context_Hide: Piilottaa
+ProfileImage_ToggleText: KÃ¤ytÃ¤ kuvaa tilikuvana
+Title_Platforms_Settings: PolarWolves - Alusta-asetukset
+Title_Settings_TestCss: 'PolarWolves - Testaa CSS: n tyyli'
+Title_AccountsList: PolarWolves - {platform}
+Title_TextEditor: PolarWolves - Tekstieditori
+Title_Settings: PolarWolves - Asetukset
+Title_Steam_Cleaning: PolarWolves - HÃ¶yrypuhdistus
+Title_Steam_Settings: PolarWolves - Steam-asetukset
+Title_Template_Settings: PolarWolves - {platformName} asetusta
+Title_Login: PolarWolves - Kirjautuminen
+Installer_Downloading: Ladataan {file}
+Installer_DownloadFinished: Lataus valmis {file}
+Installer_Installing: "Asennus: {runtime}"
+Installer_RuntimeTitle: PolarWolves - Ajoajan asentaja
+Installer_Welcome: Tervetuloa PolarWolves - Runtime-asennusohjelmaan
+Installer_InstalledRuntimes: "TÃ¤llÃ¤ hetkellÃ¤ asennetut ajoajat:"
+Installer_ErrorRuntime: "YhtÃ¤ tai useampaa ajoaikaa ei asennettu:"
+Installer_RuntimeNote: "[~{size1} Mt + ~{size2} Mt asennuksen aikana]"
+Installer_TotalSize: "Latauksen kokonaiskoko: ~{size} MB"
+Installer_AnyKeyStart: Aloita lataus painamalla mitÃ¤ tahansa nÃ¤ppÃ¤intÃ¤...
+Runtime_WebView2: Microsoft WebView2 -kÃ¤yttÃ¶aika
+Runtime_Desktop: Microsoft .NET 5 -tyÃ¶pÃ¶ydÃ¤n kÃ¤yntiaika
+Runtime_ASP: Microsoft Microsoft ASP.NET Core {version} Runtime
+Installer_FailedFolder: "Kansion luominen epÃ¤onnistui:"
+Installer_FailedWV: "Microsoft WebView2 -kÃ¤yttÃ¶ajan lataaminen ja asentaminen epÃ¤onnistui. Voit ladata: 1. Napsauta alla olevaa linkkiÃ¤: {link} 2. Valitse KÃ¤ynnistÃ¤ palvelinsovellukset -kohdasta Lataa isÃ¤nnÃ¶intipaketti."
+Installer_FailedDR: ".NET 5 -tyÃ¶pÃ¶ydÃ¤n ajoajan lataaminen ja asentaminen epÃ¤onnistui. Lataa se tÃ¤Ã¤ltÃ¤:"
+Installed_FailedASP: "{version} Runtimen lataaminen ja asentaminen epÃ¤onnistui. Lataaminen: 1. Napsauta alla olevaa linkkiÃ¤: {link} 2. Napsauta \"Download x64\" kohdassa Run Desktop Apps."
+Installer_Ready: "Yksi tai useampi on asennusvalmis. Jos ja kun kysytÃ¤Ã¤n, haluatko asentaa, napsauta 'KyllÃ¤'."
+Installer_PressStart: Aloita asennus painamalla mitÃ¤ tahansa nÃ¤ppÃ¤intÃ¤...
+Installer_VerifyMin: "Varmista, ettÃ¤ tÃ¤ytÃ¤t suositellut vÃ¤himmÃ¤isvaatimukset:"
+Installer_VerifyAlready: "NÃ¤yttÃ¤Ã¤ siltÃ¤, ettÃ¤ kaikki on asennettu. Varmista, ettÃ¤ tÃ¤ytÃ¤t suositellut vÃ¤himmÃ¤isvaatimukset:"
+Installer_Complete: SiinÃ¤ pitÃ¤isi olla kaikki. PÃ¤Ã¤ohjelma, PolarWolves.exe, kÃ¤ynnistyy automaattisesti.
+Installer_Complete2: "Jos se ei toimi, katso asennusohjeet tÃ¤Ã¤ltÃ¤: {link}"
+Tray_Error: Pakkausvirhe
+Tray_NoAccs: "TiliÃ¤ ei lÃ¶ytynyt.\nYritÃ¤ vaihtaa tiliÃ¤ ensin tai etsi 'Tray_Users.json'"
+Tray_Switch: "Vaihda: {account}"
+Tray_CantOpenExe: "PÃ¤Ã¤komentoa .exe ei voitu avata. Varmista, ettÃ¤ se on olemassa.\n\nYritin avata:"
+Tray_LaunchFail: "PolarWolves - Pakkauksen kÃ¤ynnistys epÃ¤onnistui"
+Updater_Duplicate: Toinen PolarWolves Updater -ilmentymÃ¤ on havaittu.
+Updater_Unknown: "Tuntematon argumentti: {arg}"
+Updater_NeedsAdmin: TÃ¤mÃ¤ ohjelma on suoritettava jÃ¤rjestelmÃ¤nvalvojana!
+Updater_StatusChecking: Tarkistetaan versiota
+Updater_FailedVersionCheck: "Versiota ei saatu. Napsauta \"Vahvista\" pÃ¤ivittÃ¤Ã¤ksesi ja vahvistaaksesi tiedostot"
+Updater_PressBelow: Paina alla olevaa painiketta!
+Updater_PressBelowStart: Napsauta alla olevaa painiketta aloittaaksesi pÃ¤ivityksen.
+Updater_PatchApplied: Laastari kiinnitetty!
+Updater_UpdatingAppData: PÃ¤ivitetÃ¤Ã¤n tiedostoja AppDatassa!
+Updater_Complete: Kaikki pÃ¤ivitykset valmis!
+Updater_Checking: PÃ¤ivitysten tarkistus
+Updater_UpdateToVerify: Tiedostojen vahvistamiseksi sinun on pÃ¤ivitettÃ¤vÃ¤ ne ensin.
+Updater_ClosingPolarWolves: Suljetaan PolarWolves -ilmentymÃ¤t (jos on).
+Updater_Downloading: "Ladataan pÃ¤ivitystÃ¤: {version}"
+Updater_Downloaded: Lataus valmis.
+Updater_CantExtract: PÃ¤ivityksen poiminta epÃ¤onnistui.
+Updater_Verify: Vahvista tiedostot
+Updater_Verifying: Vahvistetaan...
+Updater_VerifySkip: Vahvistetaan tiedostoja ohittaaksesi kaikki pienet pÃ¤ivitykset ja siirtyÃ¤ksesi vain uusimpiin.
+Updater_NoConnection: "Tiedostoja ei voitu yhdistÃ¤Ã¤ osoitteeseen discord.gg/PLR. Voit yrittÃ¤Ã¤ ladata asennusohjelman manuaalisesti GitHub-sivulta ja asentaa sen uudelleen pÃ¤ivitettÃ¤vÃ¤ksi.\n\nVirhe:"
+Updater_NoServer: Ei saatu yhteyttÃ¤ pÃ¤ivityspalvelimeen
+Updater_Hashlist: Ladataan viimeisintÃ¤ hash-luetteloa...
+Updater_CantCheck: PÃ¤ivityksiÃ¤ ei voi tarkistaa
+Updater_Failed: "VIRHE: Osa tiedostoista on kÃ¤ytÃ¶ssÃ¤ eikÃ¤ niitÃ¤ voi pÃ¤ivittÃ¤Ã¤.\n\n1. Varmista, ettÃ¤ kaikki PolarWolves-prosessit ovat tÃ¤ysin suljettuja\n(tai kÃ¤ynnistÃ¤ tietokoneesi uudelleen)\n\n2. Napsauta sitten Vahvista alla, tai jos kÃ¤ynnistit uudelleen:\n-   Avaa tÃ¤mÃ¤ pÃ¤ivittÃ¤jÃ¤ ja vahvista tiedostot\n    (sijaitsee asennushakemiston pÃ¤ivittÃ¤jÃ¤kansiossa)"
+Updater_Missing: "TIEDOSTO PUUTTUU: {file}"
+Updater_FileMismatch: "Tiedostossa {file} on MD5: {md5} ODOTETTU: {value}"
+Updater_DownloadingWeb: Ladataan tiedostoa verkkosivustolta...
+Updater_UnpackingAppData: Kopioidaan tiedostoja %AppData%/PolarWolves -tilin vaihtajaan... (ellei toisin ole mÃ¤Ã¤ritetty)
+Updater_VerifyComplete: Tiedostot vahvistettu!
+Updater_UpdateFound: "PÃ¤ivitys lÃ¶ytyi: {name} [{updateSize}]"
+Updater_TotalFound: "LÃ¶ytyneitÃ¤ pÃ¤ivityksiÃ¤: {x}"
+Updater_TotalSize: "Kokonaiskoko: {size}"
+Updater_AwaitingUser: Odotetaan kÃ¤yttÃ¤jÃ¤n syÃ¶ttÃ¶Ã¤...
+Updater_UpToDate: "Olet ajan tasalla.\n:)"
+Updater_FailedDecode: TÃ¤mÃ¤ johtuu todennÃ¤kÃ¶isesti siitÃ¤, ettÃ¤ minÃ¤ (PolarWolves Team) tyÃ¶ntÃ¤Ã¤ pÃ¤ivityksen, ja tehdÃ¤ kirjoitusvirhe, joka rikkoi .json pÃ¤ivitystiedoston. Ilmoitathan minulle:)
+Updater_FailedDecodeTitle: PÃ¤ivitysluettelon purkaminen epÃ¤onnistui
+Updater_Extracting: Puretaan Patch-tiedostoja
+Updater_Applying: Asennetaan korjausta...
+Updater_Moving: SiirretÃ¤Ã¤n tiedostoja...
+Updater_Title: PolarWolves Tilinvaihtajan PÃ¤ivittÃ¤jÃ¤
+Updater_Started: Aloitettu
+Updater_Start: KÃ¤ynnistÃ¤ PolarWolves
+Updater_Begin: Aloita pÃ¤ivitys
+Updater_Exit: Poistu
+FatalError: Tapahtui kohtalokas virhe!
+Online: Verkossa
+OnlineDefault: Online (oletus)
+Offline: Offline-tilassa
+Invisible: NÃ¤kymÃ¤tÃ¶n
+Busy: Kiireinen
+Away: Pois
+Snooze: Lepotila
+LookingToTrade: KaupankÃ¤ynti
+LookingToPlay: Odotetaan pelaamista
+Unrecognized_EPersonaState: Tuntematon ePersonaState
+Reg_DoesntExist: "{subKey} ei ole olemassa."
+Reg_DoesntContain: "{subKey} ei sisÃ¤llÃ¤ {val}"
+Reg_Removing: Poistetaan {subKey}\\{val}
+PngInvalid_Format: Vaadittu pikselimuoto on PixelFormat.{x}.
+PngRequired: Tarvittava kuvaformaatti on kannettava verkkografiikka (png).
+PngDimensions: Mitat saavat olla enintÃ¤Ã¤n {MaxIconWidth}x{MaxIconHeight}
+ThemeSyntaxAnd: "Tapahtui syntaksivirhe (lisÃ¤tietoja alla)! JA:"
+ThemesNotFound: "\"Teemat\" -kansiota ei lÃ¶ytynyt PolarWolvesin hakemistosta. TÃ¤mÃ¤ (erityisesti \"Dracula_Cyan\" -kansio) tarvitaan tÃ¤mÃ¤n ohjelmiston ajamiseen.\nVoit suorittaa pÃ¤ivitysohjelman pÃ¤ivityskansiossa tiedostojen tarkistamiseksi ja puuttuvien tiedostojen palauttamiseksi."
+Yes: "- KyllÃ¤."
+No: "- Ei."
+Save: Tallenna
+NoDefault: Ei (oletus)
+Ok: "HyvÃ¤ on."
+Submit: LÃ¤hetÃ¤
+Forget: Unohda.
+Notice: Ilmoitus
+Notes: Huomautuksia
+Error: 'Virhe @ info: whatsthis'
+ErrorDetails: "VIRHE: {ex}"
+Failed: EpÃ¤onnistui
+Success: Menestys
+NotFound: Ei lÃ¶ydy
+Done: Valmis
+Edit: Muokkaa
+Refresh: PÃ¤ivitÃ¤
+Working: TyÃ¶skentelee...
+ForName: "Puolesta: {name}"
+DeletedFiles: Poistetut tiedostot
+FileFoldersToClear: "Luettelo tyhjennettÃ¤vistÃ¤ tiedostoista/kansioista:"
+CouldNotFindX: Ei lÃ¶ytynyt {x}
+CouldNotCloseX: Ei voitu sulkea {x}!
+CouldNotReadFile: Ei voitu lukea {file}!
+DirectoryNotFound: Hakemistoa ei lÃ¶ytynyt
+DirectoryNotFoundFolder: "Hakemistoa ei lÃ¶ytynyt: {folder}"
+DeletingFile: "Poistetaan: {file}"
+DeletingFolder: "Poistetaan kansiota: "
+CouldntDeleteX: "VIRHE: EI VOITU POISTAA: {x}"
+CouldntDeleteUndefined: "VIRHE: MÃ„Ã„RITTELEMÃ„TÃ–NTÃ„ TIEDOSTOA EI VOITU POISTAA"
+CouldntModifyX: "Ei voitu muokata {file}. Tiedoston kÃ¤yttÃ¶oikeusvirhe tai tiedosto on kÃ¤ytÃ¶ssÃ¤."
+Prompt_RestartAsAdmin: "<h3><bold>TÃ¤mÃ¤ ohjelma kÃ¤ynnistyy uudelleen jÃ¤rjestelmÃ¤nvalvojana</bold></h3><p>Paina \"Yes\" UAC: ssÃ¤, kun sitÃ¤ pyydetÃ¤Ã¤n yllÃ¤pitÃ¤jÃ¤lle.</p>"
+Prompt_ForgetSteam: >
+  <h3 style='color:red'>Olet unohtamassa tilin!</h3> <h4>MitÃ¤ tÃ¤mÃ¤ tarkoittaa?</h4> <p>- Steamilla ei ole enÃ¤Ã¤ Big Picture Mode -tilassa olevaa tiliÃ¤, eikÃ¤ se muista salasanaa.<br/> - PolarWolves ei myÃ¶skÃ¤Ã¤n enÃ¤Ã¤ nÃ¤ytÃ¤ tiliÃ¤, ennen kuin se kirjataan uudelleen sisÃ¤Ã¤n Steamin kautta.</p> <p>Tilisi pysyy ennallaan. Se on vain unohdettu tÃ¤lle tietokoneelle.</p><h4>YmmÃ¤rrÃ¤tkÃ¶?</h4>
+Prompt_ForgetAccount: >
+  <h3 style='color:red'>Olet aikeissa unohtaa tilin!</h3> <h4>MitÃ¤ tÃ¤mÃ¤ tarkoittaa?</h4> <p>PolarWolves ei myÃ¶skÃ¤Ã¤n enÃ¤Ã¤ nÃ¤ytÃ¤ tiliÃ¤,<br/> kunnes se on kirjautunut uudelleen {platform}, ja lisÃ¤tÃ¤Ã¤n luetteloon.</p> <p>Tilisi pysyy koskemattomana. Se on vain unohdettu tÃ¤llÃ¤ tietokoneella.</p> <h4>YmmÃ¤rrÃ¤tkÃ¶?</h4>
+Prompt_ClearStats: >
+  <h3 style='color:red'>Olet poistamassa tilastoja!</h3> <p>Et voi kumota tÃ¤tÃ¤ toimintoa.</p>
+Platform_DiscordPasteHint: LiitÃ¤ Discord-konsoliin ja liitÃ¤ tulos syÃ¶tteeseen!
+Platform_ClearCache: TyhjennÃ¤ vÃ¤limuisti
+Platform_ClearCacheTotal: TyhjennetÃ¤Ã¤n {totalFileCount} tiedostoa ({totalSizeMB})
+Platform_DeleteFail: Joitakin tiedostoja ei voitu poistaa (Ohjelma saattaa olla kÃ¤ynnissÃ¤?)
+Platform_CouldNotDeleteLog: Tiedostoa ei voitu poistaa! Tarkista {logPath}
+Error_FileAccessDenied: Tiedoston kÃ¤yttÃ¶ epÃ¤onnistui! Tarkista {logPath}
+Error_RequiredFileVerify: Vaadittua tiedostoa ei lÃ¶ytynyt. Varmista, ettÃ¤ x64- ja x86-kansiot ovat asennushakemistossa. Jos ei suorita PolarWolves-Updater.exe ja vahvista tiedostoja.
+Tooltip_Settings: asetukset
+Tooltip_Info: Tiedot
+Tooltip_ManagePlatforms: NÃ¤ytÃ¤ tai piilota muut alustat
+Tooltip_ExpandShortcuts: Laajenna Peli- ja pikanÃ¤ppÃ¤invalikoima
+Tooltip_ShortcutFolder: Avaa pikakuvakekansio. Aseta pikakuvakkeet sinne ja PolarWolves nÃ¤hdÃ¤ksesi ne.
+Tooltip_Backup: Varmuuskopioi konfiguraatiotiedostot/kansiot alustan asetuksissa mÃ¤Ã¤ritetyllÃ¤ tavalla.
+Tooltip_BackupAll: Varmuuskopioi KAIKKI asetustiedostot/kansiot, mukaan lukien kuvat ja muut suuret tiedostot.
+Tooltip_ClosingMethod: "Yhdistetty on paras. Sulje yritykset sulkea suoraan suljetulla toiminnolla ja TaskKill kÃ¤yttÃ¤Ã¤ CMD: tÃ¤ (paras jos yhdistetty ei toimi)"
+Tooltip_StartingMethod: "Oletusarvo on paras. Direct ei hallitse jÃ¤rjestelmÃ¤nvalvojan tasoa tai UAC: tÃ¤. Se alkaa samalla tasolla (tai korkeammalla - mutta ei alemmalla) kuin tÃ¤mÃ¤ tilin vaihtaja"
+Tooltip_CurrentAccount: Olet tÃ¤llÃ¤ hetkellÃ¤ kirjautunut tÃ¤lle tilille.
+Tooltip_Restore: Valitse 7z-tiedosto napsauttamalla tai vedÃ¤ se tÃ¤hÃ¤n painikkeeseen.
+Tooltip_DisabledGlobally: TÃ¤mÃ¤ kohde on piilotettu kaikille tileille. Voit muuttaa tÃ¤tÃ¤ alustan asetuksissa.
+Discord_Status: Vaihdan tiliÃ¤.
+Discord_StatusDetails: "Tilit vaihdettu: {number}"
+Website: Verkkosivusto
+Preview_Platforms: Alustojen esikatselu
+Preview_Accounts: Tilien esikatselu
+Preview_Notifications: Maljapuheilmoitusten esikatselu
+Preview_Settings: Asetusten esikatselu
+Preview_Modals: Modaalien esikatselu
+
+
+
+

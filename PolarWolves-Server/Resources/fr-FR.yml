@@ -1,0 +1,513 @@
+﻿---
+Update: Mise Ã  jour disponibleÂ ! Cliquez ici pour la dÃ©marrer.
+Header_ChooseLanguage: 'SÃ©lectionnez la langueÂ :'
+Steam_ShowSteamID: SteamID
+Steam_ShowVac: Etat VAC
+Steam_ShowLastLogin: DerniÃ¨re connexion
+Steam_ShowLimited: Statut limitÃ©
+Steam_ShowAccUsername: Nom d'utilisateur du compte
+Steam_Tray_AccountName: Afficher le nom du compte [not friend name]
+Steam_CheckVac: VÃ©rifier le statut VAC du compte
+Steam_OverrideDefaultState: "Remplacer l'Ã©tat de connexion par dÃ©fautÂ :"
+Steam_StartSilent: "Ouvrir Steam dans la barre des tÃ¢ches au changement (DÃ©marrer Steam avec '-silent')"
+Steam_OldUi: "Utiliser l'ancienne interface utilisateur dans Steam (-vgui)"
+Steam_CollectInfo: Collectez des images de profil et le statut d'interdiction VAC depuis Steam
+Button_AddNew: Ajouter un nouveau
+Button_SaveCurrent: Enregistrer le compte actuel
+Button_SaveFile: Enregistrer le fichier
+Button_Cancel: Annuler
+Button_Login: Connexion
+Button_Close: Fermer
+Button_RefreshImages: Actualiser les images
+Button_ResetSettings: RÃ©initialiser les paramÃ¨tres
+Button_AdvancedCleaning: Nettoyage avancÃ©...
+Button_ClearLog: Effacer le journal
+Button_WikiInfo: Plus d'infos (Wiki)
+Button_ManagePlatforms: GÃ©rer les plateformes
+Button_Backup: Sauvegarde
+Button_BackupAll: Sauvegardez tout
+Button_Restore: Restaurer
+Button_OpenBackup: Ouvrir le dossier de sauvegarde
+Button_Back: Retour
+Button_RestartAdmin: RedÃ©marrer en tant qu'administrateur
+Button_SetPassword: DÃ©finir le mot de passe de l'application
+Settings_SteamCollectInfo: RÃ©cupÃ©rez la photo de profil Steam et le statut VAC de Steam
+Settings_Shortcut: '{platform} Switcher Raccourci bureau'
+Settings_Admin: ExÃ©cuter {platform} en tant qu'administrateur
+Settings_ImageExpiry: 'Jours avant l''expiration des images de profilÂ :'
+Settings_SteamAPIKey: "ClÃ© de l'API Web Steam (facultatif)"
+Settings_SteamAPIKey_Note: La dÃ©finition d'une clÃ© API fera apparaÃ®tre l'indicateur LimitÃ© (bordure jaune) pour les comptes qui sont interdits par la communautÃ©.
+Settings_Header_AppWide: ParamÃ¨tres de l'application
+Settings_Header_GeneralSettings: ParamÃ¨tres gÃ©nÃ©raux
+Settings_Header_AccountDisplay: ParamÃ¨tres d'affichage du compte
+Settings_Header_ExtraPlatforms: ParamÃ¨tres de la plateforme
+Settings_Header_GeneralTools: Outils gÃ©nÃ©raux
+Settings_Header_OtherTools: Autres outils
+Settings_Header_TraySettings: ParamÃ¨tres de la zone de notifications
+Settings_Header_OpenGameFolders: Ouvrir les dossiers de jeu
+Settings_Header_BackupRestore: Sauvegarde et Restauration des paramÃ¨tres de l'application
+Settings_Header_Language: Langue
+Settings_Header_System: SystÃ¨me
+Settings_Header_Theme: ThÃ¨me
+Settings_Header_Program: Programme
+Settings_Header_StatsSharing: Statistiques et partage
+Settings_Header_Platform: "ParamÃ¨tres de {platformName}"
+Settings_Header_GameStats: ParamÃ¨tres des statistiques de jeu
+Settings_GameStats: Tout ce qui est cochÃ© ici n'apparaÃ®tra pas sous votre nom d'utilisateur pour tous les comptes. Utilisez ceci si vous cachez souvent des Ã©lÃ©ments spÃ©cifiques de vos statistiques de jeu.
+Settings_TrayMax: 'Nombre maximum de comptes Ã  retenirÂ :'
+Settings_ExtraPlatformsDisabled: Plateformes dÃ©sactivÃ©es. Cliquez pour les activer.
+Settings_ExtraPlatformsEnabled: Plateformes visibles. Cliquez pour les dÃ©sactiver.
+Settings_RTL: Afficher le texte de droite Ã  gauche
+Settings_CollectStats: Collecter des statistiques
+Settings_ShareStats: Partager les statistiques de maniÃ¨re anonyme (recommandÃ©)
+Settings_DiscordRpc: PrÃ©sence de Discord Rich (RPC)
+Settings_DiscordRpcShare: Partager le total des commutateurs
+Settings_ViewStats: Voir les statistiques
+Preview: AperÃ§u
+Settings_ClearStats: RÃ©initialiser
+Settings_CurrentLocation: 'Emplacement d''installation actuelÂ : {path}'
+Settings_CurrentDataLocation: 'Emplacement actuel des donnÃ©es utilisateurÂ : {path}'
+Settings_SetDataLocation: "[DÃ©finir l'emplacement des donnÃ©es utilisateur]"
+Settings_PickFolder: Choisissez le dossier de {platform}
+Settings_OpenFolder: Ouvrir le dossier {platform}
+Settings_ClearForgotten: Effacer OubliÃ©
+Settings_ClearAccounts: Effacer les comptes
+Settings_StreamerMode: Activer le mode streamer
+Settings_ExitToTray: Quitter minimise dans la zone de notification
+Settings_DesktopShortcut: Raccourci du bureau
+Settings_StartMenu_ProgramTray: Programme & Zone de notification
+Settings_StartMenu_Platform: Plateforme
+Settings_Tray_StartWindows: DÃ©marrer dans la zone de notification avec Windows
+Settings_Tray_StartNow: '[DÃ©marrer la zone de notification maintenant]'
+Settings_CurrentStyle: Style actuel
+Settings_ThemeBackground: '[DÃ©finir l''arriÃ¨re-plan]'
+Settings_ThemeOpenFolder: '[Ouvrir le dossier du thÃ¨me]'
+Settings_Protocol: 'Activer le protocole polarwolvesÂ :\\ (recommandÃ©)'
+Settings_StartCentered: DÃ©marrer le programme centrÃ©
+Settings_OfflineMode: Mode hors ligne (aucune activitÃ© rÃ©seau)
+Settings_WindowsAccent: Utiliser la couleur d'accentuation Windows
+Settings_HelpTranslate: "[Aider Ã  traduire]"
+Settings_ViewTranslators: "[Credits]"
+Settings_Header_ActiveBrowser: "Moteur de rendu (avancÃ©)Â :"
+Settings_Header_ClosingMethod: "DÃ©finir la mÃ©thode pour fermer {platform} (AvancÃ©)"
+Settings_Header_StartingMethod: "DÃ©finir la mÃ©thode pour dÃ©marrer {platform} (AvancÃ©)"
+Settings_AutoStart: "DÃ©marrage automatique de {platform} sur le commutateur de compte"
+Settings_ShowSteamSwitcher: "Afficher le sÃ©lecteur de compte Steam (NE PAS l'utiliser sinon cela pourrait casser le sÃ©lecteur de compte PolarWolves)"
+Settings_NoPlatforms: Il n'y a actuellement aucune plate-forme activÃ©e. Veuillez cocher les plates-formes facultatives ci-dessous pour les activer, ou dÃ©cochez les plates-formes dÃ©sactivÃ©es.
+Settings_MinimizeOnSwitch: Minimiser le commutateur lors du changement de compte
+Settings_ShowShortNotes: AperÃ§u de la note sous nom d'utilisateur
+Settings_Header_AppPassword: "EmpÃªcher les autres utilisateurs d'utiliser le commutateurÂ :"
+PreviewCss: AperÃ§u du CSS
+Settings_PreviewCss: Ceci est la page d'aperÃ§u CSS. Vous pouvez voir certains Ã©lÃ©ments qui apparaissent dans le programme et voir Ã  quoi ils ressemblent avec votre thÃ¨me. Cette page est utile pour ceux qui crÃ©ent des thÃ¨mesÂ !
+Settings_PreviewCssHeader: Page d'aperÃ§u CSS
+Settings_AutoUpdatePlatforms: Liste des plates-formes de mise Ã  jour automatique
+Settings_CheckForUpdates: VÃ©rifiez les mises Ã  jour au lancement
+Stats_Disabled: "La collecte de statistiques est dÃ©sactivÃ©e."
+Stats_InDepth: Ventilation statistique approfondie
+Stats_ShareEnabled: "Ces statistiques sont partagÃ©es anonymement et s'ajouteront au total <a onclick=\"{WebsiteLink}\" class=\"fancyLink\">ici</a>."
+Stats_ShareDisabled: "Ces statistiques NE SONT PAS partagÃ©es anonymement et NE s'ajouteront PAS au total <a onclick=\"{WebsiteLink}\" class=\"fancyLink\">ici</a>."
+Stats_OperatingSystem: "SystÃ¨me d'exploitationÂ : "
+Stats_FirstLaunch: "Premier lancementÂ : "
+Stats_LaunchCount: "Nombre de lancementsÂ : "
+Stats_CrashCount: "Nombre de crashÂ : "
+Stats_MostUsedPlatform: "Plateforme la plus utilisÃ©eÂ : "
+Stats_TotalTime: "Temps total passÃ© dans l'applicationÂ : "
+Stats_TotalSwitches: "Total des changements de compteÂ : "
+Stats_TotalGamesLaunched: "Total des applications/jeux lancÃ©s via le commutateurÂ : "
+Stats_UniqueDaysLong: "Jours uniques avec changement de compteÂ : "
+Stats_LastUpload: "Dernier envoiÂ : "
+Stats_SwitcherStats: "Statistiques du commutateurÂ : "
+Stats_PageStats: "Page de statistiquesÂ : "
+Stats_VisitsTotalTime: "{visits} visites en tout, {hours} heures au total"
+Stats_Accounts: "ComptesÂ : "
+Stats_Switches: "CommutateursÂ : "
+Stats_FirstActive: "Premier activitÃ©eÂ : "
+Stats_LastActive: "DerniÃ¨re activitÃ©eÂ : "
+Stats_UniqueDays: "Jours uniquesÂ : "
+Stats_GameShortcuts: "Raccourcis de jeuxÂ : "
+Stats_GameShortcutsHotbar: "Raccourcis de jeux (sur la barre de raccourcis)Â : "
+Stats_GamesLaunched: "Lancement des jeuxÂ : "
+Stats_MetricsToShow: "Indicateurs affichÃ©sÂ :"
+Stats_AccountId: "Identifiant du compteÂ :"
+Auth_LoginRequired: Un mot de passe a dÃ©jÃ  Ã©tÃ© dÃ©fini et est requis. Veuillez saisir le mot de passe ci-dessous.
+Auth_EnterPassword: "Saisissez le mot de passeÂ :"
+Auth_PassIncorrect: Mot de passe incorrect.
+Locked: VerrouillÃ©
+Cleaning_Header_StartMenuShortcuts: 'Raccourcis pour le menu DÃ©marrerÂ :'
+Cleaning_Header_General: Nettoyage gÃ©nÃ©ral
+Cleaning_Header_LoginHistory: Nettoyer mon historique de connexion
+Cleaning_Header_PlatformCleaning: '{platform} Commutateur'
+Cleaning_ImportantInfoHeader: 'Informations importantesÂ :'
+Cleaning_ImportantInfo: >
+  Cliquez sur un bouton pour supprimer le (s) fichier(s) associÃ© (s) de votre installation Steam.<br /> La suppression de loginusers.vdf entraÃ®nera l'absence de comptes dans ce sÃ©lecteur de compte.<br /> Vous devrez vous connecter Ã  eux Ã  l'aide de Steam pour les rÃ©cupÃ©rer.
+Cleaning_Button_KillProcess: Tuer le processus {platform}
+Cleaning_Button_ForgottenBackups: Sauvegardes de compte oubliÃ©es
+Cleaning_Understand: Je comprends ce que font ces boutons.
+Restore_Info: >
+  Si vous avez prÃ©cÃ©demment "oubliÃ©" un compte, vous pouvez le restaurer ici.<br /> Cela les ajoute Ã  votre fichier loginusers.vdf, vous permettant de passer Ã  eux.
+Restore_Button_Restore: Restaurer la sÃ©lection
+Ignored_RemoveAccounts: Supprimer les comptes de la liste Ã  ignorer
+Ignored_Description: Si vous avez prÃ©cÃ©demment "ignorÃ©" un compte, vous pouvez les afficher Ã  nouveau ici
+Ignored_Stop: ArrÃªter d'ignorer la sÃ©lection
+Toast_UpdatesDownloading: Les mises Ã  jour sont en cours de tÃ©lÃ©chargement en arriÃ¨re-plan. Vous pouvez continuer Ã  utiliser le programme.
+Toast_UpdatesDownloaded: Le tÃ©lÃ©chargement des mises Ã  jour est terminÃ©. Fermez cette application pour commencer la mise Ã  jour.
+Toast_DataLocationCopying: (1/2) Copie des fichiers existants dans le nouveau dossier de donnÃ©es utilisateurÂ !
+Toast_DataLocationNotCopying: (1/2) Le dossier contient dÃ©jÃ  des fichiersÂ ! Ne migrera pas les donnÃ©es utilisateur.
+Toast_DataLocationSet: (2/2) RedÃ©marrez le sÃ©lecteur de compte pour utiliser le nouveau dossierÂ !
+Toast_PlaceShortcutFiles: Un dossier s'ouvre. Placez les raccourcis de jeu dans ce dossier et redÃ©marrez le sÃ©lecteur de compte.
+Toast_TrayStarted: Zone de notifications lancÃ©eÂ !
+Toast_TrayRunning: Zone de notification dÃ©jÃ  lancÃ©e
+Toast_TrayUsersMissing: Aucun utilisateur de zone de notification enregistrÃ©
+Toast_TrayFail: Impossible de dÃ©marrer l'application en zone de notification !
+Toast_TrayPosition: "En cliquant sur le bouton QuitterÂ : je serai dans la zone de notification WindowsÂ ! (Ã  droite de la barre de dÃ©marrage)"
+Toast_TrayHint: "AstuceÂ : Ctrl+Clique sur le Â«Â XÂ Â» pour me fermer complÃ¨tement, ou via la zone de notification > Â«Â QuitterÂ Â»"
+Toast_Copied: CopiÃ©
+Toast_AlreadyProcessing: Traitement des comptes en cours...
+Toast_FailedRestore: Impossible de restaurer les comptes (voir console)
+Toast_Restored: Comptes restaurÃ©sÂ !
+Toast_ProtocolEnabled: Ce programme va maintenant rÃ©pondre Ã  polarwolvesÂ :\\ dans Windows
+Toast_ProtocolEnabledTitle: Protocole ajoutÃ©
+Toast_ProtocolDisabled: Ce programme ne rÃ©pond plus Ã  polarwolvesÂ :\\
+Toast_ProtocolDisabledTitle: Protocole supprimÃ©
+Toast_RestartAsAdmin: Veuillez commencer en tant qu'administrateur et rÃ©essayer.
+Toast_RestartAfterClose: Veuillez redÃ©marrer le programme aprÃ¨s avoir cliquÃ© sur Fermer.
+Toast_RestartAfterCloseTitle: Couleur d'accent dÃ©sactivÃ©e
+Toast_RestartRequired: RedÃ©marrer pour appliquer les modifications
+Toast_LoadStylesheetFailed: Impossible de charger la feuille de styleÂ ! Voir le dossier de donnÃ©es utilisateur pour plus de dÃ©tails.
+Toast_LoadingStats: Un ou plusieurs profils sont des statistiques rafraÃ®chissantes. Veuillez patienter.
+Toast_ItemNotFound: "{item} introuvable"
+Toast_DeletedTotal: "{files} de {totalFiles} supprimÃ©. TotalÂ : {totalSize}"
+Toast_CantChangeUsername: Impossible de modifier le nom d'utilisateur
+Toast_CantClearLoginFiles: Impossible d'effacer les anciens fichiers de connexion
+Toast_AccountIdReg: Ã‰chec de l'obtention de l'identifiant de compte Ã  partir du registreÂ !
+Toast_RegFailWrite: Ã‰chec de l'Ã©criture dans le registre WindowsÂ !
+Toast_RegFailRead: Ã‰chec de la lecture Ã  partir du registre WindowsÂ !
+Toast_RegFailReadSaved: Ã‰chec de la lecture de l'entrÃ©e de registre enregistrÃ©e. Essayez de supprimer et d'ajouter Ã  nouveau le compte en cas d'Ã©chec.
+Toast_RegSaveMissing: Ã‰chec de la recherche ou de la lecture des donnÃ©es des fichiers de registre enregistrÃ©sÂ !
+Toast_DuplicateNames: Impossible d'Ã©changer. Dupliquer les comptes avec le mÃªme nom d'utilisateurÂ ?
+Toast_MissingUserId: "Impossible de permuter. L'ID utilisateur est manquant. VÃ©rifiez Wiki Â«Â Erreurs courantesÂ Â»."
+Toast_CouldNotLocate: Impossible de localiser l'utilisateur connectÃ©
+Toast_StreamerModeHint: Les informations privÃ©es sont masquÃ©esÂ ! - Voir les paramÃ¨tres
+Toast_StreamerModeTitle: Mode streamer
+Toast_AddAccountsFirst: Ouvrez la plateforme dans la liste et ajoutez d'abord quelques comptes
+Toast_AddAccountsFirstTitle: Aucun compte enregistrÃ©
+Toast_CantFindImage: Impossible de trouver l'image des utilisateurs.
+Toast_CantCreateShortcut: Impossible de crÃ©er le raccourci
+Toast_ShortcutCreated: Raccourci crÃ©Ã©Â !
+Toast_SettingsCopied: ParamÃ¨tres copiÃ©s avec succÃ¨s dans le compte courant.
+Toast_GameDataRestored: DonnÃ©es de jeu restaurÃ©es avec succÃ¨s pour ce compte.
+Toast_NoValidSteamId: Impossible de trouver un ID Steam valide.
+Toast_FailedUpdateCheck: Ã‰chec de la vÃ©rification des mises Ã  jour
+Toast_UpdateVerifyFail: Impossible de vÃ©rifier les fichiers de mise Ã  jour. TÃ©lÃ©chargez la derniÃ¨re version et remplacez les fichiers de votre rÃ©pertoire.
+Toast_StartedGame: CommencÃ© {program}
+Toast_SteamCantLoadXml: Impossible d'obtenir les informations XML pour {steamId}. Voir le journal pour plus de dÃ©tails.
+Toast_Steam_VacCleared: Le statut d'ACC pour les comptes a Ã©tÃ© effacÃ©
+Toast_Steam_CantDeleteVacCache: Impossible de supprimer Â«Â LoginCache/Steam/VACCache/SteamVACCache.jsonÂ Â»
+Toast_NoFindSteamUserdata: Impossible de trouver le dossier Steam\\userdata
+Toast_NoFindGameBackup: Impossible de trouver le dossier de donnÃ©es de jeu de sauvegarde pour ce compte.
+Toast_GameBackupDone: "Dossier de donnÃ©es de jeu sauvegardÃ© avec succÃ¨sÂ : {folderLocation}"
+Toast_Steam_VdfLast: A pu charger depuis vdf_last. Certains comptes peuvent Ãªtre manquants.
+Toast_PartiallyFixed: Partiellement fixÃ©
+Toast_Steam_FailedLoginusers: Ã‰chec du chargement de steam/config/loginusers.vdf
+Toast_Steam_CantLocateLoginusers: Impossible de localiser '.../Steam/config/loginusers.vdf'. Essayez d'abord de vous connecter Ã  un compte.
+Toast_CantClearImages: Impossible de supprimer les images
+Toast_RefreshedImages: Images actualisÃ©es
+Toast_ClearForgottenCheck: ÃŠtes-vous sÃ»r de vouloir effacer les sauvegardes des comptes oubliÃ©sÂ ?
+Toast_ForgotAccount: Compte oubliÃ©
+Toast_ClearedPlatformSettings: "EffacÃ© {platform} ParamÃ¨tres du commutateur"
+Toast_ClearedImages: "Images effacÃ©es"
+Toast_SavedItem: "EnregistrÃ©Â : {item}"
+Toast_ChangedUsername: Nom d'utilisateur modifiÃ©
+Toast_SetUsername: DÃ©finir le nom d'utilisateur
+Toast_AlreadyLoggedIn: DÃ©jÃ  connectÃ© avec ce compte ! (Aucun changement effectuÃ©)
+Toast_BackupCopy: (1/3) Copie de fichiers vers un emplacement temporaire...
+Toast_BackupCompress: (2/3) Compresser les fichiers ({size}). Cela prendra un certain temps...
+Toast_BackupComplete: (3/3) Compression terminÃ©eÂ ! ({size} Ã  {compressedSize})
+Toast_BackupProgress: "Sauvegarde en cours (Taille compressÃ©eÂ : {compressedSize})"
+Toast_BackupFail: Ã‰chec de la sauvegarde - Voir le journalÂ !
+Toast_BackupBusy: Sauvegarde dÃ©jÃ  en coursÂ !
+Toast_RestoreBusy: Restauration dÃ©jÃ  en cours !
+Toast_RestoreExt: Extraction d'archives.
+Toast_RestoreCopying: DÃ©placer les fichiers vers la plate-forme
+Toast_RestoreDeleting: Suppression des fichiers temporaires
+Toast_RestoreComplete: Restauration terminÃ©eÂ !
+Toast_FailedLoad: Impossible de charger {platform}Â ! Cliquez sur la plate-forme pour voir l'erreur.
+Toast_FailedPlatformsLoad: Ã‰chec du chargement de Platforms.jsonÂ ! Veuillez vÃ©rifier que ce fichier existe.
+Toast_FailedLoadSettings: "Ã‰chec du chargement des paramÃ¨tresÂ ! Chargement des paramÃ¨tres par dÃ©faut Ã  la place. Ajout de Â«Â ancienÂ Â» au nom de fichier des paramÃ¨tres existants."
+Toast_FailedLoadStats: "Ã‰chec du chargement des statistiquesÂ ! DÃ©marrage de nouveau."
+Toast_FailedStatsLoad: Ã‰chec du chargement de GameStats.jsonÂ ! Veuillez vÃ©rifier que ce fichier existe.
+Toast_GameStatsLoadFail: "Impossible d'obtenir les statistiques de jeu du web pour {Game}"
+Toast_GameStatsEmpty: "Aucune statistique de jeu trouvÃ©e sur le site pour {Game}. Tu crois que c'est une erreurÂ ? VÃ©rifiez le dossier userdata et 'temp\\download-{AccoundId}-{Game}.html' pour voir si la page a eu une erreurÂ !"
+Toast_FileCopyFail: Impossible de copier les fichiersÂ ! Voir le journal pour plus de dÃ©tails.
+Toast_UserDataLoadFail: Ã‰chec du chargement des donnÃ©es utilisateur {UserData}\\WindowSettings.json. Sauvegarde et rÃ©initialisationÂ ! Erreur enregistrÃ©e dans le journal.
+Toast_UpdateCheckFail: Impossible d'atteindre https://discord.gg/PLR/ pour vÃ©rifier les mises Ã  jour. Ce message s'affichera une fois par jour.
+Toast_FailedCreateIcon: Impossible de crÃ©er l'icÃ´ne. Voir le journal pour plus de dÃ©tails.
+Toast_SameAccount: Impossible de copier des fichiers vers/depuis le mÃªme compte. Essayez un autre compte ou consultez Wiki pour plus d'informations.
+Toast_Steam_DownloadingAppIds: TÃ©lÃ©chargement de la liste Steam AppId...
+Toast_Steam_DownloadingAppIdsComplete: TÃ©lÃ©chargement terminÃ©. Le sous-menu DonnÃ©es du jeu a Ã©tÃ© mis Ã  jour.
+Toast_SteamWebKeyInvalid: La clÃ© de l'API Web Steam semble Ãªtre invalide. Veuillez en dÃ©finir un nouveau.
+Toast_DownloadingProfileData: TÃ©lÃ©chargement des donnÃ©es de profil
+Toast_PasswordChanged: Mot de passe modifiÃ©
+Toast_JsonFailModify: Impossible de modifier le fichier JSON. Voir le journal.
+Toast_DifferentClosingMethod: "'MÃ©thode de fermeture' est diffÃ©rente de celle par dÃ©faut. Si les jeux se ferment et plus vÃ©rifiez si la modification de cette option est utile. Par dÃ©faut: {defaultMethod}, Actuel : {currentMethod}"
+Toast_NameEmpty: Le nom d'utilisateur ne peut pas Ãªtre vide (et ne peut pas contenir uniquement des espaces)
+Toast_NewPlatforms: "Mis Ã  jourÂ ! Nouvelles plateformes ajoutÃ©esÂ : {listOfNames}. Cliquez pour ignorer."
+Toast_FoundExeViaShortcut: "Nous avons trouvÃ© le chemin d'installation Ã  partir d'un raccourci du menu DÃ©marrer. Veuillez vÃ©rifier son emplacement en cliquant sur ParamÃ¨tres maintenant. Cliquez pour ignorer."
+Modal_Crowdin_Header: Traducteurs Crowdin
+Modal_Crowdin_Info: "Voici tous ceux qui ont aidÃ© Ã  traduire ce logiciel.<br>Les utilisateurs avec des langues voisines ont beaucoup aidÃ© Ã  la traduction (rÃ´le de correcteur)."
+Modal_Info_Creator: CrÃ©Ã© par PolarWolves Team [Wesley Pyburn]
+Modal_Info_Version: Version
+Modal_Info_ViewGitHub: Afficher sur GitHub
+Modal_Info_ViewPatreon: Assistance via Patreon
+Modal_Info_ViewKofi: Assistance via Ko-Fi
+Modal_Info_BugReport: Rapport de bogue/Demande de fonctionnalitÃ©
+Modal_Info_VisitSite: Visitez discord.gg/PLR
+Modal_Info_Disclaimer: Clause de non-responsabilitÃ©
+Modal_Title_Info: Informations sur le commutateur de compte PolarWolves
+Modal_Title_ChangeUsername: Modifier le nom d'utilisateur
+Modal_Title_ConfirmAction: PolarWolves Commutateur de compte Confirmer l'action
+Modal_Title_LocatePlatform: Veuillez localiser le rÃ©pertoire {platform}
+Modal_Title_AddNew: Ajouter un nouveau compte {platform}
+Modal_Title_Background: DÃ©finir une image d'arriÃ¨re-plan
+Modal_Title_Userdata: DÃ©finir le dossier de donnÃ©es utilisateur
+Modal_Title_GameStats: Activer/dÃ©sactiver les statistiques du jeu
+Modal_GameStats_Header: "Activer/dÃ©sactiver les statistiques de jeu pourÂ : {accountName}"
+Modal_Title_Stats: Vos statistiques
+Modal_Title_GameVars: "DÃ©tails d'entrÃ©e pour {game}"
+Modal_GameVars_Header: "Veuillez saisir les dÃ©tails suivants pour votre compte {game} , {username} sur {platform}"
+Modal_Title_AccountNotes: "Notes de compte pourÂ : {accountName}"
+Modal_Title_SetPassword: DÃ©finir le mot de passe
+Modal_SetBackground: 'SÃ©lectionnez une image ou entrez une URL ci-dessous.<br>Laisser vide et rÃ©gler pour rÃ©initialiser.<br>(Pour un contrÃ´le plus avancÃ©, voir le Theming sur le Wiki)Â :'
+Modal_SetBackground_Button: DÃ©finir l'arriÃ¨re-plan
+Modal_SetBackground_ChooseImage: Choisissez une image locale
+Modal_SetUserdata: Entrez un chemin de dossier ci-dessous et cliquez sur dÃ©finir.
+Modal_SetUserdata_ChooseFolder: SÃ©lectionnez un dossier
+Modal_SetUserdata_Button: DÃ©finir les donnÃ©es utilisateur
+Modal_ChangeUsername: Veuillez entrer un nouveau nom d'utilisateur pour votre compte
+Modal_ChangeUsernameType: Changer {platform} nom d'utilisateur
+Modal_SetPassword: Saisissez un mot de passe pour le commutateur de compte PolarWolves
+Modal_SetPassword_Button: DÃ©finir le mot de passe
+Modal_SetPassword_Info: "REMARQUEÂ : cela ne crypte pas vos comptes. L'Ã©change de comptes est aussi simple que le remplacement de fichiers ou la modification d'un nom d'utilisateur dans un fichier. Le mot de passe peut Ã©galement Ãªtre rÃ©initialisÃ© en modifiant le texte dans un fichier. C'est une simple sÃ©curitÃ©. Il arrÃªte l'accÃ¨s simple Ã  l'interface utilisateur. Vous pouvez placer cette application sur une clÃ© USB amovible, dÃ©finir le dossier UserData sur la mÃªme clÃ© USB et la supprimer physiquement pour plus de sÃ©curitÃ©. <a class=\"fancyLink\" onclick=\"OpenLinkInBrowser('{link}');return false;\" href=\"\">DÃ©placement vers un guide de lecteur externe</a><br><br>Pour effacer, laissez ce qui prÃ©cÃ¨de vide et cliquez sur Set."
+Modal_EnterDirectory: "Veuillez entrer le rÃ©pertoire de {platform}, en tant que telÂ : CÂ :\\Program Files\\{platform}"
+Modal_LocatePlatform: Localisation {platformExe}
+Modal_LocatePlatformFolder: SÃ©lectionner {platform} dossier
+Modal_ConfirmAction: Confirmer l'action
+Modal_AddNew: Veuillez saisir un nom pour le compte {platform} auquel vous Ãªtes connectÃ©.
+Modal_AddCurrentAccount: Ajouter compte courant {platform}
+Modal_SetImageHeader: DÃ©finir l'image de profil
+Modal_SetImage: DÃ©finir l'image
+Status_SelectedAccount: "SÃ©lectionnÃ©Â : {name}"
+Status_Init: "Statut: initialisation"
+Status_ClosingPlatform: Fermeture {platform}
+Status_ClosingPlatformFailed: Ã‰chec de la fermeture {platform}
+Status_StartingPlatform: Ã€ partir de {platform}
+Toast_StartingPlatformFailed: Impossible de dÃ©marrer {platform}! Voir le journal pour plus de dÃ©tails.
+Toast_UrlAdminErr: Vous ne pouvez pas exÃ©cuter les fichiers .url en tant qu'administrateur. Essayez un autre type de raccourci. Lancement en tant qu'utilisateur normal.
+Status_UpdatingFile: "Mise Ã  jour {file}"
+Status_UpdatingRegistry: Mise Ã  jour du registre Windows
+Status_FailedLog: 'Action: Ã©chouÃ©. Voir le journal pour plus de dÃ©tails.'
+Status_WaitingForClose: "Attente de {processName} pour fermer ({timeout}{timeLimit})"
+Status_WaitingForMultipleClose: "En attente de {processName} & {count} autres pour fermer ({timeout}/{timeLimit} secondes)"
+Status_GetUniqueId: Collecte d'un ID utilisateur unique
+Status_CopyingFiles: Copie des fichiers utilisateur...
+Status_HandlingImage: Gestion de l'image de profil du compte
+Context_SwapTo: Permuter vers le compte
+Context_CreateShortcut: CrÃ©er un raccourci
+Context_ChangeImage: Changer l'image
+Context_ChangeName: Changer le nom du sÃ©lecteur
+Context_LoginAsSubmenu: Se connecter en tant que
+Context_UsernameSubmenu: Nom d'utilisateur
+Context_RefreshName: Actualiser le nom
+Context_CopySubmenu: Copier
+Context_DataSubmenu: DonnÃ©es
+Context_CopyProfileSubmenu: Copier le profil
+Context_CommunityUrl: URL de la communautÃ©
+Context_CommunityUsername: Nom d'utilisateur de la communautÃ©
+Context_LoginUsername: Identifiant de connexion
+Context_CopySteamIdSubmenu: Copier SteamID
+Context_Steam_Id: SteamID [STEAM0Â :~]
+Context_Steam_Id3: SteamID3 [UÂ :1Â :~]
+Context_Steam_Id32: SteamID32
+Context_Steam_Id64: SteamID64 7656~
+Context_Steam_OpenUserdata: Ouvrir les donnÃ©es utilisateur
+Context_ManageSubmenu: GÃ©rer
+Context_GameDataSubmenu: DonnÃ©es du jeu
+Context_ManageGameStats: GÃ©rer les statistiques du jeu
+Context_Game_CopySettingsFrom: Copier les paramÃ¨tres dans actuel
+Context_Game_RestoreSettingsTo: Restaurer les donnÃ©es du jeu
+Context_Game_BackupData: Sauvegarder les donnÃ©es du jeu
+Context_CopyOtherSubmenu: Copier autre
+Context_HidePlatform: Masquer la plateforme
+Context_ExportAccList: Exporter la liste des comptes
+Context_RunAdmin: ExÃ©cuter en tant qu'administrateur
+Context_Hide: Cacher
+ProfileImage_ToggleText: Utiliser l'image comme image de compte
+Title_Platforms_Settings: Commutateur de compte PolarWolves - ParamÃ¨tres de plateforme
+Title_Settings_TestCss: Commutateur de compte PolarWolves - Test de style CSS
+Title_AccountsList: Commutateur de compte PolarWolves - {platform}
+Title_TextEditor: Commutateur de compte PolarWolves - Ã‰diteur de texte
+Title_Settings: Commutateur de compte PolarWolves - ParamÃ¨tres
+Title_Steam_Cleaning: Commutateur de compte PolarWolves - Nettoyage Ã  la vapeur
+Title_Steam_Settings: Commutateur de compte PolarWolves - ParamÃ¨tres de vapeur
+Title_Template_Settings: Commutateur de compte PolarWolves - {platformName} paramÃ¨tres
+Title_Login: Commutateur de compte PolarWolves - Connexion
+Installer_Downloading: TÃ©lÃ©chargement {file}
+Installer_DownloadFinished: TÃ©lÃ©chargement terminÃ© {file}
+Installer_Installing: "InstallationÂ : {runtime}"
+Installer_RuntimeTitle: Commutateur de compte PolarWolves - Installateur d'exÃ©cution
+Installer_Welcome: Bienvenue dans l'installateur de PolarWolves - Runtime
+Installer_InstalledRuntimes: "ExÃ©cutions actuellement installÃ©esÂ :"
+Installer_ErrorRuntime: "Un ou plusieurs runtimes n'ont pas Ã©tÃ© installÃ©sÂ :"
+Installer_RuntimeNote: "[~{size1} Mo + ~{size2} Mo lors de l'installation]"
+Installer_TotalSize: "Taille totale du tÃ©lÃ©chargementÂ : ~{size} Mo"
+Installer_AnyKeyStart: Appuyez sur n'importe quelle touche pour dÃ©marrer le tÃ©lÃ©chargement...
+Runtime_WebView2: ExÃ©cution de Microsoft WebView2
+Runtime_Desktop: Microsoft .NET 5 Desktop Runtime
+Runtime_ASP: Environnement d'exÃ©cution Microsoft Microsoft ASP.NET Core {version}
+Installer_FailedFolder: "Impossible de crÃ©er le dossierÂ :"
+Installer_FailedWV: "Ã‰chec du tÃ©lÃ©chargement et de l'installation de Microsoft WebView2 Runtime. Pour tÃ©lÃ©chargerÂ : 1. Cliquez sur le lien ci-dessousÂ : {link} 2. Cliquez sur Â«Â TÃ©lÃ©charger le pack d'hÃ©bergementÂ Â» sous ExÃ©cuter les applications du serveur."
+Installer_FailedDR: "Ã‰chec du tÃ©lÃ©chargement et de l'installation de .NET 5 Desktop Runtime. TÃ©lÃ©chargez-le iciÂ :"
+Installed_FailedASP: "Ã‰chec du tÃ©lÃ©chargement et de l'installation d'ASP.NET Core {version} Runtime. Pour tÃ©lÃ©charger : 1. Cliquez sur le lien ci-dessous : {link} 2. Cliquez sur Â« TÃ©lÃ©charger x64 Â» sous ExÃ©cuter les applications de bureau."
+Installer_Ready: "Un ou plusieurs sont prÃªts pour l'installation. Si et quand vous Ãªtes invitÃ© si vous souhaitez installer, cliquez sur Â«Â OuiÂ Â»."
+Installer_PressStart: Appuyez sur n'importe quelle touche pour dÃ©marrer l'installation...
+Installer_VerifyMin: "VÃ©rifiez que vous rÃ©pondez aux exigences minimales recommandÃ©esÂ :"
+Installer_VerifyAlready: "On dirait que tout est installÃ©. VÃ©rifiez que vous rÃ©pondez aux exigences minimales recommandÃ©esÂ :"
+Installer_Complete: Cela devrait Ãªtre tout. Le programme principal, PolarWolves.exe, s'exÃ©cutera automatiquement.
+Installer_Complete2: "Si cela ne fonctionne pas, veuillez vous rÃ©fÃ©rer aux instructions d'installation, iciÂ : {link}"
+Tray_Error: Erreur de bac
+Tray_NoAccs: "Aucun compte n'a Ã©tÃ© trouvÃ©.\nEssayez de changer de compte d'abord, ou localisez 'Tray_Users.json'"
+Tray_Switch: "Basculer versÂ : {account}"
+Tray_CantOpenExe: "Impossible d'ouvrir le .exe principal. Assurez-vous qu'il existe.\n\nJ'ai essayÃ© d'ouvrirÂ :"
+Tray_LaunchFail: "Commutateur de compte PolarWolves - Ã‰chec du lancement du bac"
+Updater_Duplicate: Une autre instance PolarWolves Updater a Ã©tÃ© dÃ©tectÃ©e.
+Updater_Unknown: "Argument inconnuÂ : {arg}"
+Updater_NeedsAdmin: Ce programme doit Ãªtre exÃ©cutÃ© en tant qu'administrateurÂ !
+Updater_StatusChecking: VÃ©rification de la version
+Updater_FailedVersionCheck: "Impossible d'obtenir la version. Cliquez sur Â«Â VÃ©rifierÂ Â» pour mettre Ã  jour et vÃ©rifier les fichiers"
+Updater_PressBelow: Appuyez sur le bouton ci-dessousÂ !
+Updater_PressBelowStart: Cliquez sur le bouton ci-dessous pour dÃ©marrer la mise Ã  jour.
+Updater_PatchApplied: Correctif appliquÃ©Â !
+Updater_UpdatingAppData: Mise Ã  jour des fichiers dans AppDataÂ !
+Updater_Complete: Toutes les mises Ã  jour sont terminÃ©esÂ !
+Updater_Checking: VÃ©rification des mises Ã  jour
+Updater_UpdateToVerify: Pour vÃ©rifier les fichiers, vous devez d'abord les mettre Ã  jour.
+Updater_ClosingPolarWolves: Fermeture des instances PolarWolves (le cas Ã©chÃ©ant).
+Updater_Downloading: "TÃ©lÃ©chargement de la mise Ã  jourÂ : {version}"
+Updater_Downloaded: TÃ©lÃ©chargement terminÃ©.
+Updater_CantExtract: Impossible d'extraire la mise Ã  jour.
+Updater_Verify: VÃ©rifier les fichiers
+Updater_Verifying: VÃ©rification en cours...
+Updater_VerifySkip: VÃ©rification des fichiers pour ignorer toutes les petites mises Ã  jour, et il suffit de passer Ã  la derniÃ¨re.
+Updater_NoConnection: "Impossible de se connecter Ã  discord.gg/PLR pour vÃ©rifier les fichiers. Vous pouvez essayer de tÃ©lÃ©charger manuellement le programme d'installation Ã  partir de la page GitHub et de le rÃ©installer pour mettre Ã  jour.\n\nErreurÂ :"
+Updater_NoServer: Impossible d'atteindre le serveur de mise Ã  jour
+Updater_Hashlist: TÃ©lÃ©chargement de la derniÃ¨re liste de hachage...
+Updater_CantCheck: Impossible de vÃ©rifier les mises Ã  jour
+Updater_Failed: "ERREURÂ : Certains fichiers sont en cours d'utilisation et ne peuvent pas Ãªtre mis Ã  jour.\n\n1. Assurez-vous que tous les processus PolarWolves sont complÃ¨tement fermÃ©s\n(ou redÃ©marrez votre PC)\n\n2. Puis cliquez sur VÃ©rifier ci-dessous, ou si vous avez redÃ©marrÃ©Â :\n-   Ouvrez ce programme de mise Ã  jour et vÃ©rifiez les fichiers\n    (situÃ©s dans le dossier Â«Â Mise Ã  jourÂ Â» dans le rÃ©pertoire d'installation)"
+Updater_Missing: "FICHIER MANQUANTÂ : {file}"
+Updater_FileMismatch: "FichierÂ : {file} a MD5: {md5} ATTENDUÂ : {value}"
+Updater_DownloadingWeb: TÃ©lÃ©chargement du fichier depuis le site...
+Updater_UnpackingAppData: Copie des fichiers vers %AppData%/Commutateur de compte PolarWolves... (sauf indication contraire)
+Updater_VerifyComplete: Fichiers vÃ©rifiÃ©sÂ !
+Updater_UpdateFound: "Mise Ã  jour trouvÃ©eÂ : {name} [{updateSize}]"
+Updater_TotalFound: "Total des mises Ã  jour trouvÃ©esÂ : {x}"
+Updater_TotalSize: "Taille totaleÂ : {size}"
+Updater_AwaitingUser: En attente de saisie utilisateur...
+Updater_UpToDate: "Vous Ãªtes Ã  jour.\n:)"
+Updater_FailedDecode: Cela est trÃ¨s probablement dÃ» Ã  moi (PolarWolves Team) poussant une mise Ã  jour, et faisant une typo qui a cassÃ© le fichier de mise Ã  jour .json. N'hÃ©sitez pas Ã  me le faire savoirÂ :)
+Updater_FailedDecodeTitle: Impossible de dÃ©coder la liste de mise Ã  jour
+Updater_Extracting: Extraction des fichiers patch
+Updater_Applying: Application du correctif...
+Updater_Moving: DÃ©placement des fichiers...
+Updater_Title: Mise Ã  jour du commutateur de compte PolarWolves
+Updater_Started: CommencÃ©
+Updater_Start: DÃ©marrer le commutateur de compte PolarWolves
+Updater_Begin: DÃ©marrer la mise Ã  jour
+Updater_Exit: Quitter
+FatalError: Une erreur fatale s'est produiteÂ !
+Online: En ligne
+OnlineDefault: En ligne (par dÃ©faut)
+Offline: Hors ligne
+Invisible: Invisible
+Busy: OccupÃ©
+Away: Absent
+Snooze: Mettre en pause
+LookingToTrade: Chercher Ã  trader
+LookingToPlay: Chercher Ã  jouer
+Unrecognized_EPersonaState: ePersonaState non reconnu
+Reg_DoesntExist: "{subKey} n'existe pas."
+Reg_DoesntContain: "{subKey} ne contient pas {val}"
+Reg_Removing: Retrait de {subKey}\\{val}
+PngInvalid_Format: Le format de pixel requis est PixelFormat.{x}.
+PngRequired: Le format d'image requis est un graphique rÃ©seau portable (png).
+PngDimensions: Les dimensions doivent Ãªtre infÃ©rieures ou Ã©gales Ã  {MaxIconWidth}x{MaxIconHeight}
+ThemeSyntaxAnd: "Une erreur de syntaxe a Ã©tÃ© rencontrÃ©e (plus de dÃ©tails ci-dessous)Â ! ETÂ :"
+ThemesNotFound: "Impossible de trouver le dossier \"themes\" dans le rÃ©pertoire de PolarWolves. Ceci (en particulier le dossier Â«Â Dracula_CyanÂ Â») est nÃ©cessaire pour que ce logiciel fonctionne.\nVous pouvez exÃ©cuter le Updater dans le dossier Â«Â UpdaterÂ Â» pour vÃ©rifier les fichiers et restaurer ces fichiers manquants."
+Yes: "Oui"
+No: "Non"
+Save: Enregistrer
+NoDefault: Non (par dÃ©faut)
+Ok: "OK"
+Submit: Soumettre
+Forget: Oublier
+Notice: Avis
+Notes: Remarques
+Error: Erreur
+ErrorDetails: "ERREURÂ : {ex}"
+Failed: Ã‰chec
+Success: SuccÃ¨s
+NotFound: Introuvable
+Done: TerminÃ©
+Edit: Modifier
+Refresh: Actualiser
+Working: Travail...
+ForName: "PourÂ : {name}"
+DeletedFiles: Fichiers supprimÃ©s
+FileFoldersToClear: "Liste des fichiers/dossiers Ã  effacerÂ :"
+CouldNotFindX: Impossible de trouver {x}
+CouldNotCloseX: Impossible de fermer {x}!
+CouldNotReadFile: Impossible de lire {file}!
+DirectoryNotFound: RÃ©pertoire introuvable
+DirectoryNotFoundFolder: "RÃ©pertoire introuvableÂ : {folder}"
+DeletingFile: "Suppression deÂ : {file}"
+DeletingFolder: "Suppression du dossierÂ : "
+CouldntDeleteX: "ERREURÂ : IMPOSSIBLE DE SUPPRIMERÂ : {x}"
+CouldntDeleteUndefined: "ERREURÂ : IMPOSSIBLE DE SUPPRIMER LE FICHIER NON DÃ‰FINI"
+CouldntModifyX: "Impossible de modifier {file}. Erreur d'autorisation de fichier ou le fichier est en cours d'utilisation."
+Prompt_RestartAsAdmin: "<h3><bold>Ce programme redÃ©marre en tant qu'administrateur</bold></h3><p>Appuyez sur \"Oui\" dans UAC lorsque vous Ãªtes invitÃ© Ã  administrer.</p>"
+Prompt_ForgetSteam: >
+  <h3 style='color:red'>Vous Ãªtes sur le point d'oublier un compteÂ !</h3> <h4>Qu'est-ce que cela signifie ?</h4> <p>- Steam n'aura plus le compte rÃ©pertoriÃ© dans le mode Big Picture et ne se souviendra pas du mot de passe.<br/> - PolarWolves n'affichera plus le compte, jusqu'Ã  ce qu'il soit reconnectÃ© via Steam.</p> <p>Votre compte restera intact. C'est juste oubliÃ© sur cet ordinateur.</p><h4>Comprenez-vous?</h4>
+Prompt_ForgetAccount: >
+  <h3 style='color:red'>Vous Ãªtes sur le point d'oublier un compteÂ !</h3> <h4>Qu'est-ce que cela signifie ?</h4> <p>PolarWolves n'affichera plus non plus le compte,<br/> jusqu'Ã  ce qu'il soit reconnectÃ© via {platform}, et ajoutÃ© Ã  la liste.</p> <p>Votre compte restera intact. C'est juste oubliÃ© sur cet ordinateur.</p> <h4>Comprenez-vous?</h4>
+Prompt_ClearStats: >
+  <h3 style='color:red'>Vous Ãªtes sur le point d'effacer vos statistiquesÂ !</h3> <p>Vous ne pouvez pas annuler cette action.</p>
+Platform_DiscordPasteHint: Collez dans la console Discord, puis collez le rÃ©sultat dans l'entrÃ©eÂ !
+Platform_ClearCache: Vider le cache
+Platform_ClearCacheTotal: Effacer {totalFileCount} fichiers ({totalSizeMB})
+Platform_DeleteFail: Impossible de supprimer certains fichiers (le programme est peut-Ãªtre en cours d'exÃ©cutionÂ ?)
+Platform_CouldNotDeleteLog: Impossible de supprimer le fichierÂ ! ChÃ¨que {logPath}
+Error_FileAccessDenied: Impossible d'accÃ©der au fichierÂ ! ChÃ¨que {logPath}
+Error_RequiredFileVerify: Un fichier requis est introuvable. Veuillez vous assurer que les dossiers x64 et x86 existent dans le rÃ©pertoire d'installation. Si ce n'est pas le cas, exÃ©cutez PolarWolves-Updater.exe et vÃ©rifiez les fichiers.
+Tooltip_Settings: RÃ©glages
+Tooltip_Info: Info
+Tooltip_ManagePlatforms: Afficher ou masquer les autres plates-formes
+Tooltip_ExpandShortcuts: DÃ©velopper la sÃ©lection de jeux et de raccourcis
+Tooltip_ShortcutFolder: Ouvrir le dossier de raccourcis. Placez-y des raccourcis et le sÃ©lecteur de compte PolarWolves pour les voir.
+Tooltip_Backup: Fichiers/dossiers de configuration de sauvegarde, tels que dÃ©finis dans les paramÃ¨tres de la plate-forme.
+Tooltip_BackupAll: Sauvegardez TOUS les fichiers/dossiers de configuration, y compris les images et autres fichiers volumineux.
+Tooltip_ClosingMethod: "CombinÃ© est le meilleur. Tentatives de fermer directement via une fonction de fermeture et TaskKill utilise CMD (Meilleur si combinÃ© ne fonctionne pas)"
+Tooltip_StartingMethod: "La valeur par dÃ©faut est la meilleure. Direct n'a aucun contrÃ´le sur le niveau admin ou UAC. Il commencera au mÃªme niveau (ou plus Ã©levÃ© - mais pas plus bas) que ce sÃ©lecteur de compte"
+Tooltip_CurrentAccount: Vous Ãªtes actuellement connectÃ© Ã  ce compte.
+Tooltip_Restore: Cliquez pour sÃ©lectionner un fichier 7z ou faites-le glisser sur ce bouton.
+Tooltip_DisabledGlobally: Cet Ã©lÃ©ment est masquÃ© pour tous les comptes. Vous pouvez le modifier dans les paramÃ¨tres de la plateforme.
+Discord_Status: Changement de compte en cours.
+Discord_StatusDetails: "Comptes basculÃ©sÂ : {number}"
+Website: Site Web
+Preview_Platforms: AperÃ§u des plateformes
+Preview_Accounts: AperÃ§u des comptes
+Preview_Notifications: AperÃ§u des notifications de toast
+Preview_Settings: AperÃ§u des paramÃ¨tres
+Preview_Modals: AperÃ§u des modaux
+
+
+
+

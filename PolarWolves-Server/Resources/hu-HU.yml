@@ -1,0 +1,513 @@
+﻿---
+Update: FrissÃ­tÃ©s elÃ©rhetÅ‘! Kattintson ide az indÃ­tÃ¡sÃ¡hoz.
+Header_ChooseLanguage: 'Nyelv vÃ¡lasztÃ¡sa:'
+Steam_ShowSteamID: GÅ‘zID
+Steam_ShowVac: VAC Ã¡llapot
+Steam_ShowLastLogin: UtolsÃ³ bejelentkezÃ©si idÅ‘
+Steam_ShowLimited: KorlÃ¡tozott Ã¡llapot
+Steam_ShowAccUsername: FiÃ³k felhasznÃ¡lÃ³neve
+Steam_Tray_AccountName: '[not friend name] fiÃ³knÃ©v megjelenÃ­tÃ©se'
+Steam_CheckVac: FiÃ³k VAC Ã¡llapotÃ¡nak ellenÅ‘rzÃ©se
+Steam_OverrideDefaultState: "AlapÃ©rtelmezett bejelentkezÃ©si Ã¡llapot felÃ¼lbÃ­rÃ¡lÃ¡sa:"
+Steam_StartSilent: "Nyissa ki a GÅ‘zt a tÃ¡lcÃ¡ra kapcsolÃ¡skor (indÃ­tsa el a GÅ‘zt a '-silent' gombbal)"
+Steam_OldUi: "RÃ©gi felhasznÃ¡lÃ³i felÃ¼let hasznÃ¡lata a Steamben (-vgui)"
+Steam_CollectInfo: GyÅ±jtsd Ã¶ssze a profilkÃ©peket Ã©s a VAC-tiltÃ¡s Ã¡llapotÃ¡t a SteambÅ‘l
+Button_AddNew: Ãšj hozzÃ¡adÃ¡sa
+Button_SaveCurrent: AktuÃ¡lis mentÃ©se
+Button_SaveFile: FÃ¡jl mentÃ©se
+Button_Cancel: MÃ©gse
+Button_Login: BejelentkezÃ©s
+Button_Close: BezÃ¡rÃ¡s
+Button_RefreshImages: KÃ©pek frissÃ­tÃ©se
+Button_ResetSettings: BeÃ¡llÃ­tÃ¡sok visszaÃ¡llÃ­tÃ¡sa
+Button_AdvancedCleaning: Fejlett takarÃ­tÃ¡s...
+Button_ClearLog: NaplÃ³ tÃ¶rlÃ©se
+Button_WikiInfo: TovÃ¡bbi informÃ¡ciÃ³k (Wiki)
+Button_ManagePlatforms: Platformok kezelÃ©se
+Button_Backup: biztonsÃ¡gi mentÃ©s
+Button_BackupAll: BiztonsÃ¡gi mentÃ©s mindenrÅ‘l
+Button_Restore: visszaÃ¡llÃ­tÃ¡s
+Button_OpenBackup: Nyissa meg a BiztonsÃ¡gi mentÃ©s mappÃ¡t
+Button_Back: Vissza
+Button_RestartAdmin: ÃšjraindÃ­tÃ¡s rendszergazdakÃ©nt
+Button_SetPassword: AlkalmazÃ¡sjelszÃ³ beÃ¡llÃ­tÃ¡sa
+Settings_SteamCollectInfo: GyÅ±jtsd Ã¶ssze a Steam profilkÃ©pÃ©t Ã©s a VAC Ã¡llapotÃ¡t a SteambÅ‘l
+Settings_Shortcut: '{platform} KapcsolÃ³ Asztal parancsikon'
+Settings_Admin: '{platform} futtatÃ¡sa rendszergazdakÃ©nt'
+Settings_ImageExpiry: 'A profilkÃ©pek lejÃ¡rta elÅ‘tti napok szÃ¡ma:'
+Settings_SteamAPIKey: "Steam Web API kulcs (opcionÃ¡lis)"
+Settings_SteamAPIKey_Note: BeÃ¡llÃ­tÃ¡sa API kulcs teszi a KorlÃ¡tozott mutatÃ³ (sÃ¡rga szegÃ©ly) megjelennek fiÃ³kok, amelyek a KÃ¶zÃ¶ssÃ©g Tiltott helyett.
+Settings_Header_AppWide: AlkalmazÃ¡sszintÅ± beÃ¡llÃ­tÃ¡sok
+Settings_Header_GeneralSettings: ÃltalÃ¡nos beÃ¡llÃ­tÃ¡sok
+Settings_Header_AccountDisplay: FiÃ³k megjelenÃ­tÃ©si beÃ¡llÃ­tÃ¡sai
+Settings_Header_ExtraPlatforms: PlatformbeÃ¡llÃ­tÃ¡sok
+Settings_Header_GeneralTools: ÃltalÃ¡nos eszkÃ¶zÃ¶k
+Settings_Header_OtherTools: EgyÃ©b eszkÃ¶zÃ¶k
+Settings_Header_TraySettings: TÃ¡lca beÃ¡llÃ­tÃ¡sai
+Settings_Header_OpenGameFolders: JÃ¡tÃ©kmappÃ¡k megnyitÃ¡sa
+Settings_Header_BackupRestore: BiztonsÃ¡gi mentÃ©s Ã©s visszaÃ¡llÃ­tÃ¡s platformbeÃ¡llÃ­tÃ¡sok
+Settings_Header_Language: Nyelv
+Settings_Header_System: Rendszer
+Settings_Header_Theme: TÃ©ma
+Settings_Header_Program: Program
+Settings_Header_StatsSharing: Statisztika Ã©s megosztÃ¡s
+Settings_Header_Platform: "{platformName} beÃ¡llÃ­tÃ¡s"
+Settings_Header_GameStats: GlobÃ¡lis jÃ¡tÃ©kstatisztikÃ¡k beÃ¡llÃ­tÃ¡sai
+Settings_GameStats: BÃ¡rmi bejelÃ¶lve NEM jelenik meg a felhasznÃ¡lÃ³neved alatt egyetlen fiÃ³knÃ¡l sem. Akkor hasznÃ¡ld, ha gyakran rejtegetsz bizonyos elemeket a jÃ¡tÃ©kstatisztikÃ¡dbÃ³l.
+Settings_TrayMax: 'A megjegyzendÅ‘ fiÃ³kok maximÃ¡lis szÃ¡ma:'
+Settings_ExtraPlatformsDisabled: Letiltott platformok. Kattintson az engedÃ©lyezÃ©sÃ¼khÃ¶z.
+Settings_ExtraPlatformsEnabled: LÃ¡thatÃ³ platformok. Kattintson a letiltÃ¡sukhoz.
+Settings_RTL: SzÃ¶veg megjelenÃ­tÃ©se jobbrÃ³l balra haladva
+Settings_CollectStats: StatisztikÃ¡k gyÅ±jtÃ©se
+Settings_ShareStats: StatisztikÃ¡k nÃ©vtelen megosztÃ¡sa (ajÃ¡nlott)
+Settings_DiscordRpc: Discord Rich Presence (RPC)
+Settings_DiscordRpcShare: Ã–sszes kapcsolÃ³ megosztÃ¡sa
+Settings_ViewStats: StatisztikÃ¡k megtekintÃ©se
+Preview: ElÅ‘nÃ©zet
+Settings_ClearStats: VisszaÃ¡llÃ­tÃ¡s
+Settings_CurrentLocation: 'Jelenlegi telepÃ­tÃ©si hely: {path}'
+Settings_CurrentDataLocation: 'Jelenlegi felhasznÃ¡lÃ³i adatok helye: {path}'
+Settings_SetDataLocation: "[EgyÃ©ni felhasznÃ¡lÃ³i adatok helyÃ©nek beÃ¡llÃ­tÃ¡sa]"
+Settings_PickFolder: VÃ¡lasszon {platform} mappÃ¡t
+Settings_OpenFolder: '{platform} mappa megnyitÃ¡sa'
+Settings_ClearForgotten: Elfeledett tÃ¶rlÃ©se
+Settings_ClearAccounts: FiÃ³kok tÃ¶rlÃ©se
+Settings_StreamerMode: Streamer mÃ³d engedÃ©lyezÃ©se
+Settings_ExitToTray: KilÃ©pÃ©s a minimalizÃ¡lÃ¡sbÃ³l a tÃ¡lcÃ¡ra
+Settings_DesktopShortcut: Asztali parancsikon
+Settings_StartMenu_ProgramTray: Program & TÃ¡lca
+Settings_StartMenu_Platform: Platform
+Settings_Tray_StartWindows: TÃ¡lca indÃ­tÃ¡sa Windows rendszerrel
+Settings_Tray_StartNow: '[TÃ¡lca indÃ­tÃ¡sa most]'
+Settings_CurrentStyle: Jelenlegi stÃ­lus
+Settings_ThemeBackground: '[HÃ¡ttÃ©r beÃ¡llÃ­tÃ¡sa]'
+Settings_ThemeOpenFolder: '[TÃ©ma mappa megnyitÃ¡sa]'
+Settings_Protocol: 'A PolarWolves: \\ protokoll engedÃ©lyezÃ©se (ajÃ¡nlott)'
+Settings_StartCentered: Program indÃ­tÃ¡sa kÃ¶zpontilag
+Settings_OfflineMode: Offline mÃ³d (nincs hÃ¡lÃ³zati tevÃ©kenysÃ©g)
+Settings_WindowsAccent: A Windows kiemelÅ‘szÃ­ne
+Settings_HelpTranslate: "[Help translate]"
+Settings_ViewTranslators: "[Credits]"
+Settings_Header_ActiveBrowser: "(SpeciÃ¡lis) RenderelÅ‘motor beÃ¡llÃ­tÃ¡sa:"
+Settings_Header_ClosingMethod: "(SpeciÃ¡lis) MÃ³dszer beÃ¡llÃ­tÃ¡sa {platform}bezÃ¡rÃ¡sÃ¡ra"
+Settings_Header_StartingMethod: "(SpeciÃ¡lis) MÃ³dszer beÃ¡llÃ­tÃ¡sa {platform}indÃ­tÃ¡sÃ¡hoz"
+Settings_AutoStart: "{platform} automatikus indÃ­tÃ¡sa a fiÃ³kvÃ¡ltÃ¡skor"
+Settings_ShowSteamSwitcher: "A Steam fiÃ³kvÃ¡ltÃ³jÃ¡nak megjelenÃ­tÃ©se (NE hasznÃ¡lja ezt, kÃ¼lÃ¶nben megtÃ¶rheti a PolarWolves fiÃ³kvÃ¡ltÃ³t)"
+Settings_NoPlatforms: Jelenleg nincs engedÃ©lyezve platform. KÃ©rjÃ¼k, jelÃ¶lje be alÃ¡bb az opcionÃ¡lis platformokat az engedÃ©lyezÃ©sÃ¼khÃ¶z, vagy tÃ¶rÃ¶lje a letiltott platformok jelÃ¶lÃ©sÃ©t.
+Settings_MinimizeOnSwitch: KapcsolÃ³ minimalizÃ¡lÃ¡sa a fiÃ³kkapcsolÃ³n
+Settings_ShowShortNotes: MegjegyzÃ©s elÅ‘nÃ©zete USERNAME alatt
+Settings_Header_AppPassword: "ÃllÃ­tsa le a kapcsolÃ³t hasznÃ¡lÃ³ tÃ¶bbi szemÃ©lyt:"
+PreviewCss: CSS elÅ‘nÃ©zete
+Settings_PreviewCss: Ez a CSS elÅ‘nÃ©zeti oldala. Megtekinthetsz nÃ©hÃ¡ny elemet, amely megjelenik a programban, Ã©s megnÃ©zheted, hogyan nÃ©znek ki a tÃ©mÃ¡ddal. Ez az oldal hasznos azok szÃ¡mÃ¡ra, akik tÃ©mÃ¡kat hoznak lÃ©tre!
+Settings_PreviewCssHeader: CSS elÅ‘nÃ©zeti oldal
+Settings_AutoUpdatePlatforms: Platformlista automatikus frissÃ­tÃ©se
+Settings_CheckForUpdates: IndÃ­tÃ¡skor ellenÅ‘rizze a frissÃ­tÃ©seket
+Stats_Disabled: "A statisztikai adatgyÅ±jtÃ©s le van tiltva."
+Stats_InDepth: RÃ©szletes statisztikai bontÃ¡s
+Stats_ShareEnabled: "Ezeket a statisztikÃ¡kat nÃ©vtelenÃ¼l osztjÃ¡k meg, Ã©s hozzÃ¡adjÃ¡k az itt szereplÅ‘ Ã¶sszes <a onclick=\"{WebsiteLink}\" class=\"fancyLink\">-hoz</a>."
+Stats_ShareDisabled: "Ezeket a statisztikÃ¡kat NEM osztjÃ¡k meg nÃ©vtelenÃ¼l, Ã©s NEM adjÃ¡k hozzÃ¡ a teljes <a onclick=\"{WebsiteLink}\" class=\"fancyLink\">-hoz itt</a>."
+Stats_OperatingSystem: "OperÃ¡ciÃ³s rendszer: "
+Stats_FirstLaunch: "ElsÅ‘ indÃ­tÃ¡s: "
+Stats_LaunchCount: "IndÃ­tÃ¡s szÃ¡ma: "
+Stats_CrashCount: "ÃœtkÃ¶zÃ©sek szÃ¡ma: "
+Stats_MostUsedPlatform: "Leggyakrabban hasznÃ¡lt platform: "
+Stats_TotalTime: "Az alkalmazÃ¡sban tÃ¶ltÃ¶tt teljes idÅ‘: "
+Stats_TotalSwitches: "Ã–sszes fiÃ³kkapcsolÃ³: "
+Stats_TotalGamesLaunched: "A kapcsolÃ³val elindÃ­tott alkalmazÃ¡sok/jÃ¡tÃ©kok Ã¶sszesen: "
+Stats_UniqueDaysLong: "Egyedi napok vÃ¡ltott fiÃ³kkal: "
+Stats_LastUpload: "UtolsÃ³ feltÃ¶ltÃ©s: "
+Stats_SwitcherStats: "KapcsolÃ¡si statisztika: "
+Stats_PageStats: "Oldalstatisztika: "
+Stats_VisitsTotalTime: "{visits} teljes vizit, {hours} teljes idÅ‘"
+Stats_Accounts: "FiÃ³kok: "
+Stats_Switches: "KapcsolÃ³k: "
+Stats_FirstActive: "ElsÅ‘ aktÃ­v: "
+Stats_LastActive: "LegutÃ³bbi aktÃ­v: "
+Stats_UniqueDays: "Egyedi napok: "
+Stats_GameShortcuts: "JÃ¡tÃ©kparancsikonok: "
+Stats_GameShortcutsHotbar: "JÃ¡tÃ©kparancsikonok (a gyorsbillentyÅ±n): "
+Stats_GamesLaunched: "ElindÃ­tott jÃ¡tÃ©kok: "
+Stats_MetricsToShow: "MegjelenÃ­tett mutatÃ³k:"
+Stats_AccountId: "FiÃ³kazonosÃ­tÃ³:"
+Auth_LoginRequired: A jelszÃ³ korÃ¡bban be volt Ã¡llÃ­tva, Ã©s szÃ¼ksÃ©ges. Adja meg alÃ¡bb a jelszÃ³t.
+Auth_EnterPassword: "Adja meg a jelszÃ³t:"
+Auth_PassIncorrect: A jelszÃ³ helytelen.
+Locked: ZÃ¡rolva
+Cleaning_Header_StartMenuShortcuts: 'A Start menÃ¼ parancsikonjai:'
+Cleaning_Header_General: ÃltalÃ¡nos tisztÃ­tÃ¡s
+Cleaning_Header_LoginHistory: SajÃ¡t bejelentkezÃ©si elÅ‘zmÃ©nyek tÃ¶rlÃ©se
+Cleaning_Header_PlatformCleaning: '{platform} KapcsolÃ³'
+Cleaning_ImportantInfoHeader: 'Fontos informÃ¡ciÃ³:'
+Cleaning_ImportantInfo: >
+  Egy gombra kattintva tÃ¶rli a kapcsolÃ³dÃ³ fÃ¡jl(oka) t a Steam telepÃ­tÃ©sbÅ‘l.<br /> A loginusers.vdf tÃ¶rlÃ©sÃ©vel ez a fiÃ³kvÃ¡ltÃ³ nem jelenÃ­t meg fiÃ³kokat.<br /> A Steam hasznÃ¡latÃ¡val kell bejelentkeznie, hogy visszakapja Å‘ket.
+Cleaning_Button_KillProcess: Kill {platform} folyamat
+Cleaning_Button_ForgottenBackups: Elfelejtett fiÃ³k biztonsÃ¡gi mentÃ©sek
+Cleaning_Understand: Tudom, mire valÃ³k ezek a gombok.
+Restore_Info: >
+  Ha korÃ¡bban "elfelejtett" egy fiÃ³kot, itt visszaÃ¡llÃ­thatja.<br /> Ez visszahelyezi Å‘ket a loginusers.vdf fÃ¡jlba, lehetÅ‘vÃ© tÃ©ve, hogy Ã¡tvÃ¡ltson rÃ¡.
+Restore_Button_Restore: KijelÃ¶ltek visszaÃ¡llÃ­tÃ¡sa
+Ignored_RemoveAccounts: FiÃ³kok eltÃ¡volÃ­tÃ¡sa a mellÅ‘zÃ©si listÃ¡rÃ³l
+Ignored_Description: Ha korÃ¡bban "figyelmen kÃ­vÃ¼l hagyott" egy fiÃ³kot, itt ismÃ©t megjelenÃ­theti azt
+Ignored_Stop: KijelÃ¶ltek mellÅ‘zÃ©sÃ©nek leÃ¡llÃ­tÃ¡sa
+Toast_UpdatesDownloading: A frissÃ­tÃ©sek letÃ¶ltÃ©se a hÃ¡ttÃ©rben tÃ¶rtÃ©nik. TovÃ¡bbra is hasznÃ¡lhatja a programot.
+Toast_UpdatesDownloaded: A frissÃ­tÃ©sek letÃ¶ltÃ©se befejezÅ‘dÃ¶tt. A frissÃ­tÃ©s megkezdÃ©sÃ©hez zÃ¡rja be ezt az alkalmazÃ¡st.
+Toast_DataLocationCopying: (1/2) MeglÃ©vÅ‘ fÃ¡jlok mÃ¡solÃ¡sa az Ãºj felhasznÃ¡lÃ³i adatok mappÃ¡ba!
+Toast_DataLocationNotCopying: (1/2) A mappÃ¡ban mÃ¡r vannak fÃ¡jlok! Nem migrÃ¡lja a felhasznÃ¡lÃ³i adatokat.
+Toast_DataLocationSet: (2/2) IndÃ­tsa Ãºjra a fiÃ³kvÃ¡ltÃ³t az Ãºj mappa hasznÃ¡latÃ¡hoz!
+Toast_PlaceShortcutFiles: Egy mappa nyÃ­lik meg. Helyezze el a jÃ¡tÃ©k parancsikonjait ebbe a mappÃ¡ba, Ã©s indÃ­tsa Ãºjra a fiÃ³kvÃ¡ltÃ³t.
+Toast_TrayStarted: TÃ¡lca elindÃ­tva!
+Toast_TrayRunning: A tÃ¡lca mÃ¡r nyitva van
+Toast_TrayUsersMissing: Nincs mentett tÃ¡lcafelhasznÃ¡lÃ³
+Toast_TrayFail: Nem sikerÃ¼lt elindÃ­tani a tÃ¡lcaalkalmazÃ¡st!
+Toast_TrayPosition: "A KilÃ©pÃ©s gombra kattintva: a Windows tÃ¡lcÃ¡n leszek! (A Start sÃ¡vtÃ³l jobbra)"
+Toast_TrayHint: "Tipp: Ctrl+kattints az \"X\" -re a teljes bezÃ¡rÃ¡shoz, vagy a tÃ¡lcÃ¡n keresztÃ¼l > \"KilÃ©pÃ©s\""
+Toast_Copied: MÃ¡solva
+Toast_AlreadyProcessing: A fiÃ³kok feldolgozÃ¡sa mÃ¡r folyamatban van...
+Toast_FailedRestore: Nem sikerÃ¼lt visszaÃ¡llÃ­tani a fiÃ³kokat (lÃ¡sd a konzolt)
+Toast_Restored: VisszaÃ¡llÃ­tott fiÃ³kok!
+Toast_ProtocolEnabled: 'Ez a program most reagÃ¡l a PolarWolves: \\ fÃ¡jlra a Windows rendszerben'
+Toast_ProtocolEnabledTitle: Protokoll hozzÃ¡adva
+Toast_ProtocolDisabled: 'Ez a program mÃ¡r nem vÃ¡laszol a PolarWolves: \\'
+Toast_ProtocolDisabledTitle: Protokoll eltÃ¡volÃ­tva
+Toast_RestartAsAdmin: IndÃ­tsa el adminisztrÃ¡torkÃ©nt, Ã©s prÃ³bÃ¡lja Ãºjra.
+Toast_RestartAfterClose: IndÃ­tsa Ãºjra a programot, miutÃ¡n a BezÃ¡rÃ¡s gombra kattintott.
+Toast_RestartAfterCloseTitle: KiemelÅ‘szÃ­n letiltva
+Toast_RestartRequired: A mÃ³dosÃ­tÃ¡sok alkalmazÃ¡sÃ¡hoz indÃ­tsa Ãºjra
+Toast_LoadStylesheetFailed: Nem sikerÃ¼lt betÃ¶lteni a stÃ­luslapot! RÃ©szleteket a felhasznÃ¡lÃ³i adatmappÃ¡ban talÃ¡l.
+Toast_LoadingStats: Egy vagy tÃ¶bb profil frissÃ­ti a statisztikÃ¡kat. Kis tÃ¼relmet.
+Toast_ItemNotFound: "{item} nem talÃ¡lhatÃ³"
+Toast_DeletedTotal: "{files} / {totalFiles} tÃ¶rÃ¶lve. Ã–sszesen: {totalSize}"
+Toast_CantChangeUsername: Nem sikerÃ¼lt megvÃ¡ltoztatni a felhasznÃ¡lÃ³nevet
+Toast_CantClearLoginFiles: Nem sikerÃ¼lt tÃ¶rÃ¶lni a rÃ©gi bejelentkezÃ©si fÃ¡jlokat
+Toast_AccountIdReg: Nem sikerÃ¼lt lekÃ©rni a fiÃ³kazonosÃ­tÃ³t a rendszerleÃ­rÃ³ adatbÃ¡zisbÃ³l!
+Toast_RegFailWrite: Nem sikerÃ¼lt Ã­rni a Windows Regsitry-be!
+Toast_RegFailRead: Nem sikerÃ¼lt beolvasni a Windows Regsitry-bÅ‘l!
+Toast_RegFailReadSaved: Nem sikerÃ¼lt olvasni a rendszerleÃ­rÃ³ adatbÃ¡zis mentett bejegyzÃ©sÃ©t. PrÃ³bÃ¡ld meg eltÃ¡volÃ­tani Ã©s hozzÃ¡adni a fiÃ³kot, ha nem sikerÃ¼l.
+Toast_RegSaveMissing: Sikertelen adatok keresÃ©se vagy olvasÃ¡sa a mentett rendszerleÃ­rÃ³ fÃ¡jlokbÃ³l!
+Toast_DuplicateNames: Nem lehet cserÃ©lni. DuplikÃ¡lja a fiÃ³kokat ugyanazzal a felhasznÃ¡lÃ³nÃ©vvel?
+Toast_MissingUserId: "Nem lehet cserÃ©lni. A felhasznÃ¡lÃ³i azonosÃ­tÃ³ hiÃ¡nyzik. EllenÅ‘rizze a Wiki 'Common Errors' -t."
+Toast_CouldNotLocate: Nem sikerÃ¼lt megtalÃ¡lni a bejelentkezett felhasznÃ¡lÃ³t
+Toast_StreamerModeHint: A privÃ¡t adatok rejtve vannak! - LÃ¡sd a beÃ¡llÃ­tÃ¡sokat
+Toast_StreamerModeTitle: Streamer mÃ³d
+Toast_AddAccountsFirst: Nyissa meg a platformot a listÃ¡rÃ³l, Ã©s adjon hozzÃ¡ nÃ©hÃ¡ny fiÃ³kot
+Toast_AddAccountsFirstTitle: Nincsenek mentett fiÃ³kok
+Toast_CantFindImage: Nem sikerÃ¼lt megtalÃ¡lni a felhasznÃ¡lÃ³k kÃ©pÃ©t.
+Toast_CantCreateShortcut: Nem lehet parancsikont lÃ©trehozni
+Toast_ShortcutCreated: Parancsikon lÃ©trehozva!
+Toast_SettingsCopied: BeÃ¡llÃ­tÃ¡sok sikeresen Ã¡tmÃ¡solva a jelenlegi fiÃ³kba.
+Toast_GameDataRestored: Sikeresen visszaÃ¡llÃ­totta a fiÃ³k jÃ¡tÃ©kadatait.
+Toast_NoValidSteamId: Nem talÃ¡lhatÃ³ Ã©rvÃ©nyes Steam azonosÃ­tÃ³.
+Toast_FailedUpdateCheck: FrissÃ­tÃ©sek keresÃ©se sikertelen
+Toast_UpdateVerifyFail: Nem lehet ellenÅ‘rizni a frissÃ­tÅ‘fÃ¡jlokat. TÃ¶ltse le a legÃºjabb verziÃ³t, Ã©s cserÃ©lje ki a fÃ¡jlokat a kÃ¶nyvtÃ¡rban.
+Toast_StartedGame: ElkezdÅ‘dÃ¶tt {program}
+Toast_SteamCantLoadXml: Nem sikerÃ¼lt beszerezni a {steamId}XML-informÃ¡ciÃ³it. TovÃ¡bbi rÃ©szletekÃ©rt lÃ¡sd a naplÃ³t.
+Toast_Steam_VacCleared: FiÃ³kok VAC Ã¡llapota tÃ¶rÃ¶lve
+Toast_Steam_CantDeleteVacCache: A 'LoginCache/Steam/VACCache/SteamVACCache.json' nem tÃ¶rÃ¶lhetÅ‘
+Toast_NoFindSteamUserdata: Nem talÃ¡lhatÃ³ a Steam\\userdata mappa
+Toast_NoFindGameBackup: Nem talÃ¡lhatÃ³ a fiÃ³k biztonsÃ¡gi mentÃ©si jÃ¡tÃ©kadatmappÃ¡ja.
+Toast_GameBackupDone: "A jÃ¡tÃ©k adatmappÃ¡jÃ¡nak biztonsÃ¡gi mentÃ©se sikeres: {folderLocation}"
+Toast_Steam_VdfLast: A (z) vdf_last fÃ¡jlbÃ³l sikerÃ¼lt betÃ¶lteni. Lehet, hogy nÃ©hÃ¡ny fiÃ³k hiÃ¡nyzik.
+Toast_PartiallyFixed: RÃ©szben rÃ¶gzÃ­tett
+Toast_Steam_FailedLoginusers: Nem sikerÃ¼lt betÃ¶lteni a Steam/config/loginusers.vdf fÃ¡jlt
+Toast_Steam_CantLocateLoginusers: A (z) '.../Steam/config/loginusers.vdf' nem talÃ¡lhatÃ³. ElÅ‘bb jelentkezzen be egy fiÃ³kba.
+Toast_CantClearImages: Nem sikerÃ¼lt tÃ¶rÃ¶lni a kÃ©peket
+Toast_RefreshedImages: FrissÃ­tett kÃ©pek
+Toast_ClearForgottenCheck: Biztosan tÃ¶rli az elfelejtett fiÃ³kok biztonsÃ¡gi mentÃ©seit?
+Toast_ForgotAccount: Elfelejtett fiÃ³k
+Toast_ClearedPlatformSettings: "TÃ¶rÃ¶lve {platform} Switcher beÃ¡llÃ­tÃ¡sok"
+Toast_ClearedImages: "TÃ¶rÃ¶lt kÃ©pek"
+Toast_SavedItem: "Mentve: {item}"
+Toast_ChangedUsername: FelhasznÃ¡lÃ³nÃ©v megvÃ¡ltozott
+Toast_SetUsername: FelhasznÃ¡lÃ³nÃ©v beÃ¡llÃ­tÃ¡sa
+Toast_AlreadyLoggedIn: MÃ¡r bejelentkezett ezzel a fiÃ³kkal! (Nem tÃ¶rtÃ©nt vÃ¡ltoztatÃ¡s)
+Toast_BackupCopy: (1/3) FÃ¡jlok mÃ¡solÃ¡sa ideiglenes helyre...
+Toast_BackupCompress: (2/3) FÃ¡jlok tÃ¶mÃ¶rÃ­tÃ©se ({size}). Ez eltart egy ideig...
+Toast_BackupComplete: (3/3) A tÃ¶mÃ¶rÃ­tÃ©s kÃ©sz! ({size} - {compressedSize})
+Toast_BackupProgress: "BiztonsÃ¡gi mentÃ©s folyamatban (TÃ¶mÃ¶rÃ­tett mÃ©ret: {compressedSize})"
+Toast_BackupFail: A biztonsÃ¡gi mentÃ©s sikertelen - LÃ¡sd a NaplÃ³t!
+Toast_BackupBusy: A biztonsÃ¡gi mentÃ©s mÃ¡r folyamatban van!
+Toast_RestoreBusy: A visszaÃ¡llÃ­tÃ¡s mÃ¡r folyamatban van!
+Toast_RestoreExt: ArchÃ­vum kibontÃ¡sa.
+Toast_RestoreCopying: FÃ¡jlok visszahelyezÃ©se a platformra
+Toast_RestoreDeleting: Ideiglenes fÃ¡jlok tÃ¶rlÃ©se
+Toast_RestoreComplete: A visszaÃ¡llÃ­tÃ¡s kÃ©sz!
+Toast_FailedLoad: Nem sikerÃ¼lt betÃ¶lteni a {platform}-t! Kattintson a platformra a hiba megtekintÃ©sÃ©hez.
+Toast_FailedPlatformsLoad: Nem sikerÃ¼lt betÃ¶lteni a Platforms.json fÃ¡jlt! KÃ©rjÃ¼k, ellenÅ‘rizze, hogy ez a fÃ¡jl lÃ©tezik.
+Toast_FailedLoadSettings: "Nem sikerÃ¼lt betÃ¶lteni a beÃ¡llÃ­tÃ¡sokat! AlapÃ©rtelmezett beÃ¡llÃ­tÃ¡sok betÃ¶ltÃ©se. 'Old' hozzÃ¡adÃ¡sa a meglÃ©vÅ‘ beÃ¡llÃ­tÃ¡sok fÃ¡jlnevÃ©hez."
+Toast_FailedLoadStats: "Nem sikerÃ¼lt betÃ¶lteni a statisztikÃ¡kat! Friss indÃ­tÃ¡s."
+Toast_FailedStatsLoad: Nem sikerÃ¼lt betÃ¶lteni a GameStats.json fÃ¡jlt! EllenÅ‘rizze, hogy lÃ©tezik-e ez a fÃ¡jl.
+Toast_GameStatsLoadFail: "Nem sikerÃ¼lt lekÃ©rni a jÃ¡tÃ©kstatisztikÃ¡t az internetrÅ‘l a {Game}-hoz"
+Toast_GameStatsEmpty: "A weboldalon nem talÃ¡lhatÃ³ {Game}. Szerinted ez hiba? EllenÅ‘rizze a userdata mappÃ¡t Ã©s a 'temp\\download-{AccoundId}-{Game}.html' fÃ¡jlt, hÃ¡tha az oldalon van hiba!"
+Toast_FileCopyFail: Nem sikerÃ¼lt Ã¡tmÃ¡solni a fÃ¡jlokat! TovÃ¡bbi rÃ©szletek a naplÃ³ban talÃ¡lhatÃ³k.
+Toast_UserDataLoadFail: Nem sikerÃ¼lt betÃ¶lteni a {UserData}\\ WindowSettings.json felhasznÃ¡lÃ³iadatokat. BiztonsÃ¡gi mentÃ©s Ã©s visszaÃ¡llÃ­tÃ¡s! Mentett hiba a naplÃ³ba.
+Toast_UpdateCheckFail: Nem sikerÃ¼lt elÃ©rni a https://discord.gg/PLR/ cÃ­met a frissÃ­tÃ©sek keresÃ©sÃ©hez. Ez az Ã¼zenet naponta egyszer jelenik meg.
+Toast_FailedCreateIcon: Nem sikerÃ¼lt lÃ©trehozni az ikont. A rÃ©szleteket lÃ¡sd a naplÃ³ban.
+Toast_SameAccount: Ugyanabba a fiÃ³kba/fiÃ³kbÃ³l nem lehet fÃ¡jlokat mÃ¡solni. PrÃ³bÃ¡lkozz mÃ¡sik fiÃ³kkal, vagy lÃ¡togass el a Wiki oldalÃ¡ra tovÃ¡bbi informÃ¡ciÃ³kÃ©rt.
+Toast_Steam_DownloadingAppIds: Steam AppId lista letÃ¶ltÃ©se...
+Toast_Steam_DownloadingAppIdsComplete: LetÃ¶ltÃ©s befejezve. A jÃ¡tÃ©kadatok almenÃ¼ frissÃ­tve.
+Toast_SteamWebKeyInvalid: A Steam Web API kulcs Ã©rvÃ©nytelennek tÅ±nik. KÃ©rjÃ¼k, Ã¡llÃ­tson be egy Ãºjat.
+Toast_DownloadingProfileData: Profiladatok letÃ¶ltÃ©se
+Toast_PasswordChanged: A jelszÃ³ megvÃ¡ltozott
+Toast_JsonFailModify: Nem sikerÃ¼lt mÃ³dosÃ­tani a JSON-fÃ¡jlt. LÃ¡sd a NaplÃ³t.
+Toast_DifferentClosingMethod: "A 'Closing Method' eltÃ©r az alapÃ©rtelmezetttÅ‘l. Ha a jÃ¡tÃ©kok bezÃ¡rulnak, ellenÅ‘rizze, hogy segÃ­t-e ennek az opciÃ³nak a megvÃ¡ltoztatÃ¡sa. AlapÃ©rtelmezett: {defaultMethod}, AktuÃ¡lis: {currentMethod}"
+Toast_NameEmpty: A felhasznÃ¡lÃ³nÃ©v nem lehet Ã¼res (Ã©s nem tartalmazhat csak szÃ³kÃ¶zt)
+Toast_NewPlatforms: "FrissÃ­tve! Ãšj platformok hozzÃ¡adva: {listOfNames}. Kattintson az elvetÃ©shez."
+Toast_FoundExeViaShortcut: "A telepÃ­tett elÃ©rÃ©si utat a Start menÃ¼ parancsikonjÃ¡bÃ³l talÃ¡ltuk meg. KÃ©rjÃ¼k, ellenÅ‘rizze a helyÃ©t a BeÃ¡llÃ­tÃ¡sok most lehetÅ‘sÃ©gre kattintva. Kattintson az elvetÃ©shez."
+Modal_Crowdin_Header: Crowdin fordÃ­tÃ³k
+Modal_Crowdin_Info: "Itt van mindenki, aki segÃ­tett lefordÃ­tani ezt a szoftvert.<br>A mellettÃ¼k lÃ©vÅ‘ nyelvÅ± felhasznÃ¡lÃ³k sokat segÃ­tettek a fordÃ­tÃ¡sban (lektori szerep)."
+Modal_Info_Creator: 'KÃ©szÃ­tette: PolarWolves Team [Wesley Pyburn]'
+Modal_Info_Version: VerziÃ³
+Modal_Info_ViewGitHub: MegtekintÃ©s a GitHubon
+Modal_Info_ViewPatreon: TÃ¡mogatÃ¡s a Patreonon keresztÃ¼l
+Modal_Info_ViewKofi: TÃ¡mogatÃ¡s a Ko-Fi-n keresztÃ¼l
+Modal_Info_BugReport: HibajelentÃ©s/FunkciÃ³kÃ©rÃ©s
+Modal_Info_VisitSite: LÃ¡togasson el a discord.gg/PLR oldalra
+Modal_Info_Disclaimer: Jogi nyilatkozat
+Modal_Title_Info: PolarWolves Information
+Modal_Title_ChangeUsername: FelhasznÃ¡lÃ³nÃ©v mÃ³dosÃ­tÃ¡sa
+Modal_Title_ConfirmAction: PolarWolves Confirm Action
+Modal_Title_LocatePlatform: Keresse meg a {platform} kÃ¶nyvtÃ¡rat
+Modal_Title_AddNew: Ãšj {platform} fiÃ³k hozzÃ¡adÃ¡sa
+Modal_Title_Background: ÃllÃ­tson be hÃ¡ttÃ©rkÃ©pet
+Modal_Title_Userdata: ÃllÃ­tsa be a felhasznÃ¡lÃ³i adatok mappÃ¡jÃ¡t
+Modal_Title_GameStats: JÃ¡tÃ©kstatisztikÃ¡k engedÃ©lyezÃ©se/letiltÃ¡sa
+Modal_GameStats_Header: "JÃ¡tÃ©kstatisztikÃ¡k engedÃ©lyezÃ©se/letiltÃ¡sa a kÃ¶vetkezÅ‘hÃ¶z: {accountName}"
+Modal_Title_Stats: Az Ã–n statisztikÃ¡i
+Modal_Title_GameVars: "Adja meg a {game}-hoz tartozÃ³ rÃ©szleteket"
+Modal_GameVars_Header: "KÃ©rjÃ¼k, adja meg a kÃ¶vetkezÅ‘ adatokat a {game} szÃ¡mla, {username} a {platform}"
+Modal_Title_AccountNotes: "SzÃ¡mlajegyzetek: {accountName}"
+Modal_Title_SetPassword: JelszÃ³ beÃ¡llÃ­tÃ¡sa
+Modal_SetBackground: 'VÃ¡lasszon ki egy kÃ©pet, vagy Ã­rjon be egy URL-t alÃ¡bb.<br>Hagyja Ã¼resen, Ã©s Ã¡llÃ­tsa vissza alaphelyzetbe.<br>(TovÃ¡bbi vezÃ©rlÃ©sÃ©rt lÃ¡sd a tÃ©mavÃ¡lasztÃ¡st a Wikin):'
+Modal_SetBackground_Button: HÃ¡ttÃ©r beÃ¡llÃ­tÃ¡sa
+Modal_SetBackground_ChooseImage: VÃ¡lasszon helyi kÃ©pet
+Modal_SetUserdata: Adja meg a mappa elÃ©rÃ©si ÃºtjÃ¡t alÃ¡bb, Ã©s kattintson a beÃ¡llÃ­tÃ¡s gombra.
+Modal_SetUserdata_ChooseFolder: VÃ¡lasszon ki egy mappÃ¡t
+Modal_SetUserdata_Button: FelhasznÃ¡lÃ³i adatok beÃ¡llÃ­tÃ¡sa
+Modal_ChangeUsername: KÃ©rjÃ¼k, adjon meg egy Ãºj felhasznÃ¡lÃ³nevet a fiÃ³kjÃ¡hoz
+Modal_ChangeUsernameType: '{platform} felhasznÃ¡lÃ³nÃ©v mÃ³dosÃ­tÃ¡sa'
+Modal_SetPassword: Adja meg a PolarWolves jelszavÃ¡t
+Modal_SetPassword_Button: JelszÃ³ beÃ¡llÃ­tÃ¡sa
+Modal_SetPassword_Info: "MEGJEGYZÃ‰S: Ez nem titkosÃ­tja a fiÃ³kokat. A fiÃ³kok cserÃ©je olyan egyszerÅ±, mint a fÃ¡jlok cserÃ©je, vagy egy fÃ¡jlban lÃ©vÅ‘ felhasznÃ¡lÃ³nÃ©v megvÃ¡ltoztatÃ¡sa. A jelszÃ³ visszaÃ¡llÃ­thatÃ³ egy fÃ¡jlban lÃ©vÅ‘ szÃ¶veg szerkesztÃ©sÃ©vel is. Ez egyszerÅ± biztonsÃ¡g. MegakadÃ¡lyozza az egyszerÅ± felhasznÃ¡lÃ³i felÃ¼lethez valÃ³ hozzÃ¡fÃ©rÃ©st. Ezt az alkalmazÃ¡st egy cserÃ©lhetÅ‘ USB-re helyezheti, beÃ¡llÃ­thatja a UserData mappÃ¡t ugyanarra az USB-re, Ã©s fizikailag eltÃ¡volÃ­thatja a nagyobb biztonsÃ¡g Ã©rdekÃ©ben. <a class=\"fancyLink\" onclick=\"OpenLinkInBrowser('{link}');return false;\" href=\"\">ÃttÃ©rÃ©s egy kÃ¼lsÅ‘ meghajtÃ³ ÃºtmutatÃ³jÃ¡ra</a><br><br>A tÃ¶rlÃ©shez hagyja Ã¼resen a fenti mezÅ‘t, Ã©s kattintson a BeÃ¡llÃ­tÃ¡s gombra."
+Modal_EnterDirectory: "Adja meg a {platform}kÃ¶nyvtÃ¡rÃ¡t, mint olyat: C:\\Program Files\\{platform}"
+Modal_LocatePlatform: '{platformExe}megkeresÃ©se'
+Modal_LocatePlatformFolder: '{platform} mappa kivÃ¡lasztÃ¡sa'
+Modal_ConfirmAction: MÅ±velet megerÅ‘sÃ­tÃ©se
+Modal_AddNew: Adja meg a bejelentkezett {platform} fiÃ³k nevÃ©t.
+Modal_AddCurrentAccount: Jelenlegi {platform} fiÃ³k hozzÃ¡adÃ¡sa
+Modal_SetImageHeader: ProfilkÃ©p beÃ¡llÃ­tÃ¡sa
+Modal_SetImage: KÃ©p beÃ¡llÃ­tÃ¡sa
+Status_SelectedAccount: "KivÃ¡lasztva: {name}"
+Status_Init: "Ãllapot: InicializÃ¡lÃ¡s"
+Status_ClosingPlatform: ZÃ¡rÃ¡s {platform}
+Status_ClosingPlatformFailed: Nem sikerÃ¼lt bezÃ¡rni {platform}
+Status_StartingPlatform: KezdÃ©s {platform}
+Toast_StartingPlatformFailed: Nem sikerÃ¼lt elindÃ­tani {platform}! TovÃ¡bbi rÃ©szletekÃ©rt lÃ¡sd a naplÃ³t.
+Toast_UrlAdminErr: Nem futtathat .url fÃ¡jlokat rendszergazdakÃ©nt. PrÃ³bÃ¡ljon ki egy mÃ¡sik tÃ­pusÃº parancsikont. IndÃ­tÃ¡s normÃ¡l felhasznÃ¡lÃ³kÃ©nt.
+Status_UpdatingFile: "FrissÃ­tÃ©s {file}"
+Status_UpdatingRegistry: Windows rendszerleÃ­rÃ³ adatbÃ¡zis frissÃ­tÃ©se
+Status_FailedLog: A mÅ±velet nem sikerÃ¼lt. A rÃ©szletekÃ©rt lÃ¡sd a naplÃ³t.
+Status_WaitingForClose: "VÃ¡rakozÃ¡s a {processName} -{timeLimit} {timeout})"
+Status_WaitingForMultipleClose: "VÃ¡rakozÃ¡s {processName} Ã©s {count} mÃ¡sik bezÃ¡rÃ¡sÃ¡ra{timeLimit} {timeout})"
+Status_GetUniqueId: Egyedi felhasznÃ¡lÃ³i azonosÃ­tÃ³ gyÅ±jtÃ©se
+Status_CopyingFiles: FelhasznÃ¡lÃ³i fÃ¡jlok mÃ¡solÃ¡sa...
+Status_HandlingImage: A fiÃ³k profilkÃ©pÃ©nek kezelÃ©se
+Context_SwapTo: VÃ¡ltÃ¡s a fiÃ³kra
+Context_CreateShortcut: Parancsikon lÃ©trehozÃ¡sa
+Context_ChangeImage: KÃ©p mÃ³dosÃ­tÃ¡sa
+Context_ChangeName: KapcsolÃ³ nevÃ©nek mÃ³dosÃ­tÃ¡sa
+Context_LoginAsSubmenu: BejelentkezÃ©s mint
+Context_UsernameSubmenu: FelhasznÃ¡lÃ³nÃ©v
+Context_RefreshName: NÃ©v frissÃ­tÃ©se
+Context_CopySubmenu: MÃ¡solÃ¡s
+Context_DataSubmenu: Adatok
+Context_CopyProfileSubmenu: Profil mÃ¡solÃ¡sa
+Context_CommunityUrl: KÃ¶zÃ¶ssÃ©gi URL
+Context_CommunityUsername: KÃ¶zÃ¶ssÃ©gi felhasznÃ¡lÃ³nÃ©v
+Context_LoginUsername: BejelentkezÃ©si felhasznÃ¡lÃ³nÃ©v
+Context_CopySteamIdSubmenu: SteamID mÃ¡solÃ¡sa
+Context_Steam_Id: SteamID [STEAM0:~]
+Context_Steam_Id3: SteamID3 [U:1:~]
+Context_Steam_Id32: SteamID32
+Context_Steam_Id64: SteamID64 7656~
+Context_Steam_OpenUserdata: FelhasznÃ¡lÃ³i adatok megnyitÃ¡sa
+Context_ManageSubmenu: KezelÃ©s
+Context_GameDataSubmenu: JÃ¡tÃ©kadatok
+Context_ManageGameStats: JÃ¡tÃ©kstatisztikÃ¡k kezelÃ©se
+Context_Game_CopySettingsFrom: BeÃ¡llÃ­tÃ¡sok mÃ¡solÃ¡sa az aktuÃ¡lisba
+Context_Game_RestoreSettingsTo: JÃ¡tÃ©kadatok visszaÃ¡llÃ­tÃ¡sa
+Context_Game_BackupData: A jÃ¡tÃ©k adatainak biztonsÃ¡gi mentÃ©se
+Context_CopyOtherSubmenu: MÃ¡solÃ¡s
+Context_HidePlatform: Platform elrejtÃ©se
+Context_ExportAccList: FiÃ³klista exportÃ¡lÃ¡sa
+Context_RunAdmin: Futtasson rendszergazdakÃ©nt
+Context_Hide: Elrejt
+ProfileImage_ToggleText: KÃ©p hasznÃ¡lata fiÃ³kkÃ©pkÃ©nt
+Title_Platforms_Settings: PolarWolves - PlatformbeÃ¡llÃ­tÃ¡sok
+Title_Settings_TestCss: PolarWolves - CSS stÃ­lus tesztelÃ©se
+Title_AccountsList: PolarWolves - {platform}
+Title_TextEditor: PolarWolves - SzÃ¶vegszerkesztÅ‘
+Title_Settings: PolarWolves - BeÃ¡llÃ­tÃ¡sok
+Title_Steam_Cleaning: PolarWolves - GÅ‘ztisztÃ­tÃ¡s
+Title_Steam_Settings: PolarWolves - GÅ‘zbeÃ¡llÃ­tÃ¡sok
+Title_Template_Settings: PolarWolves â€“ {platformName} beÃ¡llÃ­tÃ¡sok
+Title_Login: PolarWolves - BejelentkezÃ©s
+Installer_Downloading: LetÃ¶ltÃ©s {file}
+Installer_DownloadFinished: A letÃ¶ltÃ©s befejezÅ‘dÃ¶tt {file}
+Installer_Installing: "TelepÃ­tÃ©s: {runtime}"
+Installer_RuntimeTitle: PolarWolves - FutÃ¡sidejÅ± telepÃ­tÅ‘
+Installer_Welcome: ÃœdvÃ¶zli a PolarWolves FiÃ³kvÃ¡ltÃ³ - FutÃ¡sidejÅ± telepÃ­tÅ‘
+Installer_InstalledRuntimes: "Jelenleg telepÃ­tett futÃ¡si idÅ‘k:"
+Installer_ErrorRuntime: "Egy vagy tÃ¶bb futÃ¡sidÅ‘ nem lett telepÃ­tve:"
+Installer_RuntimeNote: "[~{size1} MB + ~{size2} MB telepÃ­tÃ©s kÃ¶zben]"
+Installer_TotalSize: "Teljes letÃ¶ltÃ©si mÃ©ret: ~{size} MB"
+Installer_AnyKeyStart: A letÃ¶ltÃ©s indÃ­tÃ¡sÃ¡hoz nyomja meg bÃ¡rmelyik gombot...
+Runtime_WebView2: Microsoft WebView2 futÃ¡sidejÅ±
+Runtime_Desktop: Microsoft .NET 5 asztali futÃ¡sidejÅ±
+Runtime_ASP: Microsoft Microsoft ASP.NET Core {version} Runtime
+Installer_FailedFolder: "Nem sikerÃ¼lt lÃ©trehozni a mappÃ¡t:"
+Installer_FailedWV: "Nem sikerÃ¼lt letÃ¶lteni Ã©s telepÃ­teni a Microsoft WebView2 futÃ¡sidejÃ©t. LetÃ¶ltÃ©s: 1. Kattintson az alÃ¡bbi linkre: {link} 2. Kattintson a \"TÃ¶ltse le a Hosting Bundle\" alatt Run szerver alkalmazÃ¡sok."
+Installer_FailedDR: "Nem sikerÃ¼lt letÃ¶lteni Ã©s telepÃ­teni a .NET 5 Desktop Runtime programot. TÃ¶ltse le innen:"
+Installed_FailedASP: "{version} Runtime letÃ¶ltÃ©se Ã©s telepÃ­tÃ©se sikertelen. LetÃ¶ltÃ©s: 1. Kattintson az alÃ¡bbi hivatkozÃ¡sra: {link} 2. Kattintson a \"Download x64\" lehetÅ‘sÃ©gre az Asztali alkalmazÃ¡sok futtatÃ¡sa alatt."
+Installer_Ready: "Egy vagy tÃ¶bb kÃ©szen Ã¡ll a telepÃ­tÃ©sre. Ha telepÃ­teni szeretnÃ© a programot, kattintson az â€žIgenâ€ gombra."
+Installer_PressStart: A telepÃ­tÃ©s indÃ­tÃ¡sÃ¡hoz nyomja meg bÃ¡rmelyik gombot...
+Installer_VerifyMin: "EllenÅ‘rizze, hogy megfelel-e az ajÃ¡nlott minimumkÃ¶vetelmÃ©nyeknek:"
+Installer_VerifyAlready: "Ãšgy tÅ±nik, minden be van szerelve. EllenÅ‘rizze, hogy megfelel-e az ajÃ¡nlott minimumkÃ¶vetelmÃ©nyeknek:"
+Installer_Complete: Ez legyen minden. A fÅ‘ program, a PolarWolves.exe, automatikusan elindul.
+Installer_Complete2: "Ha nem mÅ±kÃ¶dik, kÃ©rjÃ¼k, olvassa el a telepÃ­tÃ©si utasÃ­tÃ¡sokat, itt: {link}"
+Tray_Error: TÃ¡lcahiba
+Tray_NoAccs: "Nem talÃ¡lhatÃ³ fiÃ³k.\nElÅ‘szÃ¶r prÃ³bÃ¡ljon fiÃ³kot vÃ¡ltani, vagy keresse meg a 'Tray_Users.json' -t"
+Tray_Switch: "VÃ¡ltÃ¡s erre: {account}"
+Tray_CantOpenExe: "Nem sikerÃ¼lt megnyitni a fÅ‘ .exe fÃ¡jlt. GyÅ‘zÅ‘djÃ¶n meg rÃ³la, hogy lÃ©tezik.\n\nMegprÃ³bÃ¡ltam megnyitni:"
+Tray_LaunchFail: "PolarWolves - a tÃ¡lca indÃ­tÃ¡sa sikertelen"
+Updater_Duplicate: A rendszer egy mÃ¡sik PolarWolves Updater pÃ©ldÃ¡nyt Ã©szlelt.
+Updater_Unknown: "Ismeretlen argumentum: {arg}"
+Updater_NeedsAdmin: Ezt a programot rendszergazdakÃ©nt kell futtatni!
+Updater_StatusChecking: VerziÃ³ ellenÅ‘rzÃ©se
+Updater_FailedVersionCheck: "Nem sikerÃ¼lt lekÃ©rni a verziÃ³t. Kattintson az \"EllenÅ‘rzÃ©s\" gombra a fÃ¡jlok frissÃ­tÃ©sÃ©hez Ã©s ellenÅ‘rzÃ©sÃ©hez"
+Updater_PressBelow: Nyomja meg az alÃ¡bbi gombot!
+Updater_PressBelowStart: A frissÃ­tÃ©s megkezdÃ©sÃ©hez kattintson az alÃ¡bbi gombra.
+Updater_PatchApplied: JavÃ­tÃ¡s alkalmazva!
+Updater_UpdatingAppData: FÃ¡jlok frissÃ­tÃ©se az AppData-ban!
+Updater_Complete: Minden frissÃ­tÃ©s befejezÅ‘dÃ¶tt!
+Updater_Checking: FrissÃ­tÃ©sek keresÃ©se
+Updater_UpdateToVerify: A fÃ¡jlok ellenÅ‘rzÃ©sÃ©hez elÅ‘szÃ¶r frissÃ­tenie kell.
+Updater_ClosingPolarWolves: A PolarWolves pÃ©ldÃ¡nyok bezÃ¡rÃ¡sa (ha vannak).
+Updater_Downloading: "FrissÃ­tÃ©s letÃ¶ltÃ©se: {version}"
+Updater_Downloaded: LetÃ¶ltÃ©s kÃ©sz.
+Updater_CantExtract: Nem sikerÃ¼lt kibontani a frissÃ­tÃ©st.
+Updater_Verify: FÃ¡jlok ellenÅ‘rzÃ©se
+Updater_Verifying: EllenÅ‘rzÃ©s...
+Updater_VerifySkip: FÃ¡jlok ellenÅ‘rzÃ©se a kis frissÃ­tÃ©sek kihagyÃ¡sÃ¡hoz, Ã©s ugrÃ¡s a legÃºjabbra.
+Updater_NoConnection: "Nem sikerÃ¼lt csatlakozni a discord.gg/PLR-hoz a fÃ¡jlok ellenÅ‘rzÃ©sÃ©hez. MegprÃ³bÃ¡lhatja manuÃ¡lisan letÃ¶lteni a telepÃ­tÅ‘t a GitHub oldalrÃ³l, majd ÃºjratelepÃ­teni a frissÃ­tÃ©shez.\n\nHiba:"
+Updater_NoServer: Nem sikerÃ¼lt elÃ©rni a frissÃ­tÃ©si kiszolgÃ¡lÃ³t
+Updater_Hashlist: LegutÃ³bbi hash lista letÃ¶ltÃ©se...
+Updater_CantCheck: Nem lehet frissÃ­tÃ©seket keresni
+Updater_Failed: "HIBA: NÃ©hÃ¡ny fÃ¡jl hasznÃ¡latban van, ezÃ©rt nem lehet frissÃ­teni.\n\n1. EllenÅ‘rizze, hogy az Ã¶sszes PolarWolves folyamat teljesen le van-e zÃ¡rva\n(vagy indÃ­tsa Ãºjra a szÃ¡mÃ­tÃ³gÃ©pet)\n\n2. EzutÃ¡n kattintson az EllenÅ‘rzÃ©s gombra alÃ¡bb, vagy ha ÃºjraindÃ­totta:\n-   Nyissa meg ezt a frissÃ­tÅ‘t, Ã©s ellenÅ‘rizze a fÃ¡jlokat\n    (talÃ¡lhatÃ³ a \"frissÃ­tÅ‘\" mappÃ¡ban a telepÃ­tÃ©si kÃ¶nyvtÃ¡rban)"
+Updater_Missing: "HIÃNYZÃ“ FÃJL: {file}"
+Updater_FileMismatch: "FÃ¡jl: {file} rendelkezik MD5: {md5} VÃRHATÃ“: {value}"
+Updater_DownloadingWeb: FÃ¡jl letÃ¶ltÃ©se a webhelyrÅ‘l...
+Updater_UnpackingAppData: FÃ¡jlok mÃ¡solÃ¡sa %AppData%/TcNincs fiÃ³kvÃ¡ltÃ³ba... (hacsak nincs mÃ¡skÃ©pp beÃ¡llÃ­tva)
+Updater_VerifyComplete: FÃ¡jlok ellenÅ‘rizve!
+Updater_UpdateFound: "FrissÃ­tÃ©s talÃ¡lhatÃ³: {name} [{updateSize}]"
+Updater_TotalFound: "TalÃ¡lt frissÃ­tÃ©sek Ã¶sszesen: {x}"
+Updater_TotalSize: "Teljes mÃ©ret: {size}"
+Updater_AwaitingUser: VÃ¡rakozÃ¡s a felhasznÃ¡lÃ³i bevitelre...
+Updater_UpToDate: "Ã–n naprakÃ©sz.\n:)"
+Updater_FailedDecode: Ez valÃ³szÃ­nÅ±leg nekem (PolarWolves Team) nyomja meg a frissÃ­tÃ©st, Ã©s hogy egy elÃ­rÃ¡s, hogy megszakadt a .json frissÃ­tÃ©si fÃ¡jl. Tudasd velem:)
+Updater_FailedDecodeTitle: Nem sikerÃ¼lt dekÃ³dolni a frissÃ­tÃ©si listÃ¡t
+Updater_Extracting: FoltfÃ¡jlok kibontÃ¡sa
+Updater_Applying: JavÃ­tÃ¡s alkalmazÃ¡sa...
+Updater_Moving: FÃ¡jlok Ã¡thelyezÃ©se...
+Updater_Title: PolarWolves Updater
+Updater_Started: ElindÃ­tva
+Updater_Start: PolarWolves indÃ­tÃ¡sa
+Updater_Begin: FrissÃ­tÃ©s indÃ­tÃ¡sa
+Updater_Exit: KilÃ©pÃ©s
+FatalError: VÃ©gzetes hiba tÃ¶rtÃ©nt!
+Online: Online
+OnlineDefault: Online (alapÃ©rtelmezett)
+Offline: Offline
+Invisible: LÃ¡thatatlan
+Busy: Foglalt
+Away: TÃ¡vollÃ©t
+Snooze: Szundi
+LookingToTrade: Kereskedni szeretne
+LookingToPlay: LejÃ¡tszÃ¡sra vÃ¡r
+Unrecognized_EPersonaState: Felismeretlen ePersonaState
+Reg_DoesntExist: "{subKey} nem lÃ©tezik."
+Reg_DoesntContain: "{subKey} nem tartalmaz {val}-et"
+Reg_Removing: '{subKey}eltÃ¡volÃ­tÃ¡sa\\{val}'
+PngInvalid_Format: A szÃ¼ksÃ©ges kÃ©ppontformÃ¡tum a PixelFormat.{x}.
+PngRequired: A szÃ¼ksÃ©ges kÃ©pformÃ¡tum egy hordozhatÃ³ hÃ¡lÃ³zati grafika (png).
+PngDimensions: A mÃ©reteknek legfeljebb {MaxIconWidth}x{MaxIconHeight}-nek kell lenniÃ¼k
+ThemeSyntaxAnd: "Szintaktikai hiba tÃ¶rtÃ©nt (tovÃ¡bbi rÃ©szletek alÃ¡bb)! Ã‰S:"
+ThemesNotFound: "A \"tÃ©mÃ¡k\" mappa nem talÃ¡lhatÃ³ a PolarWolves kÃ¶nyvtÃ¡rÃ¡ban. Ez (kÃ¼lÃ¶nÃ¶sen a 'Drakula_Cyan' mappa) szÃ¼ksÃ©ges a szoftver futtatÃ¡sÃ¡hoz.\nA \"Updater\" mappÃ¡ban futtathatja a Updater programot a fÃ¡jlok ellenÅ‘rzÃ©sÃ©hez Ã©s a hiÃ¡nyzÃ³ fÃ¡jlok visszaÃ¡llÃ­tÃ¡sÃ¡hoz."
+Yes: "Igen."
+No: "Nem, nem."
+Save: MentÃ©s
+NoDefault: Nem (alapÃ©rtelmezett)
+Ok: "- OkÃ©."
+Submit: KÃ¼ldÃ©s
+Forget: Felejtsd el!
+Notice: MegjegyzÃ©s
+Notes: MegjegyzÃ©sek
+Error: Hiba
+ErrorDetails: "HIBA: {ex}"
+Failed: Sikertelen
+Success: Siker
+NotFound: Nem talÃ¡lhatÃ³
+Done: KÃ©sz
+Edit: SzerkesztÃ©s
+Refresh: FrissÃ­tÃ©s
+Working: DolgozÃ³...
+ForName: "Mellette: {name}"
+DeletedFiles: TÃ¶rÃ¶lt fÃ¡jlok
+FileFoldersToClear: "A tÃ¶rÃ¶lni kÃ­vÃ¡nt fÃ¡jlok/mappÃ¡k listÃ¡ja:"
+CouldNotFindX: '{x}nem talÃ¡lhatÃ³'
+CouldNotCloseX: Nem lehetett bezÃ¡rni {x}!
+CouldNotReadFile: Nem sikerÃ¼lt leolvasni a {file}-t!
+DirectoryNotFound: A kÃ¶nyvtÃ¡r nem talÃ¡lhatÃ³
+DirectoryNotFoundFolder: "A kÃ¶nyvtÃ¡r nem talÃ¡lhatÃ³: {folder}"
+DeletingFile: "TÃ¶rlÃ©s: {file}"
+DeletingFolder: "Mappa tÃ¶rlÃ©se: "
+CouldntDeleteX: "HIBA: NEM SIKERÃœLT TÃ–RÃ–LNI: {x}"
+CouldntDeleteUndefined: "HIBA: NEM SIKERÃœLT TÃ–RÃ–LNI EGY DEFINIÃLATLAN FÃJLT"
+CouldntModifyX: "A {file}nem mÃ³dosÃ­thatÃ³. FÃ¡jlengedÃ©ly-hiba, vagy a fÃ¡jl hasznÃ¡latban van."
+Prompt_RestartAsAdmin: "<h3><bold>Ez a program rendszergazdakÃ©nt indul Ãºjra.</bold></h3><p>Nyomja meg az \"Igen\" gombot az UAC-ban, amikor a rendszer rendszergazdakÃ©nt kÃ©ri.</p>"
+Prompt_ForgetSteam: >
+  <h3 style='color:red'>MindjÃ¡rt elfelejt egy fiÃ³kot!</h3> <h4>Mit jelent ez?</h4> <p>- A Steam tÃ¶bbÃ© nem rendelkezik a Big Picture mÃ³dban szereplÅ‘ fiÃ³kkal, Ã©s nem emlÃ©kszik meg a jelszÃ³ra.<br/> â€“ A PolarWolves szintÃ©n nem fogja megjelenÃ­teni a fiÃ³kot, amÃ­g Ãºjra be nem jelentkezik a Steamen keresztÃ¼l.</p> <p>FiÃ³kja Ã©rintetlen marad. EgyszerÅ±en feledÃ©sbe merÃ¼lt ezen a szÃ¡mÃ­tÃ³gÃ©pen.</p><h4>Ã‰rted?</h4>
+Prompt_ForgetAccount: >
+  <h3 style='color:red'>You are about to forget an account!</h3> <h4>Mit jelent ez?</h4> <p>PolarWolves will also not show the account,<br/> until it 's logged into again through {platform}, and added to the list.</p> <p>FiÃ³kja Ã©rintetlen marad. Csak elfelejtettÃ©k ezen a szÃ¡mÃ­tÃ³gÃ©pen.</p> <h4>MegÃ©rtetted?</h4>
+Prompt_ClearStats: >
+  <h3 style='color:red'>You are about to clear your statistics!</h3> <p>Ezt a mÅ±veletet nem vonhatja vissza.</p>
+Platform_DiscordPasteHint: Illessze be a Discord konzolba, majd illessze be az eredmÃ©nyt a bevitelbe!
+Platform_ClearCache: TÃ¶rÃ¶lje a gyorsÃ­tÃ³tÃ¡rat
+Platform_ClearCacheTotal: '{totalFileCount} fÃ¡jl tÃ¶rlÃ©se ({totalSizeMB})'
+Platform_DeleteFail: Nem sikerÃ¼lt tÃ¶rÃ¶lni nÃ©hÃ¡ny fÃ¡jlt (lehet, hogy a program fut?)
+Platform_CouldNotDeleteLog: Nem sikerÃ¼lt tÃ¶rÃ¶lni a fÃ¡jlt! EllenÅ‘rizze a {logPath}
+Error_FileAccessDenied: Nem sikerÃ¼lt elÃ©rni a fÃ¡jlt! EllenÅ‘rizze a {logPath}
+Error_RequiredFileVerify: A szÃ¼ksÃ©ges fÃ¡jl nem talÃ¡lhatÃ³. EllenÅ‘rizze, hogy az x64 Ã©s x86 mappÃ¡k lÃ©teznek-e a telepÃ­tÃ©si kÃ¶nyvtÃ¡rban. Ha nem futtatja a PolarWolves-Updater.exe programot, ellenÅ‘rizze a fÃ¡jlokat.
+Tooltip_Settings: BeÃ¡llÃ­tÃ¡sok
+Tooltip_Info: Info
+Tooltip_ManagePlatforms: MÃ¡s platformok megjelenÃ­tÃ©se vagy elrejtÃ©se
+Tooltip_ExpandShortcuts: Bontsa ki a JÃ¡tÃ©kok Ã©s parancsikonok vÃ¡lasztÃ©kÃ¡t
+Tooltip_ShortcutFolder: Nyissa meg a parancsikon mappÃ¡t. Helyezze el a parancsikonokat oda, Ã©s a PolarWolves fiÃ³kvÃ¡ltÃ³t, hogy megtekinthesse Å‘ket.
+Tooltip_Backup: A konfigurÃ¡ciÃ³s fÃ¡jlok/mappÃ¡k biztonsÃ¡gi mentÃ©se a platform beÃ¡llÃ­tÃ¡saiban meghatÃ¡rozottak szerint.
+Tooltip_BackupAll: KÃ©szÃ­tsen biztonsÃ¡gi mÃ¡solatot az Ã–SSZES konfigurÃ¡ciÃ³s fÃ¡jlrÃ³l/mappÃ¡rÃ³l, beleÃ©rtve a kÃ©peket Ã©s mÃ¡s nagy fÃ¡jlokat is.
+Tooltip_ClosingMethod: "KombinÃ¡lt a legjobb. A bezÃ¡rÃ¡si kÃ­sÃ©rlet kÃ¶zvetlenÃ¼l egy kÃ¶zeli funkciÃ³n keresztÃ¼l tÃ¶rtÃ©nik, Ã©s a TaskKill CMD-t hasznÃ¡l (a legjobb, ha a kombinÃ¡ciÃ³ nem mÅ±kÃ¶dik)"
+Tooltip_StartingMethod: "Az alapÃ©rtelmezÃ©s a legjobb. A Direct nem tudja ellenÅ‘rizni az adminisztrÃ¡ciÃ³s szintet vagy az UAC-t. Ugyanazon a szinten (vagy magasabb - de nem alacsonyabb) fog kezdÅ‘dni, mint ez a fiÃ³kvÃ¡ltÃ³"
+Tooltip_CurrentAccount: Ã–n jelenleg be van jelentkezve ebbe a fiÃ³kba.
+Tooltip_Restore: Kattintson ide egy 7z fÃ¡jl kivÃ¡lasztÃ¡sÃ¡hoz, vagy hÃºzza Ã¡t erre a gombra.
+Tooltip_DisabledGlobally: Ez az elem minden fiÃ³kban rejtve van. Ezt a platform beÃ¡llÃ­tÃ¡saiban mÃ³dosÃ­thatod.
+Discord_Status: FiÃ³kvÃ¡ltÃ¡s folyamatban.
+Discord_StatusDetails: "ÃtvÃ¡ltott fiÃ³kok: {number}"
+Website: Honlap
+Preview_Platforms: Platformok elÅ‘nÃ©zete
+Preview_Accounts: FiÃ³kok elÅ‘nÃ©zete
+Preview_Notifications: PirÃ­tÃ³sÃ©rtesÃ­tÃ©sek elÅ‘nÃ©zete
+Preview_Settings: BeÃ¡llÃ­tÃ¡sok elÅ‘nÃ©zete
+Preview_Modals: ModÃ¡lis elÅ‘nÃ©zet
+
+
+
+

@@ -1,0 +1,513 @@
+﻿---
+Update: GÃ¼ncelleme mevcut! GÃ¼ncellemeyi baÅŸlatmak iÃ§in buraya tÄ±klayÄ±n.
+Header_ChooseLanguage: 'Dil SeÃ§in:'
+Steam_ShowSteamID: SteamID
+Steam_ShowVac: VAC durumu
+Steam_ShowLastLogin: Son giriÅŸ saati
+Steam_ShowLimited: SÄ±nÄ±rlÄ± Durum
+Steam_ShowAccUsername: Hesap kullanÄ±cÄ± adÄ±
+Steam_Tray_AccountName: Hesap adÄ±nÄ± gÃ¶ster [arkadaÅŸ adÄ± deÄŸil]
+Steam_CheckVac: Hesap VAC durumunu kontrol et
+Steam_OverrideDefaultState: "VarsayÄ±lan oturum aÃ§ma durumunu geÃ§ersiz kÄ±l:"
+Steam_StartSilent: "Anahtar Ã¼zerindeki gÃ¶rev tepsisine buharÄ± aÃ§Ä±n (BuharÄ± '- sessiz 'ile baÅŸlatÄ±n)"
+Steam_OldUi: "Steam'de Eski KullanÄ±cÄ± ArayÃ¼zÃ¼nÃ¼ KullanÄ±n (-vgui)"
+Steam_CollectInfo: Steam'den profil resimleri ve VAC yasak durumu topla
+Button_AddNew: Yeni Ekle
+Button_SaveCurrent: Mevcut Oturumu Kaydet
+Button_SaveFile: DosyayÄ± Kaydet
+Button_Cancel: Ä°ptal et
+Button_Login: GiriÅŸ Yap
+Button_Close: Kapat
+Button_RefreshImages: Resimleri yenile
+Button_ResetSettings: AyarlarÄ± sÄ±fÄ±rla
+Button_AdvancedCleaning: GeliÅŸmiÅŸ temizlik...
+Button_ClearLog: Log'u temizle
+Button_WikiInfo: Daha Fazla Bilgi (Wiki)
+Button_ManagePlatforms: PlatformlarÄ± YÃ¶net
+Button_Backup: Yedek
+Button_BackupAll: Her ÅŸeyi yedekle
+Button_Restore: Eski haline getir
+Button_OpenBackup: Yedek KlasÃ¶rÃ¼nÃ¼ AÃ§
+Button_Back: Geri
+Button_RestartAdmin: YÃ¶netici olarak yeniden baÅŸlat
+Button_SetPassword: Uygulama ParolasÄ±nÄ± Ayarla
+Settings_SteamCollectInfo: Steam Profil Resmini ve VAC Durumunu Steam'den Topla
+Settings_Shortcut: '{platform} AnahtarlayÄ±cÄ± MasaÃ¼stÃ¼ kÄ±sayolu'
+Settings_Admin: '{platform} platformunu YÃ¶netici olarak Ã§alÄ±ÅŸtÄ±r'
+Settings_ImageExpiry: 'Profil resimlerinin sÃ¼resi dolmadan Ã¶nceki gÃ¼nler:'
+Settings_SteamAPIKey: "Steam Web API anahtarÄ± (isteÄŸe baÄŸlÄ±)"
+Settings_SteamAPIKey_Note: Bir API anahtarÄ± ayarlamak, SÄ±nÄ±rlÄ± gÃ¶stergenin (sarÄ± kenarlÄ±k) bunun yerine Topluluk YasaklÄ± hesaplar iÃ§in gÃ¶sterilmesini saÄŸlar.
+Settings_Header_AppWide: Uygulama genelinde ayarlar
+Settings_Header_GeneralSettings: Genel Ayarlar
+Settings_Header_AccountDisplay: Hesap GÃ¶rÃ¼ntÃ¼leme ayarlarÄ±
+Settings_Header_ExtraPlatforms: Platform AyarlarÄ±
+Settings_Header_GeneralTools: Genel AraÃ§lar
+Settings_Header_OtherTools: DiÄŸer AraÃ§lar
+Settings_Header_TraySettings: Tepsi ayarlarÄ±
+Settings_Header_OpenGameFolders: Oyun klasÃ¶rlerini aÃ§
+Settings_Header_BackupRestore: Yedekleme ve Geri YÃ¼kleme platformu ayarlarÄ±
+Settings_Header_Language: Dil
+Settings_Header_System: Sistem
+Settings_Header_Theme: Tema
+Settings_Header_Program: Program
+Settings_Header_StatsSharing: Ä°statistikler ve PaylaÅŸÄ±m
+Settings_Header_Platform: "{platformName} ayarlarÄ±"
+Settings_Header_GameStats: KÃ¼resel oyun istatistikleri ayarlarÄ±
+Settings_GameStats: Burada iÅŸaretlenen herhangi bir ÅŸey, herhangi bir hesap iÃ§in kullanÄ±cÄ± adÄ±nÄ±z altÄ±nda gÃ¶sterilmeyecektir. Oyun istatistiklerinizdeki belirli Ã¶ÄŸeleri sÄ±k sÄ±k gizliyorsanÄ±z bunu kullanÄ±n.
+Settings_TrayMax: 'HatÄ±rlanacak maksimum hesap sayÄ±sÄ±:'
+Settings_ExtraPlatformsDisabled: Devre dÄ±ÅŸÄ± platformlar. EtkinleÅŸtirmek iÃ§in tÄ±klayÄ±n.
+Settings_ExtraPlatformsEnabled: GÃ¶rÃ¼nÃ¼r platformlar. Devre dÄ±ÅŸÄ± bÄ±rakmak iÃ§in tÄ±klayÄ±n.
+Settings_RTL: Metni SaÄŸdan Sola olarak gÃ¶ster
+Settings_CollectStats: Ä°statistikleri topla
+Settings_ShareStats: Ä°statistikleri anonim olarak paylaÅŸÄ±n (Ã¶nerilir)
+Settings_DiscordRpc: Discord Rich Presence (RPC)
+Settings_DiscordRpcShare: Toplam anahtarlarÄ± paylaÅŸ
+Settings_ViewStats: Ä°statistikleri gÃ¶rÃ¼ntÃ¼le
+Preview: Ã–nizleme
+Settings_ClearStats: SÄ±fÄ±rla
+Settings_CurrentLocation: 'GeÃ§erli yÃ¼kleme konumu: {path}'
+Settings_CurrentDataLocation: 'GeÃ§erli kullanÄ±cÄ± verileri konumu: {path}'
+Settings_SetDataLocation: "[KullanÄ±cÄ± verileri iÃ§in Ã¶zel bir yer ayarla]"
+Settings_PickFolder: '{platform} klasÃ¶rÃ¼nÃ¼ seÃ§'
+Settings_OpenFolder: '{platform} KlasÃ¶rÃ¼nÃ¼ AÃ§'
+Settings_ClearForgotten: UnutulanlarÄ± Temizle
+Settings_ClearAccounts: HesaplarÄ± Temizle
+Settings_StreamerMode: YayÄ±ncÄ± modunu etkinleÅŸtir
+Settings_ExitToTray: Tepsiye Ã§Ä±kÄ±ÅŸÄ± en aza indirir
+Settings_DesktopShortcut: MasaÃ¼stÃ¼ kÄ±sayolu
+Settings_StartMenu_ProgramTray: Program ve Tepsi
+Settings_StartMenu_Platform: Platform
+Settings_Tray_StartWindows: Tepsiyi Pencerelerle BaÅŸlat
+Settings_Tray_StartNow: '[Tepsiyi ÅŸimdi baÅŸlat]'
+Settings_CurrentStyle: GeÃ§erli Stil
+Settings_ThemeBackground: '[Arka planÄ± ayarla]'
+Settings_ThemeOpenFolder: '[Tema klasÃ¶rÃ¼nÃ¼ aÃ§]'
+Settings_Protocol: 'Tcno''yu etkinleÅŸtir:\\ protocol (Ã–nerilen)'
+Settings_StartCentered: ProgramÄ± merkezde baÅŸlat
+Settings_OfflineMode: Ã‡evrimdÄ±ÅŸÄ± Mod (AÄŸ etkinliÄŸi yok)
+Settings_WindowsAccent: Windows Vurgu Rengini Kullan
+Settings_HelpTranslate: "[Ã‡eviriye yardÄ±m et]"
+Settings_ViewTranslators: "[KatkÄ±da Bulunanlar]"
+Settings_Header_ActiveBrowser: "(GeliÅŸmiÅŸ) Ä°ÅŸleme motorunu ayarlayÄ±n:"
+Settings_Header_ClosingMethod: "(GeliÅŸmiÅŸ) YÃ¶ntemi kapatmak iÃ§in ayarlayÄ±n {platform}"
+Settings_Header_StartingMethod: "(GeliÅŸmiÅŸ) BaÅŸlangÄ±Ã§ yÃ¶ntemini ayarlayÄ±n {platform}"
+Settings_AutoStart: "Otomatik Olarak {platform} hesap deÄŸiÅŸtirince baÅŸlat"
+Settings_ShowSteamSwitcher: "Steam'in hesap deÄŸiÅŸtiricisini gÃ¶ster (Bunu KULLANMAYIN, aksi takdirde PolarWolves Hesap DeÄŸiÅŸtiricisi bozulabilir)"
+Settings_NoPlatforms: Åžu anda etkin platform yok. LÃ¼tfen bunlarÄ± etkinleÅŸtirmek iÃ§in aÅŸaÄŸÄ±daki isteÄŸe baÄŸlÄ± platformlarÄ± iÅŸaretleyin veya devre dÄ±ÅŸÄ± bÄ±rakÄ±lmÄ±ÅŸ platformlarÄ±n iÅŸaretini kaldÄ±rÄ±n.
+Settings_MinimizeOnSwitch: Hesap anahtarÄ±ndaki anahtarlayÄ±cÄ±yÄ± en aza indirin
+Settings_ShowShortNotes: KullanÄ±cÄ± adÄ± altÄ±nda not Ã¶nizlemesi
+Settings_Header_AppPassword: "AnahtarlayÄ±cÄ±yÄ± kullanarak diÄŸerlerini durdurun:"
+PreviewCss: Ã–nizleme CSS
+Settings_PreviewCss: Bu CSS Ã¶nizleme sayfasÄ±dÄ±r. Programda aÃ§Ä±lan bazÄ± Ã¶ÄŸeleri gÃ¶rÃ¼ntÃ¼leyebilir ve temanÄ±zla nasÄ±l gÃ¶rÃ¼ndÃ¼klerini gÃ¶rebilirsiniz. Bu sayfa tema oluÅŸturanlar iÃ§in kullanÄ±ÅŸlÄ±dÄ±r!
+Settings_PreviewCssHeader: CSS Ã–nizleme SayfasÄ±
+Settings_AutoUpdatePlatforms: Platformlar listesini otomatik gÃ¼ncelle
+Settings_CheckForUpdates: Lansman sÄ±rasÄ±nda gÃ¼ncellemeleri kontrol edin
+Stats_Disabled: "Ä°statistik koleksiyonu devre dÄ±ÅŸÄ±."
+Stats_InDepth: Derinlemesine istatistik dÃ¶kÃ¼mÃ¼
+Stats_ShareEnabled: "Bu istatistikler anonim olarak paylaÅŸÄ±lÄ±r ve buradaki toplam <a onclick=\"{WebsiteLink}\" class=\"fancyLink\"></a>eklenir."
+Stats_ShareDisabled: "Bu istatistikler anonim olarak paylaÅŸÄ±lmaz ve buradaki toplam <a onclick=\"{WebsiteLink}\" class=\"fancyLink\">'a EKLENMEZ</a>."
+Stats_OperatingSystem: "Ä°ÅŸletim sistemi: "
+Stats_FirstLaunch: "Ä°lk fÄ±rlatma: "
+Stats_LaunchCount: "FÄ±rlatma sayÄ±sÄ±: "
+Stats_CrashCount: "Ã‡Ã¶kme sayÄ±sÄ±: "
+Stats_MostUsedPlatform: "En Ã§ok kullanÄ±lan platform: "
+Stats_TotalTime: "Uygulamada geÃ§irilen toplam sÃ¼re: "
+Stats_TotalSwitches: "Toplam hesap anahtarlarÄ±: "
+Stats_TotalGamesLaunched: "AnahtarlayÄ±cÄ± aracÄ±lÄ±ÄŸÄ±yla baÅŸlatÄ±lan toplam uygulama/oyun: "
+Stats_UniqueDaysLong: "Hesaplar deÄŸiÅŸtirilmiÅŸ benzersiz gÃ¼nler: "
+Stats_LastUpload: "Son YÃ¼kleme: "
+Stats_SwitcherStats: "AnahtarlayÄ±cÄ± istatistikleri: "
+Stats_PageStats: "Sayfa istatistikleri: "
+Stats_VisitsTotalTime: "{visits} toplam ziyaret, {hours} toplam sÃ¼re"
+Stats_Accounts: "Hesaplar: "
+Stats_Switches: "Anahtarlar: "
+Stats_FirstActive: "Ä°lk aktif: "
+Stats_LastActive: "Son aktif: "
+Stats_UniqueDays: "Benzersiz gÃ¼nler: "
+Stats_GameShortcuts: "Oyun kÄ±sayollarÄ±: "
+Stats_GameShortcutsHotbar: "Oyun kÄ±sayollarÄ± (hotbar Ã¼zerinde): "
+Stats_GamesLaunched: "BaÅŸlatÄ±lan oyunlar: "
+Stats_MetricsToShow: "GÃ¶rÃ¼ntÃ¼lenen metrikler:"
+Stats_AccountId: "Hesap KimliÄŸi:"
+Auth_LoginRequired: Bir parola daha Ã¶nce ayarlanmÄ±ÅŸtÄ± ve gereklidir. LÃ¼tfen ÅŸifreyi aÅŸaÄŸÄ±ya girin.
+Auth_EnterPassword: "ParolayÄ± girin:"
+Auth_PassIncorrect: Parola yanlÄ±ÅŸ.
+Locked: Kilitli
+Cleaning_Header_StartMenuShortcuts: 'BaÅŸlat MenÃ¼sÃ¼ iÃ§in KÄ±sayollar:'
+Cleaning_Header_General: Genel Temizlik
+Cleaning_Header_LoginHistory: GiriÅŸ geÃ§miÅŸimi temizle
+Cleaning_Header_PlatformCleaning: '{platform} AnahtarlayÄ±cÄ±'
+Cleaning_ImportantInfoHeader: 'Ã–nemli bilgiler:'
+Cleaning_ImportantInfo: >
+  Bir dÃ¼ÄŸmeye tÄ±kladÄ±ÄŸÄ±nÄ±zda ilgili dosya(lar) Steam kurulumunuzdan silinir.<br /> Loginusers.vdf dosyasÄ±nÄ± silmek, bu hesap deÄŸiÅŸtiricinin hiÃ§bir hesap gÃ¶stermemesine neden olur.<br /> Bu dosyalarÄ± geri almak iÃ§in Steam kullanarak oturum aÃ§manÄ±z gerekir.
+Cleaning_Button_KillProcess: Kill {platform} process
+Cleaning_Button_ForgottenBackups: Unutulan hesap yedeklemeleri
+Cleaning_Understand: Bu dÃ¼ÄŸmelerin ne iÅŸe yaradÄ±ÄŸÄ±nÄ± anlÄ±yorum.
+Restore_Info: >
+  Daha Ã¶nce bir hesabÄ± "unuttuysanÄ±z ", buradan geri yÃ¼kleyebilirsiniz.<br /> Bu, bunlarÄ± loginusers.vdf dosyanÄ±za geri ekleyerek bunlara geÃ§menizi saÄŸlar.
+Restore_Button_Restore: SeÃ§ilenleri geri yÃ¼kle
+Ignored_RemoveAccounts: HesaplarÄ± yoksay listesinden kaldÄ±r
+Ignored_Description: Daha Ã¶nce bir hesabÄ± "yoksaydÄ± ", burada tekrar gÃ¶sterebilirsiniz
+Ignored_Stop: SeÃ§ilenleri gÃ¶rmezden gelmeyi bÄ±rak
+Toast_UpdatesDownloading: GÃ¼ncellemeler arka planda indiriliyor. ProgramÄ± kullanmaya devam edebilirsiniz.
+Toast_UpdatesDownloaded: GÃ¼ncellemeler indirildi. GÃ¼ncellemeyi baÅŸlatmak iÃ§in bu uygulamayÄ± kapatÄ±n.
+Toast_DataLocationCopying: (1/2) Mevcut dosyalarÄ±n yeni kullanÄ±cÄ± verileri klasÃ¶rÃ¼ne kopyalanmasÄ±!
+Toast_DataLocationNotCopying: (1/2) KlasÃ¶rde zaten dosyalar var! KullanÄ±cÄ± verilerini taÅŸÄ±maz.
+Toast_DataLocationSet: (2/2) Yeni klasÃ¶rÃ¼ kullanmak iÃ§in hesap deÄŸiÅŸtiriciyi yeniden baÅŸlatÄ±n!
+Toast_PlaceShortcutFiles: Bir klasÃ¶r aÃ§Ä±lÄ±yor. Oyun kÄ±sayollarÄ±nÄ± bu klasÃ¶re yerleÅŸtirin ve hesap deÄŸiÅŸtiriciyi yeniden baÅŸlatÄ±n.
+Toast_TrayStarted: Tepsi baÅŸladÄ±!
+Toast_TrayRunning: Tepsi zaten aÃ§Ä±k
+Toast_TrayUsersMissing: HiÃ§bir tepsi kullanÄ±cÄ±sÄ± kaydedilmedi
+Toast_TrayFail: Tepsi uygulamasÄ± baÅŸlatÄ±lamadÄ±!
+Toast_TrayPosition: "Ã‡Ä±kÄ±ÅŸ dÃ¼ÄŸmesine tÄ±kladÄ±ktan sonra: Windows Tepsisinde olacaÄŸÄ±m! (BaÅŸlangÄ±Ã§ Ã‡ubuÄŸunun SaÄŸÄ±)"
+Toast_TrayHint: "Ä°pucu: Ctrl+ Beni tamamen kapatmak iÃ§in 'X'i tÄ±klayÄ±n veya Tepsi >' Ã‡Ä±kÄ±ÅŸ '"
+Toast_Copied: KopyalandÄ±
+Toast_AlreadyProcessing: Hesaplar zaten iÅŸleniyor...
+Toast_FailedRestore: Hesaplar geri yÃ¼klenemedi (Bkz. konsol)
+Toast_Restored: Geri yÃ¼klenen hesaplar!
+Toast_ProtocolEnabled: Bu program ÅŸimdi Windows'ta polarwolves :\\' ya yanÄ±t verecek
+Toast_ProtocolEnabledTitle: Protokol eklendi
+Toast_ProtocolDisabled: Bu program artÄ±k PolarWolves'ya yanÄ±t vermeyecek:\\
+Toast_ProtocolDisabledTitle: Protokol kaldÄ±rÄ±ldÄ±
+Toast_RestartAsAdmin: LÃ¼tfen YÃ¶netici olarak baÅŸlayÄ±n ve tekrar deneyin.
+Toast_RestartAfterClose: LÃ¼tfen Kapat'Ä± tÄ±klattÄ±ktan sonra programÄ± yeniden baÅŸlatÄ±n.
+Toast_RestartAfterCloseTitle: Vurgu rengi devre dÄ±ÅŸÄ±
+Toast_RestartRequired: DeÄŸiÅŸiklikleri uygulamak iÃ§in yeniden baÅŸlatÄ±n
+Toast_LoadStylesheetFailed: Stil sayfasÄ± yÃ¼klenemedi! AyrÄ±ntÄ±lar iÃ§in kullanÄ±cÄ± veri klasÃ¶rÃ¼ne bakÄ±n.
+Toast_LoadingStats: Bir veya daha fazla profil istatistikleri yeniliyor. LÃ¼tfen bekleyin.
+Toast_ItemNotFound: "{item} bulunamadÄ±"
+Toast_DeletedTotal: "{files} / {totalFiles} silindi. Toplam: {totalSize}"
+Toast_CantChangeUsername: KullanÄ±cÄ± adÄ± deÄŸiÅŸtirilemedi
+Toast_CantClearLoginFiles: Eski oturum aÃ§ma dosyalarÄ± temizlenemedi
+Toast_AccountIdReg: KayÄ±t Defterinden Hesap KimliÄŸi alÄ±namadÄ±!
+Toast_RegFailWrite: Windows KayÄ±t Defterine YazÄ±lamadÄ±!
+Toast_RegFailRead: Windows KayÄ±t Defterinden OkunamadÄ±!
+Toast_RegFailReadSaved: Kaydedilen KayÄ±t Defteri giriÅŸi okunamadÄ±. BaÅŸarÄ±sÄ±z olursanÄ±z hesabÄ± kaldÄ±rmayÄ± ve yeniden eklemeyi deneyin.
+Toast_RegSaveMissing: KaydedilmiÅŸ KayÄ±t DosyalarÄ±ndan Veri Bulun veya OkunamadÄ±!
+Toast_DuplicateNames: DeÄŸiÅŸtirilemedi. AynÄ± kullanÄ±cÄ± adÄ±na sahip yinelenen hesaplar?
+Toast_MissingUserId: "DeÄŸiÅŸtirilemedi. KullanÄ±cÄ± kimliÄŸi eksik. Wiki 'Genel Hatalar'Ä± kontrol edin."
+Toast_CouldNotLocate: Oturum aÃ§mÄ±ÅŸ kullanÄ±cÄ± bulunamÄ±yor
+Toast_StreamerModeHint: Ã–zel bilgiler gizlendi! - Ayarlara bakÄ±n
+Toast_StreamerModeTitle: AktarÄ±cÄ± modu
+Toast_AddAccountsFirst: Listeden platformu aÃ§Ä±n ve Ã¶nce birkaÃ§ hesap ekleyin
+Toast_AddAccountsFirstTitle: KayÄ±tlÄ± hesap yok
+Toast_CantFindImage: KullanÄ±cÄ±larÄ±n resmi bulunamadÄ±.
+Toast_CantCreateShortcut: KÄ±sayol oluÅŸturulamÄ±yor
+Toast_ShortcutCreated: KÄ±sayol oluÅŸturuldu!
+Toast_SettingsCopied: Ayarlar geÃ§erli hesaba baÅŸarÄ±yla kopyalandÄ±.
+Toast_GameDataRestored: Bu hesap iÃ§in oyun verileri baÅŸarÄ±yla geri yÃ¼klendi.
+Toast_NoValidSteamId: GeÃ§erli bir Steam KimliÄŸi bulunamÄ±yor.
+Toast_FailedUpdateCheck: GÃ¼ncellemeler denetlenemedi
+Toast_UpdateVerifyFail: GÃ¼ncelleyici dosyalarÄ± doÄŸrulanamÄ±yor. En son sÃ¼rÃ¼mÃ¼ indirin ve dizininizdeki dosyalarÄ± deÄŸiÅŸtirin.
+Toast_StartedGame: '{program} baÅŸlatÄ±ldÄ±'
+Toast_SteamCantLoadXml: '{steamId}iÃ§in XML bilgisi alÄ±namadÄ±. Daha fazla ayrÄ±ntÄ± iÃ§in gÃ¼nlÃ¼ÄŸe bakÄ±n.'
+Toast_Steam_VacCleared: Hesaplar iÃ§in VAC durumu temizlendi
+Toast_Steam_CantDeleteVacCache: '''LoginCache/Steam/VACCache/SteamVACCache.json'' silinemedi'
+Toast_NoFindSteamUserdata: Steam\\userdata klasÃ¶rÃ¼ bulunamadÄ±
+Toast_NoFindGameBackup: Bu hesap iÃ§in yedekleme oyunu veri klasÃ¶rÃ¼ bulunamÄ±yor.
+Toast_GameBackupDone: "Oyun veri klasÃ¶rÃ¼ baÅŸarÄ±yla yedeklendi: {folderLocation}"
+Toast_Steam_VdfLast: Vdf_last adresinden yÃ¼klenebildi. BazÄ± hesaplar eksik olabilir.
+Toast_PartiallyFixed: KÄ±smen sabit
+Toast_Steam_FailedLoginusers: Steam/config/loginusers.vdf yÃ¼klenemedi
+Toast_Steam_CantLocateLoginusers: '''.../Steam/config/loginusers.vdf'' bulunamÄ±yor. Ã–nce bir hesapta oturum aÃ§mayÄ± deneyin.'
+Toast_CantClearImages: Resimler temizlenemedi
+Toast_RefreshedImages: Yenilenen resimler
+Toast_ClearForgottenCheck: Unutulan hesaplarÄ±n yedeklerini silmek istediÄŸinizden emin misiniz?
+Toast_ForgotAccount: HesabÄ±mÄ± unuttum
+Toast_ClearedPlatformSettings: "{platform} DeÄŸiÅŸtirici ayarlarÄ± temizlendi"
+Toast_ClearedImages: "Temizlenen resimler"
+Toast_SavedItem: "Kaydedildi: {item}"
+Toast_ChangedUsername: KullanÄ±cÄ± AdÄ± DeÄŸiÅŸtirildi
+Toast_SetUsername: KullanÄ±cÄ± AdÄ±nÄ± Ayarla
+Toast_AlreadyLoggedIn: Bu hesapla zaten giriÅŸ yaptÄ±n! (Herhangi bir deÄŸiÅŸiklik yapÄ±lmadÄ±)
+Toast_BackupCopy: (1/3) Dosyalar geÃ§ici bir konuma kopyalanÄ±yor...
+Toast_BackupCompress: (2/3) DosyalarÄ± sÄ±kÄ±ÅŸtÄ±rma ({size}). Bu biraz zaman alacak...
+Toast_BackupComplete: (3/3) SÄ±kÄ±ÅŸtÄ±rma tamamlandÄ±! ({size} {compressedSize})
+Toast_BackupProgress: "Yedekleme devam ediyor (SÄ±kÄ±ÅŸtÄ±rÄ±lmÄ±ÅŸ boyut: {compressedSize})"
+Toast_BackupFail: Yedekleme baÅŸarÄ±sÄ±z - GÃ¼nlÃ¼ÄŸe bakÄ±n!
+Toast_BackupBusy: Yedekleme zaten devam ediyor!
+Toast_RestoreBusy: Geri yÃ¼kleme zaten devam ediyor!
+Toast_RestoreExt: ArÅŸiv ayÄ±klanÄ±yor.
+Toast_RestoreCopying: DosyalarÄ± tekrar platforma taÅŸÄ±ma
+Toast_RestoreDeleting: GeÃ§ici dosyalarÄ± silme
+Toast_RestoreComplete: Geri yÃ¼kleme tamamlandÄ±!
+Toast_FailedLoad: '{platform}yÃ¼klenemedi! HatayÄ± gÃ¶rmek iÃ§in platforma tÄ±klayÄ±n.'
+Toast_FailedPlatformsLoad: Platforms.json yÃ¼klenemedi! LÃ¼tfen bu dosyanÄ±n var olduÄŸunu doÄŸrulayÄ±n.
+Toast_FailedLoadSettings: "Ayarlar yÃ¼klenemedi! Bunun yerine varsayÄ±lan ayarlar yÃ¼kleniyor. Mevcut ayarlar dosya adÄ±na 'eski' ekleniyor."
+Toast_FailedLoadStats: "Ä°statistikler yÃ¼klenemedi! Yeni bir baÅŸlangÄ±Ã§."
+Toast_FailedStatsLoad: GameStats.json yÃ¼klenemedi! LÃ¼tfen bu dosyanÄ±n mevcut olduÄŸunu doÄŸrulayÄ±n.
+Toast_GameStatsLoadFail: "{Game}iÃ§in web'den oyun istatistikleri alÄ±namadÄ±"
+Toast_GameStatsEmpty: "{Game}iÃ§in web sitesinde oyun istatistiÄŸi bulunamadÄ±. Sence bu bir hata mÄ±? Sayfada bir hata olup olmadÄ±ÄŸÄ±nÄ± gÃ¶rmek iÃ§in kullanÄ±cÄ± verileri klasÃ¶rÃ¼nÃ¼ ve 'temp\\ download -{AccoundId}-{Game}.html' dosyasÄ±nÄ± kontrol edin!"
+Toast_FileCopyFail: Dosyalar kopyalanamadÄ±! Daha fazla ayrÄ±ntÄ± iÃ§in gÃ¼nlÃ¼ÄŸe bakÄ±n.
+Toast_UserDataLoadFail: KullanÄ±cÄ± verileri yÃ¼klenemedi {UserData}\\WindowSettings.json. Geri alÄ±nÄ±yor ve sÄ±fÄ±rlanÄ±yor! GÃ¼nlÃ¼ÄŸe kaydetme hatasÄ±.
+Toast_UpdateCheckFail: GÃ¼ncellemeleri kontrol etmek iÃ§in https://discord.gg/PLR/ adresine ulaÅŸÄ±lamadÄ±. Bu mesaj gÃ¼nde bir kez gÃ¶sterilecektir.
+Toast_FailedCreateIcon: Simge oluÅŸturulamadÄ±. AyrÄ±ntÄ±lar iÃ§in gÃ¼nlÃ¼ÄŸe bakÄ±n.
+Toast_SameAccount: Dosyalar aynÄ± hesaba/aynÄ± hesaptan kopyalanamÄ±yor. FarklÄ± bir hesap deneyin veya daha fazla bilgi iÃ§in Wiki'ye bakÄ±n.
+Toast_Steam_DownloadingAppIds: Steam AppId listesi indiriliyor...
+Toast_Steam_DownloadingAppIdsComplete: Ä°ndirme tamamlandÄ±. Oyun verileri alt menÃ¼sÃ¼ gÃ¼ncellendi.
+Toast_SteamWebKeyInvalid: Steam Web API anahtarÄ± geÃ§ersiz gÃ¶rÃ¼nÃ¼yor. LÃ¼tfen yeni bir tane ayarlayÄ±n.
+Toast_DownloadingProfileData: Profil verileri indiriliyor
+Toast_PasswordChanged: Åžifre deÄŸiÅŸtirildi
+Toast_JsonFailModify: JSON dosyasÄ± deÄŸiÅŸtirilemedi. GÃ¼nlÃ¼ÄŸe bakÄ±n.
+Toast_DifferentClosingMethod: "'KapanÄ±ÅŸ YÃ¶ntemi' varsayÄ±landan farklÄ±dÄ±r. Oyunlar kapanÄ±yorsa ve daha fazlasÄ± varsa bu seÃ§eneÄŸi deÄŸiÅŸtirmenin yardÄ±mcÄ± olup olmadÄ±ÄŸÄ±nÄ± kontrol edin. VarsayÄ±lan: {defaultMethod}, Mevcut: {currentMethod}"
+Toast_NameEmpty: KullanÄ±cÄ± adÄ± boÅŸ olamaz (ve yalnÄ±zca boÅŸluk iÃ§eremez)
+Toast_NewPlatforms: "GÃ¼ncellendi! Yeni platformlar eklendi: {listOfNames}. Kapatmak iÃ§in tÄ±klayÄ±n."
+Toast_FoundExeViaShortcut: "YÃ¼klenen yolu bir BaÅŸlat MenÃ¼sÃ¼ kÄ±sayolundan bulduk. LÃ¼tfen ÅŸimdi Ayarlar'a tÄ±klayarak konumunu doÄŸrulayÄ±n. Kapatmak iÃ§in tÄ±klayÄ±n."
+Modal_Crowdin_Header: Crowdin Ã§evirmenleri
+Modal_Crowdin_Info: "Ä°ÅŸte bu yazÄ±lÄ±mÄ± Ã§evirmeye yardÄ±m eden herkes.<br>Dilleri yanlarÄ±nda olan kullanÄ±cÄ±lar Ã§eviride Ã§ok yardÄ±mcÄ± oldular (dÃ¼zeltici rolÃ¼)."
+Modal_Info_Creator: PolarWolves Team [Wesley Pyburn] tarafÄ±ndan oluÅŸturuldu
+Modal_Info_Version: Versiyon
+Modal_Info_ViewGitHub: GitHub'da GÃ¶rÃ¼ntÃ¼le
+Modal_Info_ViewPatreon: Patreon Ã¼zerinden destek
+Modal_Info_ViewKofi: Ko-Fi Ã¼zerinden destek
+Modal_Info_BugReport: Hata raporu/Ã–zellik isteÄŸi
+Modal_Info_VisitSite: discord.gg/PLR adresini ziyaret edin
+Modal_Info_Disclaimer: Sorumluluk Reddi
+Modal_Title_Info: PolarWolves Hesap DeÄŸiÅŸtirici Bilgileri
+Modal_Title_ChangeUsername: KullanÄ±cÄ± adÄ±nÄ± deÄŸiÅŸtir
+Modal_Title_ConfirmAction: PolarWolves Hesap DeÄŸiÅŸtirici Eylemi Onayla
+Modal_Title_LocatePlatform: LÃ¼tfen {platform} dizinini bulun
+Modal_Title_AddNew: Yeni {platform} hesap ekle
+Modal_Title_Background: Bir arka plan resmi ayarla
+Modal_Title_Userdata: KullanÄ±cÄ± verileri klasÃ¶rÃ¼nÃ¼ ayarlayÄ±n
+Modal_Title_GameStats: Oyun istatistiklerini etkinleÅŸtir/devre dÄ±ÅŸÄ± bÄ±rak
+Modal_GameStats_Header: "Oyun istatistiklerini etkinleÅŸtir/devre dÄ±ÅŸÄ± bÄ±rak: {accountName}"
+Modal_Title_Stats: Ä°statistikleriniz
+Modal_Title_GameVars: "{game}iÃ§in giriÅŸ ayrÄ±ntÄ±larÄ±"
+Modal_GameVars_Header: "LÃ¼tfen {game} hesabÄ±nÄ±z iÃ§in aÅŸaÄŸÄ±daki bilgileri girin, {username} {platform}"
+Modal_Title_AccountNotes: "Hesap NotlarÄ±: {accountName}"
+Modal_Title_SetPassword: ParolayÄ± Ayarla
+Modal_SetBackground: 'Bir resim seÃ§in veya aÅŸaÄŸÄ±ya bir URL girin.<br>BoÅŸ bÄ±rakÄ±n ve sÄ±fÄ±rlamaya ayarlayÄ±n.<br>(Daha geliÅŸmiÅŸ kontrol iÃ§in Wiki''deki Temaya bakÄ±n):'
+Modal_SetBackground_Button: Arka planÄ± ayarla
+Modal_SetBackground_ChooseImage: Yerel resmi seÃ§in
+Modal_SetUserdata: AÅŸaÄŸÄ±ya bir klasÃ¶r yolu girin ve ayarla'ya tÄ±klayÄ±n.
+Modal_SetUserdata_ChooseFolder: Bir klasÃ¶r seÃ§in
+Modal_SetUserdata_Button: KullanÄ±cÄ± verilerini ayarla
+Modal_ChangeUsername: LÃ¼tfen hesabÄ±nÄ±z iÃ§in yeni bir kullanÄ±cÄ± adÄ± girin
+Modal_ChangeUsernameType: '{platform} kullanÄ±cÄ± adÄ±nÄ± deÄŸiÅŸtir'
+Modal_SetPassword: PolarWolves Hesap DeÄŸiÅŸtirici iÃ§in bir ÅŸifre girin
+Modal_SetPassword_Button: ParolayÄ± ayarla
+Modal_SetPassword_Info: "NOT: Bu, hesaplarÄ±nÄ±zÄ± ÅŸifrelemez. HesaplarÄ± deÄŸiÅŸtirmek, dosyalarÄ± deÄŸiÅŸtirmek veya bir dosyadaki kullanÄ±cÄ± adÄ±nÄ± deÄŸiÅŸtirmek kadar basittir. Parola, bir dosyadaki metni de dÃ¼zenleyerek sÄ±fÄ±rlanabilir. Bu basit bir gÃ¼venlik. Basit kullanÄ±cÄ± arayÃ¼zÃ¼ eriÅŸimini durdurur. Bu uygulamayÄ± Ã§Ä±karÄ±labilir bir USB'ye koyabilir, UserData klasÃ¶rÃ¼nÃ¼ aynÄ± USB'ye ayarlayabilir ve daha fazla gÃ¼venlik iÃ§in fiziksel olarak kaldÄ±rabilirsiniz. <a class=\"fancyLink\" onclick=\"OpenLinkInBrowser('{link}');return false;\" href=\"\">Harici bir sÃ¼rÃ¼cÃ¼ kÄ±lavuzuna gitme</a><br><br>Temizlemek iÃ§in, yukarÄ±dakileri boÅŸ bÄ±rakÄ±n ve Ayarla'yÄ± tÄ±klatÄ±n."
+Modal_EnterDirectory: "LÃ¼tfen {platform}dizinini ÅŸu ÅŸekilde girin: C:\\Program Files\\{platform}"
+Modal_LocatePlatform: Konum {platformExe}
+Modal_LocatePlatformFolder: '{platform} klasÃ¶r seÃ§'
+Modal_ConfirmAction: Eylemi onayla
+Modal_AddNew: LÃ¼tfen giriÅŸ yaptÄ±ÄŸÄ±nÄ±z {platform} hesap iÃ§in bir ad girin.
+Modal_AddCurrentAccount: GeÃ§erli {platform} hesap ekle
+Modal_SetImageHeader: Profil resmini ayarla
+Modal_SetImage: Resmi Ayarla
+Status_SelectedAccount: "SeÃ§ili: {name}"
+Status_Init: "Durum: BaÅŸlatÄ±lÄ±yor"
+Status_ClosingPlatform: kapanÄ±ÅŸ {platform}
+Status_ClosingPlatformFailed: '{platform}kapatÄ±lamadÄ±'
+Status_StartingPlatform: '{platform} baÅŸlatÄ±lÄ±yor'
+Toast_StartingPlatformFailed: '{platform}baÅŸlatÄ±lamadÄ±! Daha fazla ayrÄ±ntÄ± iÃ§in gÃ¼nlÃ¼ÄŸe bakÄ±n.'
+Toast_UrlAdminErr: .url dosyalarÄ±nÄ± yÃ¶netici olarak Ã§alÄ±ÅŸtÄ±ramazsÄ±nÄ±z. BaÅŸka bir kÄ±sayol tÃ¼rÃ¼ deneyin. Normal kullanÄ±cÄ± olarak baÅŸlatÄ±lÄ±yor.
+Status_UpdatingFile: "{file}gÃ¼ncelleniyor"
+Status_UpdatingRegistry: Windows kayÄ±t defterini gÃ¼ncelleme
+Status_FailedLog: Eylem baÅŸarÄ±sÄ±z. AyrÄ±ntÄ±lar iÃ§in gÃ¼nlÃ¼ÄŸe bakÄ±n.
+Status_WaitingForClose: "{processName} kapanmasÄ± bekleniyor{timeLimit} {timeout}saniye)"
+Status_WaitingForMultipleClose: "{processName} ve {count} kiÅŸinin daha kapanmasÄ± bekleniyor ({timeout}/{timeLimit} saniye)"
+Status_GetUniqueId: Benzersiz kullanÄ±cÄ± kimliÄŸi toplama
+Status_CopyingFiles: KullanÄ±cÄ± dosyalarÄ± kopyalanÄ±yor...
+Status_HandlingImage: Hesap profil resmini iÅŸleme
+Context_SwapTo: Hesaba geÃ§
+Context_CreateShortcut: KÄ±sayol OluÅŸtur
+Context_ChangeImage: Resmi deÄŸiÅŸtir
+Context_ChangeName: DeÄŸiÅŸtirici adÄ±nÄ± deÄŸiÅŸtir
+Context_LoginAsSubmenu: Olarak giriÅŸ yap
+Context_UsernameSubmenu: KullanÄ±cÄ± adÄ±
+Context_RefreshName: AdÄ± yenile
+Context_CopySubmenu: Kopyala
+Context_DataSubmenu: Data
+Context_CopyProfileSubmenu: Profili Kopyala
+Context_CommunityUrl: Topluluk URL'si
+Context_CommunityUsername: Topluluk KullanÄ±cÄ± AdÄ±
+Context_LoginUsername: GiriÅŸ kullanÄ±cÄ± adÄ±
+Context_CopySteamIdSubmenu: SteamID'yi Kopyala
+Context_Steam_Id: SteamID [STEAM0 :~]
+Context_Steam_Id3: SteamID3 [U:1 :~]
+Context_Steam_Id32: BuharID32
+Context_Steam_Id64: SteamID64 7656~
+Context_Steam_OpenUserdata: KullanÄ±cÄ± verilerini aÃ§
+Context_ManageSubmenu: YÃ¶netmek
+Context_GameDataSubmenu: Oyun verileri
+Context_ManageGameStats: Oyun istatistiklerini yÃ¶net
+Context_Game_CopySettingsFrom: AyarlarÄ± ÅŸu anki ayarlara kopyala
+Context_Game_RestoreSettingsTo: Oyun verilerini geri yÃ¼kle
+Context_Game_BackupData: Yedekleme oyunu verileri
+Context_CopyOtherSubmenu: DiÄŸerini kopyala
+Context_HidePlatform: Platformu gizle
+Context_ExportAccList: Hesap listesini dÄ±ÅŸa aktar
+Context_RunAdmin: YÃ¶netici olarak Ã§alÄ±ÅŸtÄ±r
+Context_Hide: Saklamak
+ProfileImage_ToggleText: Resmi hesap resmi olarak kullan
+Title_Platforms_Settings: PolarWolves Hesap DeÄŸiÅŸtirici - Platform AyarlarÄ±
+Title_Settings_TestCss: PolarWolves Hesap DeÄŸiÅŸtirici - Test CSS Stili
+Title_AccountsList: PolarWolves Hesap DeÄŸiÅŸtirici - {platform}
+Title_TextEditor: PolarWolves Hesap DeÄŸiÅŸtirici - Metin DÃ¼zenleyici
+Title_Settings: PolarWolves Hesap DeÄŸiÅŸtirici - Ayarlar
+Title_Steam_Cleaning: PolarWolves Hesap DeÄŸiÅŸtirici - BuharlÄ± Temizlik
+Title_Steam_Settings: PolarWolves Hesap DeÄŸiÅŸtirici - Buhar AyarlarÄ±
+Title_Template_Settings: PolarWolves Hesap DeÄŸiÅŸtirici - {platformName} Ayarlar
+Title_Login: PolarWolves Hesap DeÄŸiÅŸtirici - GiriÅŸ
+Installer_Downloading: Ä°ndiriliyor {file}
+Installer_DownloadFinished: Ä°ndirme tamamlandÄ± {file}
+Installer_Installing: "YÃ¼kleme: {runtime}"
+Installer_RuntimeTitle: PolarWolves Hesap DeÄŸiÅŸtirici - Ã‡alÄ±ÅŸma zamanÄ± yÃ¼kleyici
+Installer_Welcome: PolarWolves Hesap DeÄŸiÅŸtiricisine HoÅŸ Geldiniz - Ã‡alÄ±ÅŸma zamanÄ± yÃ¼kleyicisi
+Installer_InstalledRuntimes: "Åžu anda kurulu Ã§alÄ±ÅŸma sÃ¼releri:"
+Installer_ErrorRuntime: "Bir veya daha fazla Ã§alÄ±ÅŸma sÃ¼resi yÃ¼klenmedi:"
+Installer_RuntimeNote: "[Kurulum sÄ±rasÄ±nda ~{size1} MB + ~{size2} MB]"
+Installer_TotalSize: "Toplam indirme boyutu: ~{size} MB"
+Installer_AnyKeyStart: Ä°ndirmeyi baÅŸlatmak iÃ§in herhangi bir tuÅŸa basÄ±n...
+Runtime_WebView2: Microsoft WebView2 Ã‡alÄ±ÅŸma SÃ¼resi
+Runtime_Desktop: Microsoft .NET 5 MasaÃ¼stÃ¼ Ã‡alÄ±ÅŸma SÃ¼resi
+Runtime_ASP: Microsoft Microsoft ASP.NET Core {version} Ã‡alÄ±ÅŸma ZamanÄ±
+Installer_FailedFolder: "KlasÃ¶r oluÅŸturulamadÄ±:"
+Installer_FailedWV: "Microsoft WebView2 Ã‡alÄ±ÅŸma ZamanÄ± indirilemedi ve yÃ¼klenemedi. Ä°ndirmek iÃ§in: 1. AÅŸaÄŸÄ±daki baÄŸlantÄ±ya tÄ±klayÄ±n: {link} 2. Sunucu uygulamalarÄ±nÄ± Ã§alÄ±ÅŸtÄ±r altÄ±nda 'Hosting Paketini Ä°ndir'i tÄ±klayÄ±n."
+Installer_FailedDR: ".NET 5 MasaÃ¼stÃ¼ Ã‡alÄ±ÅŸma SÃ¼resi indirilemedi ve yÃ¼klenemedi. LÃ¼tfen buradan indirin:"
+Installed_FailedASP: "{version} Runtime indirilemedi ve yÃ¼klenemedi. Ä°ndirmek iÃ§in: 1. AÅŸaÄŸÄ±daki baÄŸlantÄ±ya tÄ±klayÄ±n: {link} 2. MasaÃ¼stÃ¼ uygulamalarÄ±nÄ± Ã‡alÄ±ÅŸtÄ±r altÄ±nda 'x64 indir' seÃ§eneÄŸine tÄ±klayÄ±n."
+Installer_Ready: "Bir veya daha fazla kurulum iÃ§in hazÄ±r. YÃ¼klemek istediÄŸinizde ve istendiÄŸinde, 'Evet'i tÄ±klayÄ±n."
+Installer_PressStart: Kurulumu baÅŸlatmak iÃ§in herhangi bir tuÅŸa basÄ±n...
+Installer_VerifyMin: "Ã–nerilen minimum gereksinimleri karÅŸÄ±ladÄ±ÄŸÄ±nÄ±zdan emin olun:"
+Installer_VerifyAlready: "Her ÅŸey kurulu gibi gÃ¶rÃ¼nÃ¼yor. Ã–nerilen minimum gereksinimleri karÅŸÄ±ladÄ±ÄŸÄ±nÄ±zdan emin olun:"
+Installer_Complete: Her ÅŸey bu olmalÄ±. Ana program, PolarWolves.exe, otomatik olarak Ã§alÄ±ÅŸacaktÄ±r.
+Installer_Complete2: "Ã‡alÄ±ÅŸmazsa, lÃ¼tfen kurulum talimatlarÄ±na bakÄ±n, burada: {link}"
+Tray_Error: Tepsi HatasÄ±
+Tray_NoAccs: "HiÃ§bir hesap bulunamadÄ±.\nÃ–nce hesap deÄŸiÅŸtirmeyi deneyin veya 'Tray_Users.json'u bulun"
+Tray_Switch: "Åžuraya geÃ§: {account}"
+Tray_CantOpenExe: "Ana .exe aÃ§Ä±lamadÄ±. Var olduÄŸundan emin olun.\n\nAÃ§maya Ã§alÄ±ÅŸtÄ±m:"
+Tray_LaunchFail: "PolarWolves Hesap DeÄŸiÅŸtirici - Tepsi baÅŸlatma baÅŸarÄ±sÄ±z"
+Updater_Duplicate: BaÅŸka bir PolarWolves Hesap DeÄŸiÅŸtirici GÃ¼ncelleyici Ã¶rneÄŸi tespit edildi.
+Updater_Unknown: "Bilinmeyen argÃ¼man: {arg}"
+Updater_NeedsAdmin: Bu program yÃ¶netici olarak Ã§alÄ±ÅŸtÄ±rÄ±lmalÄ±dÄ±r!
+Updater_StatusChecking: SÃ¼rÃ¼m kontrol ediliyor
+Updater_FailedVersionCheck: "SÃ¼rÃ¼m alÄ±namadÄ±. DosyalarÄ± gÃ¼ncellemek ve doÄŸrulamak iÃ§in \"DoÄŸrula\" yÄ± tÄ±klayÄ±n"
+Updater_PressBelow: AÅŸaÄŸÄ±daki dÃ¼ÄŸmeye basÄ±n!
+Updater_PressBelowStart: GÃ¼ncellemeyi baÅŸlatmak iÃ§in aÅŸaÄŸÄ±daki dÃ¼ÄŸmeye tÄ±klayÄ±n.
+Updater_PatchApplied: Yama uygulandÄ±!
+Updater_UpdatingAppData: AppData'daki dosyalar gÃ¼ncelleniyor!
+Updater_Complete: TÃ¼m gÃ¼ncellemeler tamamlandÄ±!
+Updater_Checking: GÃ¼ncellemeler denetleniyor
+Updater_UpdateToVerify: DosyalarÄ± doÄŸrulamak iÃ§in Ã¶nce gÃ¼ncellemeniz gerekir.
+Updater_ClosingPolarWolves: PolarWolves Hesap DeÄŸiÅŸtirici Ã¶rneklerinin (varsa) kapatÄ±lmasÄ±.
+Updater_Downloading: "GÃ¼ncelleme indiriliyor: {version}"
+Updater_Downloaded: Ä°ndirme tamamlandÄ±.
+Updater_CantExtract: GÃ¼ncelleme alÄ±namadÄ±.
+Updater_Verify: DosyalarÄ± doÄŸrula
+Updater_Verifying: DoÄŸrulanÄ±yor...
+Updater_VerifySkip: TÃ¼m kÃ¼Ã§Ã¼k gÃ¼ncellemeleri atlamak ve en son gÃ¼ncellemelere atlamak iÃ§in dosyalarÄ± doÄŸrulama.
+Updater_NoConnection: "DosyalarÄ± doÄŸrulamak iÃ§in discord.gg/PLR'ya baÄŸlanÄ±lamadÄ±. YÃ¼kleyiciyi GitHub sayfasÄ±ndan manuel olarak indirmeyi ve gÃ¼ncellemek iÃ§in yeniden yÃ¼klemeyi deneyebilirsiniz.\n\nHata:"
+Updater_NoServer: GÃ¼ncelleme sunucusuna ulaÅŸÄ±lamadÄ±
+Updater_Hashlist: En son Ã¶zet listesi indiriliyor...
+Updater_CantCheck: GÃ¼ncellemeler kontrol edilemiyor
+Updater_Failed: "HATA: BazÄ± dosyalar kullanÄ±mda ve gÃ¼ncellenemiyor.\n\n1. TÃ¼m PolarWolves iÅŸlemlerinin tamamen kapatÄ±ldÄ±ÄŸÄ±ndan emin olun\n(veya bilgisayarÄ±nÄ±zÄ± yeniden baÅŸlatÄ±n)\n\n2. ArdÄ±ndan aÅŸaÄŸÄ±daki DoÄŸrula'yÄ± tÄ±klayÄ±n veya yeniden baÅŸlattÄ±ysanÄ±z:\n- Bu gÃ¼ncelleyiciyi aÃ§Ä±n ve dosyalarÄ± doÄŸrulayÄ±n\n    ('gÃ¼ncelleyici' klasÃ¶rÃ¼nde bulunur) dizini kurun)"
+Updater_Missing: "EKSÄ°K DOSYA: {file}"
+Updater_FileMismatch: "Dosya: {file} MD5: {md5} BEKLENÄ°YOR: {value}"
+Updater_DownloadingWeb: Web sitesinden dosya indiriliyor...
+Updater_UnpackingAppData: Dosyalar %AppData%/PolarWolves Hesap DeÄŸiÅŸtiriciye kopyalanÄ±yor... (aksi belirtilmedikÃ§e)
+Updater_VerifyComplete: Dosyalar doÄŸrulandÄ±!
+Updater_UpdateFound: "GÃ¼ncelleme bulundu: {name} [{updateSize}]"
+Updater_TotalFound: "Bulunan toplam gÃ¼ncelleme: {x}"
+Updater_TotalSize: "Toplam boyut: {size}"
+Updater_AwaitingUser: KullanÄ±cÄ± giriÅŸi bekleniyor...
+Updater_UpToDate: "GÃ¼ncelsiniz.\n:)"
+Updater_FailedDecode: Bu bÃ¼yÃ¼k olasÄ±lÄ±kla benim (PolarWolves Team) bir gÃ¼ncellemeye basmamdan ve .json gÃ¼ncelleme dosyasÄ±nÄ± kÄ±ran bir yazÄ±m hatasÄ± yapmamdan kaynaklanÄ±yor. LÃ¼tfen bana bildirin :)
+Updater_FailedDecodeTitle: GÃ¼ncelleme listesi kodu Ã§Ã¶zÃ¼lemedi
+Updater_Extracting: Yama dosyalarÄ± ayÄ±klanÄ±yor
+Updater_Applying: Yama uygulanÄ±yor...
+Updater_Moving: Dosyalar taÅŸÄ±nÄ±yor...
+Updater_Title: PolarWolves Hesap DeÄŸiÅŸtirici GÃ¼ncelleyici
+Updater_Started: BaÅŸladÄ±
+Updater_Start: PolarWolves Hesap DeÄŸiÅŸtiricisini BaÅŸlat
+Updater_Begin: GÃ¼ncellemeyi baÅŸlat
+Updater_Exit: Ã‡Ä±kÄ±ÅŸ
+FatalError: Ã–nemli bir hata oluÅŸtu!
+Online: Ã‡evrimiÃ§i
+OnlineDefault: Ã‡evrimiÃ§i (VarsayÄ±lan)
+Offline: Ã‡evrimdÄ±ÅŸÄ±
+Invisible: GÃ¶rÃ¼nmez
+Busy: MeÅŸgul
+Away: Uzakta
+Snooze: Uyku moduna alma
+LookingToTrade: Ä°ÅŸlem Yapmak Ä°stiyoruz
+LookingToPlay: Oynamak Ä°stiyor
+Unrecognized_EPersonaState: TanÄ±nmayan ePersonaState
+Reg_DoesntExist: "{subKey} mevcut deÄŸil."
+Reg_DoesntContain: "{subKey} , {val}iÃ§ermez"
+Reg_Removing: Ã‡Ä±karma {subKey}\\{val}
+PngInvalid_Format: Gerekli piksel formatÄ± PixelFormat.{x}.
+PngRequired: Gerekli gÃ¶rÃ¼ntÃ¼ formatÄ± taÅŸÄ±nabilir bir aÄŸ grafiÄŸidir (png).
+PngDimensions: Boyutlar {MaxIconWidth}x{MaxIconHeight}'den kÃ¼Ã§Ã¼k veya eÅŸit olmalÄ±dÄ±r
+ThemeSyntaxAnd: "Bir sÃ¶zdizimi hatasÄ±yla karÅŸÄ±laÅŸÄ±ldÄ± (daha fazla bilgi aÅŸaÄŸÄ±da verilmiÅŸtir)! VE:"
+ThemesNotFound: "PolarWolves Hesap DeÄŸiÅŸtirici dizininde \"temalar\" klasÃ¶rÃ¼ bulunamadÄ±. Bu yazÄ±lÄ±mÄ±n Ã§alÄ±ÅŸmasÄ± iÃ§in bu (Ã¶zellikle 'Dracula_Cyan' klasÃ¶rÃ¼) gereklidir.\nDosyalarÄ± doÄŸrulamak ve bu eksik dosyalarÄ± geri yÃ¼klemek iÃ§in GÃ¼ncelleyiciyi \"gÃ¼ncelleyici\" klasÃ¶rÃ¼nde Ã§alÄ±ÅŸtÄ±rabilirsiniz."
+Yes: "- Evet."
+No: "- HayÄ±r."
+Save: Kaydet
+NoDefault: HayÄ±r (VarsayÄ±lan)
+Ok: "- Tamam."
+Submit: GÃ¶nder
+Forget: Unut gitsin.
+Notice: Bildirim
+Notes: Notlar
+Error: Hata
+ErrorDetails: "HATA: {ex}"
+Failed: BaÅŸarÄ±sÄ±z
+Success: BaÅŸarÄ±
+NotFound: BulunamadÄ±
+Done: TamamlandÄ±
+Edit: DÃ¼zenle
+Refresh: Yenile
+Working: Ã‡alÄ±ÅŸma...
+ForName: "For: {name}"
+DeletedFiles: Silinen dosyalar
+FileFoldersToClear: "Temizlenecek dosya/klasÃ¶r listesi:"
+CouldNotFindX: '{x}bulunamadÄ±'
+CouldNotCloseX: '{x}kapatÄ±lamadÄ±!'
+CouldNotReadFile: '{file}okunamadÄ±!'
+DirectoryNotFound: Dizin bulunamadÄ±
+DirectoryNotFoundFolder: "Dizin bulunamadÄ±: {folder}"
+DeletingFile: "Silme: {file}"
+DeletingFolder: "KlasÃ¶r Siliniyor: "
+CouldntDeleteX: "HATA: SÄ°LÄ°NEMEDÄ°: {x}"
+CouldntDeleteUndefined: "HATA: TANIMLANMAMIÅž DOSYA SÄ°LÄ°NEMEDÄ°"
+CouldntModifyX: "{file}deÄŸiÅŸtirilemedi. Dosya izin hatasÄ± veya dosya kullanÄ±mda."
+Prompt_RestartAsAdmin: "<h3><bold>Bu program, YÃ¶netici</bold></h3><p>olarak yeniden baÅŸlayacaktÄ±r.</p>iÃ§in istendiÄŸinde UAC'de \"Evet\" e basÄ±n."
+Prompt_ForgetSteam: >
+  <h3 style='color:red'>Bir hesabÄ± unutmak Ã¼zeresiniz!</h3> <h4>Bu ne anlama geliyor?</h4> <p>- Steam, artÄ±k BÃ¼yÃ¼k Resim Modunda listelenen hesaba sahip olmayacak ve ParolayÄ± HatÄ±rlamayacaktÄ±r.<br/> - PolarWolves, Steam Ã¼zerinden tekrar oturum aÃ§Ä±lana kadar hesabÄ± artÄ±k gÃ¶stermeyecek.</p> <p>HesabÄ±nÄ±za dokunulmayacak. Sadece bu bilgisayarda unutuldu.</p><h4>AnlÄ±yor musun?</h4>
+Prompt_ForgetAccount: >
+  <h3 style='color:red'>Bir hesabÄ± unutmak Ã¼zeresiniz!</h3> <h4>Bu ne anlama geliyor?</h4> <p>PolarWolves Hesap DeÄŸiÅŸtirici artÄ±k hesabÄ± gÃ¶stermeyecek, {platform}'dan tekrar oturum aÃ§ana ve listeye eklenene kadar<br/> .</p> <p>HesabÄ±nÄ±za dokunulmayacak. Bu bilgisayarda unutuldu.</p> <h4>AnlÄ±yor musunuz?</h4>
+Prompt_ClearStats: >
+  <h3 style='color:red'>Ä°statistiklerinizi temizlemek Ã¼zeresiniz!</h3> <p>Bu eylemi geri alamazsÄ±nÄ±z.</p>
+Platform_DiscordPasteHint: Discord konsoluna yapÄ±ÅŸtÄ±rÄ±n ve sonucu girdiye yapÄ±ÅŸtÄ±rÄ±n!
+Platform_ClearCache: Ã–nbelleÄŸi Temizle
+Platform_ClearCacheTotal: '{totalFileCount} dosya temizleniyor ({totalSizeMB})'
+Platform_DeleteFail: BazÄ± dosyalar silinemedi (Program Ã§alÄ±ÅŸÄ±yor olabilir mi?)
+Platform_CouldNotDeleteLog: Dosya silinemedi! {logPath}kontrol et
+Error_FileAccessDenied: Dosyaya eriÅŸilemedi! {logPath}kontrol et
+Error_RequiredFileVerify: Gerekli bir dosya bulunamadÄ±. LÃ¼tfen kurulum dizininde x64 ve x86 klasÃ¶rlerinin bulunduÄŸundan emin olun. DeÄŸilse, PolarWolves-Updater.exe dosyalarÄ±nÄ± Ã§alÄ±ÅŸtÄ±rÄ±n ve dosyalarÄ± doÄŸrulayÄ±n.
+Tooltip_Settings: Ayarlar
+Tooltip_Info: Bilgi
+Tooltip_ManagePlatforms: DiÄŸer platformlarÄ± gÃ¶ster veya gizle
+Tooltip_ExpandShortcuts: Oyun ve KÄ±sayol seÃ§imini geniÅŸlet
+Tooltip_ShortcutFolder: KÄ±sayol klasÃ¶rÃ¼nÃ¼ aÃ§Ä±n. KÄ±sayollarÄ± ve bunlarÄ± gÃ¶rmek iÃ§in PolarWolves'Ä± buraya yerleÅŸtirin.
+Tooltip_Backup: Platform ayarlarÄ±nda tanÄ±mlandÄ±ÄŸÄ± ÅŸekilde yapÄ±landÄ±rma dosyalarÄ±nÄ±/klasÃ¶rlerini yedekleyin.
+Tooltip_BackupAll: Resimler ve diÄŸer bÃ¼yÃ¼k dosyalar dahil TÃœM yapÄ±landÄ±rma dosyalarÄ±nÄ±/klasÃ¶rlerini yedekleyin.
+Tooltip_ClosingMethod: "Kombine en iyisidir. Kapatma giriÅŸimleri doÄŸrudan bir kapatma iÅŸlevi aracÄ±lÄ±ÄŸÄ±yla kapatÄ±lÄ±r ve TaskKill CMD kullanÄ±r (Kombine Ã§alÄ±ÅŸmazsa en iyi sonucu verir)"
+Tooltip_StartingMethod: "VarsayÄ±lan en iyisidir. DoÄŸrudan, yÃ¶netici seviyesi veya UAC Ã¼zerinde hiÃ§bir kontrole sahip deÄŸildir. Bu, bu hesap deÄŸiÅŸtiriciyle aynÄ± seviye (veya daha yÃ¼ksek - ancak daha dÃ¼ÅŸÃ¼k deÄŸil) olarak baÅŸlayacaktÄ±r"
+Tooltip_CurrentAccount: Åžu anda bu hesapta oturum aÃ§tÄ±nÄ±z.
+Tooltip_Restore: Bir 7z dosyasÄ± seÃ§mek iÃ§in tÄ±klayÄ±n veya bu dÃ¼ÄŸmeye sÃ¼rÃ¼kleyin.
+Tooltip_DisabledGlobally: Bu Ã¶ÄŸe tÃ¼m hesaplar iÃ§in gizlidir. Bunu platform ayarlarÄ±ndan deÄŸiÅŸtirebilirsiniz.
+Discord_Status: Åžu anda hesaplar deÄŸiÅŸtiriliyor.
+Discord_StatusDetails: "Anahtarlanan Hesaplar: {number}"
+Website: Websitesi
+Preview_Platforms: Platformlar Ã¶nizlemesi
+Preview_Accounts: Hesaplar Ã¶nizlemesi
+Preview_Notifications: Tost bildirimleri Ã¶nizlemesi
+Preview_Settings: Ayarlar Ã¶nizlemesi
+Preview_Modals: Modal Ã¶nizlemesi
+
+
+
+

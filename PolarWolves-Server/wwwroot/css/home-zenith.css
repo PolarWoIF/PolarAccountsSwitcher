@@ -1,0 +1,742 @@
+.main-platform-rework.zenith-home {
+    --zh-accent: #16d5ff;
+    --zh-accent-soft: rgba(22, 213, 255, 0.24);
+    --zh-accent-strong: #52f4ff;
+    --zh-ink: #050b12;
+    --zh-panel: rgba(6, 14, 24, 0.82);
+    --zh-border: rgba(96, 177, 228, 0.28);
+    --zh-text: #eaf6ff;
+    --zh-muted: rgba(188, 221, 244, 0.58);
+    position: relative;
+    width: 100%;
+    height: calc(100% - 6px);
+    min-height: 100%;
+    overflow: hidden;
+    isolation: isolate;
+    background: radial-gradient(circle at 8% 10%, rgba(10, 188, 196, 0.18), transparent 34%),
+    radial-gradient(circle at 86% 8%, rgba(41, 102, 255, 0.16), transparent 34%),
+    linear-gradient(140deg, #040811 0%, #051224 42%, #03070f 100%);
+}
+
+.main-platform-rework.zenith-home .zenith-home__ambient,
+.main-platform-rework.zenith-home .zenith-home__noise,
+.main-platform-rework.zenith-home .zenith-home__scanline {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.main-platform-rework.zenith-home .zenith-home__ambient {
+    z-index: 1;
+    opacity: 0.45;
+    background: radial-gradient(circle at 24% 62%, rgba(5, 232, 220, 0.12), transparent 36%),
+    radial-gradient(circle at 68% 34%, rgba(22, 83, 255, 0.14), transparent 34%),
+    repeating-linear-gradient(90deg, rgba(37, 177, 255, 0.055), rgba(37, 177, 255, 0.055) 1px, transparent 1px, transparent 40px);
+    animation: zenithAmbientShift 22s ease-in-out infinite alternate;
+}
+
+.main-platform-rework.zenith-home .zenith-home__noise {
+    z-index: 2;
+    opacity: 0.07;
+    mix-blend-mode: soft-light;
+    background-image: url("img/noise.png");
+    background-size: 300px 300px;
+}
+
+.main-platform-rework.zenith-home .zenith-home__scanline {
+    z-index: 3;
+    opacity: 0.08;
+    background: repeating-linear-gradient(
+            180deg,
+            rgba(90, 198, 255, 0.07),
+            rgba(90, 198, 255, 0.07) 1px,
+            transparent 1px,
+            transparent 3px
+    );
+}
+
+.main-platform-rework.zenith-home .zenith-home__frame {
+    position: relative;
+    z-index: 10;
+    width: min(1380px, 100%);
+    margin: 0 auto;
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 18px 14px;
+}
+
+.main-platform-rework.zenith-home .zenith-home__topbar {
+    min-height: 54px;
+    display: grid;
+    grid-template-columns: minmax(220px, 1fr) auto minmax(220px, 1fr);
+    align-items: center;
+    padding: 4px 8px;
+    border-bottom: 1px solid rgba(92, 170, 218, 0.17);
+}
+
+.main-platform-rework.zenith-home .zenith-home__top-side {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-platform-rework.zenith-home .zenith-home__top-side--right {
+    justify-self: end;
+}
+
+.main-platform-rework.zenith-home .zenith-home__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.main-platform-rework.zenith-home .zenith-home__meta span {
+    font-family: "Catamaran", sans-serif;
+    font-size: 0.56rem;
+    letter-spacing: 0.34em;
+    font-weight: 700;
+    color: rgba(176, 220, 245, 0.3);
+    text-transform: uppercase;
+}
+
+.main-platform-rework.zenith-home .zenith-home__meta strong {
+    font-family: "Raleway", sans-serif;
+    font-size: 0.82rem;
+    letter-spacing: 0.08em;
+    font-weight: 800;
+    color: #1bddff;
+    text-transform: uppercase;
+}
+
+.main-platform-rework.zenith-home .zenith-home__meta--right {
+    align-items: flex-end;
+}
+
+.main-platform-rework.zenith-home .zenith-home__brand {
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-platform-rework.zenith-home .zenith-home__brand h1 {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-size: clamp(1.2rem, 1.26vw, 1.62rem);
+    font-weight: 900;
+    letter-spacing: 0.64em;
+    text-transform: uppercase;
+    color: #f2fbff;
+    text-shadow: 0 6px 16px rgba(0, 0, 0, 0.42);
+}
+
+.main-platform-rework.zenith-home .zenith-home__brand-line {
+    margin-top: 4px;
+    width: 90px;
+    height: 2px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, transparent, var(--zh-accent), transparent);
+    box-shadow: 0 0 18px rgba(36, 209, 255, 0.45);
+}
+
+.main-platform-rework.zenith-home .zenith-home__mini-btn {
+    width: 38px;
+    min-width: 38px;
+    height: 38px;
+    border: 1px solid rgba(118, 182, 224, 0.34);
+    border-radius: 12px;
+    background: linear-gradient(160deg, rgba(20, 34, 52, 0.94), rgba(9, 16, 26, 0.96));
+    color: #d4edff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 150ms ease, box-shadow 150ms ease, transform 150ms ease;
+}
+
+.main-platform-rework.zenith-home .zenith-home__mini-btn:hover {
+    transform: translateY(-1px);
+    border-color: rgba(137, 233, 255, 0.88);
+    box-shadow: 0 0 0 1px rgba(90, 230, 255, 0.25);
+}
+
+.main-platform-rework.zenith-home .zenith-home__mini-btn svg {
+    width: 16px;
+    height: 16px;
+    fill: #83eaff;
+}
+
+.main-platform-rework.zenith-home .zenith-home__hero {
+    margin-top: 6px;
+    border: 1px solid var(--zh-border);
+    border-radius: 36px;
+    background: linear-gradient(115deg, rgba(10, 24, 39, 0.94), rgba(4, 10, 19, 0.96));
+    box-shadow: inset 0 1px 0 rgba(218, 242, 255, 0.08), 0 22px 45px rgba(0, 0, 0, 0.32);
+    padding: 18px 32px;
+    min-height: 150px;
+    display: grid;
+    grid-template-columns: minmax(260px, 1fr) minmax(320px, auto);
+    align-items: center;
+    column-gap: 26px;
+}
+
+.main-platform-rework.zenith-home .zenith-home__search-shell {
+    position: relative;
+    max-width: 430px;
+}
+
+.main-platform-rework.zenith-home .zenith-home__search-shell i {
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(73, 231, 255, 0.45);
+    font-size: 1rem;
+}
+
+.main-platform-rework.zenith-home .zenith-home__search-shell input {
+    width: 100%;
+    height: 54px;
+    border-radius: 999px;
+    border: 1px solid rgba(105, 172, 217, 0.32);
+    background: rgba(2, 7, 14, 0.86);
+    padding: 0 24px 0 56px;
+    color: var(--zh-text);
+    font-family: "Catamaran", sans-serif;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.27em;
+    text-transform: uppercase;
+    outline: 0;
+    transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.main-platform-rework.zenith-home .zenith-home__search-shell input:focus {
+    border-color: rgba(110, 234, 255, 0.78);
+    box-shadow: 0 0 0 3px rgba(48, 203, 255, 0.12);
+}
+
+.main-platform-rework.zenith-home .zenith-home__search-shell input::placeholder {
+    color: rgba(205, 232, 250, 0.18);
+}
+
+.main-platform-rework.zenith-home .zenith-home__hero-copy {
+    text-align: right;
+}
+
+.main-platform-rework.zenith-home .zenith-home__hero-copy p {
+    margin: 0;
+    font-family: "Catamaran", sans-serif;
+    font-size: 0.58rem;
+    font-weight: 800;
+    letter-spacing: 0.58em;
+    color: #56e6ff;
+    text-transform: uppercase;
+}
+
+.main-platform-rework.zenith-home .zenith-home__hero-copy h2 {
+    margin: 8px 0 0;
+    font-family: "Raleway", sans-serif;
+    font-size: clamp(2.1rem, 3vw, 3.6rem);
+    font-weight: 900;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #f6fbff;
+    text-shadow: 0 16px 24px rgba(0, 0, 0, 0.5);
+}
+
+.main-platform-rework.zenith-home .zenith-home__hero-copy span {
+    display: inline-block;
+    margin-top: 4px;
+    font-family: "Catamaran", sans-serif;
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.34em;
+    text-transform: uppercase;
+    color: rgba(188, 215, 235, 0.34);
+}
+
+.main-platform-rework.zenith-home .platformTable.zenith-home__platforms-shell {
+    flex: 1 1 auto;
+    min-height: 0;
+    max-height: none;
+    width: 100%;
+    display: block;
+    text-align: left;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 4px 0;
+}
+
+.main-platform-rework.zenith-home .platform_list {
+    width: min(1270px, 100%);
+    margin: 0 auto;
+    padding: 8px 4px 18px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 24px 26px;
+    align-content: start;
+    overflow: visible;
+    perspective: 1280px;
+}
+
+.main-platform-rework.zenith-home .platform_list_item {
+    --card-tilt-x: 0deg;
+    --card-tilt-y: 0deg;
+    --card-mx: 50%;
+    --card-my: 50%;
+    --card-glow: 0;
+    --card-sheen-shift: -30%;
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 286px;
+    max-width: none;
+    max-height: none;
+    margin: 0;
+    border: 1px solid rgba(108, 176, 220, 0.27);
+    border-radius: 34px;
+    cursor: pointer;
+    overflow: hidden;
+    isolation: isolate;
+    background: linear-gradient(168deg, rgba(21, 37, 57, 0.9), rgba(8, 15, 26, 0.94));
+    box-shadow: inset 0 1px 0 rgba(194, 238, 255, 0.07), 0 14px 32px rgba(0, 0, 0, 0.36);
+    transform-style: preserve-3d;
+    will-change: transform, border-color, box-shadow;
+    transform: perspective(980px) rotateX(var(--card-tilt-x)) rotateY(var(--card-tilt-y)) translateY(0);
+    opacity: 0;
+    animation: zenithCardIn 520ms cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+    animation-delay: var(--plat-order, 0ms);
+    transition: border-color 190ms ease, box-shadow 190ms ease, transform 230ms ease;
+}
+
+.main-platform-rework.zenith-home .platform_list_item::before,
+.main-platform-rework.zenith-home .platform_list_item::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.main-platform-rework.zenith-home .platform_list_item::before {
+    z-index: 2;
+    opacity: calc(0.03 + var(--card-glow));
+    background: radial-gradient(circle at var(--card-mx) var(--card-my), rgba(108, 237, 255, 0.22), rgba(108, 237, 255, 0) 56%),
+    linear-gradient(180deg, rgba(108, 237, 255, 0.05), rgba(108, 237, 255, 0));
+    transition: opacity 180ms ease;
+}
+
+.main-platform-rework.zenith-home .platform_list_item::after {
+    z-index: 6;
+    opacity: 0;
+    mix-blend-mode: screen;
+    background: linear-gradient(116deg, rgba(255, 255, 255, 0) 36%, rgba(197, 249, 255, 0.14) 50%, rgba(255, 255, 255, 0) 64%);
+    transform: translateX(var(--card-sheen-shift)) rotate(10deg);
+    transition: opacity 220ms ease, transform 230ms ease;
+}
+
+.main-platform-rework.zenith-home .platform_list_item .icoBG {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(139deg, rgba(102, 175, 230, 0.08), rgba(3, 10, 18, 0.2));
+    z-index: 0;
+}
+
+.main-platform-rework.zenith-home .platform_list_item .icoGlass {
+    fill: rgba(183, 243, 255, 0.04);
+}
+
+.main-platform-rework.zenith-home .platform_list_item .fgImg {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 61%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.main-platform-rework.zenith-home .platform_list_item .fgImg svg {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 41%;
+    height: 41%;
+    max-width: none;
+    max-height: none;
+    filter: drop-shadow(0 10px 16px rgba(0, 0, 0, 0.45));
+    transition: filter 200ms ease;
+}
+
+.main-platform-rework.zenith-home .platform_list_item .icoFG {
+    fill: var(--zh-accent);
+}
+
+.main-platform-rework.zenith-home .platform_list_item#Steam .fgImg svg {
+    width: 44%;
+    height: 44%;
+}
+
+.main-platform-rework.zenith-home .platform_list_item#Steam .fgImg svg use,
+.main-platform-rework.zenith-home .platform_list_item#Steam .fgImg svg circle,
+.main-platform-rework.zenith-home .platform_list_item#Steam .fgImg svg path,
+.main-platform-rework.zenith-home .platform_list_item#Steam .fgImg svg line,
+.main-platform-rework.zenith-home .platform_list_item#Steam .fgImg svg polyline,
+.main-platform-rework.zenith-home .platform_list_item#Steam .fgImg svg polygon {
+    fill-rule: nonzero;
+}
+
+.main-platform-rework.zenith-home .platform_list_item .fgText {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 36px;
+    z-index: 4;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+}
+
+.main-platform-rework.zenith-home .platform_list_item .fgText p {
+    margin: 0;
+    position: static;
+    transform: none;
+    width: 100%;
+    text-align: center;
+    font-family: "Catamaran", sans-serif;
+    font-weight: 900;
+    font-size: clamp(1.1rem, 1.35vw, 1.55rem);
+    letter-spacing: 0.1em;
+    color: #f2fbff;
+    text-shadow: 0 5px 14px rgba(0, 0, 0, 0.55);
+}
+
+.main-platform-rework.zenith-home .platform_list_item .shortText p {
+    font-size: clamp(1.24rem, 1.9vw, 1.8rem);
+}
+
+.main-platform-rework.zenith-home .platform_list_item .longText p {
+    font-size: clamp(0.92rem, 1.1vw, 1.16rem);
+}
+
+.main-platform-rework.zenith-home .platform_list_item .noImageCenterText {
+    top: 0;
+    bottom: 24px;
+    height: auto;
+}
+
+.main-platform-rework.zenith-home .zenith-home__card-dots {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    z-index: 5;
+    display: inline-flex;
+    gap: 4px;
+}
+
+.main-platform-rework.zenith-home .zenith-home__card-dots span {
+    width: 3px;
+    height: 3px;
+    border-radius: 999px;
+    background: rgba(196, 238, 255, 0.18);
+}
+
+.main-platform-rework.zenith-home .zenith-home__card-meta {
+    position: absolute;
+    left: 18px;
+    bottom: 16px;
+    z-index: 5;
+    font-family: "Catamaran", sans-serif;
+    font-size: 0.48rem;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    color: rgba(175, 215, 240, 0.16);
+    text-transform: uppercase;
+    pointer-events: none;
+}
+
+.main-platform-rework.zenith-home .zenith-home__card-pulse {
+    position: absolute;
+    left: 50%;
+    bottom: 34px;
+    width: 40px;
+    height: 8px;
+    border-radius: 999px;
+    transform: translateX(-50%);
+    background: radial-gradient(ellipse at center, rgba(23, 209, 255, 0.44), rgba(23, 209, 255, 0));
+    filter: blur(2px);
+    opacity: 0.45;
+}
+
+.main-platform-rework.zenith-home .platform_list_item:hover,
+.main-platform-rework.zenith-home .platform_list_item.is-pointer-active {
+    border-color: rgba(125, 230, 255, 0.75);
+    box-shadow: inset 0 1px 0 rgba(212, 245, 255, 0.11), 0 18px 30px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(90, 230, 255, 0.2);
+}
+
+.main-platform-rework.zenith-home .platform_list_item:hover::after,
+.main-platform-rework.zenith-home .platform_list_item.is-pointer-active::after {
+    opacity: 0.58;
+}
+
+.main-platform-rework.zenith-home .platform_list_item:hover .fgImg svg,
+.main-platform-rework.zenith-home .platform_list_item.is-pointer-active .fgImg svg {
+    filter: drop-shadow(0 0 9px rgba(94, 238, 255, 0.4));
+}
+
+.main-platform-rework.zenith-home .platform_list_item.is-pressing,
+.main-platform-rework.zenith-home .platform_list_item:active {
+    box-shadow: inset 0 1px 0 rgba(212, 245, 255, 0.1), 0 9px 18px rgba(0, 0, 0, 0.32), 0 0 0 1px rgba(90, 230, 255, 0.18);
+}
+
+.main-platform-rework.zenith-home .platform_list_item.is-search-hidden {
+    display: none !important;
+}
+
+.main-platform-rework.zenith-home .zenith-home__ticker {
+    position: relative;
+    height: 28px;
+    border: 1px solid rgba(88, 168, 214, 0.24);
+    border-radius: 10px;
+    background: rgba(2, 10, 17, 0.9);
+    overflow: hidden;
+}
+
+.main-platform-rework.zenith-home .zenith-home__ticker-track {
+    position: absolute;
+    inset: 0 auto 0 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 34px;
+    white-space: nowrap;
+    padding-left: 20px;
+    animation: zenithTicker 34s linear infinite;
+}
+
+.main-platform-rework.zenith-home .zenith-home__ticker-track span {
+    font-family: "Catamaran", sans-serif;
+    font-size: 0.52rem;
+    font-weight: 800;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(61, 223, 255, 0.74);
+}
+
+.main-platform-rework.zenith-home .zenith-home__footer {
+    min-height: 70px;
+    border: 1px solid var(--zh-border);
+    border-radius: 18px;
+    background: linear-gradient(90deg, rgba(8, 16, 27, 0.96), rgba(6, 14, 23, 0.94));
+    box-shadow: inset 0 1px 0 rgba(194, 235, 255, 0.06), 0 14px 24px rgba(0, 0, 0, 0.32);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+}
+
+.main-platform-rework.zenith-home .zenith-home__manage-btn {
+    min-width: 260px;
+    height: 50px;
+    border: 1px solid rgba(73, 220, 255, 0.8);
+    border-radius: 999px;
+    background: linear-gradient(180deg, rgba(38, 211, 255, 0.94), rgba(19, 178, 226, 0.95));
+    color: #04111c;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-family: "Catamaran", sans-serif;
+    font-weight: 900;
+    font-size: 0.92rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    transition: transform 150ms ease, filter 150ms ease, box-shadow 150ms ease;
+    box-shadow: 0 0 30px rgba(54, 217, 255, 0.24);
+}
+
+.main-platform-rework.zenith-home .zenith-home__manage-btn:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.04);
+    box-shadow: 0 0 35px rgba(54, 217, 255, 0.3);
+}
+
+.main-platform-rework.zenith-home .zenith-home__manage-btn i {
+    font-size: 0.95rem;
+}
+
+.main-platform-rework.zenith-home .zenith-home__footer-actions {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.main-platform-rework.zenith-home .zenith-home__footer-actions .zenith-home__mini-btn {
+    width: 46px;
+    min-width: 46px;
+    height: 46px;
+    border-radius: 14px;
+}
+
+@keyframes zenithCardIn {
+    from {
+        opacity: 0;
+        transform: perspective(980px) rotateX(-2deg) rotateY(0deg) scale(0.974);
+    }
+    to {
+        opacity: 1;
+        transform: perspective(980px) rotateX(var(--card-tilt-x)) rotateY(var(--card-tilt-y)) scale(1);
+    }
+}
+
+@keyframes zenithTicker {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes zenithAmbientShift {
+    from {
+        background-position: 0 0, 100% 0, 0 0;
+    }
+    to {
+        background-position: 8% 8%, 84% 12%, 124px 0;
+    }
+}
+
+@media (max-width: 1280px) {
+    .main-platform-rework.zenith-home .zenith-home__hero {
+        grid-template-columns: 1fr;
+        row-gap: 14px;
+    }
+
+    .main-platform-rework.zenith-home .zenith-home__hero-copy {
+        text-align: left;
+    }
+}
+
+@media (max-width: 1060px) {
+    .main-platform-rework.zenith-home .zenith-home__frame {
+        padding: 8px 10px 10px;
+    }
+
+    .main-platform-rework.zenith-home .zenith-home__topbar {
+        grid-template-columns: 1fr auto;
+        grid-template-rows: auto auto;
+        row-gap: 8px;
+    }
+
+    .main-platform-rework.zenith-home .zenith-home__brand {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        justify-self: center;
+    }
+
+    .main-platform-rework.zenith-home .zenith-home__top-side {
+        grid-row: 2;
+    }
+
+    .main-platform-rework.zenith-home .zenith-home__top-side--right {
+        justify-self: end;
+    }
+
+    .main-platform-rework.zenith-home .platform_list {
+        grid-template-columns: repeat(auto-fill, minmax(176px, 1fr));
+        gap: 14px;
+    }
+
+    .main-platform-rework.zenith-home .platform_list_item {
+        min-height: 240px;
+        border-radius: 26px;
+    }
+
+    .main-platform-rework.zenith-home .zenith-home__card-meta {
+        display: none;
+    }
+
+    .main-platform-rework.zenith-home .zenith-home__footer {
+        min-height: 64px;
+    }
+
+    .main-platform-rework.zenith-home .zenith-home__manage-btn {
+        min-width: 204px;
+        height: 44px;
+        font-size: 0.72rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .main-platform-rework.zenith-home .zenith-home__meta {
+        display: none;
+    }
+
+    .main-platform-rework.zenith-home .zenith-home__brand h1 {
+        letter-spacing: 0.22em;
+    }
+
+    .main-platform-rework.zenith-home .zenith-home__hero {
+        border-radius: 22px;
+        padding: 14px;
+    }
+
+    .main-platform-rework.zenith-home .zenith-home__hero-copy h2 {
+        font-size: clamp(1.7rem, 7vw, 2.4rem);
+    }
+
+    .main-platform-rework.zenith-home .zenith-home__search-shell input {
+        letter-spacing: 0.16em;
+        font-size: 0.62rem;
+    }
+
+    .main-platform-rework.zenith-home .platform_list {
+        grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
+    }
+
+    .main-platform-rework.zenith-home .platform_list_item {
+        min-height: 210px;
+        border-radius: 22px;
+    }
+
+    .main-platform-rework.zenith-home .platform_list_item .fgText p {
+        font-size: 0.96rem;
+    }
+
+    .main-platform-rework.zenith-home .zenith-home__ticker {
+        display: none;
+    }
+
+    .main-platform-rework.zenith-home .zenith-home__footer {
+        justify-content: center;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .main-platform-rework.zenith-home .zenith-home__manage-btn {
+        width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .main-platform-rework.zenith-home .zenith-home__ambient,
+    .main-platform-rework.zenith-home .platform_list_item,
+    .main-platform-rework.zenith-home .zenith-home__ticker-track {
+        animation: none !important;
+    }
+
+    .main-platform-rework.zenith-home .platform_list_item {
+        opacity: 1;
+        transform: none !important;
+        transition: none !important;
+    }
+}

@@ -1,0 +1,513 @@
+﻿---
+Update: Aktualizace je k dispozici! KliknutÃ­m sem ji spustÃ­te.
+Header_ChooseLanguage: 'Vyberte jazyk:'
+Steam_ShowSteamID: SteamID
+Steam_ShowVac: Stav VAC
+Steam_ShowLastLogin: PoslednÃ­ Äas pÅ™ihlÃ¡Å¡enÃ­
+Steam_ShowLimited: OmezenÃ½ stav
+Steam_ShowAccUsername: UÅ¾ivatelskÃ© jmÃ©no ÃºÄtu
+Steam_Tray_AccountName: Zobrazit jmÃ©no ÃºÄtu [ne jmÃ©no pÅ™Ã­tele]
+Steam_CheckVac: Zkontrolovat stav VAC ÃºÄtu
+Steam_OverrideDefaultState: "PÅ™epsat vÃ½chozÃ­ stav pÅ™ihlÃ¡Å¡enÃ­:"
+Steam_StartSilent: "OtevÅ™ete pÃ¡ru na pÅ™epÃ­naÄ zÃ¡sobnÃ­ku Ãºloh (spusÅ¥te pÃ¡ru pomocÃ­ â€ž- Silentâ€œ (TichÃ½))"
+Steam_OldUi: "PouÅ¾Ã­t starÃ© uÅ¾ivatelskÃ© rozhranÃ­ ve sluÅ¾bÄ› Steam (-vgui)"
+Steam_CollectInfo: SbÃ­rejte profilovÃ© obrÃ¡zky a stav zÃ¡kazu VAC ze sluÅ¾by Steam
+Button_AddNew: PÅ™idat novÃ½
+Button_SaveCurrent: UloÅ¾it aktuÃ¡lnÃ­
+Button_SaveFile: UloÅ¾it soubor
+Button_Cancel: ZruÅ¡it
+Button_Login: PÅ™ihlÃ¡sit se
+Button_Close: 'ZavÅ™Ã­t @ info: whatsthis'
+Button_RefreshImages: Znovu naÄÃ­st obrÃ¡zky
+Button_ResetSettings: Obnovit nastavenÃ­
+Button_AdvancedCleaning: PokroÄilÃ© ÄiÅ¡tÄ›nÃ­...
+Button_ClearLog: Vymazat protokol
+Button_WikiInfo: VÃ­ce informacÃ­ (Wiki)
+Button_ManagePlatforms: Spravovat platformy
+Button_Backup: ZÃ¡lohovat
+Button_BackupAll: ZÃ¡lohovat vÅ¡e
+Button_Restore: Obnovit
+Button_OpenBackup: OtevÅ™ete sloÅ¾ku ZÃ¡loh
+Button_Back: ZpÄ›t
+Button_RestartAdmin: Restartovat jako sprÃ¡vce
+Button_SetPassword: Nastavit heslo aplikace
+Settings_SteamCollectInfo: SbÃ­rejte profilovÃ½ obrÃ¡zek sluÅ¾by Steam a stav VAC ze sluÅ¾by Steam
+Settings_Shortcut: ' PÅ™idat zÃ¡stupce {platform} pÅ™epÃ­naÄe na plochu'
+Settings_Admin: Spustit {platform} jako sprÃ¡vce
+Settings_ImageExpiry: 'Dny pÅ™ed vyprÅ¡enÃ­m platnosti profilovÃ½ch obrÃ¡zkÅ¯:'
+Settings_SteamAPIKey: "Steam Web API klÃ­Ä (volitelnÃ½)"
+Settings_SteamAPIKey_Note: NastavenÃ­ API klÃ­Äe zpÅ¯sobÃ­, Å¾e OmezenÃ½ indikÃ¡tor (Å¾lutÃ½ okraj) se zobrazÃ­ pro ÃºÄty, kterÃ© jsou komunita zakÃ¡zÃ¡na mÃ­sto.
+Settings_Header_AppWide: NastavenÃ­ celÃ© aplikace
+Settings_Header_GeneralSettings: ObecnÃ¡ nastavenÃ­
+Settings_Header_AccountDisplay: NastavenÃ­ zobrazenÃ­ ÃºÄtu
+Settings_Header_ExtraPlatforms: NastavenÃ­ platformy
+Settings_Header_GeneralTools: ObecnÃ© nÃ¡stroje
+Settings_Header_OtherTools: OstatnÃ­ nÃ¡stroje
+Settings_Header_TraySettings: NastavenÃ­ systÃ©movÃ© liÅ¡ty
+Settings_Header_OpenGameFolders: OtevÅ™Ã­t sloÅ¾ky her
+Settings_Header_BackupRestore: NastavenÃ­ zÃ¡lohovÃ¡nÃ­ a obnovenÃ­ platformy
+Settings_Header_Language: Jazyk
+Settings_Header_System: SystÃ©m
+Settings_Header_Theme: Vzhled
+Settings_Header_Program: Program
+Settings_Header_StatsSharing: Statistiky a sdÃ­lenÃ­
+Settings_Header_Platform: "{platformName} nastavenÃ­"
+Settings_Header_GameStats: GlobÃ¡lnÃ­ nastavenÃ­ statistik hry
+Settings_GameStats: Cokoli zde zaÅ¡krtnutÃ© se nezobrazÃ­ pod vaÅ¡Ã­m uÅ¾ivatelskÃ½m jmÃ©nem pro Å¾Ã¡dnÃ½ ÃºÄet. Tuto moÅ¾nost pouÅ¾ijte, pokud Äasto skryjete urÄitÃ© poloÅ¾ky ze statistik hry.
+Settings_TrayMax: 'MaximÃ¡lnÃ­ poÄet ÃºÄtÅ¯, kterÃ© chcete uloÅ¾it:'
+Settings_ExtraPlatformsDisabled: ZakÃ¡zanÃ© platformy. KliknutÃ­m je povolÃ­te.
+Settings_ExtraPlatformsEnabled: ViditelnÃ© platformy. KliknutÃ­m je zakÃ¡Å¾ete.
+Settings_RTL: Zobrazit text zprava doleva
+Settings_CollectStats: ShromaÅ¾Äovat statistiky
+Settings_ShareStats: AnonymnÃ­ sdÃ­lenÃ­ statistik (doporuÄeno)
+Settings_DiscordRpc: PÅ™Ã­tomnost bohatÃ¡ na diskord (RPC)
+Settings_DiscordRpcShare: SdÃ­let celkovÃ© pÅ™epÃ­naÄe
+Settings_ViewStats: Zobrazit statistiky
+Preview: NÃ¡hled
+Settings_ClearStats: Resetovat
+Settings_CurrentLocation: 'AktuÃ¡lnÃ­ umÃ­stÄ›nÃ­ instalace: {path}'
+Settings_CurrentDataLocation: 'AktuÃ¡lnÃ­ umÃ­stÄ›nÃ­ uÅ¾ivatelskÃ½ch dat: {path}'
+Settings_SetDataLocation: "[Nastavit vlastnÃ­ umÃ­stÄ›nÃ­ uÅ¾ivatelskÃ½ch dat]"
+Settings_PickFolder: Vyberte {platform} sloÅ¾ku
+Settings_OpenFolder: OtevÅ™Ã­t {platform} sloÅ¾ku
+Settings_ClearForgotten: Vymazat zapomenutÃ©
+Settings_ClearAccounts: Vymazat ÃºÄty
+Settings_StreamerMode: Povolit reÅ¾im streameru
+Settings_ExitToTray: TlaÄÃ­tko ukonÄit minimalizuje do liÅ¡ty
+Settings_DesktopShortcut: ZÃ¡stupce na ploÅ¡e
+Settings_StartMenu_ProgramTray: ProgramovÃ½ & zÃ¡sobnÃ­k
+Settings_StartMenu_Platform: SluÅ¾ba
+Settings_Tray_StartWindows: Spustit v systÃ©movÃ© liÅ¡tÄ› s Windows
+Settings_Tray_StartNow: '[Spustit v systÃ©movÃ© liÅ¡tÄ›]'
+Settings_CurrentStyle: AktuÃ¡lnÃ­ vzhled
+Settings_ThemeBackground: '[Nastavit pozadÃ­]'
+Settings_ThemeOpenFolder: '[OtevÅ™Ã­t sloÅ¾ku vzhledÅ¯]'
+Settings_Protocol: 'Povolit polarwolves:\\\\ protokol (doporuÄeno)'
+Settings_StartCentered: Spustit program ve stÅ™edu obrazovky
+Settings_OfflineMode: ReÅ¾im offline (Å¾Ã¡dnÃ¡ sÃ­Å¥ovÃ¡ aktivita)
+Settings_WindowsAccent: PouÅ¾Ã­ barvu motivu Windows
+Settings_HelpTranslate: "[Pomozte s pÅ™ekladem]"
+Settings_ViewTranslators: "[Titulky]"
+Settings_Header_ActiveBrowser: "(PokroÄilÃ©) NastavenÃ­ vykreslovacÃ­ho motoru:"
+Settings_Header_ClosingMethod: "(PokroÄilÃ©) Nastavte metodu na zavÅ™enÃ­ {platform}"
+Settings_Header_StartingMethod: "(PokroÄilÃ©) Nastavte metodu na zaÄÃ¡tek {platform}"
+Settings_AutoStart: "Automaticky spustit {platform} pÅ™i pÅ™epnutÃ­ ÃºÄtu"
+Settings_ShowSteamSwitcher: "Zobrazit pÅ™epÃ­naÄ ÃºÄtÅ¯ Steamu (NEPOUÅ½ÃVEJTE jej, jinak by mohl pÅ™eruÅ¡it pÅ™epÃ­naÄ ÃºÄtÅ¯ PolarWolves)"
+Settings_NoPlatforms: MomentÃ¡lnÄ› nejsou povoleny Å¾Ã¡dnÃ© platformy. ZaÅ¡krtnÄ›te prosÃ­m nÃ­Å¾e volitelnÃ© platformy, abyste je povolili, nebo zruÅ¡te zaÅ¡krtnutÃ­ zakÃ¡zanÃ½ch platforem.
+Settings_MinimizeOnSwitch: Minimalizovat pÅ™epÃ­naÄ pÅ™i pÅ™epÃ­nÃ¡nÃ­ ÃºÄtu
+Settings_ShowShortNotes: NÃ¡hled poznÃ¡mky pod uÅ¾ivatelskÃ½m jmÃ©nem
+Settings_Header_AppPassword: "Zastavte ostatnÃ­ uÅ¾ivatele pomocÃ­ pÅ™epÃ­naÄe:"
+PreviewCss: NÃ¡hled CSS
+Settings_PreviewCss: Toto je strÃ¡nka s nÃ¡hledem CSS. MÅ¯Å¾ete si prohlÃ©dnout nÄ›kterÃ© prvky, kterÃ© se v programu objevÃ­, a zjistit, jak vypadajÃ­ s vaÅ¡Ã­m motivem. Tato strÃ¡nka je uÅ¾iteÄnÃ¡ pro ty, kteÅ™Ã­ vytvÃ¡Å™ejÃ­ tÃ©mata!
+Settings_PreviewCssHeader: NÃ¡hledovÃ¡ StrÃ¡nka CSS
+Settings_AutoUpdatePlatforms: Automaticky aktualizovat seznam platforem
+Settings_CheckForUpdates: PÅ™i spuÅ¡tÄ›nÃ­ zkontrolujte aktualizace
+Stats_Disabled: "SbÄ›r statistik je zakÃ¡zÃ¡n."
+Stats_InDepth: PodrobnÃ© ÄlenÄ›nÃ­ statistik
+Stats_ShareEnabled: "Tyto statistiky jsou sdÃ­leny anonymnÄ› a pÅ™idÃ¡ se k celkovÃ© <a onclick=\"{WebsiteLink}\" class=\"fancyLink\">zde</a>."
+Stats_ShareDisabled: "Tyto statistiky NEJSOU sdÃ­leny anonymnÄ› a NEBUDOU pÅ™idÃ¡vat k celkovÃ© <a onclick=\"{WebsiteLink}\" class=\"fancyLink\">zde</a>."
+Stats_OperatingSystem: "OperaÄnÃ­ systÃ©m: "
+Stats_FirstLaunch: "PrvnÃ­ spuÅ¡tÄ›nÃ­: "
+Stats_LaunchCount: "PoÄet spuÅ¡tÄ›nÃ­: "
+Stats_CrashCount: "PoÄet pÃ¡dÅ¯: "
+Stats_MostUsedPlatform: "NejpouÅ¾Ã­vanÄ›jÅ¡Ã­ platforma: "
+Stats_TotalTime: "CelkovÃ½ Äas strÃ¡venÃ½ v aplikaci: "
+Stats_TotalSwitches: "CelkovÃ½ poÄet pÅ™epnutÃ­ ÃºÄtÅ¯: "
+Stats_TotalGamesLaunched: "CelkovÃ½ poÄet aplikacÃ­/her spuÅ¡tÄ›nÃ½ch pomocÃ­ pÅ™epÃ­naÄ: "
+Stats_UniqueDaysLong: "UnikÃ¡tnÃ­ dny se zmÄ›nÄ›nÃ½mi ÃºÄty: "
+Stats_LastUpload: "PoslednÃ­ nahrÃ¡nÃ­: "
+Stats_SwitcherStats: "Statistiky pÅ™epÃ­naÄe: "
+Stats_PageStats: "Statistiky strÃ¡nky: "
+Stats_VisitsTotalTime: "{visits} celkem nÃ¡vÅ¡tev, {hours} celkem Äasu"
+Stats_Accounts: "ÃšÄty: "
+Stats_Switches: "PÅ™epnutÃ­: "
+Stats_FirstActive: "PrvnÃ­ aktivita: "
+Stats_LastActive: "PoslednÃ­ aktivita: "
+Stats_UniqueDays: "UnikÃ¡tnÃ­ dny: "
+Stats_GameShortcuts: "HernÃ­ zkratky: "
+Stats_GameShortcutsHotbar: "HernÃ­ zkratky (na liÅ¡tÄ›): "
+Stats_GamesLaunched: "Kolik her bylo spuÅ¡tÄ›no: "
+Stats_MetricsToShow: "ZobrazenÃ© metriky:"
+Stats_AccountId: "ID ÃºÄtu:"
+Auth_LoginRequired: Heslo bylo dÅ™Ã­ve nastaveno a je vyÅ¾adovÃ¡no. NÃ­Å¾e prosÃ­m zadejte heslo.
+Auth_EnterPassword: "Zadejte heslo:"
+Auth_PassIncorrect: NesprÃ¡vnÃ© heslo.
+Locked: ZamÄeno
+Cleaning_Header_StartMenuShortcuts: 'ZÃ¡stupce v nabÃ­dce Start:'
+Cleaning_Header_General: ObecnÃ© ÄiÅ¡tÄ›nÃ­
+Cleaning_Header_LoginHistory: Vymazat historii pÅ™ihlÃ¡Å¡enÃ­
+Cleaning_Header_PlatformCleaning: '{platform} PÅ™epÃ­naÄ'
+Cleaning_ImportantInfoHeader: 'DÅ¯leÅ¾itÃ© informace:'
+Cleaning_ImportantInfo: >
+  KliknutÃ­m na tlaÄÃ­tko smaÅ¾ete souvisejÃ­cÃ­ soubor(y) z instalace Steamu.<br /> SmazÃ¡nÃ­ loginusers.vdf bude mÃ­t za nÃ¡sledek tento pÅ™epÃ­naÄ ÃºÄtÅ¯ bez ÃºÄtÅ¯.<br /> Budete se k nim muset pÅ™ihlÃ¡sit pomocÃ­ Steamu, abyste je dostali zpÄ›t.
+Cleaning_Button_KillProcess: Proces zabitÃ­ {platform}
+Cleaning_Button_ForgottenBackups: ZÃ¡lohovÃ¡nÃ­ zapomenutÃ½ch ÃºÄtÅ¯
+Cleaning_Understand: RozumÃ­m, co tato tlaÄÃ­tka dÄ›lajÃ­.
+Restore_Info: >
+  Pokud jste dÅ™Ã­ve ÃºÄet "zapomnÄ›li", mÅ¯Å¾ete ho zde obnovit.<br /> Toto je pÅ™idÃ¡ zpÄ›t do souboru loginusers.vdf, coÅ¾ vÃ¡m umoÅ¾nÃ­ se na nÄ› pÅ™epnout.
+Restore_Button_Restore: Obnovit vybranÃ©
+Ignored_RemoveAccounts: Odebrat ÃºÄty ze seznamu ignorovanÃ½ch
+Ignored_Description: Pokud jste dÅ™Ã­ve ÃºÄet â€žignorovaliâ€œ, mÅ¯Å¾ete je zobrazit znovu zde
+Ignored_Stop: Zastavit ignorovÃ¡nÃ­ vybranÃ½ch
+Toast_UpdatesDownloading: Aktualizace se stahujÃ­ na pozadÃ­. Program mÅ¯Å¾ete nadÃ¡le pouÅ¾Ã­vat.
+Toast_UpdatesDownloaded: StahovÃ¡nÃ­ aktualizacÃ­ bylo dokonÄeno. Chcete-li zahÃ¡jit aktualizaci, zavÅ™ete tuto aplikaci.
+Toast_DataLocationCopying: (1/2) KopÃ­rovÃ¡nÃ­ stÃ¡vajÃ­cÃ­ch souborÅ¯ do novÃ© sloÅ¾ky uÅ¾ivatelskÃ½ch dat!
+Toast_DataLocationNotCopying: (1/2) SloÅ¾ka jiÅ¾ obsahuje soubory! Nebudou migrovat uÅ¾ivatelskÃ¡ data.
+Toast_DataLocationSet: (2/2) Chcete-li pouÅ¾Ã­t novou sloÅ¾ku, restartujte pÅ™epÃ­naÄ ÃºÄtÅ¯!
+Toast_PlaceShortcutFiles: OtevÃ­rÃ¡ se sloÅ¾ka. Do tÃ©to sloÅ¾ky umÃ­stÄ›te zÃ¡stupce her a restartujte pÅ™epÃ­naÄ ÃºÄtÅ¯.
+Toast_TrayStarted: SpuÅ¡tÄ›no na liÅ¡tÄ›!
+Toast_TrayRunning: Aplikace je jiÅ¾ spuÅ¡tÄ›na
+Toast_TrayUsersMissing: Nebyli uloÅ¾eni Å¾Ã¡dnÃ­ uÅ¾ivatelÃ© zÃ¡sobnÃ­ku
+Toast_TrayFail: Nelze spustit aplikaci zÃ¡sobnÃ­ku!
+Toast_TrayPosition: "KliknutÃ­m na tlaÄÃ­tko UkonÄit: Budu v systÃ©movÃ© liÅ¡tÄ› Windows! (Napravo od startovacÃ­ liÅ¡ty)"
+Toast_TrayHint: "Tip: Ctrl+Klikni na 'X' pro ÃºplnÃ© zavÅ™enÃ­, nebo pÅ™es Tray > 'UkonÄit'"
+Toast_Copied: ZkopÃ­rovÃ¡no
+Toast_AlreadyProcessing: JiÅ¾ zpracovÃ¡vÃ¡m ÃºÄty...
+Toast_FailedRestore: ObnovenÃ­ ÃºÄtÅ¯ se nezdaÅ™ilo (viz konzole)
+Toast_Restored: ÃšÄty obnoveny!
+Toast_ProtocolEnabled: Tento program bude nynÃ­ reagovat na polarwolves:\\\\ ve Windows
+Toast_ProtocolEnabledTitle: Protokol byl pÅ™idÃ¡n
+Toast_ProtocolDisabled: Tento program jiÅ¾ nebude reagovat na polarwolves:\\\\
+Toast_ProtocolDisabledTitle: Protokol byl odstranÄ›n
+Toast_RestartAsAdmin: SpusÅ¥te jako SprÃ¡vce a zkuste to znovu.
+Toast_RestartAfterClose: Po kliknutÃ­ na tlaÄÃ­tko ZavÅ™Ã­t restartujte program.
+Toast_RestartAfterCloseTitle: Barva zvÃ½raznÄ›nÃ­ zakÃ¡zÃ¡na
+Toast_RestartRequired: Restartovat pro pouÅ¾itÃ­ zmÄ›n
+Toast_LoadStylesheetFailed: NepodaÅ™ilo se naÄÃ­st list stylÅ¯! Podrobnosti naleznete ve sloÅ¾ce uÅ¾ivatelskÃ½ch dat.
+Toast_LoadingStats: Jeden nebo vÃ­ce profilÅ¯ jsou obnovujÃ­cÃ­ statistiky. PoÄkejte prosÃ­m.
+Toast_ItemNotFound: "{item} nebylo nalezeno"
+Toast_DeletedTotal: "{files} z {totalFiles} odstranÄ›no. Celkem: {totalSize}"
+Toast_CantChangeUsername: Nelze zmÄ›nit uÅ¾ivatelskÃ© jmÃ©no
+Toast_CantClearLoginFiles: VymazÃ¡nÃ­ starÃ½ch pÅ™ihlaÅ¡ovacÃ­ch souborÅ¯ se nezdaÅ™ilo
+Toast_AccountIdReg: NepodaÅ™ilo se zÃ­skat ID ÃºÄtu z registru!
+Toast_RegFailWrite: ZÃ¡pis do registru systÃ©mu Windows se nezdaÅ™il!
+Toast_RegFailRead: ÄŒtenÃ­ z registru systÃ©mu Windows se nezdaÅ™ilo!
+Toast_RegFailReadSaved: NepodaÅ™ilo se pÅ™eÄÃ­st uloÅ¾enou poloÅ¾ku registru. Pokud se ti to nepodaÅ™Ã­, zkus ÃºÄet odebrat a pÅ™idat znovu.
+Toast_RegSaveMissing: Selhalo hledÃ¡nÃ­ nebo ÄtenÃ­ dat z uloÅ¾enÃ½ch souborÅ¯ registru!
+Toast_DuplicateNames: Nelze provÃ©st vÃ½mÄ›nu. Duplikovat ÃºÄty se stejnÃ½m uÅ¾ivatelskÃ½m jmÃ©nem?
+Toast_MissingUserId: "Nelze pÅ™epnout. ChybÃ­ ID uÅ¾ivatele. ZaÅ¡krtnÄ›te polÃ­Äko Wiki 'BÄ›Å¾nÃ© chyby'."
+Toast_CouldNotLocate: Nelze najÃ­t pÅ™ihlÃ¡Å¡enÃ©ho uÅ¾ivatele
+Toast_StreamerModeHint: SoukromÃ© informace jsou skrytÃ©! - Zobrazit nastavenÃ­
+Toast_StreamerModeTitle: ReÅ¾im streameru
+Toast_AddAccountsFirst: OtevÅ™ete platformu ze seznamu a nejprve pÅ™idejte nÄ›kolik ÃºÄtÅ¯
+Toast_AddAccountsFirstTitle: Å½Ã¡dnÃ© uloÅ¾enÃ© ÃºÄty
+Toast_CantFindImage: NepodaÅ™ilo se najÃ­t obrÃ¡zek uÅ¾ivatele.
+Toast_CantCreateShortcut: Nelze vytvoÅ™it zÃ¡stupce
+Toast_ShortcutCreated: Zkratka vytvoÅ™ena!
+Toast_SettingsCopied: NastavenÃ­ bylo ÃºspÄ›Å¡nÄ› zkopÃ­rovÃ¡no na aktuÃ¡lnÃ­ ÃºÄet.
+Toast_GameDataRestored: ÃšspÄ›Å¡nÄ› obnovena hernÃ­ data pro tento ÃºÄet.
+Toast_NoValidSteamId: Nelze najÃ­t platnÃ© ID pÃ¡ry.
+Toast_FailedUpdateCheck: NepodaÅ™ilo se zkontrolovat aktualizace
+Toast_UpdateVerifyFail: Nelze ovÄ›Å™it soubory aktualizÃ¡toru. StÃ¡hnÄ›te si nejnovÄ›jÅ¡Ã­ verzi a nahraÄte soubory ve svÃ©m adresÃ¡Å™i.
+Toast_StartedGame: SpuÅ¡tÄ›n {program}
+Toast_SteamCantLoadXml: Nelze zÃ­skat informace XML pro {steamId}. DalÅ¡Ã­ podrobnosti naleznete v protokolu.
+Toast_Steam_VacCleared: Status VAC pro ÃºÄty byl vymazÃ¡n
+Toast_Steam_CantDeleteVacCache: Nelze odstranit 'LoginCache/Steam/VACCache/SteamVACCache.json'
+Toast_NoFindSteamUserdata: Nelze najÃ­t sloÅ¾ku dat sluÅ¾by Steam\\userdata
+Toast_NoFindGameBackup: Nelze najÃ­t sloÅ¾ku se zÃ¡loÅ¾nÃ­mi daty hry pro tento ÃºÄet.
+Toast_GameBackupDone: "SloÅ¾ka s daty hry byla ÃºspÄ›Å¡nÄ› zÃ¡lohovÃ¡na: {folderLocation}"
+Toast_Steam_VdfLast: Informace naÄteny z vdf_last. NÄ›kterÃ© ÃºÄty mohou chybÄ›t.
+Toast_PartiallyFixed: ÄŒÃ¡steÄnÄ› opravenÃ©
+Toast_Steam_FailedLoginusers: NaÄtenÃ­ pÃ¡ry/config/loginusers.vdf se nezdaÅ™ilo
+Toast_Steam_CantLocateLoginusers: Nelze nalÃ©zt '.../Steam/config/loginusers.vdf'. Zkuste se nejdÅ™Ã­ve pÅ™ihlÃ¡sit k ÃºÄtu.
+Toast_CantClearImages: ObrÃ¡zky nelze vymazat
+Toast_RefreshedImages: ObrÃ¡zky Obnoveny
+Toast_ClearForgottenCheck: Opravdu chcete vymazat zÃ¡lohy zapomenutÃ½ch ÃºÄtÅ¯?
+Toast_ForgotAccount: ZapomenutÃ½ ÃºÄet
+Toast_ClearedPlatformSettings: "VymazÃ¡no {platform} nastavenÃ­ pÅ™epÃ­naÄe"
+Toast_ClearedImages: "VyÄiÅ¡tÄ›nÃ© obrÃ¡zky"
+Toast_SavedItem: "UloÅ¾eno: {item}"
+Toast_ChangedUsername: UÅ¾ivatelskÃ© jmÃ©no bylo zmÄ›nÄ›no
+Toast_SetUsername: Nastavit uÅ¾ivatelskÃ© jmÃ©no
+Toast_AlreadyLoggedIn: JiÅ¾ jste pÅ™ihlÃ¡Å¡eni pomocÃ­ tohoto ÃºÄtu! (Neprovedeny Å¾Ã¡dnÃ© zmÄ›ny)
+Toast_BackupCopy: (1/3) KopÃ­rovÃ¡nÃ­ souborÅ¯ do doÄasnÃ©ho umÃ­stÄ›nÃ­...
+Toast_BackupCompress: (2/3) Komprese souborÅ¯ ({size}). Bude to chvÃ­li trvat...
+Toast_BackupComplete: (3/3) Komprese dokonÄena! ({size} aÅ¾ {compressedSize})
+Toast_BackupProgress: "ProbÃ­hÃ¡ zÃ¡lohovÃ¡nÃ­ (komprimovanÃ¡ velikost: {compressedSize})"
+Toast_BackupFail: ZÃ¡lohovÃ¡nÃ­ se nezdaÅ™ilo - viz protokol!
+Toast_BackupBusy: ZÃ¡lohovÃ¡nÃ­ jiÅ¾ probÃ­hÃ¡!
+Toast_RestoreBusy: ObnovenÃ­ jiÅ¾ probÃ­hÃ¡!
+Toast_RestoreExt: RozbalenÃ­ archivu.
+Toast_RestoreCopying: PÅ™esouvÃ¡nÃ­ souborÅ¯ zpÄ›t na platformu
+Toast_RestoreDeleting: MazÃ¡nÃ­ doÄasnÃ½ch souborÅ¯
+Toast_RestoreComplete: ObnovenÃ­ dokonÄeno!
+Toast_FailedLoad: NepodaÅ™ilo se naÄÃ­st {platform}! Chybu zobrazÃ­te kliknutÃ­m na platformu.
+Toast_FailedPlatformsLoad: NaÄtenÃ­ Platforms.json se nezdaÅ™ilo! ProsÃ­m ovÄ›Å™te, Å¾e tento soubor existuje.
+Toast_FailedLoadSettings: "NastavenÃ­ se nepodaÅ™ilo naÄÃ­st! NaÄÃ­tÃ¡nÃ­ vÃ½chozÃ­ho nastavenÃ­. PÅ™idÃ¡nÃ­ â€žstarÃ©hoâ€œ do existujÃ­cÃ­ho nÃ¡zvu souboru nastavenÃ­."
+Toast_FailedLoadStats: "NepodaÅ™ilo se naÄÃ­st statistiky! ZaÄÃ­nÃ¡me znovu."
+Toast_FailedStatsLoad: NepodaÅ™ilo se naÄÃ­st GameStats.json! OvÄ›Å™te, zda tento soubor existuje.
+Toast_GameStatsLoadFail: "NepodaÅ™ilo se zÃ­skat statistiky hry z webu pro {Game}"
+Toast_GameStatsEmpty: "Na webovÃ½ch strÃ¡nkÃ¡ch nebyly nalezeny Å¾Ã¡dnÃ© statistiky hry pro {Game}. MyslÃ­Å¡, Å¾e je to chyba? Zkontrolujte sloÅ¾ku userdata a 'temp\\download-{AccoundId}-{Game}.html', zda na strÃ¡nce nebyla chyba!"
+Toast_FileCopyFail: KopÃ­rovÃ¡nÃ­ souborÅ¯ se nezdaÅ™ilo! DalÅ¡Ã­ podrobnosti naleznete v protokolu.
+Toast_UserDataLoadFail: NaÄtenÃ­ uÅ¾ivatelskÃ½ch dat {UserData}\\ WindowSettings.json se nezdaÅ™ilo. ZÃ¡lohovÃ¡nÃ­ a resetovÃ¡nÃ­! Chyba uloÅ¾ena do protokolu.
+Toast_UpdateCheckFail: NepodaÅ™ilo se nÃ¡m kontaktovat https://discord.gg/PLR/ a zkontrolovat aktualizace. Tato zprÃ¡va se zobrazÃ­ jednou dennÄ›.
+Toast_FailedCreateIcon: VytvoÅ™enÃ­ ikony se nezdaÅ™ilo. Podrobnosti naleznete v protokolu.
+Toast_SameAccount: Nelze zkopÃ­rovat soubory do/ze stejnÃ©ho ÃºÄtu. VyzkouÅ¡ej jinÃ½ ÃºÄet nebo se podÃ­vej na Wiki, kde najdeÅ¡ dalÅ¡Ã­ informace.
+Toast_Steam_DownloadingAppIds: StahovÃ¡nÃ­ seznamu aplikacÃ­ sluÅ¾by Steam...
+Toast_Steam_DownloadingAppIdsComplete: StahovÃ¡nÃ­ dokonÄeno. PodnabÃ­dka hernÃ­ch dat byla aktualizovÃ¡na.
+Toast_SteamWebKeyInvalid: ZdÃ¡ se, Å¾e klÃ­Ä API sluÅ¾by Steam Web je neplatnÃ½. Nastavte prosÃ­m novou.
+Toast_DownloadingProfileData: StahovÃ¡nÃ­ dat profilu
+Toast_PasswordChanged: Heslo zmÄ›nÄ›no
+Toast_JsonFailModify: NepodaÅ™ilo se upravit soubor JSON. Viz protokol.
+Toast_DifferentClosingMethod: "'UzavÃ­racÃ­ metoda' se liÅ¡Ã­ od vÃ½chozÃ­ho nastavenÃ­. Pokud jsou hry zavÃ­rÃ¡ny a vÃ­ce zkontrolujte, zda zmÄ›na tÃ©to volby pomÅ¯Å¾e. VÃ½chozÃ­: {defaultMethod}, AktuÃ¡lnÃ­: {currentMethod}"
+Toast_NameEmpty: UÅ¾ivatelskÃ© jmÃ©no nesmÃ­ bÃ½t prÃ¡zdnÃ© (a nemÅ¯Å¾e obsahovat pouze mezery)
+Toast_NewPlatforms: "AktualizovÃ¡no! PÅ™idÃ¡ny novÃ© platformy: {listOfNames}. KliknutÃ­m zavÅ™ete."
+Toast_FoundExeViaShortcut: "NaÅ¡li jsme nainstalovanou cestu ze zÃ¡stupce nabÃ­dky Start. OvÄ›Å™te prosÃ­m jeho umÃ­stÄ›nÃ­ kliknutÃ­m na NastavenÃ­. KliknutÃ­m zavÅ™ete."
+Modal_Crowdin_Header: CrowdinÅ¡tÃ­ pÅ™ekladatelÃ©
+Modal_Crowdin_Info: "Zde jsou vÅ¡ichni, kteÅ™Ã­ pomohli pÅ™eloÅ¾it tento software.<br>pÅ™ekladu hodnÄ› pomohli uÅ¾ivatelÃ© s jazyky vedle sebe (role korektora)."
+Modal_Info_Creator: VytvoÅ™eno spoleÄnostÃ­ PolarWolves Team [Wesley Pyburn]
+Modal_Info_Version: Verze
+Modal_Info_ViewGitHub: Zobrazit na GitHubu
+Modal_Info_ViewPatreon: Podpora pÅ™es Patreon
+Modal_Info_ViewKofi: Podpora pÅ™es Ko-Fi
+Modal_Info_BugReport: HlÃ¡Å¡enÃ­ chyb/Å½Ã¡dost o funkce
+Modal_Info_VisitSite: NavÅ¡tivte discord.gg/PLR
+Modal_Info_Disclaimer: ProhlÃ¡Å¡enÃ­
+Modal_Title_Info: Informace o pÅ™epÃ­naÄi ÃºÄtÅ¯ PolarWolves
+Modal_Title_ChangeUsername: ZmÄ›nit uÅ¾ivatelskÃ© jmÃ©no
+Modal_Title_ConfirmAction: PolarWolves Potvrdit akci
+Modal_Title_LocatePlatform: ProsÃ­m najdÄ›te {platform} adresÃ¡Å™
+Modal_Title_AddNew: PÅ™idat novÃ½ {platform} ÃºÄet
+Modal_Title_Background: Nastavte obrÃ¡zek na pozadÃ­
+Modal_Title_Userdata: Nastavte sloÅ¾ku uÅ¾ivatelskÃ½ch dat
+Modal_Title_GameStats: Povolit/zakÃ¡zat statistiku hry
+Modal_GameStats_Header: "Povolit/zakÃ¡zat statistiku hry pro: {accountName}"
+Modal_Title_Stats: VaÅ¡e statistiky
+Modal_Title_GameVars: "VstupnÃ­ Ãºdaje pro {game}"
+Modal_GameVars_Header: "Zadejte prosÃ­m nÃ¡sledujÃ­cÃ­ Ãºdaje pro svÅ¯j {game} ÃºÄet, {username} na {platform}"
+Modal_Title_AccountNotes: "PoznÃ¡mky k ÃºÄtu pro: {accountName}"
+Modal_Title_SetPassword: Nastavit heslo
+Modal_SetBackground: 'Vyberte obrÃ¡zek nebo nÃ­Å¾e zadejte adresu URL.<br>Ponechte prÃ¡zdnÃ© a nastavte reset.<br>(Pro pokroÄilejÅ¡Ã­ ovlÃ¡dÃ¡nÃ­ viz Theming na Wiki):'
+Modal_SetBackground_Button: Nastavit pozadÃ­
+Modal_SetBackground_ChooseImage: Vyberte mÃ­stnÃ­ obrÃ¡zek
+Modal_SetUserdata: NÃ­Å¾e zadejte cestu ke sloÅ¾ce a kliknÄ›te na nastavit.
+Modal_SetUserdata_ChooseFolder: Vyberte sloÅ¾ku
+Modal_SetUserdata_Button: Nastavit uÅ¾ivatelskÃ¡ data
+Modal_ChangeUsername: Zadejte prosÃ­m novÃ© uÅ¾ivatelskÃ© jmÃ©no pro svÅ¯j ÃºÄet
+Modal_ChangeUsernameType: ZmÄ›Åˆte {platform} uÅ¾ivatelskÃ© jmÃ©no
+Modal_SetPassword: Zadejte heslo pro pÅ™epÃ­naÄ ÃºÄtÅ¯ PolarWolves
+Modal_SetPassword_Button: Nastavit heslo
+Modal_SetPassword_Info: "POZNÃMKA: Toto neÅ¡ifruje vaÅ¡e ÃºÄty. VÃ½mÄ›na ÃºÄtÅ¯ je jednoduchÃ¡ jako nahrazenÃ­ souborÅ¯ nebo zmÄ›na uÅ¾ivatelskÃ©ho jmÃ©na v souboru. Heslo lze obnovit takÃ© Ãºpravou textu v souboru. Tohle je jednoduchÃ¡ ochranka. ZastavÃ­ jednoduchÃ½ pÅ™Ã­stup k uÅ¾ivatelskÃ©mu rozhranÃ­. Tuto aplikaci mÅ¯Å¾ete umÃ­stit na vyjÃ­matelnÃ© USB, nastavit sloÅ¾ku UserData na stejnÃ© USB a fyzicky ji vyjmout pro vÄ›tÅ¡Ã­ bezpeÄnost. <a class=\"fancyLink\" onclick=\"OpenLinkInBrowser('{link}');return false;\" href=\"\">PÅ™echod na prÅ¯vodce externÃ­m diskem</a><br><br>Pro vymazÃ¡nÃ­ ponechte vÃ½Å¡e uvedenou sloÅ¾ku prÃ¡zdnou a klepnÄ›te na tlaÄÃ­tko Nastavit."
+Modal_EnterDirectory: "Zadejte prosÃ­m adresÃ¡Å™ {platform} jako takovÃ½: C:\\Program Files\\{platform}"
+Modal_LocatePlatform: Lokalizovat {platformExe}
+Modal_LocatePlatformFolder: Vyberte {platform} sloÅ¾ku
+Modal_ConfirmAction: Potvrdit akci
+Modal_AddNew: Zadejte prosÃ­m nÃ¡zev {platform} ÃºÄtu, do kterÃ©ho jste pÅ™ihlÃ¡Å¡eni.
+Modal_AddCurrentAccount: PÅ™idat aktuÃ¡lnÃ­ {platform} ÃºÄet
+Modal_SetImageHeader: Nastavit profilovÃ½ obrÃ¡zek
+Modal_SetImage: Nastavit obrÃ¡zek
+Status_SelectedAccount: "VybrÃ¡no: {name}"
+Status_Init: "Stav: inicializace"
+Status_ClosingPlatform: ZavÃ­rÃ¡nÃ­ {platform}
+Status_ClosingPlatformFailed: NepodaÅ™ilo se zavÅ™Ã­t {platform}
+Status_StartingPlatform: PoÄÃ­naje {platform}
+Toast_StartingPlatformFailed: NepodaÅ™ilo se spustit {platform}! DalÅ¡Ã­ podrobnosti naleznete v protokolu.
+Toast_UrlAdminErr: Soubory .url nemÅ¯Å¾ete spouÅ¡tÄ›t jako sprÃ¡vce. Zkuste jinÃ½ typ zkratky. SpuÅ¡tÄ›nÃ­ jako normÃ¡lnÃ­ uÅ¾ivatel.
+Status_UpdatingFile: "Aktualizuji {file}"
+Status_UpdatingRegistry: Aktualizace registru Windows
+Status_FailedLog: Akce se nezdaÅ™ila. Podrobnosti naleznete v protokolu.
+Status_WaitingForClose: "ÄŒekÃ¡nÃ­ na zavÅ™enÃ­ {processName} ({timeout}{timeLimit})"
+Status_WaitingForMultipleClose: "ÄŒekÃ¡nÃ­ na zavÅ™enÃ­ {processName} a {count} dalÅ¡Ã­ho ({timeout}{timeLimit})"
+Status_GetUniqueId: ShromaÅ¾ÄovÃ¡nÃ­ jedineÄnÃ©ho ID uÅ¾ivatele
+Status_CopyingFiles: KopÃ­rovÃ¡nÃ­ uÅ¾ivatelskÃ½ch souborÅ¯...
+Status_HandlingImage: Manipulace s profilovÃ½m obrÃ¡zkem ÃºÄtu
+Context_SwapTo: PÅ™epnout na ÃºÄet
+Context_CreateShortcut: VytvoÅ™it zÃ¡stupce
+Context_ChangeImage: ZmÄ›nit obrÃ¡zek
+Context_ChangeName: ZmÄ›nit nÃ¡zev pÅ™epÃ­naÄe
+Context_LoginAsSubmenu: PÅ™ihlÃ¡sit se jako
+Context_UsernameSubmenu: UÅ¾ivatelskÃ© jmÃ©no
+Context_RefreshName: Obnovit nÃ¡zev
+Context_CopySubmenu: KopÃ­rovat
+Context_DataSubmenu: Data
+Context_CopyProfileSubmenu: KopÃ­rovat profil
+Context_CommunityUrl: Adresa URL komunity
+Context_CommunityUsername: KomunitnÃ­ uÅ¾ivatelskÃ© jmÃ©no
+Context_LoginUsername: PÅ™ihlaÅ¡ovacÃ­ uÅ¾ivatelskÃ© jmÃ©no
+Context_CopySteamIdSubmenu: KopÃ­rovat SteamID
+Context_Steam_Id: SteamID [STEAM0:~]
+Context_Steam_Id3: SteamID3 [U:1:~]
+Context_Steam_Id32: SteamID32
+Context_Steam_Id64: SteamID64 7656~
+Context_Steam_OpenUserdata: OtevÅ™Ã­t uÅ¾ivatelskÃ¡ data
+Context_ManageSubmenu: Spravovat
+Context_GameDataSubmenu: HernÃ­ data
+Context_ManageGameStats: Spravovat statistiky hry
+Context_Game_CopySettingsFrom: KopÃ­rovat nastavenÃ­ na aktuÃ¡lnÃ­
+Context_Game_RestoreSettingsTo: Obnovit hernÃ­ data
+Context_Game_BackupData: ZÃ¡lohovat hernÃ­ data
+Context_CopyOtherSubmenu: KopÃ­rovat dalÅ¡Ã­
+Context_HidePlatform: SkrÃ½t platformu
+Context_ExportAccList: Exportovat seznam ÃºÄtÅ¯
+Context_RunAdmin: Spustit jako sprÃ¡vce
+Context_Hide: SkrÃ½t
+ProfileImage_ToggleText: PouÅ¾Ã­t obrÃ¡zek jako obrÃ¡zek ÃºÄtu
+Title_Platforms_Settings: PolarWolves - NastavenÃ­ platformy
+Title_Settings_TestCss: PolarWolves - Test CSS stylÅ¯
+Title_AccountsList: PolarWolves - {platform}
+Title_TextEditor: PolarWolves - TextovÃ½ editor
+Title_Settings: PolarWolves - NastavenÃ­
+Title_Steam_Cleaning: PÅ™epÃ­naÄ ÃºÄtÅ¯ PolarWolves - ÄiÅ¡tÄ›nÃ­ pÃ¡rou
+Title_Steam_Settings: PÅ™epÃ­naÄ ÃºÄtÅ¯ PolarWolves - NastavenÃ­ sluÅ¾by Steam
+Title_Template_Settings: PolarWolves - {platformName} Settings
+Title_Login: PolarWolves - PÅ™ihlÃ¡Å¡enÃ­
+Installer_Downloading: StahovÃ¡nÃ­ souboru {file}
+Installer_DownloadFinished: StahovÃ¡nÃ­ dokonÄeno {file}
+Installer_Installing: "Instalace: {runtime}"
+Installer_RuntimeTitle: PÅ™epÃ­naÄ ÃºÄtÅ¯ PolarWolves - instalce runtime
+Installer_Welcome: VÃ­tejte v PÅ™epÃ­naÄi ÃºÄtÅ¯ PolarWolves - Instalace runtime
+Installer_InstalledRuntimes: "AktuÃ¡lnÄ› nainstalovanÃ© runtimy:"
+Installer_ErrorRuntime: "Nebyl nainstalovÃ¡n jeden nebo vÃ­ce runtime:"
+Installer_RuntimeNote: "[~{size1} MB + ~{size2} MB pÅ™i instalaci]"
+Installer_TotalSize: "CelkovÃ¡ velikost stahovÃ¡nÃ­: ~{size} MB"
+Installer_AnyKeyStart: StisknutÃ­m libovolnÃ©ho tlaÄÃ­tka spustÃ­te stahovÃ¡nÃ­...
+Runtime_WebView2: Microsoft WebView2 Runtime
+Runtime_Desktop: Microsoft .NET 5 Desktop Runtime
+Runtime_ASP: Microsoft Microsoft ASP.NET Core {version} Runtime
+Installer_FailedFolder: "NepodaÅ™ilo se vytvoÅ™it sloÅ¾ku:"
+Installer_FailedWV: "StaÅ¾enÃ­ a instalace aplikace Microsoft WebView2 Runtime se nezdaÅ™ilo. Ke staÅ¾enÃ­: 1. KliknÄ›te na odkaz nÃ­Å¾e: {link} 2. V ÄÃ¡sti Spustit serverovÃ© aplikace kliknÄ›te na moÅ¾nost StÃ¡hnout hostitelskÃ½ balÃ­Äek."
+Installer_FailedDR: "StaÅ¾enÃ­ a instalace .NET 5 Desktop Runtime se nezdaÅ™ilo. StÃ¡hnÄ›te si jej prosÃ­m zde:"
+Installed_FailedASP: "StaÅ¾enÃ­ a instalace ASP.NET Core {version} Runtime se nezdaÅ™ilo. StaÅ¾enÃ­: 1. KliknÄ›te na nÃ­Å¾e uvedenÃ½ odkaz: {link} 2. KliknÄ›te na 'Download x64' pod Run Desktop apps."
+Installer_Ready: "Jeden nebo vÃ­ce z nich je pÅ™ipraveno k instalaci. Pokud budete vyzvÃ¡ni k instalaci, kliknÄ›te na tlaÄÃ­tko â€žAnoâ€œ."
+Installer_PressStart: StisknutÃ­m libovolnÃ©ho tlaÄÃ­tka spustÃ­te instalaci...
+Installer_VerifyMin: "OvÄ›Å™, zda splÅˆujeÅ¡ minimÃ¡lnÃ­ doporuÄenÃ© poÅ¾adavky:"
+Installer_VerifyAlready: "VypadÃ¡ to, Å¾e je vÅ¡echno nainstalovanÃ©. OvÄ›Å™, zda splÅˆujeÅ¡ minimÃ¡lnÃ­ doporuÄenÃ© poÅ¾adavky:"
+Installer_Complete: To by mÄ›lo bÃ½t vÅ¡e. HlavnÃ­ program, PolarWolves.exe, se spustÃ­ automaticky.
+Installer_Complete2: "Pokud to nefunguje, postupujte podle pokynÅ¯ k instalaci, zde: {link}"
+Tray_Error: Chyba v systÃ©movÃ© liÅ¡tÄ›
+Tray_NoAccs: "Nebyly nalezeny Å¾Ã¡dnÃ© ÃºÄty.\nZkuste nejprve zmÄ›nit ÃºÄty, nebo vyhledejte 'Tray_Users.json'"
+Tray_Switch: "PÅ™epnout na: {account}"
+Tray_CantOpenExe: "Nelze otevÅ™Ã­t hlavnÃ­ .exe. UjistÄ›te se, Å¾e existuje.\n\nPokusil jsem se otevÅ™Ã­t:"
+Tray_LaunchFail: "PolarWolves - SpuÅ¡tÄ›nÃ­ v systÃ©movÃ© liÅ¡tÄ› se nezdaÅ™ilo"
+Updater_Duplicate: Byla zjiÅ¡tÄ›na jinÃ¡ instance Tcno pÅ™epÃ­naÄe ÃºÄtÅ¯.
+Updater_Unknown: "NeznÃ¡mÃ½ argument: {arg}"
+Updater_NeedsAdmin: Tento program musÃ­ bÃ½t spuÅ¡tÄ›n jako sprÃ¡vce!
+Updater_StatusChecking: Kontroluji verzi
+Updater_FailedVersionCheck: "Verzi nelze zÃ­skat. Pro aktualizaci a ovÄ›Å™enÃ­ souborÅ¯ klikni na OvÄ›Å™it"
+Updater_PressBelow: StisknÄ›te tlaÄÃ­tko nÃ­Å¾e!
+Updater_PressBelowStart: KliknutÃ­m na tlaÄÃ­tko nÃ­Å¾e zahÃ¡jÃ­te aktualizaci.
+Updater_PatchApplied: Oprava aplikovÃ¡na!
+Updater_UpdatingAppData: Aktualizuji soubory v AppData!
+Updater_Complete: VÅ¡echny aktualizace dokonÄeny!
+Updater_Checking: VyhledÃ¡vÃ¡nÃ­ aktualizacÃ­
+Updater_UpdateToVerify: Chcete-li ovÄ›Å™it soubory, musÃ­te nejprve provÃ©st aktualizaci.
+Updater_ClosingPolarWolves: UzavÅ™enÃ­ instancÃ­ PÅ™epÃ­naÄe ÃºÄtÅ¯ PolarWolves (pokud existuje).
+Updater_Downloading: "Stahuji aktualizaci: {version}"
+Updater_Downloaded: StahovÃ¡nÃ­ dokonÄeno.
+Updater_CantExtract: NepodaÅ™ilo se extrahovat aktualizaci.
+Updater_Verify: OvÄ›Å™it soubory
+Updater_Verifying: OvÄ›Å™ovÃ¡nÃ­...
+Updater_VerifySkip: OvÄ›Å™ovÃ¡nÃ­ souborÅ¯ pro pÅ™eskoÄenÃ­ vÅ¡ech malÃ½ch aktualizacÃ­ a jen pÅ™ejÃ­t na nejnovÄ›jÅ¡Ã­.
+Updater_NoConnection: "Nelze se pÅ™ipojit k discord.gg/PLR pro ovÄ›Å™enÃ­ souborÅ¯. MÅ¯Å¾ete zkusit ruÄnÄ› stÃ¡hnout instalaÄnÃ­ program ze strÃ¡nky GitHub a znovu jej nainstalovat pro aktualizaci.\n\nChyba:"
+Updater_NoServer: Nelze se pÅ™ipojit k aktualizaÄnÃ­mu serveru
+Updater_Hashlist: StahovÃ¡nÃ­ nejnovÄ›jÅ¡Ã­ho haÅ¡ovacÃ­ho seznamu...
+Updater_CantCheck: Aktualizace nelze zkontrolovat
+Updater_Failed: "CHYBA: NÄ›kterÃ© soubory se pouÅ¾Ã­vajÃ­ a nelze je aktualizovat.\n\n1. Zkontrolujte, zda jsou vÅ¡echny procesy PolarWolves zcela uzavÅ™eny\n(nebo restartujte poÄÃ­taÄ)\n\n2. Pak klepnÄ›te na tlaÄÃ­tko OvÄ›Å™it nÃ­Å¾e, nebo pokud jste restartovali:\n-   OtevÅ™ete tento aktualizÃ¡tor a ovÄ›Å™te soubory\n    (nachÃ¡zÃ­ se ve sloÅ¾ce 'aktualizÃ¡tor' v instalaÄnÃ­m adresÃ¡Å™i)"
+Updater_Missing: "SOUBOR NENALEZEN: {file}"
+Updater_FileMismatch: "Soubor: {file} mÃ¡ MD5: {md5} OÄŒEKÃVANÃ‰: {value}"
+Updater_DownloadingWeb: StahovÃ¡nÃ­ souboru z webovÃ½ch strÃ¡nek...
+Updater_UnpackingAppData: KopÃ­rovÃ¡nÃ­ souborÅ¯ do %AppData%/PolarWolves PÅ™epÃ­naÄe ÃºÄtÅ¯... (pokud nenÃ­ nastaveno jinak)
+Updater_VerifyComplete: Soubory ovÄ›Å™eny!
+Updater_UpdateFound: "Aktualizace nalezena: {name} [{updateSize}]"
+Updater_TotalFound: "Celkem aktualizacÃ­ nalezeno: {x}"
+Updater_TotalSize: "CelkovÃ¡ velikost: {size}"
+Updater_AwaitingUser: ÄŒekÃ¡nÃ­ na zadÃ¡nÃ­ uÅ¾ivatelem...
+Updater_UpToDate: "Aplikace aktuÃ¡lnÃ­.\n:)"
+Updater_FailedDecode: To je nejpravdÄ›podobnÄ›ji zpÅ¯sobeno mnou (PolarWolves Team) vydÃ¡vÃ¡nÃ­m aktualizace s chybou, kterÃ¡ poruÅ¡ila soubor .json aktualizace. Dejte mi vÄ›dÄ›t :)
+Updater_FailedDecodeTitle: Aktualizace seznamu se nezdaÅ™ila
+Updater_Extracting: ExtrahovÃ¡nÃ­ zÃ¡platovÃ½ch souborÅ¯
+Updater_Applying: Aplikuje se zÃ¡plata...
+Updater_Moving: PÅ™esouvÃ¡nÃ­ souborÅ¯...
+Updater_Title: PolarWolves Updater
+Updater_Started: SpuÅ¡tÄ›no
+Updater_Start: Spustit pÅ™epÃ­naÄ ÃºÄtÅ¯ PolarWolves
+Updater_Begin: ZahÃ¡jit aktualizaci
+Updater_Exit: UkonÄit
+FatalError: DoÅ¡lo k zÃ¡vaÅ¾nÃ© chybÄ›!
+Online: Online
+OnlineDefault: Online (VÃ½chozÃ­)
+Offline: Offline
+Invisible: NeviditelnÃ½
+Busy: ZaneprÃ¡zdnÄ›n
+Away: NepÅ™Ã­tomen
+Snooze: Uspat
+LookingToTrade: Chci obchodovat
+LookingToPlay: Chci hrÃ¡t
+Unrecognized_EPersonaState: NerozpoznanÃ½ ePersonaState
+Reg_DoesntExist: "{subKey} neexistuje."
+Reg_DoesntContain: "{subKey} neobsahuje {val}"
+Reg_Removing: OdstraÅˆovÃ¡nÃ­ {subKey}\\{val}
+PngInvalid_Format: PoÅ¾adovanÃ½ formÃ¡t pixelu je PixelFormat.{x}.
+PngRequired: PoÅ¾adovanÃ½ formÃ¡t obrÃ¡zku je pÅ™enosnÃ¡ sÃ­Å¥ovÃ¡ grafika (png).
+PngDimensions: RozmÄ›ry musÃ­ bÃ½t menÅ¡Ã­ nebo se rovnat {MaxIconWidth}x{MaxIconHeight}
+ThemeSyntaxAnd: "DoÅ¡lo k chybÄ› syntaxe (dalÅ¡Ã­ podrobnosti nÃ­Å¾e)! A:"
+ThemesNotFound: "Nelze najÃ­t sloÅ¾ku \"themes\" v adresÃ¡Å™i PolarWolves. Tento (zejmÃ©na sloÅ¾ka 'Dracula_Cyan') je nutnÃ½ pro spuÅ¡tÄ›nÃ­ tohoto softwaru.\nMÅ¯Å¾ete spustit aktualizÃ¡tor ve sloÅ¾ce \"aktualizÃ¡tor\" pro ovÄ›Å™enÃ­ souborÅ¯ a obnovenÃ­ tÄ›chto chybÄ›jÃ­cÃ­ch souborÅ¯."
+Yes: "- Ano. - Ano."
+No: "Ne. Ne."
+Save: UloÅ¾it
+NoDefault: Ne (vÃ½chozÃ­)
+Ok: "OK"
+Submit: Potvrdit
+Forget: Zapomenout
+Notice: UpozornÄ›nÃ­
+Notes: PoznÃ¡mky
+Error: 'Chyba @ title: window'
+ErrorDetails: "CHYBA: {ex}"
+Failed: Operace selhala
+Success: Operace ÃºspÄ›Å¡nÃ¡
+NotFound: Nenalezeno
+Done: Hotovo
+Edit: 'Upravit @ action: button'
+Refresh: Obnovit
+Working: Pracuji...
+ForName: "Pro: {name}"
+DeletedFiles: SmazanÃ© soubory
+FileFoldersToClear: "Seznam souborÅ¯/sloÅ¾ek k vymazÃ¡nÃ­:"
+CouldNotFindX: Nelze nalÃ©zt {x}
+CouldNotCloseX: Nelze zavÅ™Ã­t {x}!
+CouldNotReadFile: Nelze pÅ™eÄÃ­st {file}!
+DirectoryNotFound: AdresÃ¡Å™ nebyl nalezen
+DirectoryNotFoundFolder: "AdresÃ¡Å™ {folder} nenalezen"
+DeletingFile: "OdstraÅˆuji: {file}"
+DeletingFolder: "OdstraÅˆovÃ¡nÃ­ sloÅ¾ky: "
+CouldntDeleteX: "CHYBA: NELZE SMAZAT: {x}"
+CouldntDeleteUndefined: "CHYBA: NELZE ODSTRANIT NEDEFINOVANÃ SOUBOR"
+CouldntModifyX: "Nelze upravit {file}. Chyba oprÃ¡vnÄ›nÃ­ k souboru nebo se soubor pouÅ¾Ã­vÃ¡."
+Prompt_RestartAsAdmin: "<h3><bold>Tento program bude restartovÃ¡n jako SprÃ¡vce</bold></h3><p>stisknÄ›te tlaÄÃ­tko \"Ano\" v UAC pÅ™i vÃ½zvÄ› sprÃ¡vce.</p>"
+Prompt_ForgetSteam: >
+  <h3 style='color:red'>ChystÃ¡te se zapomenout ÃºÄet!</h3> <h4>Co to znamenÃ¡?</h4> <p>- Steam jiÅ¾ nebude mÃ­t ÃºÄet uvedenÃ½ v reÅ¾imu Big Picture a nebude si pamatovat heslo.<br/> â€“ PÅ™epÃ­naÄ ÃºÄtÅ¯ PolarWolves jiÅ¾ takÃ© nebude zobrazovat ÃºÄet, dokud se znovu nepÅ™ihlÃ¡sÃ­ prostÅ™ednictvÃ­m sluÅ¾by Steam.</p> <p>VÃ¡Å¡ ÃºÄet zÅ¯stane nedotÄen. V tomto poÄÃ­taÄi je to prostÄ› zapomenuto.</p><h4>RozumÃ­te?</h4>
+Prompt_ForgetAccount: >
+  <h3 style='color:red'>ChystÃ¡te se zapomenout na ÃºÄet!</h3> <h4>Co to znamenÃ¡?</h4> <p>PÅ™epÃ­naÄ PolarWolves ÃºÄtu jiÅ¾ nebude zobrazovat ÃºÄet,<br/> dokud nenÃ­ znovu pÅ™ihlÃ¡Å¡en pÅ™es {platform}a nenÃ­ pÅ™idÃ¡n do seznamu.</p> <p>VÃ¡Å¡ ÃºÄet zÅ¯stane nedotÄen. Na tomto poÄÃ­taÄi je zapomenut.</p> <h4>RozrozumÃ­te?</h4>
+Prompt_ClearStats: >
+  <h3 style='color:red'>ChystÃ¡te se vymazat svÃ© statistiky!</h3> <p>Tuto akci nelze vrÃ¡tit zpÄ›t.</p>
+Platform_DiscordPasteHint: VloÅ¾te do Discord konzole a pak vÃ½sledek vloÅ¾te do vstupu!
+Platform_ClearCache: VyÄistit mezipamÄ›Å¥
+Platform_ClearCacheTotal: MazÃ¡nÃ­ {totalFileCount} souborÅ¯ ({totalSizeMB})
+Platform_DeleteFail: NÄ›kterÃ© soubory nelze smazat (mÅ¯Å¾e bÃ½t spuÅ¡tÄ›n program?)
+Platform_CouldNotDeleteLog: Soubor nelze smazat! Zkontrolujte {logPath}
+Error_FileAccessDenied: NepodaÅ™ilo se zÃ­skat pÅ™Ã­stup k souboru! Zkontrolujte {logPath}
+Error_RequiredFileVerify: PoÅ¾adovanÃ½ soubor nebyl nalezen. UjistÄ›te se, Å¾e sloÅ¾ky x64 a x86 existujÃ­ v instalaÄnÃ­m adresÃ¡Å™i. Pokud ne, spusÅ¥te PolarWolves-Updater.exe a ovÄ›Å™te soubory.
+Tooltip_Settings: NastavenÃ­
+Tooltip_Info: Informace
+Tooltip_ManagePlatforms: Zobrazit nebo skrÃ½t dalÅ¡Ã­ platformy
+Tooltip_ExpandShortcuts: Rozbalte vÃ½bÄ›r her a zÃ¡stupcÅ¯
+Tooltip_ShortcutFolder: OtevÅ™ete sloÅ¾ku zÃ¡stupcÅ¯. UmÃ­stÄ›te tam zÃ¡stupce a pÅ™epÃ­naÄ ÃºÄtÅ¯ PolarWolves, abyste je vidÄ›li.
+Tooltip_Backup: ZÃ¡lohujte konfiguraÄnÃ­ soubory/sloÅ¾ky, jak je definovÃ¡no v nastavenÃ­ platformy.
+Tooltip_BackupAll: ZÃ¡lohujte VÅ ECHNY konfiguraÄnÃ­ soubory/sloÅ¾ky, vÄetnÄ› obrÃ¡zkÅ¯ a dalÅ¡Ã­ch velkÃ½ch souborÅ¯.
+Tooltip_ClosingMethod: "Kombinace je nejlepÅ¡Ã­. ZavÅ™Ã­t pokusy o zavÅ™enÃ­ pÅ™Ã­mo pomocÃ­ funkce zavÅ™enÃ­ a TaskKill pouÅ¾Ã­vÃ¡ CMD (NejlepÅ¡Ã­, pokud kombinace nefunguje)"
+Tooltip_StartingMethod: "VÃ½chozÃ­ nastavenÃ­ je nejlepÅ¡Ã­. Direct nemÃ¡ kontrolu nad ÃºrovnÃ­ administrÃ¡tora nebo UAC. ZaÄne na stejnÃ© Ãºrovni (nebo vyÅ¡Å¡Ã­ - ale ne niÅ¾Å¡Ã­) neÅ¾ tento pÅ™epÃ­naÄ ÃºÄtÅ¯"
+Tooltip_CurrentAccount: MomentÃ¡lnÄ› jste pÅ™ihlÃ¡Å¡eni k tomuto ÃºÄtu.
+Tooltip_Restore: KlepnutÃ­m vyberte soubor 7z nebo jej pÅ™etÃ¡hnÄ›te na toto tlaÄÃ­tko.
+Tooltip_DisabledGlobally: Tato poloÅ¾ka je skryta pro vÅ¡echny ÃºÄty. MÅ¯Å¾ete to zmÄ›nit v nastavenÃ­ platformy.
+Discord_Status: ProbÃ­hÃ¡ pÅ™epÃ­nÃ¡nÃ­ ÃºÄtÅ¯.
+Discord_StatusDetails: "PÅ™epnutÃ© ÃºÄty: {number}"
+Website: WebovÃ¡ strÃ¡nka
+Preview_Platforms: NÃ¡hled platforem
+Preview_Accounts: NÃ¡hled ÃºÄtÅ¯
+Preview_Notifications: NÃ¡hled oznÃ¡menÃ­ o topinkÃ¡ch
+Preview_Settings: NÃ¡hled nastavenÃ­
+Preview_Modals: NÃ¡hled modÅ¯
+
+
+
+

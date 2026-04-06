@@ -1,0 +1,513 @@
+﻿---
+Update: Actualizare disponibilÄƒ! Click aici pentru a o Ã®ncepe.
+Header_ChooseLanguage: 'AlegeÈ›i limba:'
+Steam_ShowSteamID: SteamID
+Steam_ShowVac: Stare VCA
+Steam_ShowLastLogin: Ora ultimei autentificÄƒri
+Steam_ShowLimited: Stare limitatÄƒ
+Steam_ShowAccUsername: Numele de utilizator
+Steam_Tray_AccountName: AratÄƒ numele contului [nu numele prietenului]
+Steam_CheckVac: VerificÄƒ statusul VAC
+Steam_OverrideDefaultState: "Suprascrie starea implicitÄƒ de conectare:"
+Steam_StartSilent: "DeschideÈ›i Steam Ã®n bara de activitÄƒÈ›i pe comutator (PorniÈ›i Steam cu â€ž-silentâ€)"
+Steam_OldUi: "UtilizaÈ›i vechea interfaÈ›Äƒ de utilizare Ã®n Steam (-vgui)"
+Steam_CollectInfo: ColectaÈ›i imagini de profil È™i starea interzicerii VAC de la Steam
+Button_AddNew: AdÄƒugÄƒ
+Button_SaveCurrent: SalveazÄƒ Actual
+Button_SaveFile: SalveazÄƒ fiÈ™ierul
+Button_Cancel: AnulaÈ›i
+Button_Login: Autentificare
+Button_Close: ÃŽnchide
+Button_RefreshImages: ReÃ®mprospÄƒtaÈ›i imaginile
+Button_ResetSettings: Resetare setÄƒri
+Button_AdvancedCleaning: CurÄƒÈ›are avansatÄƒ...
+Button_ClearLog: È˜terge jurnalul
+Button_WikiInfo: Mai multe informaÈ›ii (Wiki)
+Button_ManagePlatforms: GestionaÈ›i platformele
+Button_Backup: Backup
+Button_BackupAll: FaceÈ›i backup pentru tot
+Button_Restore: RestabiliÈ›i
+Button_OpenBackup: DeschideÈ›i dosarul de backup
+Button_Back: ÃŽnapoi
+Button_RestartAdmin: Repornire ca administrator
+Button_SetPassword: SetaÈ›i parola aplicaÈ›iei
+Settings_SteamCollectInfo: ColectaÈ›i imaginea de profil Steam È™i starea VAC de la Steam
+Settings_Shortcut: '{platform} Switcher scurtÄƒturÄƒ desktop'
+Settings_Admin: ExecutÄƒ {platform} ca administrator
+Settings_ImageExpiry: 'Zile Ã®nainte de expirarea imaginilor de profil:'
+Settings_SteamAPIKey: "Cheie API web Steam (opÈ›ional)"
+Settings_SteamAPIKey_Note: Setarea unei chei API va face ca indicatorul Limitat (chenar galben) sÄƒ aparÄƒ pentru conturile care sunt Ã®n schimb interzise de Comunitate.
+Settings_Header_AppWide: SetÄƒri pentru Ã®ntreaga aplicaÈ›ie
+Settings_Header_GeneralSettings: SetÄƒri generale
+Settings_Header_AccountDisplay: SetÄƒri afiÈ™are cont
+Settings_Header_ExtraPlatforms: SetÄƒrile platformei
+Settings_Header_GeneralTools: Instrumente generale
+Settings_Header_OtherTools: Alte instrumente
+Settings_Header_TraySettings: SetÄƒrile tÄƒvii
+Settings_Header_OpenGameFolders: Deschide dosarele de joc
+Settings_Header_BackupRestore: Backup È™i restaurare setÄƒrile platformei
+Settings_Header_Language: Limba
+Settings_Header_System: Sistem
+Settings_Header_Theme: Tema
+Settings_Header_Program: Program
+Settings_Header_StatsSharing: Statistici È™i distribuire
+Settings_Header_Platform: "{platformName} setÄƒri"
+Settings_Header_GameStats: SetÄƒrile pentru statisticile globale ale jocului
+Settings_GameStats: Orice este bifat aici NU va apÄƒrea sub numele dvs. de utilizator pentru niciun cont. UtilizaÈ›i aceastÄƒ opÈ›iune dacÄƒ ascundeÈ›i adesea anumite elemente din statisticile dvs. de joc.
+Settings_TrayMax: 'NumÄƒrul maxim de conturi de reÈ›inut:'
+Settings_ExtraPlatformsDisabled: Platforme dezactivate. FaceÈ›i clic pentru a le activa.
+Settings_ExtraPlatformsEnabled: Platforme vizibile. FaceÈ›i clic pentru a le dezactiva.
+Settings_RTL: AfiÈ™aÈ›i textul ca de la dreapta la stÃ¢nga
+Settings_CollectStats: Colectare statistici
+Settings_ShareStats: DistribuiÈ›i statistici Ã®n mod anonim (recomandat)
+Settings_DiscordRpc: Discord Rich Presence (RPC)
+Settings_DiscordRpcShare: PartajaÈ›i numÄƒrul total de comutatoare
+Settings_ViewStats: Vizualizare statistici
+Preview: Previzualizare
+Settings_ClearStats: Resetare
+Settings_CurrentLocation: 'LocaÈ›ia curentÄƒ de instalare: {path}'
+Settings_CurrentDataLocation: 'LocaÈ›ia curentÄƒ a datelor utilizatorului: {path}'
+Settings_SetDataLocation: "[SetaÈ›i locaÈ›ia personalizatÄƒ a datelor utilizatorului]"
+Settings_PickFolder: AlegeÈ›i dosarul {platform}
+Settings_OpenFolder: Deschide dosarul {platform}
+Settings_ClearForgotten: È˜terge cele uitate
+Settings_ClearAccounts: È˜terge conturile
+Settings_StreamerMode: ActiveazÄƒ modul streamer
+Settings_ExitToTray: IeÈ™irea se reduce la minimum Ã®n tavÄƒ
+Settings_DesktopShortcut: Comanda rapidÄƒ de pe desktop
+Settings_StartMenu_ProgramTray: Program È™i tavÄƒ
+Settings_StartMenu_Platform: PlatformÄƒ
+Settings_Tray_StartWindows: PorniÈ›i tava cu Windows
+Settings_Tray_StartNow: '[PorniÈ›i tava acum]'
+Settings_CurrentStyle: Stil curent
+Settings_ThemeBackground: '[SetaÈ›i fundalul]'
+Settings_ThemeOpenFolder: '[Deschide folderul cu teme]'
+Settings_Protocol: 'ActivaÈ›i polarwolves:\\\\ protocol (recomandat)'
+Settings_StartCentered: PorneÈ™te programul centrat
+Settings_OfflineMode: Modul offline (fÄƒrÄƒ activitate Ã®n reÈ›ea)
+Settings_WindowsAccent: UtilizeazÄƒ culoarea de accentuare Windows
+Settings_HelpTranslate: "[Help translate] ([Ajutor la traducere])"
+Settings_ViewTranslators: "[Credits]"
+Settings_Header_ActiveBrowser: "(Avansat) SetaÈ›i motorul de randare:"
+Settings_Header_ClosingMethod: "(Avansat) SetaÈ›i metoda de Ã®nchidere {platform}"
+Settings_Header_StartingMethod: "(Avansat) SetaÈ›i metoda pentru a porni {platform}"
+Settings_AutoStart: "PorniÈ›i automat {platform} la comutarea contului"
+Settings_ShowSteamSwitcher: "AfiÈ™aÈ›i comutatorul de conturi Steam (NU utilizaÈ›i acest lucru sau poate rupe comutatorul de cont PolarWolves)"
+Settings_NoPlatforms: ÃŽn prezent, nu existÄƒ platforme activate. VÄƒ rugÄƒm sÄƒ bifaÈ›i mai jos platformele opÈ›ionale pentru a le activa sau debifaÈ›i platformele dezactivate.
+Settings_MinimizeOnSwitch: MinimizaÈ›i comutatorul la comutarea contului
+Settings_ShowShortNotes: Previzualizare notÄƒ sub numele de utilizator
+Settings_Header_AppPassword: "OpriÈ›i alte persoane care utilizeazÄƒ comutatorul:"
+PreviewCss: Previzualizare CSS
+Settings_PreviewCss: Aceasta este pagina de previzualizare CSS. PuteÈ›i vizualiza cÃ¢teva elemente care apar Ã®n program È™i puteÈ›i vedea cum aratÄƒ cu tema dvs. AceastÄƒ paginÄƒ este utilÄƒ pentru cei care creeazÄƒ teme!
+Settings_PreviewCssHeader: Pagina de previzualizare CSS
+Settings_AutoUpdatePlatforms: ActualizaÈ›i automat lista de platforme
+Settings_CheckForUpdates: VerificaÈ›i actualizÄƒrile la lansare
+Stats_Disabled: "ColecÈ›ia de statistici este dezactivatÄƒ."
+Stats_InDepth: Defalcare Ã®n profunzime a statisticilor
+Stats_ShareEnabled: "Aceste statistici sunt distribuite anonim È™i se vor adÄƒuga la totalul <a onclick=\"{WebsiteLink}\" class=\"fancyLink\">aici</a>."
+Stats_ShareDisabled: "Aceste statistici NU sunt distribuite anonim È™i NU se vor adÄƒuga la totalul <a onclick=\"{WebsiteLink}\" class=\"fancyLink\">aici</a>."
+Stats_OperatingSystem: "Sistem de operare: "
+Stats_FirstLaunch: "Prima lansare: "
+Stats_LaunchCount: "NumÄƒrÄƒtoarea lansÄƒrilor: "
+Stats_CrashCount: "NumÄƒr de accidente: "
+Stats_MostUsedPlatform: "Platforma cea mai utilizatÄƒ: "
+Stats_TotalTime: "Timpul total petrecut Ã®n aplicaÈ›ie: "
+Stats_TotalSwitches: "Total comutatoare de cont: "
+Stats_TotalGamesLaunched: "Total aplicaÈ›ii/jocuri lansate prin comutator: "
+Stats_UniqueDaysLong: "Zile unice cu conturi schimbate: "
+Stats_LastUpload: "Ultima Ã®ncÄƒrcare: "
+Stats_SwitcherStats: "Statistici comutator: "
+Stats_PageStats: "Statisticile paginii: "
+Stats_VisitsTotalTime: "{visits} vizite Ã®n total, {hours} orÄƒ Ã®n total"
+Stats_Accounts: "Conturi: "
+Stats_Switches: "Comutatoare: "
+Stats_FirstActive: "Primul activ: "
+Stats_LastActive: "Ultimul activ: "
+Stats_UniqueDays: "Zile unice: "
+Stats_GameShortcuts: "Comenzi rapide de joc: "
+Stats_GameShortcutsHotbar: "Comenzi rapide de joc (pe bara de comandÄƒ rapidÄƒ): "
+Stats_GamesLaunched: "Jocuri lansate: "
+Stats_MetricsToShow: "Valori afiÈ™ate:"
+Stats_AccountId: "Id cont:"
+Auth_LoginRequired: O parolÄƒ a fost setatÄƒ anterior È™i este necesarÄƒ. VÄƒ rugÄƒm sÄƒ introduceÈ›i parola mai jos.
+Auth_EnterPassword: "IntroduceÈ›i parola:"
+Auth_PassIncorrect: ParolÄƒ incorectÄƒ.
+Locked: Blocat
+Cleaning_Header_StartMenuShortcuts: 'Comenzi rapide pentru meniul Start:'
+Cleaning_Header_General: CurÄƒÈ›are generalÄƒ
+Cleaning_Header_LoginHistory: CurÄƒÈ›Äƒ istoricul conectÄƒrilor
+Cleaning_Header_PlatformCleaning: '{platform} Comutator'
+Cleaning_ImportantInfoHeader: 'InformaÈ›ii importante:'
+Cleaning_ImportantInfo: >
+  DacÄƒ dai clic pe un buton, vei È™terge fiÈ™ierele asociate din instalaÈ›ia Steam.<br /> DacÄƒ È™tergi loginusers.vdf, acest comutator de cont nu va mai afiÈ™a niciun cont.<br /> Va trebui sÄƒ te conectezi la el folosind Steam pentru a-l recupera.
+Cleaning_Button_KillProcess: Procesul Kill {platform}
+Cleaning_Button_ForgottenBackups: Copiile de rezervÄƒ ale contului uitate
+Cleaning_Understand: ÃŽnÈ›eleg ce fac butoanele astea.
+Restore_Info: >
+  DacÄƒ anterior aÈ›i â€žuitatâ€ un cont, Ã®l puteÈ›i restaura aici.<br /> Aceasta le adaugÄƒ Ã®napoi Ã®n fiÈ™ierul loginusers.vdf, permiÈ›Ã¢ndu-vÄƒ sÄƒ comutaÈ›i la acesta.
+Restore_Button_Restore: Restabilire selectatÄƒ
+Ignored_RemoveAccounts: EliminaÈ›i conturile din lista de ignorare
+Ignored_Description: DacÄƒ aÈ›i â€žignoratâ€ anterior un cont, Ã®l puteÈ›i afiÈ™a din nou aici
+Ignored_Stop: Oprire ignorare selectatÄƒ
+Toast_UpdatesDownloading: ActualizÄƒrile se descarcÄƒ Ã®n fundal. PuteÈ›i continua sÄƒ utilizaÈ›i programul.
+Toast_UpdatesDownloaded: DescÄƒrcarea actualizÄƒrilor s-a terminat. ÃŽnchideÈ›i aceastÄƒ aplicaÈ›ie pentru a Ã®ncepe actualizarea.
+Toast_DataLocationCopying: (1/2) Copierea fiÈ™ierelor existente Ã®n noul folder de date utilizator!
+Toast_DataLocationNotCopying: (1/2) Folderul are deja fiÈ™iere! Nu va migra datele utilizatorului.
+Toast_DataLocationSet: (2/2) ReporniÈ›i comutatorul de cont pentru a utiliza noul folder!
+Toast_PlaceShortcutFiles: Se deschide un folder. PlasaÈ›i comenzile rapide ale jocului Ã®n acel dosar È™i reporniÈ›i comutatorul de cont.
+Toast_TrayStarted: Tava a pornit!
+Toast_TrayRunning: Tava este deja deschisÄƒ
+Toast_TrayUsersMissing: Niciun utilizator al tÄƒvii salvat
+Toast_TrayFail: Imposibil de pornit aplicaÈ›ia de tavÄƒ!
+Toast_TrayPosition: "La apÄƒsarea butonului Exit (IeÈ™ire): voi fi pe tava Windows! (Dreapta Barei de Start)"
+Toast_TrayHint: "Sugestie: Ctrl+FaceÈ›i clic pe â€žXâ€ pentru a mÄƒ Ã®nchide complet sau prin intermediul tÄƒvii > â€žIeÈ™ireâ€"
+Toast_Copied: Copiat
+Toast_AlreadyProcessing: Se proceseazÄƒ deja conturile...
+Toast_FailedRestore: Restabilirea conturilor a eÈ™uat (consultaÈ›i consola)
+Toast_Restored: Conturile au fost restaurate!
+Toast_ProtocolEnabled: Acest program va rÄƒspunde acum la polarwolves:\\\\ Ã®n Windows
+Toast_ProtocolEnabledTitle: Protocol adÄƒugat
+Toast_ProtocolDisabled: Acest program nu va mai rÄƒspunde la polarwolves:\\\\
+Toast_ProtocolDisabledTitle: Protocol eliminat
+Toast_RestartAsAdmin: ÃŽncepeÈ›i ca administrator È™i Ã®ncercaÈ›i din nou.
+Toast_RestartAfterClose: ReporniÈ›i programul dupÄƒ ce faceÈ›i clic pe ÃŽnchideÈ›i.
+Toast_RestartAfterCloseTitle: Culoarea de accentuare este dezactivatÄƒ
+Toast_RestartRequired: ReporneÈ™te pentru a aplica modificÄƒrile
+Toast_LoadStylesheetFailed: ÃŽncÄƒrcarea foii de stil a eÈ™uat! Pentru detalii, consultaÈ›i dosarul cu datele utilizatorului.
+Toast_LoadingStats: Unul sau mai multe profiluri sunt statistici revigorante. VÄƒ rugÄƒm sÄƒ aÈ™teptaÈ›i.
+Toast_ItemNotFound: "{item} nu a fost gÄƒsit"
+Toast_DeletedTotal: "{files} din {totalFiles} È™ters. Total: {totalSize}"
+Toast_CantChangeUsername: Numele de utilizator nu a putut fi modificat
+Toast_CantClearLoginFiles: È˜tergerea fiÈ™ierelor de autentificare vechi a eÈ™uat
+Toast_AccountIdReg: Nu s-a putut obÈ›ine ID-ul contului din Registry!
+Toast_RegFailWrite: Nu s-a putut scrie Ã®n Registrul Windows!
+Toast_RegFailRead: Nu s-a putut citi din Registrul Windows!
+Toast_RegFailReadSaved: ÃŽnregistrarea salvatÄƒ nu a putut fi cititÄƒ. DacÄƒ nu reuÈ™eÈ™ti, Ã®ncearcÄƒ sÄƒ elimini È™i sÄƒ adaugi din nou contul.
+Toast_RegSaveMissing: Nu a reuÈ™it GÄƒsirea sau citirea datelor din fiÈ™ierele de registry salvate!
+Toast_DuplicateNames: Imposibil de schimbat. DuplicaÈ›i conturile cu acelaÈ™i nume de utilizator?
+Toast_MissingUserId: "Imposibil de schimbat. ID-ul de utilizator lipseÈ™te. VerificaÈ›i â€žErori comuneâ€ Wiki."
+Toast_CouldNotLocate: Nu s-a putut localiza utilizatorul conectat
+Toast_StreamerModeHint: InformaÈ›iile private sunt ascunse! - Vezi setÄƒrile
+Toast_StreamerModeTitle: Modul streamer
+Toast_AddAccountsFirst: DeschideÈ›i platforma din listÄƒ È™i adÄƒugaÈ›i mai Ã®ntÃ¢i cÃ¢teva conturi
+Toast_AddAccountsFirstTitle: Nu existÄƒ conturi salvate
+Toast_CantFindImage: Imaginea utilizatorilor nu a putut fi gÄƒsitÄƒ.
+Toast_CantCreateShortcut: Nu se poate crea o comandÄƒ rapidÄƒ
+Toast_ShortcutCreated: ComandÄƒ rapidÄƒ creatÄƒ!
+Toast_SettingsCopied: SetÄƒrile au fost copiate Ã®n contul curent.
+Toast_GameDataRestored: Datele jocului pentru acest cont au fost restaurate.
+Toast_NoValidSteamId: Imposibil de gÄƒsit un ID Steam valid.
+Toast_FailedUpdateCheck: CÄƒutarea actualizÄƒrilor a eÈ™uat
+Toast_UpdateVerifyFail: Nu se pot verifica fiÈ™ierele de actualizare. DescÄƒrcaÈ›i cea mai recentÄƒ versiune È™i Ã®nlocuiÈ›i fiÈ™ierele din directorul dvs.
+Toast_StartedGame: ÃŽnceput {program}
+Toast_SteamCantLoadXml: Nu s-au putut obÈ›ine informaÈ›ii XML pentru {steamId}. ConsultaÈ›i jurnalul pentru mai multe detalii.
+Toast_Steam_VacCleared: Starea VCA pentru conturi a fost eliminatÄƒ
+Toast_Steam_CantDeleteVacCache: Nu s-a putut È™terge â€žLoginCache/Steam/VACCache/SteamVACCache.jsonâ€
+Toast_NoFindSteamUserdata: Imposibil de gÄƒsit dosarul Steam\\ userdata
+Toast_NoFindGameBackup: Imposibil de gÄƒsit folderul de date al jocului de rezervÄƒ pentru acest cont.
+Toast_GameBackupDone: "Folderul de date al jocului a fost copiat cu succes: {folderLocation}"
+Toast_Steam_VdfLast: S-a putut Ã®ncÄƒrca din vdf_last. Unele conturi pot lipsi.
+Toast_PartiallyFixed: ParÈ›ial fix
+Toast_Steam_FailedLoginusers: Nu s-a putut Ã®ncÄƒrca aplicaÈ›ia Steam/config/loginusers.vdf
+Toast_Steam_CantLocateLoginusers: Nu se poate localiza â€ž.../Steam/config/loginusers.vdfâ€. Mai Ã®ntÃ¢i, Ã®ncearcÄƒ sÄƒ te conectezi la un cont.
+Toast_CantClearImages: Nu s-au putut È™terge imaginile
+Toast_RefreshedImages: Imagini reÃ®mprospÄƒtate
+Toast_ClearForgottenCheck: Sigur doriÈ›i sÄƒ È™tergeÈ›i copiile de rezervÄƒ ale conturilor uitate?
+Toast_ForgotAccount: Am uitat contul
+Toast_ClearedPlatformSettings: "S-au È™ters {platform} setÄƒri ale comutatorului"
+Toast_ClearedImages: "Imagini È™terse"
+Toast_SavedItem: "Salvat: {item}"
+Toast_ChangedUsername: Nume de utilizator schimbat
+Toast_SetUsername: SeteazÄƒ numele de utilizator
+Toast_AlreadyLoggedIn: Te-ai conectat deja cu acest cont! (Nu au fost efectuate modificÄƒri)
+Toast_BackupCopy: (1/3) Se copiazÄƒ fiÈ™ierele Ã®ntr-o locaÈ›ie temporarÄƒ...
+Toast_BackupCompress: (2/3) Comprimarea fiÈ™ierelor ({size}). Acest lucru va dura ceva timp...
+Toast_BackupComplete: (3/3) S-a terminat de comprimat! ({size} la {compressedSize})
+Toast_BackupProgress: "Backup Ã®n curs (dimensiune comprimatÄƒ: {compressedSize})"
+Toast_BackupFail: Copiere de rezervÄƒ eÈ™uatÄƒ - consultaÈ›i jurnalul!
+Toast_BackupBusy: Backup deja Ã®n desfÄƒÈ™urare!
+Toast_RestoreBusy: Restaurare deja Ã®n desfÄƒÈ™urare!
+Toast_RestoreExt: Extragerea arhivei.
+Toast_RestoreCopying: Mutarea fiÈ™ierelor Ã®napoi Ã®n platformÄƒ
+Toast_RestoreDeleting: È˜tergerea fiÈ™ierelor temporare
+Toast_RestoreComplete: Restaurare terminatÄƒ!
+Toast_FailedLoad: Nu s-a Ã®ncÄƒrcat {platform}! FaceÈ›i clic pe platformÄƒ pentru a vedea eroarea.
+Toast_FailedPlatformsLoad: Nu s-a Ã®ncÄƒrcat Platforms.json! VerificaÈ›i dacÄƒ acest fiÈ™ier existÄƒ.
+Toast_FailedLoadSettings: "ÃŽncÄƒrcarea setÄƒrilor a eÈ™uat! Se Ã®ncarcÄƒ Ã®n schimb setÄƒrile implicite. Se adaugÄƒ â€žvechiâ€ la numele fiÈ™ierului de setÄƒri existent."
+Toast_FailedLoadStats: "ÃŽncÄƒrcarea statisticilor a eÈ™uat! ÃŽncepeÈ›i din nou."
+Toast_FailedStatsLoad: ÃŽncÄƒrcarea GameStats.json a eÈ™uat! Te rugÄƒm sÄƒ verifici dacÄƒ acest fiÈ™ier existÄƒ.
+Toast_GameStatsLoadFail: "Statisticile jocului nu au putut fi obÈ›inute de pe web pentru {Game}"
+Toast_GameStatsEmpty: "Nu au fost gÄƒsite statistici despre joc pe site-ul web pentru {Game}. Crezi cÄƒ e o eroare? VerificaÈ›i folderul de date utilizator È™i 'temp\\download-{AccoundId}-{Game}.html' pentru a vedea dacÄƒ pagina a avut o eroare!"
+Toast_FileCopyFail: Copierea fiÈ™ierelor a eÈ™uat! ConsultaÈ›i jurnalul pentru mai multe detalii.
+Toast_UserDataLoadFail: ÃŽncÄƒrcarea datelor de utilizator {UserData}\\ WindowSettings.json a eÈ™uat. Se dÄƒ Ã®napoi È™i se reseteazÄƒ! Eroare salvatÄƒ Ã®n jurnal.
+Toast_UpdateCheckFail: Nu s-a putut contacta https://discord.gg/PLR/ pentru a verifica dacÄƒ existÄƒ actualizÄƒri. Acest mesaj va fi afiÈ™at o datÄƒ pe zi.
+Toast_FailedCreateIcon: EÈ™ec la crearea pictogramei. ConsultaÈ›i jurnalul pentru detalii.
+Toast_SameAccount: Nu se pot copia fiÈ™iere Ã®n/din acelaÈ™i cont. ÃŽncearcÄƒ alt cont sau acceseazÄƒ Wiki pentru mai multe informaÈ›ii.
+Toast_Steam_DownloadingAppIds: Se descarcÄƒ lista de aplicaÈ›ii Steam...
+Toast_Steam_DownloadingAppIdsComplete: S-a terminat descÄƒrcarea. Submeniul cu datele jocului a fost actualizat.
+Toast_SteamWebKeyInvalid: Cheia API web Steam pare sÄƒ fie nevalidÄƒ. VÄƒ rugÄƒm sÄƒ setaÈ›i unul nou.
+Toast_DownloadingProfileData: Se descarcÄƒ datele de profil
+Toast_PasswordChanged: Parola a fost schimbatÄƒ
+Toast_JsonFailModify: Modificarea fiÈ™ierului JSON a eÈ™uat. ConsultaÈ›i jurnalul.
+Toast_DifferentClosingMethod: "'Metoda de Ã®nchidere' este diferitÄƒ de cea implicitÄƒ. DacÄƒ jocurile se Ã®nchid È™i mai multe verificÄƒ dacÄƒ schimbarea acestei opÈ›iuni ajutÄƒ. Implicit: {defaultMethod}, Curent: {currentMethod}"
+Toast_NameEmpty: Numele de utilizator nu poate fi gol (È™i nu poate conÈ›ine doar spaÈ›ii)
+Toast_NewPlatforms: "Actualizat! Au adÄƒugat noi platforme: {listOfNames}. FaceÈ›i clic pentru a respinge."
+Toast_FoundExeViaShortcut: "Am gÄƒsit calea instalatÄƒ dintr-o comandÄƒ rapidÄƒ din meniul Start. VerificaÈ›i locaÈ›ia fÄƒcÃ¢nd clic pe SetÄƒri acum. FaceÈ›i clic pentru a respinge."
+Modal_Crowdin_Header: Crowdin traducÄƒtori
+Modal_Crowdin_Info: "IatÄƒ toÈ›i cei care au ajutat la traducerea acestui software.<br>Utilizatorii cu limbi lÃ¢ngÄƒ ei au ajutat foarte mult la traducere (rol de corector)."
+Modal_Info_Creator: Creat de PolarWolves Team [Wesley Pyburn]
+Modal_Info_Version: Versiune
+Modal_Info_ViewGitHub: Vizualizare pe GitHub
+Modal_Info_ViewPatreon: Suport prin Patreon
+Modal_Info_ViewKofi: Suport prin Ko-Fi
+Modal_Info_BugReport: Raport de eroare/Solicitare de caracteristici
+Modal_Info_VisitSite: VizitaÈ›i discord.gg/PLR
+Modal_Info_Disclaimer: Declinarea responsabilitÄƒÈ›ii
+Modal_Title_Info: PolarWolves Information (FÄƒrÄƒ informaÈ›ii despre comutatorul de cont)
+Modal_Title_ChangeUsername: SchimbaÈ›i numele de utilizator
+Modal_Title_ConfirmAction: Comutator de cont discord.gg/PLRnfirmare acÈ›iune
+Modal_Title_LocatePlatform: VÄƒ rugÄƒm sÄƒ localizaÈ›i directorul {platform}
+Modal_Title_AddNew: AdÄƒugaÈ›i un cont {platform} nou
+Modal_Title_Background: SetaÈ›i o imagine de fundal
+Modal_Title_Userdata: SetaÈ›i folderul de date utilizator
+Modal_Title_GameStats: Activare/Dezactivare statistici joc
+Modal_GameStats_Header: "Activare/Dezactivare statistici joc pentru: {accountName}"
+Modal_Title_Stats: Statisticile dvs.
+Modal_Title_GameVars: "Introdu detaliile pentru {game}"
+Modal_GameVars_Header: "VÄƒ rugÄƒm sÄƒ introduceÈ›i urmÄƒtoarele detalii pentru contul dvs. {game} , {username} la {platform}"
+Modal_Title_AccountNotes: "Note privind contul pentru: {accountName}"
+Modal_Title_SetPassword: Setare parolÄƒ
+Modal_SetBackground: 'SelectaÈ›i o imagine sau introduceÈ›i o adresÄƒ URL mai jos.<br>LÄƒsaÈ›i necompletat È™i setaÈ›i resetarea.<br>(Pentru un control mai avansat, consultaÈ›i Tematica de pe Wiki):'
+Modal_SetBackground_Button: SetaÈ›i fundalul
+Modal_SetBackground_ChooseImage: AlegeÈ›i imaginea localÄƒ
+Modal_SetUserdata: IntroduceÈ›i o cale de folder mai jos È™i faceÈ›i clic pe setaÈ›i.
+Modal_SetUserdata_ChooseFolder: SelectaÈ›i un folder
+Modal_SetUserdata_Button: SetaÈ›i datele utilizatorului
+Modal_ChangeUsername: VÄƒ rugÄƒm sÄƒ introduceÈ›i un nou nume de utilizator pentru contul dvs
+Modal_ChangeUsernameType: SchimbaÈ›i {platform} nume de utilizator
+Modal_SetPassword: IntroduceÈ›i o parolÄƒ pentru Comutatorul de conturi PolarWolves
+Modal_SetPassword_Button: Setare parolÄƒ
+Modal_SetPassword_Info: "NOTÄ‚: aceasta nu vÄƒ cripteazÄƒ conturile. Schimbarea conturilor este la fel de simplÄƒ ca Ã®nlocuirea fiÈ™ierelor sau schimbarea unui nume de utilizator Ã®ntr-un fiÈ™ier. Parola poate fi resetatÄƒ prin editarea textului È™i Ã®ntr-un fiÈ™ier. Aceasta este o simplÄƒ securitate. OpreÈ™te accesul simplu la interfaÈ›a cu utilizatorul. PuteÈ›i pune aceastÄƒ aplicaÈ›ie pe un USB amovibil, setaÈ›i folderul UserData pe acelaÈ™i USB È™i scoateÈ›i-l fizic pentru mai multÄƒ securitate. <a class=\"fancyLink\" onclick=\"OpenLinkInBrowser('{link}');return false;\" href=\"\">Trecerea la un ghid de unitate externÄƒ</a><br><br>Pentru a È™terge, lÄƒsaÈ›i necompletat È™i faceÈ›i clic pe SetaÈ›i."
+Modal_EnterDirectory: "Te rugÄƒm sÄƒ introduci directorul {platform}, ca atare: C:\\Program Files\\{platform}"
+Modal_LocatePlatform: Localizare {platformExe}
+Modal_LocatePlatformFolder: SelectaÈ›i dosarul {platform}
+Modal_ConfirmAction: ConfirmÄƒ acÈ›iunea
+Modal_AddNew: IntroduceÈ›i un nume pentru contul {platform} la care sunteÈ›i conectat (Äƒ).
+Modal_AddCurrentAccount: AdÄƒugaÈ›i contul curent {platform}
+Modal_SetImageHeader: SetaÈ›i imaginea de profil
+Modal_SetImage: SetaÈ›i imaginea
+Status_SelectedAccount: "Selectat: {name}"
+Status_Init: "Stare: iniÈ›ializare"
+Status_ClosingPlatform: ÃŽnchidere {platform}
+Status_ClosingPlatformFailed: Nu s-a putut Ã®nchide {platform}
+Status_StartingPlatform: Incepand cu {platform}
+Toast_StartingPlatformFailed: Nu s-a putut porni {platform}! ConsultaÈ›i jurnalul pentru mai multe detalii.
+Toast_UrlAdminErr: Nu puteÈ›i rula fiÈ™iere .url ca administrator. ÃŽncercaÈ›i un alt tip de scurtÄƒturÄƒ. Se lanseazÄƒ ca utilizator normal.
+Status_UpdatingFile: "Actualizare {file}"
+Status_UpdatingRegistry: Actualizarea registrului Windows
+Status_FailedLog: AcÈ›iunea eÈ™uatÄƒ. ConsultaÈ›i jurnalul pentru detalii.
+Status_WaitingForClose: "AÈ™teptaÈ›i ca {processName} sÄƒ se Ã®nchidÄƒ ({timeout}/{timeLimit} secunde)"
+Status_WaitingForMultipleClose: "Se aÈ™teaptÄƒ ca {processName} È™i {count} alÈ›ii sÄƒ se Ã®nchidÄƒ{timeLimit} {timeout})"
+Status_GetUniqueId: Colectarea ID-ului de utilizator unic
+Status_CopyingFiles: Se copieazÄƒ fiÈ™ierele utilizator...
+Status_HandlingImage: Gestionarea imaginii de profil a contului
+Context_SwapTo: ComutÄƒ la cont
+Context_CreateShortcut: CreaÈ›i o comandÄƒ rapidÄƒ
+Context_ChangeImage: SchimbÄƒ imaginea
+Context_ChangeName: SchimbÄƒ numele comutatorului
+Context_LoginAsSubmenu: ConecteazÄƒ-te ca
+Context_UsernameSubmenu: Nume de utilizator
+Context_RefreshName: ReÃ®mprospÄƒtare nume
+Context_CopySubmenu: CopiazÄƒ
+Context_DataSubmenu: Data
+Context_CopyProfileSubmenu: CopiazÄƒ profilul
+Context_CommunityUrl: URL comunitate
+Context_CommunityUsername: Numele de utilizator al comunitÄƒÈ›ii
+Context_LoginUsername: Nume utilizator de autentificare
+Context_CopySteamIdSubmenu: CopiazÄƒ SteamID
+Context_Steam_Id: SteamID [Steam0:~]
+Context_Steam_Id3: SteamID3 [U:1:~]
+Context_Steam_Id32: SteamID32
+Context_Steam_Id64: SteamID64 7656~
+Context_Steam_OpenUserdata: DeschideÈ›i datele de utilizator
+Context_ManageSubmenu: Gestionare
+Context_GameDataSubmenu: Date despre joc
+Context_ManageGameStats: GestionaÈ›i statisticile jocului
+Context_Game_CopySettingsFrom: CopiazÄƒ setÄƒrile Ã®n meniul curent
+Context_Game_RestoreSettingsTo: RestaureazÄƒ datele jocului
+Context_Game_BackupData: Backup game data (Copiere de rezervÄƒ date joc)
+Context_CopyOtherSubmenu: CopiazÄƒ altul
+Context_HidePlatform: AscundeÈ›i platforma
+Context_ExportAccList: ExportÄƒ lista de conturi
+Context_RunAdmin: RulaÈ›i ca administrator
+Context_Hide: Ascunde
+ProfileImage_ToggleText: UtilizaÈ›i imaginea ca imagine de cont
+Title_Platforms_Settings: PolarWolves - SetÄƒri platformÄƒ
+Title_Settings_TestCss: PolarWolves - Test CSS Styling
+Title_AccountsList: PolarWolves Comutator de cont - {platform}
+Title_TextEditor: PolarWolves - Text Editor
+Title_Settings: PolarWolves - SetÄƒri
+Title_Steam_Cleaning: PolarWolves Comutator de cont - CurÄƒÈ›are cu abur
+Title_Steam_Settings: PolarWolves - Steam Settings
+Title_Template_Settings: PolarWolves - {platformName} SetÄƒri
+Title_Login: Comutator de cont PolarWolves - Autentificare
+Installer_Downloading: DescÄƒrcare {file}
+Installer_DownloadFinished: DescÄƒrcare finalizatÄƒ {file}
+Installer_Installing: "Instalare: {runtime}"
+Installer_RuntimeTitle: PolarWolves - Instalator runtime
+Installer_Welcome: Bine aÈ›i venit la PolarWolves - Programul de instalare Runtime
+Installer_InstalledRuntimes: "Timpii de execuÈ›ie instalaÈ›i Ã®n prezent:"
+Installer_ErrorRuntime: "Unul sau mai multe cicluri de execuÈ›ie nu au fost instalate:"
+Installer_RuntimeNote: "[~{size1} MB + ~{size2} MB Ã®n timpul instalÄƒrii]"
+Installer_TotalSize: "Dimensiunea totalÄƒ a descÄƒrcÄƒrii: ~{size} MO"
+Installer_AnyKeyStart: ApÄƒsaÈ›i orice tastÄƒ pentru a Ã®ncepe descÄƒrcarea...
+Runtime_WebView2: Microsoft WebView2 Runtime
+Runtime_Desktop: ExecuÈ›ie desktop Microsoft .NET 5
+Runtime_ASP: Microsoft Microsoft ASP.NET Core {version} Runtime
+Installer_FailedFolder: "Crearea dosarului a eÈ™uat:"
+Installer_FailedWV: "DescÄƒrcarea È™i instalarea Microsoft WebView2 Runtime a eÈ™uat. Pentru a descÄƒrca: 1. FaceÈ›i clic pe link-ul de mai jos: {link} 2. FaceÈ›i clic pe â€žDescÄƒrcaÈ›i pachetul de gÄƒzduireâ€ sub RulaÈ›i aplicaÈ›iile serverului."
+Installer_FailedDR: "DescÄƒrcarea È™i instalarea .NET 5 Desktop Runtime a eÈ™uat. VÄƒ rugÄƒm sÄƒ Ã®l descÄƒrcaÈ›i aici:"
+Installed_FailedASP: "Nu s-a putut descÄƒrca È™i instala ASP.NET Core {version} Runtime. Pentru a descÄƒrca: 1. FaceÈ›i clic pe linkul de mai jos: {link} 2. FaceÈ›i clic pe â€žDownload x64â€ sub Run Desktop apps."
+Installer_Ready: "Unul sau mai multe sunt gata de instalare. DacÄƒ È™i cÃ¢nd vi se solicitÄƒ dacÄƒ doriÈ›i sÄƒ instalaÈ›i, faceÈ›i clic pe â€žDaâ€."
+Installer_PressStart: ApÄƒsaÈ›i orice tastÄƒ pentru a Ã®ncepe instalarea...
+Installer_VerifyMin: "VerificaÈ›i dacÄƒ Ã®ndepliniÈ›i cerinÈ›ele minime recomandate:"
+Installer_VerifyAlready: "Se pare cÄƒ totul este instalat. VerificaÈ›i dacÄƒ Ã®ndepliniÈ›i cerinÈ›ele minime recomandate:"
+Installer_Complete: Asta ar trebui sÄƒ fie totul. Programul principal, PolarWolves.exe, se va rula automat.
+Installer_Complete2: "DacÄƒ nu funcÈ›ioneazÄƒ, consultaÈ›i instrucÈ›iunile de instalare, aici: {link}"
+Tray_Error: Eroare tavÄƒ
+Tray_NoAccs: "Nu au fost gÄƒsite conturi.\nÃŽncercaÈ›i mai Ã®ntÃ¢i sÄƒ comutaÈ›i conturile sau localizaÈ›i â€žTray_Users.jsonâ€"
+Tray_Switch: "Comutare la: {account}"
+Tray_CantOpenExe: "Nu s-a putut deschide .exe-ul principal. AsigurÄƒ-te cÄƒ existÄƒ.\n\nAm Ã®ncercat sÄƒ deschid:"
+Tray_LaunchFail: "PolarWolves - Lansarea tÄƒvii a eÈ™uat"
+Updater_Duplicate: A fost detectatÄƒ o altÄƒ instanÈ›Äƒ PolarWolves Updater.
+Updater_Unknown: "Argument necunoscut: {arg}"
+Updater_NeedsAdmin: Acest program trebuie rulat ca administrator!
+Updater_StatusChecking: Verificare versiune
+Updater_FailedVersionCheck: "Nu s-a putut obÈ›ine versiunea. FaceÈ›i clic pe â€žConfirmaÈ›iâ€ pentru a actualiza È™i verifica fiÈ™ierele"
+Updater_PressBelow: ApÄƒsaÈ›i butonul de mai jos!
+Updater_PressBelowStart: FaceÈ›i clic pe butonul de mai jos pentru a Ã®ncepe actualizarea.
+Updater_PatchApplied: Patch aplicat!
+Updater_UpdatingAppData: Se actualizeazÄƒ fiÈ™ierele Ã®n AppData!
+Updater_Complete: Toate actualizÄƒrile sunt complete!
+Updater_Checking: Se verificÄƒ dacÄƒ existÄƒ actualizÄƒri
+Updater_UpdateToVerify: Pentru a verifica fiÈ™ierele, trebuie sÄƒ actualizaÈ›i mai Ã®ntÃ¢i.
+Updater_ClosingPolarWolves: ÃŽnchiderea instanÈ›elor PolarWolves (dacÄƒ existÄƒ).
+Updater_Downloading: "DescÄƒrcare actualizare: {version}"
+Updater_Downloaded: DescÄƒrcare completÄƒ.
+Updater_CantExtract: Extragerea actualizÄƒrii a eÈ™uat.
+Updater_Verify: VerificÄƒ fiÈ™ierele
+Updater_Verifying: Se verificÄƒ...
+Updater_VerifySkip: Se verificÄƒ fiÈ™ierele pentru a trece peste toate actualizÄƒrile mici È™i se trece direct la cele mai recente.
+Updater_NoConnection: "Nu s-a putut realiza conexiunea la discord.gg/PLR pentru a verifica fiÈ™ierele. PuteÈ›i Ã®ncerca sÄƒ descÄƒrcaÈ›i manual programul de instalare din pagina GitHub È™i sÄƒ Ã®l reinstalaÈ›i pentru actualizare.\n\nEroare:"
+Updater_NoServer: Nu s-a putut ajunge la serverul de actualizare
+Updater_Hashlist: Se descarcÄƒ cea mai recentÄƒ listÄƒ hash...
+Updater_CantCheck: Nu se pot cÄƒuta actualizÄƒri
+Updater_Failed: "EROARE: Unele fiÈ™iere sunt Ã®n uz È™i nu pot fi actualizate.\n\n1. AsiguraÈ›i-vÄƒ cÄƒ toate procesele PolarWolves sunt complet Ã®nchise\n(sau reporniÈ›i PC-ul)\n\n2. Apoi faceÈ›i clic pe Verify (Verificare) de mai jos sau dacÄƒ aÈ›i repornit:\n-   DeschideÈ›i acest actualizator È™i verificaÈ›i fiÈ™ierele\n    (aflate Ã®n folderul â€župdaterâ€ din directorul de instalare)"
+Updater_Missing: "FIÈ˜IER LIPSÄ‚: {file}"
+Updater_FileMismatch: "FiÈ™ier: {file} are MD5: {md5} AÈ˜TEPTAT: {value}"
+Updater_DownloadingWeb: Se descarcÄƒ fiÈ™ierul de pe site-ul web...
+Updater_UnpackingAppData: Se copiazÄƒ fiÈ™ierele Ã®n %AppData%/PolarWolves... (exceptÃ¢nd cazul Ã®n care existÄƒ alte setÄƒri)
+Updater_VerifyComplete: FiÈ™iere verificate!
+Updater_UpdateFound: "Actualizare gÄƒsitÄƒ: {name} [{updateSize}]"
+Updater_TotalFound: "Total actualizÄƒri gÄƒsite: {x}"
+Updater_TotalSize: "Dimensiune totalÄƒ: {size}"
+Updater_AwaitingUser: Se aÈ™teaptÄƒ introducerea de cÄƒtre utilizator...
+Updater_UpToDate: "EÈ™ti la zi.\n:)"
+Updater_FailedDecode: Acest lucru se datoreazÄƒ cel mai probabil faptului cÄƒ eu (PolarWolves Team) am apÄƒsat pe o actualizare È™i am fÄƒcut o greÈ™ealÄƒ de scriere care a stricat fiÈ™ierul de actualizare .json. AnunÈ›Äƒ-mÄƒ :)
+Updater_FailedDecodeTitle: Nu s-a reuÈ™it decodificarea listei de actualizÄƒri
+Updater_Extracting: Extragerea fiÈ™ierelor patch
+Updater_Applying: Se aplicÄƒ peticul...
+Updater_Moving: Se mutÄƒ fiÈ™ierele...
+Updater_Title: PolarWolves Updater
+Updater_Started: ÃŽnceput
+Updater_Start: PorneÈ™te PolarWolves
+Updater_Begin: ÃŽncepe actualizarea
+Updater_Exit: IeÈ™ire
+FatalError: A apÄƒrut o eroare fatalÄƒ!
+Online: Online
+OnlineDefault: Online (implicit)
+Offline: Deconectat
+Invisible: Invizibil
+Busy: Ocupat
+Away: Departe
+Snooze: Dezactivare temporarÄƒ
+LookingToTrade: Privind spre comerÈ›
+LookingToPlay: CÄƒutaÈ›i sÄƒ jucaÈ›i
+Unrecognized_EPersonaState: ePersonaState nerecunoscut
+Reg_DoesntExist: "{subKey} nu existÄƒ."
+Reg_DoesntContain: "{subKey} nu conÈ›ine {val}"
+Reg_Removing: Se eliminÄƒ {subKey}\\{val}
+PngInvalid_Format: Formatul pixelilor necesari este PixelFormat.{x}.
+PngRequired: Formatul de imagine necesar este un grafic de reÈ›ea portabil (png).
+PngDimensions: Dimensiunile trebuie sÄƒ fie mai mici sau egale cu {MaxIconWidth}x{MaxIconHeight}
+ThemeSyntaxAnd: "A apÄƒrut o eroare de sintaxÄƒ (mai multe detalii mai jos)! È˜I:"
+ThemesNotFound: "Nu s-a putut gÄƒsi dosarul â€žtemeâ€ Ã®n directorul PolarWolves. Acest lucru (Ã®n special folderul \"Dracula_Cyan\") este necesar pentru ca acest software sÄƒ ruleze.\nPuteÈ›i rula Updater Ã®n folderul \"updater\" pentru a verifica fiÈ™ierele, È™i de a restaura aceste fiÈ™iere lipsÄƒ."
+Yes: "- Da, domnule."
+No: "Nu, nu, nu."
+Save: SalveazÄƒ
+NoDefault: Nu (Implicit)
+Ok: "OK"
+Submit: Trimite
+Forget: UitÄƒ.
+Notice: ÃŽnÈ™tiinÈ›are
+Notes: Note
+Error: Eroare
+ErrorDetails: "EROARE: {ex}"
+Failed: EÈ™uat
+Success: Succes
+NotFound: Nu a fost gÄƒsit
+Done: Gata
+Edit: EditaÈ›i
+Refresh: ReÃ®mprospÄƒtare
+Working: Lucru...
+ForName: "Pentru: {name}"
+DeletedFiles: FiÈ™iere È™terse
+FileFoldersToClear: "Lista fiÈ™ierelor/directoarelor de È™ters:"
+CouldNotFindX: Nu s-a putut gÄƒsi {x}
+CouldNotCloseX: Nu s-a putut Ã®nchide {x}!
+CouldNotReadFile: Nu s-a putut citi {file}!
+DirectoryNotFound: Directorul nu a fost gÄƒsit
+DirectoryNotFoundFolder: "Directorul nu a fost gÄƒsit: {folder}"
+DeletingFile: "È˜tergere: {file}"
+DeletingFolder: "È˜tergerea dosarului: "
+CouldntDeleteX: "EROARE: NU S-A PUTUT È˜TERGE: {x}"
+CouldntDeleteUndefined: "EROARE: NU S-A PUTUT È˜TERGE FIÈ˜IERUL NEDEFINIT"
+CouldntModifyX: "Nu s-a putut modifica {file}. Eroare de permisiunea fiÈ™ierului sau fiÈ™ierul este Ã®n uz."
+Prompt_RestartAsAdmin: "<h3><bold>Acest program va reporni ca administrator</bold></h3><p>ApÄƒsaÈ›i â€žDaâ€ Ã®n UAC cÃ¢nd vi se solicitÄƒ administrator.</p>"
+Prompt_ForgetSteam: >
+  <h3 style='color:red'>EÈ™ti pe cale sÄƒ uiÈ›i un cont!</h3> <h4>Ce Ã®nseamnÄƒ asta?</h4> <p>- Steam nu va mai avea contul listat Ã®n modul Big Picture È™i nu va reÈ›ine parola.<br/> - PolarWolves nu va mai afiÈ™a contul pÃ¢nÄƒ cÃ¢nd nu se va conecta din nou prin Steam.</p> <p>Contul dvs. va rÄƒmÃ¢ne neatins. Este doar uitat pe acest computer.</p><h4>ÃŽnÈ›elegi?</h4>
+Prompt_ForgetAccount: >
+  <h3 style='color:red'>SunteÈ›i pe cale sÄƒ uitaÈ›i un cont!</h3> <h4>Ce Ã®nseamnÄƒ acest lucru?</h4> <p>PolarWolves nu va mai afiÈ™a contul,<br/> pÃ¢nÄƒ cÃ¢nd nu este conectat din nou prin {platform}È™i adÄƒugat la listÄƒ.</p> <p>Contul dvs. va rÄƒmÃ¢ne neatins. Este pur È™i simplu uitat pe acest computer.</p> <h4>ÃŽnÈ›elegi?</h4>
+Prompt_ClearStats: >
+  <h3 style='color:red'>SunteÈ›i pe cale sÄƒ vÄƒ È™tergeÈ›i statisticile!</h3> <p>Nu puteÈ›i anula aceastÄƒ acÈ›iune.</p>
+Platform_DiscordPasteHint: LipiÈ›i Ã®n consola Discord È™i apoi lipiÈ›i rezultatul Ã®n intrare!
+Platform_ClearCache: GoliÈ›i memoria cache
+Platform_ClearCacheTotal: Se È™terge {totalFileCount} fiÈ™iere ({totalSizeMB})
+Platform_DeleteFail: Nu s-au putut È™terge unele fiÈ™iere (este posibil ca programul sÄƒ ruleze?)
+Platform_CouldNotDeleteLog: Nu s-a putut È™terge fiÈ™ierul! VerificaÈ›i {logPath}
+Error_FileAccessDenied: Nu s-a putut accesa fiÈ™ierul! VerificaÈ›i {logPath}
+Error_RequiredFileVerify: Nu a fost gÄƒsit un fiÈ™ier necesar. AsiguraÈ›i-vÄƒ cÄƒ dosarele x64 È™i x86 existÄƒ Ã®n directorul de instalare. DacÄƒ nu rulaÈ›i PolarWolves-Updater.exe È™i verificaÈ›i fiÈ™ierele.
+Tooltip_Settings: SetÄƒri
+Tooltip_Info: Info
+Tooltip_ManagePlatforms: AfiÈ™aÈ›i sau AscundeÈ›i alte platforme
+Tooltip_ExpandShortcuts: ExtindeÈ›i selecÈ›ia de jocuri È™i comenzi rapide
+Tooltip_ShortcutFolder: DeschideÈ›i folderul de comenzi rapide. PlasaÈ›i comenzi rapide acolo È™i comutatorul de cont PolarWolves pentru a le vedea.
+Tooltip_Backup: FaceÈ›i backup pentru fiÈ™ierele/folderele de configurare, aÈ™a cum este definit Ã®n setÄƒrile platformei.
+Tooltip_BackupAll: FaceÈ›i backup pentru TOATE fiÈ™ierele/folderele de configurare, inclusiv imaginile È™i alte fiÈ™iere mari.
+Tooltip_ClosingMethod: "Combinat este cel mai bine. ÃŽnchideÈ›i Ã®ncercÄƒrile de a Ã®nchide direct printr-o funcÈ›ie de Ã®nchidere È™i TaskKill utilizeazÄƒ Cmd (Cel mai bine dacÄƒ este combinat nu funcÈ›ioneazÄƒ)"
+Tooltip_StartingMethod: "Implicit este cel mai bun. Direct nu are control asupra nivelului de administrare sau UAC. Acesta va Ã®ncepe cu acelaÈ™i nivel (sau mai mare - dar nu mai mic) decÃ¢t acest comutator de cont"
+Tooltip_CurrentAccount: ÃŽn prezent sunteÈ›i conectat (Äƒ) la acest cont.
+Tooltip_Restore: FaceÈ›i clic pentru a selecta un fiÈ™ier 7z sau trageÈ›i-l pe acest buton.
+Tooltip_DisabledGlobally: Acest element este ascuns pentru toate conturile. PoÈ›i modifica acest lucru Ã®n setÄƒrile platformei.
+Discord_Status: ÃŽn prezent, Ã®È™i schimbÄƒ conturile.
+Discord_StatusDetails: "Conturi comutate: {number}"
+Website: Website
+Preview_Platforms: Previzualizarea platformelor
+Preview_Accounts: Previzualizarea conturilor
+Preview_Notifications: Previzualizare notificÄƒri Toast
+Preview_Settings: Previzualizare setÄƒri
+Preview_Modals: Previzualizarea modalitÄƒÈ›ilor
+
+
+
+

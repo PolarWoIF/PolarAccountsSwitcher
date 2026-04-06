@@ -1,0 +1,465 @@
+/* Zenith Steam View (safe alternate page) */
+.steam-zenith {
+    --zenith-bg: #05080d;
+    --zenith-panel: rgba(13, 21, 32, 0.72);
+    --zenith-panel-strong: rgba(8, 14, 22, 0.92);
+    --zenith-border: rgba(102, 176, 224, 0.24);
+    --zenith-border-strong: rgba(118, 210, 255, 0.66);
+    --zenith-cyan: #56d6ff;
+    --zenith-cyan-soft: rgba(86, 214, 255, 0.2);
+    --zenith-text-soft: rgba(202, 231, 255, 0.72);
+    --zenith-success: #8eff85;
+
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 18% 12%, rgba(14, 87, 124, 0.24), transparent 48%),
+        radial-gradient(circle at 83% 78%, rgba(16, 58, 128, 0.22), transparent 50%),
+        linear-gradient(180deg, #05080d 0%, #04070b 40%, #03060b 100%);
+}
+
+.steam-zenith__noise,
+.steam-zenith__scan,
+.steam-zenith__glow {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.steam-zenith__noise {
+    z-index: 1;
+    opacity: 0.03;
+    background-image: radial-gradient(circle at 30% 30%, #fff 0 1px, transparent 1px);
+    background-size: 5px 5px;
+}
+
+.steam-zenith__scan {
+    z-index: 1;
+    opacity: 0.03;
+    background-image: linear-gradient(to bottom, transparent 0, transparent 50%, rgba(150, 220, 255, 0.2) 50%, transparent 100%);
+    background-size: 100% 3px;
+}
+
+.steam-zenith__glow--left {
+    z-index: 0;
+    background: radial-gradient(circle at 15% 15%, rgba(27, 178, 255, 0.16), transparent 54%);
+}
+
+.steam-zenith__glow--right {
+    z-index: 0;
+    background: radial-gradient(circle at 82% 84%, rgba(13, 95, 255, 0.15), transparent 56%);
+}
+
+.steam-zenith__topbar {
+    z-index: 3;
+    height: 78px;
+    padding: 0 22px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    border-bottom: 1px solid rgba(96, 160, 208, 0.22);
+    background: linear-gradient(180deg, rgba(10, 17, 27, 0.9), rgba(7, 12, 19, 0.82));
+    backdrop-filter: blur(14px);
+}
+
+.steam-zenith__top-left,
+.steam-zenith__session {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.steam-zenith__session {
+    justify-content: flex-end;
+    color: var(--zenith-text-soft);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.steam-zenith__session strong {
+    color: var(--zenith-cyan);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+}
+
+.steam-zenith__return {
+    border: 1px solid rgba(104, 183, 227, 0.34);
+    background: linear-gradient(180deg, rgba(16, 33, 49, 0.9), rgba(10, 18, 27, 0.92));
+    color: #d7efff;
+    border-radius: 12px;
+    padding: 8px 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+.steam-zenith__return:hover {
+    border-color: var(--zenith-border-strong);
+    box-shadow: 0 0 0 1px rgba(92, 218, 255, 0.2);
+}
+
+.steam-zenith__kernel {
+    border: 1px solid rgba(112, 191, 232, 0.28);
+    border-radius: 999px;
+    padding: 7px 11px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--zenith-text-soft);
+    font-weight: 700;
+}
+
+.steam-zenith__kernel-led {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #53f77e;
+    box-shadow: 0 0 8px #53f77e;
+}
+
+.steam-zenith__title {
+    text-align: center;
+    line-height: 1.1;
+}
+
+.steam-zenith__title h1 {
+    margin: 0;
+    color: #f0f7ff;
+    font-size: 24px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.steam-zenith__title p {
+    margin: 4px 0 0;
+    font-size: 10px;
+    letter-spacing: 0.42em;
+    text-transform: uppercase;
+    color: rgba(151, 223, 255, 0.66);
+    font-weight: 700;
+}
+
+.steam-zenith__main {
+    z-index: 2;
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px 16px 10px;
+}
+
+.steam-zenith__filterbar {
+    height: 54px;
+    border: 1px solid var(--zenith-border);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    background: linear-gradient(90deg, rgba(11, 21, 33, 0.72), rgba(7, 13, 21, 0.72));
+}
+
+.steam-zenith__filterchip {
+    border: 1px solid rgba(100, 219, 255, 0.5);
+    background: linear-gradient(180deg, rgba(15, 47, 66, 0.9), rgba(10, 27, 39, 0.9));
+    color: #e7f8ff;
+    border-radius: 12px;
+    padding: 7px 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.steam-zenith__filterchip small {
+    background: rgba(88, 207, 255, 0.2);
+    border-radius: 999px;
+    padding: 1px 7px;
+    font-size: 10px;
+}
+
+.steam-zenith__filtermeta {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: rgba(160, 215, 245, 0.72);
+}
+
+.steam-zenith__accountwrap {
+    flex: 1;
+    min-height: 0;
+    border: 1px solid var(--zenith-border);
+    border-radius: 17px 17px 0 0;
+    background: linear-gradient(180deg, rgba(10, 18, 29, 0.64), rgba(6, 11, 18, 0.62));
+    overflow: hidden;
+}
+
+.steam-zenith .acc_list_shell {
+    height: 100%;
+}
+
+.steam-zenith .catalog_rail {
+    background: rgba(6, 17, 28, 0.66);
+    border-bottom: 1px solid rgba(103, 165, 209, 0.2);
+}
+
+.steam-zenith .acc_list {
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(168px, 1fr));
+    grid-auto-rows: minmax(222px, auto);
+    gap: 11px;
+    padding: 13px 13px 72px;
+    background:
+        linear-gradient(180deg, rgba(6, 13, 21, 0.82), rgba(5, 10, 16, 0.85)),
+        repeating-linear-gradient(90deg, rgba(59, 110, 153, 0.08) 0, rgba(59, 110, 153, 0.08) 1px, transparent 1px, transparent 28px);
+}
+
+.steam-zenith .acc_list_item {
+    border: 0;
+}
+
+.steam-zenith label.acc {
+    min-width: 100%;
+    max-width: none;
+    min-height: 222px;
+    max-height: none;
+    border-radius: 20px;
+    border: 1px solid rgba(95, 154, 207, 0.32);
+    background:
+        linear-gradient(153deg, rgba(36, 72, 101, 0.72) 0%, rgba(17, 35, 54, 0.74) 45%, rgba(7, 17, 30, 0.92) 46%, rgba(4, 11, 23, 0.96) 100%);
+    box-shadow: inset 0 0 0 1px rgba(130, 201, 244, 0.08), 0 18px 30px rgba(0, 0, 0, 0.32);
+    padding: 10px 10px 12px;
+}
+
+.steam-zenith .acc_list_item:hover label.acc {
+    border-color: rgba(129, 218, 255, 0.74);
+    box-shadow: 0 0 0 1px rgba(126, 219, 255, 0.22), 0 20px 30px rgba(0, 0, 0, 0.4);
+}
+
+.steam-zenith .acc_list_item.is-pointer-active label.acc {
+    box-shadow:
+        0 0 0 1px rgba(128, 216, 255, 0.24),
+        0 18px 28px rgba(0, 0, 0, 0.46),
+        0 0 18px rgba(95, 214, 255, 0.2);
+}
+
+.steam-zenith input.acc:checked + label.acc {
+    border-color: var(--zenith-success);
+    box-shadow:
+        0 0 0 1px rgba(143, 255, 142, 0.4),
+        0 0 30px rgba(107, 255, 104, 0.16),
+        0 18px 30px rgba(0, 0, 0, 0.44);
+}
+
+.steam-zenith label.acc img {
+    width: 92px;
+    height: 92px;
+    border-radius: 16px;
+    object-fit: cover;
+    margin: 2px auto 9px;
+    border: 2px solid rgba(142, 196, 236, 0.36);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.38);
+}
+
+.steam-zenith label.acc h6.displayName {
+    order: 1;
+    margin-top: 1px;
+    margin-bottom: 2px;
+    color: #eef8ff;
+    font-size: 16px;
+    line-height: 1.06;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    text-align: center;
+}
+
+.steam-zenith label.acc p.streamerCensor:first-of-type {
+    order: 2;
+    color: rgba(165, 210, 244, 0.84);
+    font-size: 12px;
+    line-height: 1.06;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.steam-zenith label.acc p.steamId,
+.steam-zenith label.acc p.lastLogin {
+    display: none !important;
+}
+
+.steam-zenith .acc_note {
+    margin-top: 3px;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(168, 216, 249, 0.8);
+}
+
+.steam-zenith__actionbar {
+    margin: 0;
+    width: 100%;
+    border-radius: 0 0 16px 16px !important;
+    border: 1px solid rgba(108, 176, 221, 0.27) !important;
+    background: linear-gradient(180deg, rgba(8, 14, 22, 0.92), rgba(5, 10, 17, 0.94)) !important;
+}
+
+.steam-zenith .statusBar > div {
+    border-radius: 11px !important;
+    background: rgba(3, 9, 15, 0.88) !important;
+}
+
+.steam-zenith .acc_list_actionbar input {
+    color: rgba(175, 218, 248, 0.88) !important;
+}
+
+.steam-zenith .acc_list_actionbar button {
+    border-radius: 11px !important;
+    border-color: rgba(104, 171, 217, 0.35) !important;
+    background: linear-gradient(180deg, rgba(17, 34, 52, 0.9), rgba(9, 17, 27, 0.94)) !important;
+    color: #e6f4ff !important;
+}
+
+.steam-zenith #btnAddNew,
+.steam-zenith #btnAddCatalog,
+.steam-zenith #btnLogin,
+.steam-zenith #btnAccountGames {
+    padding: 0.3em 1.1em !important;
+    min-width: 112px !important;
+}
+
+.steam-zenith #btnAccountGames {
+    border-color: rgba(140, 225, 255, 0.64) !important;
+}
+
+.steam-zenith #btnLogin {
+    border-color: rgba(144, 255, 132, 0.62) !important;
+    background: linear-gradient(180deg, rgba(28, 81, 58, 0.96), rgba(16, 43, 32, 0.98)) !important;
+}
+
+.steam-zenith #btnSettings,
+.steam-zenith #btnHelp,
+.steam-zenith #btnStartPlat {
+    min-width: 40px !important;
+    max-width: 40px !important;
+}
+
+.steam-zenith .shortcuts {
+    border: 1px solid rgba(107, 174, 218, 0.42) !important;
+    border-radius: 10px !important;
+    background: linear-gradient(180deg, rgba(9, 18, 28, 0.9), rgba(8, 15, 24, 0.95)) !important;
+}
+
+.steam-zenith__footer {
+    z-index: 2;
+    height: 34px;
+    border-top: 1px solid rgba(98, 160, 201, 0.24);
+    background: linear-gradient(180deg, rgba(6, 11, 18, 0.94), rgba(4, 8, 14, 0.96));
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.steam-zenith__ticker {
+    display: inline-flex;
+    align-items: center;
+    gap: 22px;
+    white-space: nowrap;
+    padding-left: 18px;
+    animation: zenithTicker 26s linear infinite;
+}
+
+.steam-zenith__ticker span {
+    color: rgba(150, 212, 247, 0.76);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.steam-zenith__ticker span::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background: rgba(93, 215, 255, 0.7);
+    box-shadow: 0 0 8px rgba(93, 215, 255, 0.6);
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@keyframes zenithTicker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-40%); }
+}
+
+@media (max-width: 1150px) {
+    .steam-zenith__session {
+        display: none;
+    }
+
+    .steam-zenith .acc_list {
+        grid-template-columns: repeat(auto-fill, minmax(152px, 1fr));
+        grid-auto-rows: minmax(206px, auto);
+    }
+
+    .steam-zenith label.acc {
+        min-height: 206px;
+    }
+}
+
+@media (max-width: 900px) {
+    .steam-zenith__topbar {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        height: auto;
+        padding: 10px 12px;
+    }
+
+    .steam-zenith__top-left {
+        justify-content: space-between;
+    }
+
+    .steam-zenith__title {
+        text-align: left;
+    }
+
+    .steam-zenith__title h1 {
+        font-size: 20px;
+    }
+
+    .steam-zenith .acc_list {
+        grid-template-columns: repeat(auto-fill, minmax(138px, 1fr));
+        grid-auto-rows: minmax(194px, auto);
+        gap: 9px;
+    }
+
+    .steam-zenith label.acc {
+        min-height: 194px;
+    }
+
+    .steam-zenith label.acc img {
+        width: 80px;
+        height: 80px;
+    }
+}

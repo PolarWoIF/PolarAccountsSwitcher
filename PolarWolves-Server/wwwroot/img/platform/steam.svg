@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <linearGradient id="steamBeam" x1="34" y1="264" x2="196" y2="318" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#66e8ff" stop-opacity="0"/>
+      <stop offset="0.42" stop-color="#66e8ff" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#66e8ff" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+  <g id="FG" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="250" cy="250" r="166" fill="none" stroke="#66e8ff" stroke-width="16"/>
+
+    <line x1="34" y1="264" x2="188" y2="318" stroke="url(#steamBeam)" stroke-width="30"/>
+    <line x1="192" y1="315" x2="309" y2="206" stroke="#66e8ff" stroke-width="31"/>
+
+    <circle cx="324" cy="188" r="52" fill="none" stroke="#66e8ff" stroke-width="16"/>
+    <circle cx="324" cy="188" r="28" fill="none" stroke="#66e8ff" stroke-width="11"/>
+
+    <circle cx="188" cy="318" r="38" fill="none" stroke="#66e8ff" stroke-width="15"/>
+    <circle cx="188" cy="318" r="17" fill="none" stroke="#66e8ff" stroke-width="10"/>
+  </g>
+</svg>

@@ -1,0 +1,3 @@
+files:
+  - source: PolarWolves-Server/Resources/en-US.yml
+    translation: /PolarWolves-Server/Resources/%locale%.yml

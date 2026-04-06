@@ -1,0 +1,513 @@
+﻿---
+Update: ×¢×“×›×•×Ÿ ×–×ž×™×Ÿ! ×œ×—×¥ ×›××Ÿ ×›×“×™ ×œ×”×ª×§×™×Ÿ ××•×ª×•.
+Header_ChooseLanguage: '×‘×—×¨ ×©×¤×”:'
+Steam_ShowSteamID: ×ž×–×”×” Steam
+Steam_ShowVac: ×¡×˜×˜×•×¡ VAC
+Steam_ShowLastLogin: ×–×ž×Ÿ ×”×ª×—×‘×¨×•×ª ××—×¨×•×Ÿ
+Steam_ShowLimited: ×¡×˜×˜×•×¡ ×ž×•×’×‘×œ
+Steam_ShowAccUsername: ×©× ×ž×©×ª×ž×© ×©×œ ×”×—×©×‘×•×Ÿ
+Steam_Tray_AccountName: ×”×¦×’ ××ª ×©× ×”×ž×©×ª×ž×© [×œ× ××ª ×©× ×”×›×™× ×•×™]
+Steam_CheckVac: ×‘×“×•×§ ××ª ×ž×¦×‘ ×”- VAC ×©×œ ×”×—×©×‘×•×Ÿ
+Steam_OverrideDefaultState: "×¢×§×•×£ ××ª ×“×¨×š ×‘×¨×™×¨×ª ×”×ž×—×“×œ ×œ×›× ×™×¡×”:"
+Steam_StartSilent: "×¤×ª×— ××ª Steam ×œ×ž×’×© ×”×ž×©×™×ž×•×ª ×¢×œ ×ž×ª×’ (×”×ª×—×œ ××ª Steam ×¢× '- ×©×§×˜ ')"
+Steam_OldUi: "×”×©×ª×ž×© ×‘×ž×ž×©×§ ×”×ž×©×ª×ž×© ×”×™×©×Ÿ ×‘-Steam (-vgui)"
+Steam_CollectInfo: ××¡×•×£ ×ª×ž×•× ×•×ª ×¤×¨×•×¤×™×œ ×•×¡×˜×˜×•×¡ ××™×¡×•×¨ VAC ×ž-Steam
+Button_AddNew: ×”×•×¡×£
+Button_SaveCurrent: ×©×ž×•×¨ × ×•×›×—×™
+Button_SaveFile: ×©×ž×•×¨ ×§×•×‘×¥
+Button_Cancel: ×‘×˜×œ
+Button_Login: ×”×ª×—×‘×¨
+Button_Close: ×¡×’×•×¨
+Button_RefreshImages: ×¨×¢× ×Ÿ ×ª×ž×•× ×•×ª
+Button_ResetSettings: ××™×¤×•×¡ ×”×’×“×¨×•×ª
+Button_AdvancedCleaning: × ×™×§×•×™ ×ž×ª×§×“×...
+Button_ClearLog: × ×§×” ×™×•×ž×Ÿ
+Button_WikiInfo: ×ž×™×“×¢ × ×•×¡×£ (×•×•×™×§×™)
+Button_ManagePlatforms: × ×”×œ ×¤×œ×˜×¤×•×¨×ž×•×ª
+Button_Backup: ×’×™×‘×•×™
+Button_BackupAll: ×’×‘×” ×”×›×œ
+Button_Restore: ×œ×©×—×–×¨
+Button_OpenBackup: ×¤×ª×— ××ª ×ª×™×§×™×™×ª ×”×’×™×‘×•×™
+Button_Back: ×—×–×¨×”
+Button_RestartAdmin: ×”×ª×—×œ ×ž×—×“×© ×›×ž× ×”×œ ×”×ž×¢×¨×›×ª
+Button_SetPassword: ×”×’×“×¨ ×¡×™×¡×ž×” ×œ××¤×œ×™×§×¦×™×”
+Settings_SteamCollectInfo: ××¡×•×£ ×ª×ž×•× ×ª ×¤×¨×•×¤×™×œ Steam ×•×¡×˜×˜×•×¡ VAC ×ž-Steam
+Settings_Shortcut: '{platform} ×ž×—×œ×£ ×§×™×¦×•×¨ ×©×•×œ×—×Ÿ ×¢×‘×•×“×”'
+Settings_Admin: ×”×¤×¢×œ {platform} ×›×ž× ×”×œ
+Settings_ImageExpiry: '×™×ž×™× ×œ×¤× ×™ ×¤×§×™×¢×ª ×ª×•×§×£ ×ª×ž×•× ×•×ª ×”×¤×¨×•×¤×™×œ:'
+Settings_SteamAPIKey: "×ž×¤×ª×— Steam Web API (××•×¤×¦×™×•× ×œ×™)"
+Settings_SteamAPIKey_Note: ×”×’×“×¨×ª ×ž×¤×ª×— API ×ª×’×¨×•× ×œ××™× ×“×™×§×˜×•×¨ ×”×ž×•×’×‘×œ (×’×‘×•×œ ×¦×”×•×‘) ×œ×”×¨××•×ª ×—×©×‘×•× ×•×ª ×©×”×§×”×™×œ×” ××¡×¨×” ×¢×œ×™×”× ×‘×ž×§×•× ×–××ª.
+Settings_Header_AppWide: ×”×’×“×¨×•×ª ×¨×—×‘×•×ª ×©×œ ×”××¤×œ×™×§×¦×™×”
+Settings_Header_GeneralSettings: ×”×’×“×¨×•×ª ×›×œ×œ×™×•×ª
+Settings_Header_AccountDisplay: ×”×’×“×¨×•×ª ×ª×¦×•×’×ª ×—×©×‘×•×Ÿ
+Settings_Header_ExtraPlatforms: ×”×’×“×¨×•×ª ×¤×œ×˜×¤×•×¨×ž×”
+Settings_Header_GeneralTools: ×›×œ×™× ×›×œ×œ×™×™×
+Settings_Header_OtherTools: ×›×œ×™× ××—×¨×™×
+Settings_Header_TraySettings: ×”×’×“×¨×•×ª ×ž×’×©
+Settings_Header_OpenGameFolders: ×¤×ª×— ×ª×™×§×™×•×ª ×ž×©×—×§
+Settings_Header_BackupRestore: ×’×™×‘×•×™ ×•×©×—×–×•×¨ ×”×’×“×¨×•×ª ×¤×œ×˜×¤×•×¨×ž×”
+Settings_Header_Language: ×©×¤×”
+Settings_Header_System: ×ž×¢×¨×›×ª
+Settings_Header_Theme: ×¢×¨×›×ª ×¢×™×¦×•×‘
+Settings_Header_Program: ×ª×•×›× ×™×ª
+Settings_Header_StatsSharing: ×¡×˜×˜×™×¡×˜×™×§×” ×•×©×™×ª×•×£
+Settings_Header_Platform: "{platformName} ×”×’×“×¨×•×ª"
+Settings_Header_GameStats: ×”×’×“×¨×•×ª × ×ª×•× ×™× ×¡×˜×˜×™×¡×˜×™×™× ×©×œ ×ž×©×—×§×™× ×’×œ×•×‘×œ×™×™×
+Settings_GameStats: ×›×œ ×“×‘×¨ ×”×ž×¡×•×ž×Ÿ ×›××Ÿ ×œ× ×™×•×¦×’ ×ª×—×ª ×©× ×”×ž×©×ª×ž×© ×©×œ×š ×¢×‘×•×¨ ×›×œ ×—×©×‘×•×Ÿ. ×”×©×ª×ž×© ×‘××¤×©×¨×•×ª ×–×• ×× ×œ×¢×ª×™× ×§×¨×•×‘×•×ª ××ª×” ×ž×¡×ª×™×¨ ×¤×¨×™×˜×™× ×¡×¤×¦×™×¤×™×™× ×ž×”×¡×˜×˜×™×¡×˜×™×§×” ×©×œ ×”×ž×©×—×§ ×©×œ×š.
+Settings_TrayMax: '×ž×¡×¤×¨ ×—×©×‘×•× ×•×ª ×ž×§×¡×™×ž×œ×™ ×©×™×© ×œ×–×›×•×¨:'
+Settings_ExtraPlatformsDisabled: ×¤×œ×˜×¤×•×¨×ž×•×ª ×ž×•×©×‘×ª×•×ª. ×œ×—×¥ ×›×“×™ ×œ×”×¤×¢×™×œ ××•×ª×Ÿ.
+Settings_ExtraPlatformsEnabled: ×¤×œ×˜×¤×•×¨×ž×•×ª ×’×œ×•×™×•×ª. ×œ×—×¥ ×›×“×™ ×œ×”×©×‘×™×ª ××•×ª×Ÿ.
+Settings_RTL: ×”×¦×’ ×˜×§×¡×˜ ×‘×ª×•×¨ ×ž×™×ž×™×Ÿ ×œ×©×ž××œ
+Settings_CollectStats: ××™×¡×•×£ × ×ª×•× ×™× ×¡×˜×˜×™×¡×˜×™×™×
+Settings_ShareStats: ×©×ª×£ × ×ª×•× ×™× ×¡×˜×˜×™×¡×˜×™×™× ×‘××•×¤×Ÿ ×× ×•× ×™×ž×™ (×ž×•×ž×œ×¥)
+Settings_DiscordRpc: × ×•×›×—×•×ª ×¢×©×™×¨×” ×‘×“×™×¡×§×•×¨×“ (RPC)
+Settings_DiscordRpcShare: ×©×ª×£ ××ª ×¡×š ×”×ž×ª×’×™×
+Settings_ViewStats: ×”×¦×’ × ×ª×•× ×™× ×¡×˜×˜×™×¡×˜×™×™×
+Preview: ×ª×¦×•×’×” ×ž×§×“×™×ž×”
+Settings_ClearStats: ××™×¤×•×¡
+Settings_CurrentLocation: '×ž×™×§×•× ×”×”×ª×§× ×” ×”× ×•×›×—×™: {path}'
+Settings_CurrentDataLocation: '×ž×™×§×•× × ×ª×•× ×™ ×ž×©×ª×ž×© × ×•×›×—×™: {path}'
+Settings_SetDataLocation: "[×”×’×“×¨ ×ž×™×§×•× × ×ª×•× ×™ ×ž×©×ª×ž×© ×ž×•×ª×× ××™×©×™×ª]"
+Settings_PickFolder: ×‘×—×¨ ×ª×™×§×™×™×” {platform}
+Settings_OpenFolder: ×¤×ª×— ×ª×™×§×™×™×” {platform}
+Settings_ClearForgotten: × ×§×” ×©×›×—×ª×™
+Settings_ClearAccounts: ×ž×—×™×§×ª ×—×©×‘×•× ×•×ª
+Settings_StreamerMode: ××¤×©×¨ ×ž×¦×‘ ×¡×˜×¨×™×ž×¨
+Settings_ExitToTray: ×¦× ×ž×ž×–×¢×•×¨ ×œ×ž×’×©
+Settings_DesktopShortcut: ×§×™×¦×•×¨ ×“×¨×š ×œ×©×•×œ×—×Ÿ ×”×¢×‘×•×“×”
+Settings_StartMenu_ProgramTray: ×ª×•×›× ×™×ª & ×ž×’×©
+Settings_StartMenu_Platform: ×¤×œ×˜×¤×•×¨×ž×”
+Settings_Tray_StartWindows: ×”×ª×—×œ ×ž×’×© ×¢× Windows
+Settings_Tray_StartNow: '[×”×ª×—×œ ×ž×’×© ×¢×›×©×™×•]'
+Settings_CurrentStyle: ×¡×’× ×•×Ÿ × ×•×›×—×™
+Settings_ThemeBackground: '[×”×’×“×¨ ×¨×§×¢]'
+Settings_ThemeOpenFolder: '[×¤×ª×— ××ª ×ª×™×§×™×™×ª ×”× ×•×©×]'
+Settings_Protocol: '××¤×©×¨ PolarWolves: \\ ×¤×¨×•×˜×•×§×•×œ (×ž×•×ž×œ×¥)'
+Settings_StartCentered: ×”×ª×—×œ ×ª×•×›× ×™×ª ×ž×ž×•×¨×›×–×ª
+Settings_OfflineMode: ×ž×¦×‘ ×œ× ×ž×§×•×•×Ÿ (×œ×œ× ×¤×¢×™×œ×•×ª ×‘×¨×©×ª)
+Settings_WindowsAccent: ×”×©×ª×ž×© ×‘×¦×‘×¢ ×”×“×’×©×” ×©×œ Windows
+Settings_HelpTranslate: "[×¢×–×¨×” ×œ×ª×¨×’×]"
+Settings_ViewTranslators: "[Credits]"
+Settings_Header_ActiveBrowser: "(×ž×ª×§×“×) ×”×’×“×¨×ª ×ž× ×•×¢ ×¢×™×‘×•×“:"
+Settings_Header_ClosingMethod: "(×ž×ª×§×“×) ×”×’×“×¨ ×©×™×˜×” ×œ×¡×’×™×¨×ª {platform}"
+Settings_Header_StartingMethod: "(×ž×ª×§×“×) ×”×’×“×¨ ×©×™×˜×” ×œ×”×ª×—×œ×” {platform}"
+Settings_AutoStart: "×”×ª×—×œ {platform} ×‘××•×¤×Ÿ ××•×˜×•×ž×˜×™ ×‘×ž×¢×‘×¨ ×”×—×©×‘×•×Ÿ"
+Settings_ShowSteamSwitcher: "×”×¦×’ ××ª ×ž×—×œ×™×£ ×”×—×©×‘×•× ×•×ª ×©×œ Steam (××œ ×ª×©×ª×ž×© ×‘×–×” ××• ×©×”×•× ×¢×œ×•×œ ×œ×©×‘×•×¨ ××ª ×ž×—×œ×™×£ ×”×—×©×‘×•× ×•×ª ×©×œ PolarWolves)"
+Settings_NoPlatforms: ×›×¨×’×¢ ××™×Ÿ ×¤×œ×˜×¤×•×¨×ž×•×ª ×ž×•×¤×¢×œ×•×ª. ×× × ×¡×ž×Ÿ ×¤×œ×˜×¤×•×¨×ž×•×ª ××•×¤×¦×™×•× ×œ×™×•×ª ×œ×ž×˜×” ×›×“×™ ×œ×”×¤×¢×™×œ ××•×ª×Ÿ, ××• ×‘×˜×œ ××ª ×”×¡×™×ž×•×Ÿ ×©×œ ×¤×œ×˜×¤×•×¨×ž×•×ª ×ž×•×©×‘×ª×•×ª.
+Settings_MinimizeOnSwitch: ×ž×–×¢×¨ ××ª ×”×ž×—×œ×£ ×‘×¢×ª ×”×—×œ×¤×ª ×”×—×©×‘×•×Ÿ
+Settings_ShowShortNotes: '×”×¢×¨×”: ×ª×¦×•×’×” ×ž×§×“×™×ž×” ×ª×—×ª ×©× ×ž×©×ª×ž×©'
+Settings_Header_AppPassword: "×”×¤×¡×§ ××ª ×”×©×™×ž×•×© ×‘××—×¨×™× ×‘××ž×¦×¢×•×ª ×”×ž×—×œ×£:"
+PreviewCss: ×ª×¦×•×’×” ×ž×§×“×™×ž×” ×©×œ CSS
+Settings_PreviewCss: ×–×”×• ×“×£ ×”×ª×¦×•×’×” ×”×ž×§×“×™×ž×” ×©×œ CSS. ×ª×•×›×œ ×œ×”×¦×™×’ ×›×ž×” ××œ×ž× ×˜×™× ×©×¦×¦×™× ×‘×ª×•×›× ×™×ª ×•×œ×¨××•×ª ××™×š ×”× × ×¨××™× ×¢× ×¢×¨×›×ª ×”×¢×™×¦×•×‘ ×©×œ×š. ×“×£ ×–×” ×©×™×ž×•×©×™ ×¢×‘×•×¨ ××œ×” ×©×™×•×¦×¨×™× ×¢×¨×›×•×ª ×¢×™×¦×•×‘!
+Settings_PreviewCssHeader: ×“×£ ×ª×¦×•×’×” ×ž×§×“×™×ž×” ×©×œ CSS
+Settings_AutoUpdatePlatforms: ×¢×“×›×•×Ÿ ××•×˜×•×ž×˜×™ ×©×œ ×¨×©×™×ž×ª ×”×¤×œ×˜×¤×•×¨×ž×•×ª
+Settings_CheckForUpdates: ×‘×“×•×§ ×× ×™×© ×¢×“×›×•× ×™× ×‘×¢×ª ×”×”×©×§×”
+Stats_Disabled: "××™×¡×•×£ ×”× ×ª×•× ×™× ×”×¡×˜×˜×™×¡×˜×™×™× ×ž×•×©×‘×ª."
+Stats_InDepth: ×¤×™×¨×•×˜ ×¡×˜×˜×™×¡×˜×™×§×” ×ž×¢×ž×™×§×”
+Stats_ShareEnabled: "× ×ª×•× ×™× ×¡×˜×˜×™×¡×˜×™×™× ××œ×” ×ž×©×•×ª×¤×™× ×‘××•×¤×Ÿ ×× ×•× ×™×ž×™ ×•×™×•×¡×™×¤×• ×œ×¡×›×•× ×”×›×•×œ×œ <a onclick=\"{WebsiteLink}\" class=\"fancyLink\">×›××Ÿ</a>."
+Stats_ShareDisabled: "× ×ª×•× ×™× ×¡×˜×˜×™×¡×˜×™×™× ××œ×” ××™× × ×ž×©×•×ª×¤×™× ×‘××•×¤×Ÿ ×× ×•× ×™×ž×™ ×•×œ× ×™×•×¡×™×¤×• ×œ×¡×›×•× ×”×›×•×œ×œ ×©×œ <a onclick=\"{WebsiteLink}\" class=\"fancyLink\">×›××Ÿ</a>."
+Stats_OperatingSystem: "×ž×¢×¨×›×ª ×”×¤×¢×œ×”: "
+Stats_FirstLaunch: "×”×©×§×” ×¨××©×•× ×”: "
+Stats_LaunchCount: "×ž×¡×¤×¨ ×”×©×§×•×ª: "
+Stats_CrashCount: "×¡×¤×™×¨×ª ×§×¨×™×¡×”: "
+Stats_MostUsedPlatform: "×”×¤×œ×˜×¤×•×¨×ž×” ×”× ×¤×•×¦×” ×‘×™×•×ª×¨: "
+Stats_TotalTime: "×”×–×ž×Ÿ ×”×›×•×œ×œ ×©×”×•×©×§×¢ ×‘××¤×œ×™×§×¦×™×”: "
+Stats_TotalSwitches: "×¡×”\"×› ×ž×ª×’×™ ×—×©×‘×•×Ÿ: "
+Stats_TotalGamesLaunched: "×¡×”\"×› ×™×™×©×•×ž×™×/×ž×©×—×§×™× ×©×”×•×©×§×• ×‘××ž×¦×¢×•×ª ×ž×—×œ×™×£: "
+Stats_UniqueDaysLong: "×™×ž×™× ×™×™×—×•×“×™×™× ×¢× ×—×©×‘×•× ×•×ª ×©×”×•×—×œ×¤×•: "
+Stats_LastUpload: "×”×¢×œ××” ××—×¨×•× ×”: "
+Stats_SwitcherStats: "×¡×˜×˜×™×¡×˜×™×§×” ×©×œ ×ž×—×œ×™×£ × ×ª×•× ×™×: "
+Stats_PageStats: "×¡×˜×˜×™×¡×˜×™×§×ª ×¢×ž×•×“: "
+Stats_VisitsTotalTime: "{visits} ×‘×™×§×•×¨×™× ×›×•×œ×œ, {hours} ×–×ž×Ÿ ×›×•×œ×œ"
+Stats_Accounts: "×—×©×‘×•× ×•×ª: "
+Stats_Switches: "×ž×ª×’×™×: "
+Stats_FirstActive: "×¤×¢×™×œ ×¨××©×•×Ÿ: "
+Stats_LastActive: "×¤×¢×™×œ ××—×¨×•×Ÿ: "
+Stats_UniqueDays: "×™×ž×™× ×™×™×—×•×“×™×™×: "
+Stats_GameShortcuts: "×§×™×¦×•×¨×™ ×“×¨×š ×œ×ž×©×—×§: "
+Stats_GameShortcutsHotbar: "×§×™×¦×•×¨×™ ×“×¨×š ×œ×ž×©×—×§ (×‘ - Hotbar): "
+Stats_GamesLaunched: "×ž×©×—×§×™× ×©×”×•×©×§×•: "
+Stats_MetricsToShow: "×ž×“×“×™× ×ž×•×¦×’×™×:"
+Stats_AccountId: "×ž×–×”×” ×—×©×‘×•×Ÿ:"
+Auth_LoginRequired: ×¡×™×¡×ž×” ×”×•×’×“×¨×” ×‘×¢×‘×¨, ×•×”×™× × ×“×¨×©×ª. ×”×–×Ÿ ××ª ×”×¡×™×¡×ž×” ×©×œ×”×œ×Ÿ.
+Auth_EnterPassword: "×”×–×Ÿ ×¡×™×¡×ž×”:"
+Auth_PassIncorrect: ×”×¡×™×¡×ž×” ×©×’×•×™×”.
+Locked: × ×¢×•×œ
+Cleaning_Header_StartMenuShortcuts: '×§×™×¦×•×¨×™ ×“×¨×š ×œ×ª×¤×¨×™×˜ ×”×”×ª×—×œ×”:'
+Cleaning_Header_General: × ×™×§×•×™ ×›×œ×œ×™
+Cleaning_Header_LoginHistory: × ×§×” ××ª ×”×™×¡×˜×•×¨×™×™×ª ×”×”×ª×—×‘×¨×•×ª ×©×œ×™
+Cleaning_Header_PlatformCleaning: '×ž×—×œ×£ {platform}'
+Cleaning_ImportantInfoHeader: '×ž×™×“×¢ ×—×©×•×‘:'
+Cleaning_ImportantInfo: >
+  ×œ×—×™×¦×” ×¢×œ ×›×¤×ª×•×¨ ×ª×ž×—×§ ××ª ×”×§×‘×¦×™× ×”×§×©×•×¨×™× ×ž×”×ª×§× ×ª ×” - Steam ×©×œ×š.<br /> ×ž×—×™×§×ª loginusers.vdf ×ª×’×¨×•× ×œ×›×š ×©×ž×¢×‘×™×¨ ×—×©×‘×•×Ÿ ×–×” ×œ× ×™×¦×™×’ ×—×©×‘×•× ×•×ª.<br /> ×™×”×™×” ×¢×œ×™×š ×œ×”×ª×—×‘×¨ ××œ×™×”× ×‘××ž×¦×¢×•×ª Steam ×›×“×™ ×œ×§×‘×œ ××•×ª× ×‘×—×–×¨×”.
+Cleaning_Button_KillProcess: ×ª×”×œ×™×š Kill {platform}
+Cleaning_Button_ForgottenBackups: ×’×™×‘×•×™×™× ×œ×—×©×‘×•×Ÿ ×©× ×©×›×—×•
+Cleaning_Understand: ×× ×™ ×ž×‘×™×Ÿ ×ž×” ×”×›×¤×ª×•×¨×™× ×”××œ×” ×¢×•×©×™×.
+Restore_Info: >
+  ×× ×‘×¢×‘×¨ "×©×›×—×ª" ×—×©×‘×•×Ÿ, ×ª×•×›×œ ×œ×©×—×–×¨ ××•×ª×• ×›××Ÿ.<br /> ×¤×¢×•×œ×” ×–×• ×ž×•×¡×™×¤×” ××•×ª×• ×—×–×¨×” ×œ×§×•×‘×¥ loginusers.vdf ×©×œ×š, ×•×ž××¤×©×¨×ª ×œ×š ×œ×¢×‘×•×¨ ××œ×™×•.
+Restore_Button_Restore: ×©×—×–×¨ ××ª ×”× ×‘×—×¨
+Ignored_RemoveAccounts: ×”×¡×¨×ª ×—×©×‘×•× ×•×ª ×ž×¨×©×™×ž×ª ×”×”×ª×¢×œ×ž×•×ª
+Ignored_Description: ×× ×‘×¢×‘×¨ "×”×ª×¢×œ×ž×ª" ×ž×—×©×‘×•×Ÿ, ×ª×•×›×œ ×œ×”×¦×™×’ ××•×ª×• ×©×•×‘ ×›××Ÿ
+Ignored_Stop: ×”×¤×¡×§ ×œ×”×ª×¢×œ× ×ž×”×‘×—×™×¨×”
+Toast_UpdatesDownloading: ×¢×“×›×•× ×™× ×™×•×¨×“×™× ×‘×¨×§×¢. ××ª×” ×™×›×•×œ ×œ×”×ž×©×™×š ×œ×”×©×ª×ž×© ×‘×ª×•×›× ×™×ª.
+Toast_UpdatesDownloaded: ×”×•×¨×“×ª ×”×¢×“×›×•× ×™× ×”×¡×ª×™×™×ž×”. ×¡×’×•×¨ ××ª ×”××¤×œ×™×§×¦×™×” ×”×–×• ×›×“×™ ×œ×”×ª×—×™×œ ×œ×¢×“×›×Ÿ.
+Toast_DataLocationCopying: (1/2) ×”×¢×ª×§×ª ×§×‘×¦×™× ×§×™×™×ž×™× ×œ×ª×™×§×™×™×ª × ×ª×•× ×™ ×”×ž×©×ª×ž×© ×”×—×“×©×”!
+Toast_DataLocationNotCopying: (1/2) ×‘×ª×™×§×™×™×” ×›×‘×¨ ×™×© ×§×‘×¦×™×! ×œ× ×™×¢×‘×™×¨ × ×ª×•× ×™ ×ž×©×ª×ž×©.
+Toast_DataLocationSet: (2/2) ×”×¤×¢×œ ×ž×—×“×© ××ª ×ž×—×œ×™×£ ×”×—×©×‘×•× ×•×ª ×›×“×™ ×œ×”×©×ª×ž×© ×‘×ª×™×§×™×™×” ×”×—×“×©×”!
+Toast_PlaceShortcutFiles: × ×¤×ª×—×ª ×ª×™×§×™×”. ×ž×§× ×§×™×¦×•×¨×™ ×“×¨×š ×œ×ž×©×—×§ ×‘××•×ª×” ×ª×™×§×™×”, ×•×”×¤×¢×œ ×ž×—×“×© ××ª ×ž×—×œ×™×£ ×”×—×©×‘×•× ×•×ª.
+Toast_TrayStarted: ×”×ž×’×© ×”×ª×—×™×œ!
+Toast_TrayRunning: ×”×ž×’×© ×›×‘×¨ ×¤×ª×•×—
+Toast_TrayUsersMissing: ×œ× × ×©×ž×¨×• ×ž×©×ª×ž×©×™× ×‘×ž×’×©
+Toast_TrayFail: ×œ× × ×™×ª×Ÿ ×œ×”×¤×¢×™×œ ××ª ×™×™×©×•× ×”×ž×’×©!
+Toast_TrayPosition: "×‘×œ×—×™×¦×” ×¢×œ ×›×¤×ª×•×¨ ×”×™×¦×™××”: ×× ×™ ××”×™×” ×¢×œ ×ž×’×© ×”×—×œ×•× ×•×ª! (×¡×¨×’×œ ×–×›×•×ª ×”×ª×—×œ×”)"
+Toast_TrayHint: "×¨×ž×–: Ctrl+×œ×—×¥ ×¢×œ ×” -' X' ×›×“×™ ×œ×¡×’×•×¨ ××•×ª×™ ×œ×—×œ×•×˜×™×Ÿ, ××• ×“×¨×š ×”×ž×’×© > '×™×¦×™××”'"
+Toast_Copied: ×”×•×¢×ª×§
+Toast_AlreadyProcessing: ×›×‘×¨ ×ž×¢×‘×“ ×—×©×‘×•× ×•×ª...
+Toast_FailedRestore: ×©×—×–×•×¨ ×—×©×‘×•× ×•×ª × ×›×©×œ (×¨××” ×ž×¡×•×£)
+Toast_Restored: ×—×©×‘×•× ×•×ª ×ž×©×•×—×–×¨×™×!
+Toast_ProtocolEnabled: '×ª×•×›× ×™×ª ×–×• ×ª×’×™×‘ ×›×¢×ª ×œ- PolarWolves: \\ ×‘- Windows'
+Toast_ProtocolEnabledTitle: ×”×¤×¨×•×˜×•×§×•×œ × ×•×¡×£
+Toast_ProtocolDisabled: '×ª×•×›× ×™×ª ×–×• ×›×‘×¨ ×œ× ×ª×’×™×‘ ×œ- PolarWolves: \\'
+Toast_ProtocolDisabledTitle: ×”×¤×¨×•×˜×•×§×•×œ ×”×•×¡×¨
+Toast_RestartAsAdmin: ×× × ×”×ª×—×œ ×›×ž× ×”×œ ×•× ×¡×” ×©×•×‘.
+Toast_RestartAfterClose: ×× × ×”×¤×¢×œ ×ž×—×“×© ××ª ×”×ª×•×›× ×™×ª ×œ××—×¨ ×œ×—×™×¦×” ×¢×œ ×¡×’×•×¨.
+Toast_RestartAfterCloseTitle: ×¦×‘×¢ ×”×“×’×©×” ×ž×•×©×‘×ª
+Toast_RestartRequired: ×”×¤×¢×œ ×ž×—×“×© ×›×“×™ ×œ×”×—×™×œ ×©×™× ×•×™×™×
+Toast_LoadStylesheetFailed: ×˜×¢×™× ×ª ×’×™×œ×™×•×Ÿ ×”×¡×’× ×•×Ÿ × ×›×©×œ×”! × ×™×ª×Ÿ ×œ×¢×™×™×Ÿ ×‘×ª×™×§×™×™×ª × ×ª×•× ×™ ×”×ž×©×ª×ž×© ×œ×§×‘×œ×ª ×¤×¨×˜×™×.
+Toast_LoadingStats: ×¤×¨×•×¤×™×œ ××—×“ ××• ×™×•×ª×¨ ×”× × ×ª×•× ×™× ×¡×˜×˜×™×¡×˜×™×™× ×ž×¨×¢× × ×™×. ×× × ×”×ž×ª×Ÿ.
+Toast_ItemNotFound: "{item} ×œ× × ×ž×¦×"
+Toast_DeletedTotal: "{files} ×ž×ª×•×š {totalFiles} × ×ž×—×§. ×¡×”\"×›: {totalSize}"
+Toast_CantChangeUsername: ×œ× × ×™×ª×Ÿ ×œ×©× ×•×ª ××ª ×©× ×”×ž×©×ª×ž×©
+Toast_CantClearLoginFiles: × ×™×§×•×™ ×§×•×‘×¦×™ ×”×”×ª×—×‘×¨×•×ª ×”×™×©× ×™× × ×›×©×œ
+Toast_AccountIdReg: × ×›×©×œ ×§×‘×œ×ª ×–×™×”×•×™ ×—×©×‘×•×Ÿ ×ž×”×¨×™×©×•×!
+Toast_RegFailWrite: ×”×›×ª×™×‘×” ×œ-Windows Regsitry × ×›×©×œ×”!
+Toast_RegFailRead: × ×›×©×œ ×œ×§×¨×•× ×ž-Windows Regsitry!
+Toast_RegFailReadSaved: × ×›×©×œ ×‘×§×¨×™××ª ×¢×¨×š ×”×¨×™×©×•× ×©× ×©×ž×¨. × ×¡×” ×œ×”×¡×™×¨ ×•×œ×”×•×¡×™×£ ××ª ×”×—×©×‘×•×Ÿ ×©×•×‘ ×× ×”×¤×¢×•×œ×” × ×›×©×œ×”.
+Toast_RegSaveMissing: × ×›×©×œ ×—×™×¤×•×© ××• ×§×¨×™××” ×©×œ × ×ª×•× ×™× ×ž×§×‘×¦×™ ×¨×™×©×•× ×©×ž×•×¨×™×!
+Toast_DuplicateNames: ×œ× × ×™×ª×Ÿ ×œ×”×—×œ×™×£. ×—×©×‘×•× ×•×ª ×›×¤×•×œ×™× ×¢× ××•×ª×• ×©× ×ž×©×ª×ž×©?
+Toast_MissingUserId: "×œ× × ×™×ª×Ÿ ×œ×”×—×œ×™×£. ×ž×–×”×” ×”×ž×©×ª×ž×© ×—×¡×¨. ×‘×“×•×§ '×©×’×™××•×ª × ×¤×•×¦×•×ª' ×‘×•×•×™×§×™."
+Toast_CouldNotLocate: ×œ× × ×™×ª×Ÿ ×œ××ª×¨ ×ž×©×ª×ž×© ×ž×—×•×‘×¨
+Toast_StreamerModeHint: ×ž×™×“×¢ ×¤×¨×˜×™ ×ž×•×¡×ª×¨! - ×¨××” ×”×’×“×¨×•×ª
+Toast_StreamerModeTitle: ×ž×¦×‘ ×¡×˜×¨×™×ž×¨
+Toast_AddAccountsFirst: ×¤×ª×— ××ª ×”×¤×œ×˜×¤×•×¨×ž×” ×ž×”×¨×©×™×ž×” ×•×”×•×¡×£ ×›×ž×” ×—×©×‘×•× ×•×ª ×§×•×“×
+Toast_AddAccountsFirstTitle: ××™×Ÿ ×—×©×‘×•× ×•×ª ×©×ž×•×¨×™×
+Toast_CantFindImage: ×œ× × ×™×ª×Ÿ ×œ×ž×¦×•× ××ª ×ª×ž×•× ×ª ×”×ž×©×ª×ž×©×™×.
+Toast_CantCreateShortcut: ××™×Ÿ ××¤×©×¨×•×ª ×œ×™×¦×•×¨ ×§×™×¦×•×¨ ×“×¨×š
+Toast_ShortcutCreated: ×§×™×¦×•×¨ ×“×¨×š × ×•×¦×¨!
+Toast_SettingsCopied: ×”×”×’×“×¨×•×ª ×”×•×¢×ª×§×• ×‘×”×¦×œ×—×” ×œ×—×©×‘×•×Ÿ ×”× ×•×›×—×™.
+Toast_GameDataRestored: × ×ª×•× ×™ ×”×ž×©×—×§ ×©×•×—×–×¨×• ×‘×”×¦×œ×—×” ×¢×‘×•×¨ ×—×©×‘×•×Ÿ ×–×”.
+Toast_NoValidSteamId: ×œ× × ×™×ª×Ÿ ×œ×ž×¦×•× ×ž×–×”×” ×§×™×˜×•×¨ ×—×•×§×™.
+Toast_FailedUpdateCheck: ×‘×“×™×§×ª ×”×¢×“×›×•× ×™× × ×›×©×œ×”
+Toast_UpdateVerifyFail: ×œ× × ×™×ª×Ÿ ×œ××ž×ª ×§×‘×¦×™ ×¢×“×›×•×Ÿ. ×”×•×¨×“ ××ª ×”×’×™×¨×¡×” ×”××—×¨×•× ×” ×•×”×—×œ×£ ×§×‘×¦×™× ×‘×¡×¤×¨×™×” ×©×œ×š.
+Toast_StartedGame: ×”×ª×—×™×œ {program}
+Toast_SteamCantLoadXml: ×œ× × ×™×ª×Ÿ ×”×™×” ×œ×§×‘×œ ×ž×™×“×¢ XML ×¢×‘×•×¨ {steamId}. ×¨××” ×™×•×ž×Ÿ ×œ×¤×¨×˜×™× × ×•×¡×¤×™×.
+Toast_Steam_VacCleared: ×¡×˜×˜×•×¡ VAC ×¢×‘×•×¨ ×—×©×‘×•× ×•×ª × ×•×§×”
+Toast_Steam_CantDeleteVacCache: ×œ× × ×™×ª×Ÿ ×œ×ž×—×•×§ ××ª 'LoginCache/Steam/VACCache/SteamVACCache.json'
+Toast_NoFindSteamUserdata: ×œ× × ×™×ª×Ÿ ×œ×ž×¦×•× ×ª×™×§×™×™×ª Steam\\ userdata
+Toast_NoFindGameBackup: ×œ× × ×™×ª×Ÿ ×œ×ž×¦×•× ×ª×™×§×™×™×ª × ×ª×•× ×™ ×ž×©×—×§ ×’×™×‘×•×™ ×¢×‘×•×¨ ×—×©×‘×•×Ÿ ×–×”.
+Toast_GameBackupDone: "×ª×™×§×™×™×ª × ×ª×•× ×™ ×”×ž×©×—×§ ×’×•×‘×ª×” ×‘×”×¦×œ×—×”: {folderLocation}"
+Toast_Steam_VdfLast: ×”×¦×œ×™×— ×œ×˜×¢×•×Ÿ ×ž - vdf_last. ×™×™×ª×›×Ÿ ×©×—×œ×§ ×ž×”×—×©×‘×•× ×•×ª ×—×¡×¨×™×.
+Toast_PartiallyFixed: ×§×‘×•×¢ ×—×œ×§×™×ª
+Toast_Steam_FailedLoginusers: ×˜×¢×™× ×ª ×” - steam/config/loginusers.vdf × ×›×©×œ×”
+Toast_Steam_CantLocateLoginusers: ×œ× × ×™×ª×Ÿ ×œ××ª×¨ ××ª '.../Steam/config/loginusers.vdf '. ×›×“××™ ×œ× ×¡×•×ª ×œ×”×ª×—×‘×¨ ×§×•×“× ×œ×—×©×‘×•×Ÿ.
+Toast_CantClearImages: ×œ× × ×™×ª×Ÿ ×”×™×” ×œ× ×§×•×ª ×ª×ž×•× ×•×ª
+Toast_RefreshedImages: ×ª×ž×•× ×•×ª ×¨×¢× × ×•×ª
+Toast_ClearForgottenCheck: ×”×× ××ª×” ×‘×˜×•×— ×©×‘×¨×¦×•× ×š ×œ× ×§×•×ª ×’×™×‘×•×™×™× ×©×œ ×—×©×‘×•× ×•×ª ×©× ×©×›×—×•?
+Toast_ForgotAccount: ×©×›×—×ª ×—×©×‘×•×Ÿ
+Toast_ClearedPlatformSettings: "× ×§×” {platform} ×”×’×“×¨×•×ª ×ž×—×œ×™×£"
+Toast_ClearedImages: "×ª×ž×•× ×•×ª × ×ž×—×§×•"
+Toast_SavedItem: "× ×©×ž×¨: {item}"
+Toast_ChangedUsername: ×©× ×ž×©×ª×ž×© ×©×•× ×”
+Toast_SetUsername: ×”×’×“×¨ ×©× ×ž×©×ª×ž×©
+Toast_AlreadyLoggedIn: ×›×‘×¨ ×ž×—×•×‘×¨ ×¢× ×—×©×‘×•×Ÿ ×–×”! (×œ× ×‘×•×¦×¢×• ×©×™× ×•×™×™×)
+Toast_BackupCopy: (1/3) ×”×¢×ª×§×ª ×§×‘×¦×™× ×œ×ž×™×§×•× ×–×ž× ×™...
+Toast_BackupCompress: (2/3) ×“×—×™×¡×ª ×§×‘×¦×™× ({size}). ×–×” ×™×™×§×— ×§×¦×ª ×–×ž×Ÿ...
+Toast_BackupComplete: (3/3) ×¡×™×™× ××ª ×”×“×—×™×¡×”! ({size} ×¢×“ {compressedSize})
+Toast_BackupProgress: "×’×™×‘×•×™ ×ž×ª×‘×¦×¢ (×’×•×“×œ ×“×—×•×¡: {compressedSize})"
+Toast_BackupFail: ×”×’×™×‘×•×™ × ×›×©×œ - ×¨××” ×™×•×ž×Ÿ!
+Toast_BackupBusy: ×”×’×™×‘×•×™ ×›×‘×¨ ×ž×ª×‘×¦×¢!
+Toast_RestoreBusy: ×”×©×—×–×•×¨ ×›×‘×¨ ×ž×ª×‘×¦×¢!
+Toast_RestoreExt: ×ž×—×œ×¥ ××¨×›×™×•×Ÿ.
+Toast_RestoreCopying: ×”×¢×‘×¨×ª ×§×‘×¦×™× ×—×–×¨×” ×œ×¤×œ×˜×¤×•×¨×ž×”
+Toast_RestoreDeleting: ×ž×—×™×§×ª ×§×‘×¦×™× ×–×ž× ×™×™×
+Toast_RestoreComplete: ×”×©×—×–×•×¨ ×”×¡×ª×™×™×!
+Toast_FailedLoad: ×˜×¢×™× ×ª {platform}× ×›×©×œ×”! ×œ×—×¥ ×¢×œ ×”×¤×œ×˜×¤×•×¨×ž×” ×›×“×™ ×œ×¨××•×ª ××ª ×”×©×’×™××”.
+Toast_FailedPlatformsLoad: ×˜×¢×™× ×ª Platforms.json × ×›×©×œ×”! ×× × ×•×“× ×©×§×•×‘×¥ ×–×” ×§×™×™×.
+Toast_FailedLoadSettings: "×˜×¢×™× ×ª ×”×”×’×“×¨×•×ª × ×›×©×œ×”! ×˜×•×¢×Ÿ ×”×’×“×¨×•×ª ×‘×¨×™×¨×ª ×ž×—×“×œ ×‘×ž×§×•× ×–××ª. ×”×•×¡×¤×ª '×™×©×Ÿ' ×œ×©× ×§×•×‘×¥ ×”×”×’×“×¨×•×ª ×”×§×™×™×."
+Toast_FailedLoadStats: "×˜×¢×™× ×ª ×”× ×ª×•× ×™× ×”×¡×˜×˜×™×¡×˜×™×™× × ×›×©×œ×”! ×ž×ª×—×™×œ ×ž×—×“×©."
+Toast_FailedStatsLoad: ×˜×¢×™× ×ª GameStats.json × ×›×©×œ×”! ×× × ×•×“× ×©×§×•×‘×¥ ×–×” ×§×™×™×.
+Toast_GameStatsLoadFail: "× ×›×©×œ ×‘×§×‘×œ×ª ×¡×˜×˜×™×¡×˜×™×§×•×ª ×ž×©×—×§ ×ž×”××™× ×˜×¨× ×˜ ×¢×‘×•×¨ {Game}"
+Toast_GameStatsEmpty: "×œ× × ×ž×¦××• ×¡×˜×˜×™×¡×˜×™×§×•×ª ×ž×©×—×§ ×‘××ª×¨ ×¢×‘×•×¨ {Game}. ××ª×” ×—×•×©×‘ ×©×–×• ×˜×¢×•×ª? ×‘×“×•×§ ××ª ×ª×™×§×™×™×ª × ×ª×•× ×™ ×”×ž×©×ª×ž×© ×• -' temp\\download -{AccoundId}-{Game}.html '×›×“×™ ×œ×¨××•×ª ×× ×”×™×™×ª×” ×©×’×™××” ×‘×“×£!"
+Toast_FileCopyFail: ×”×¢×ª×§×ª ×”×§×‘×¦×™× × ×›×©×œ×”! × ×™×ª×Ÿ ×œ×¢×™×™×Ÿ ×‘×™×•×ž×Ÿ ×œ×§×‘×œ×ª ×¤×¨×˜×™× × ×•×¡×¤×™×.
+Toast_UserDataLoadFail: ×˜×¢×™× ×ª × ×ª×•× ×™ ×”×ž×©×ª×ž×© × ×›×©×œ×” {UserData}\\WindowSettings.json. ×’×™×‘×•×™ ×•××™×¤×•×¡! ×©×’×™××” × ×©×ž×¨×” ×œ×¨×™×©×•×.
+Toast_UpdateCheckFail: ×œ× × ×™×ª×Ÿ ×œ×™×¦×•×¨ ×§×©×¨ ×¢× https://discord.gg/PLR/ ×›×“×™ ×œ×‘×“×•×§ ×× ×™×© ×¢×“×›×•× ×™×. ×”×•×“×¢×” ×–×• ×ª×•×¦×’ ×¤×¢× ×‘×™×•×.
+Toast_FailedCreateIcon: ×™×¦×™×¨×ª ×”×¡×ž×œ × ×›×©×œ×”. × ×™×ª×Ÿ ×œ×¢×™×™×Ÿ ×‘×™×•×ž×Ÿ ×œ×§×‘×œ×ª ×¤×¨×˜×™×.
+Toast_SameAccount: ×œ× × ×™×ª×Ÿ ×œ×”×¢×ª×™×§ ×§×‘×¦×™× ××œ/×ž××•×ª×• ×—×©×‘×•×Ÿ. ××¤×©×¨ ×œ× ×¡×•×ª ×—×©×‘×•×Ÿ ××—×¨ ××• ×œ×¢×™×™×Ÿ ×‘ - Wiki ×œ×§×‘×œ×ª ×ž×™×“×¢ × ×•×¡×£.
+Toast_Steam_DownloadingAppIds: ×ž×•×¨×™×“ ××ª ×¨×©×™×ž×ª ×” - Steam AppId...
+Toast_Steam_DownloadingAppIdsComplete: ×”×”×•×¨×“×” ×”×¡×ª×™×™×ž×”. ×ª×¤×¨×™×˜ ×”×ž×©× ×” ×©×œ × ×ª×•× ×™ ×”×ž×©×—×§ ×¢×•×“×›×Ÿ.
+Toast_SteamWebKeyInvalid: ×ž×¤×ª×— ×” - API ×©×œ Steam Web ×œ× ×—×•×§×™. ×× × ×”×’×“×¨ ××—×“ ×—×“×©.
+Toast_DownloadingProfileData: ×ž×•×¨×™×“ × ×ª×•× ×™ ×¤×¨×•×¤×™×œ
+Toast_PasswordChanged: ×”×¡×™×¡×ž×” ×©×•× ×ª×”
+Toast_JsonFailModify: ×©×™× ×•×™ ×§×•×‘×¥ JSON × ×›×©×œ. ×¨××” ×™×•×ž×Ÿ ×¨×™×©×•×.
+Toast_DifferentClosingMethod: "'×©×™×˜×ª ×¡×’×™×¨×”' ×©×•× ×” ×ž×‘×¨×™×¨×ª ×”×ž×—×“×œ. ×× ×ž×©×—×§×™× × ×¡×’×¨×™× ×•×¢×•×“ ×‘×“×•×§ ×× ×©×™× ×•×™ ××¤×©×¨×•×ª ×–×• ×¢×•×–×¨×ª. ×‘×¨×™×¨×ª ×ž×—×“×œ: {defaultMethod}, × ×•×›×—×™: {currentMethod}"
+Toast_NameEmpty: ×©× ×ž×©×ª×ž×© ×œ× ×™×›×•×œ ×œ×”×™×•×ª ×¨×™×§ (×•×œ× ×™×›×•×œ ×œ×”×›×™×œ ×¨×§ ×¨×•×•×—×™×)
+Toast_NewPlatforms: "×žÖ°×¢×•Ö¼×“×›Ö¼Ö¸×Ÿ! ×¤×œ×˜×¤×•×¨×ž×•×ª ×—×“×©×•×ª ×©× ×•×¡×¤×•: {listOfNames}. ×œ×—×¥ ×›×“×™ ×œ×¡×’×•×¨."
+Toast_FoundExeViaShortcut: "×ž×¦×× ×• ××ª ×”× ×ª×™×‘ ×”×ž×•×ª×§×Ÿ ×ž×§×™×¦×•×¨ ×“×¨×š ×ª×¤×¨×™×˜ ×”×ª×—×œ. ×× × ××ž×ª ××ª ×ž×™×§×•×ž×• ×¢×œ ×™×“×™ ×œ×—×™×¦×” ×¢×œ ×”×’×“×¨×•×ª ×›×¢×ª. ×œ×—×¥ ×›×“×™ ×œ×¡×’×•×¨."
+Modal_Crowdin_Header: ×ž×ª×¨×’×ž×™ Crowdin
+Modal_Crowdin_Info: "×”× ×” ×›×œ ×ž×™ ×©×¢×–×¨ ×œ×ª×¨×’× ××ª ×”×ª×•×›× ×” ×”×–×•.<br>×ž×©×ª×ž×©×™× ×¢× ×©×¤×•×ª ×œ×™×“× ×¢×–×¨×• ×¨×‘×•×ª ×‘×ª×¨×’×•× (×ª×¤×§×™×“ ×”×’×”×”)."
+Modal_Info_Creator: × ×•×¦×¨ ×¢×œ ×™×“×™ PolarWolves Team [×•×•×¡×œ×™ Pyburn]
+Modal_Info_Version: ×’×¨×¡×”
+Modal_Info_ViewGitHub: ×”×¦×’ ×‘ - GitHub
+Modal_Info_ViewPatreon: ×ª×ž×™×›×” ×‘××ž×¦×¢×•×ª Patreon
+Modal_Info_ViewKofi: ×ª×ž×™×›×” ×‘××ž×¦×¢×•×ª Ko-Fi
+Modal_Info_BugReport: ×“×™×•×•×— ×‘××’×™×/×‘×§×©×” ×œ×ª×›×•× ×”
+Modal_Info_VisitSite: ×‘×§×¨ ×‘×›×ª×•×‘×ª discord.gg/PLR
+Modal_Info_Disclaimer: ×›×ª×‘ ×•×™×ª×•×¨
+Modal_Title_Info: ×¤×¨×˜×™ ×ž×—×œ×™×£ ×—×©×‘×•×Ÿ PolarWolves
+Modal_Title_ChangeUsername: ×©× ×” ×©× ×ž×©×ª×ž×©
+Modal_Title_ConfirmAction: PolarWolves ×ž×—×œ×£ ×—×©×‘×•×Ÿ ××©×¨ ×¤×¢×•×œ×”
+Modal_Title_LocatePlatform: ×× × ××ª×¨ ××ª ×ª×™×§×™×™×ª {platform}
+Modal_Title_AddNew: ×”×•×¡×£ ×—×©×‘×•×Ÿ {platform} ×—×“×©
+Modal_Title_Background: ×”×’×“×¨ ×ª×ž×•× ×ª ×¨×§×¢
+Modal_Title_Userdata: ×”×’×“×¨ ××ª ×ª×™×§×™×™×ª × ×ª×•× ×™ ×”×ž×©×ª×ž×©
+Modal_Title_GameStats: ×”×¤×¢×œ/×‘×˜×œ ×¡×˜×˜×™×¡×˜×™×§×ª ×ž×©×—×§
+Modal_GameStats_Header: "×”×¤×¢×œ/×‘×˜×œ ×¡×˜×˜×™×¡×˜×™×§×ª ×ž×©×—×§ ×¢×‘×•×¨: {accountName}"
+Modal_Title_Stats: ×”× ×ª×•× ×™× ×”×¡×˜×˜×™×¡×˜×™×™× ×©×œ×š
+Modal_Title_GameVars: "×”×–×Ÿ ×¤×¨×˜×™× ×¢×‘×•×¨ {game}"
+Modal_GameVars_Header: "×× × ×”×–×Ÿ ××ª ×”×¤×¨×˜×™× ×”×‘××™× ×¢×‘×•×¨ ×—×©×‘×•×Ÿ {game} ×©×œ×š, {username} ×¢×œ {platform}"
+Modal_Title_AccountNotes: "×”×¢×¨×•×ª ×œ×—×©×‘×•×Ÿ ×¢×‘×•×¨: {accountName}"
+Modal_Title_SetPassword: ×”×’×“×¨ ×¡×™×¡×ž×”
+Modal_SetBackground: '×‘×—×¨ ×ª×ž×•× ×”, ××• ×”×–×Ÿ ×›×ª×•×‘×ª ××ª×¨ ×œ×ž×˜×”.<br>×”×©××¨ ×¨×™×§ ×•×”×’×“×¨ ×œ××™×¤×•×¡.<br>(×œ×©×œ×™×˜×” ×ž×ª×§×“×ž×ª ×™×•×ª×¨ ×¨××” ××ª ×”× ×•×©× ×‘×•×•×™×§×™):'
+Modal_SetBackground_Button: ×”×’×“×¨ ×¨×§×¢
+Modal_SetBackground_ChooseImage: ×‘×—×¨ ×ª×ž×•× ×” ×ž×§×•×ž×™×ª
+Modal_SetUserdata: ×”×–×Ÿ × ×ª×™×‘ ×ª×™×§×™×” ×œ×ž×˜×” ×•×œ×—×¥ ×¢×œ ×”×’×“×¨.
+Modal_SetUserdata_ChooseFolder: ×‘×—×¨ ×ª×™×§×™×”
+Modal_SetUserdata_Button: ×”×’×“×¨ × ×ª×•× ×™ ×ž×©×ª×ž×©
+Modal_ChangeUsername: ×× × ×”×–×Ÿ ×©× ×ž×©×ª×ž×© ×—×“×© ×¢×‘×•×¨ ×—×©×‘×•× ×š
+Modal_ChangeUsernameType: ×©× ×” {platform} ×©× ×ž×©×ª×ž×©
+Modal_SetPassword: ×”×–×Ÿ ×¡×™×¡×ž×” ×¢×‘×•×¨ ×ž×—×œ×™×£ ×”×—×©×‘×•×Ÿ PolarWolves
+Modal_SetPassword_Button: ×”×’×“×¨ ×¡×™×¡×ž×”
+Modal_SetPassword_Info: "×”×¢×¨×”: ×–×” ×œ× ×ž×¦×¤×™×Ÿ ××ª ×”×—×©×‘×•× ×•×ª ×©×œ×š. ×”×—×œ×¤×ª ×—×©×‘×•× ×•×ª ×”×™× ×¤×©×•×˜×” ×›×ž×• ×”×—×œ×¤×ª ×§×‘×¦×™×, ××• ×©×™× ×•×™ ×©× ×ž×©×ª×ž×© ×‘×§×•×‘×¥. × ×™×ª×Ÿ ×œ××¤×¡ ××ª ×”×¡×™×¡×ž×” ×’× ×¢×œ ×™×“×™ ×¢×¨×™×›×ª ×˜×§×¡×˜ ×‘×§×•×‘×¥. ×–×•×”×™ ××‘×˜×—×” ×¤×©×•×˜×”. ×–×” ×¢×•×¦×¨ ×’×™×©×” ×¤×©×•×˜×” ×œ×ž×ž×©×§ ×”×ž×©×ª×ž×©. ××ª×” ×™×›×•×œ ×œ×©×™× ××ª ×”××¤×œ×™×§×¦×™×” ×”×–×• ×¢×œ USB × ×©×œ×£, ×œ×”×’×“×™×¨ ××ª ×ª×™×§×™×™×ª UserData ×œ××•×ª×• USB ×•×œ×”×¡×™×¨ ××•×ª×” ×¤×™×–×™×ª ×œ×™×ª×¨ ××‘×˜×—×”. <a class=\"fancyLink\" onclick=\"OpenLinkInBrowser('{link}');return false;\" href=\"\">×ž×¢×‘×¨ ×œ×ž×“×¨×™×š ×œ×›×•× ×Ÿ ×—×™×¦×•× ×™</a><br><br>×›×“×™ ×œ× ×§×•×ª, ×”×©××¨ ××ª ×”××ž×•×¨ ×œ×¢×™×œ ×¨×™×§ ×•×œ×—×¥ ×¢×œ ×”×’×“×¨."
+Modal_EnterDirectory: "×× × ×”×–×Ÿ ××ª ×”×¡×¤×¨×™×” ×©×œ {platform}, ×›×’×•×Ÿ: C:\\Program Files\\{platform}"
+Modal_LocatePlatform: ××ª×¨ {platformExe}
+Modal_LocatePlatformFolder: ×‘×—×¨ ×ª×™×§×™×™×” {platform}
+Modal_ConfirmAction: ××™×©×•×¨ ×”×¤×¢×•×œ×”
+Modal_AddNew: ×”×–×Ÿ ×©× ×¢×‘×•×¨ ×—×©×‘×•×Ÿ {platform} ×©××œ×™×• ××ª×” ×ž×—×•×‘×¨.
+Modal_AddCurrentAccount: ×”×•×¡×£ ×—×©×‘×•×Ÿ {platform} × ×•×›×—×™
+Modal_SetImageHeader: ×”×’×“×¨ ×ª×ž×•× ×ª ×¤×¨×•×¤×™×œ
+Modal_SetImage: ×”×’×“×¨ ×ª×ž×•× ×”
+Status_SelectedAccount: "× ×‘×—×¨: {name}"
+Status_Init: "×ž×¦×‘: ×ž××ª×—×œ"
+Status_ClosingPlatform: ×¡×•×’×¨×™× {platform}
+Status_ClosingPlatformFailed: ×¡×’×™×¨×ª {platform}
+Status_StartingPlatform: ×ž×ª×—×™×œ {platform}
+Toast_StartingPlatformFailed: ×”×”×ª×—×œ×” ×©×œ {platform}× ×›×©×œ×”! ×¨××” ×™×•×ž×Ÿ ×œ×¤×¨×˜×™× × ×•×¡×¤×™×.
+Toast_UrlAdminErr: ××™× ×š ×™×›×•×œ ×œ×”×¤×¢×™×œ ×§×•×‘×¦×™ url ×›×ž× ×”×œ ×ž×¢×¨×›×ª. × ×¡×” ×¡×•×’ ×§×™×¦×•×¨ ××—×¨. ×ž×•×¤×¢×œ ×›×ž×©×ª×ž×© ×¨×’×™×œ.
+Status_UpdatingFile: "×ž×¢×“×›×Ÿ {file}"
+Status_UpdatingRegistry: ×¢×“×›×•×Ÿ ×”×¨×™×©×•× ×©×œ Windows
+Status_FailedLog: '×¤×¢×•×œ×”: × ×›×©×œ. ×¨××” ×™×•×ž×Ÿ ×œ×¤×¨×˜×™×.'
+Status_WaitingForClose: "×ž×ž×ª×™×Ÿ ×œ {processName} ×œ×¡×’×™×¨×” ({timeout}×©× ×™×•×ª{timeLimit}"
+Status_WaitingForMultipleClose: "×ž×ž×ª×™×Ÿ ×œ×¡×’×™×¨×” ×©×œ {processName} ×• {count} ××—×¨×™× ({timeout}{timeLimit})"
+Status_GetUniqueId: ××™×¡×•×£ ×ž×–×”×” ×ž×©×ª×ž×© ×™×™×—×•×“×™
+Status_CopyingFiles: ×ž×¢×ª×™×§ ×§×‘×¦×™ ×ž×©×ª×ž×©...
+Status_HandlingImage: ×˜×™×¤×•×œ ×‘×ª×ž×•× ×ª ×¤×¨×•×¤×™×œ ×—×©×‘×•×Ÿ
+Context_SwapTo: ×”×—×œ×£ ×œ×—×©×‘×•×Ÿ
+Context_CreateShortcut: ×¦×•×¨ ×§×™×¦×•×¨ ×“×¨×š
+Context_ChangeImage: ×©× ×” ×ª×ž×•× ×”
+Context_ChangeName: ×©× ×” ××ª ×©× ×”×ž×—×œ×£
+Context_LoginAsSubmenu: ×”×ª×—×‘×¨ ×› -
+Context_UsernameSubmenu: ×©× ×ž×©×ª×ž×©
+Context_RefreshName: ×¨×¢× ×Ÿ ×©×
+Context_CopySubmenu: ×”×¢×ª×§
+Context_DataSubmenu: × ×ª×•× ×™×
+Context_CopyProfileSubmenu: ×”×¢×ª×§ ×¤×¨×•×¤×™×œ
+Context_CommunityUrl: ×›×ª×•×‘×ª URL ×©×œ ×”×§×”×™×œ×”
+Context_CommunityUsername: ×©× ×ž×©×ª×ž×© ×‘×§×”×™×œ×”
+Context_LoginUsername: ×©× ×ž×©×ª×ž×© ×œ×›× ×™×¡×”
+Context_CopySteamIdSubmenu: ×”×¢×ª×§ SteamID
+Context_Steam_Id: 'SteamID [STEAM0: ~]'
+Context_Steam_Id3: 'SteamID3 [U:1: ~]'
+Context_Steam_Id32: SteamID32
+Context_Steam_Id64: SteamID64 7656~
+Context_Steam_OpenUserdata: ×¤×ª×— × ×ª×•× ×™ ×ž×©×ª×ž×©
+Context_ManageSubmenu: × ×”×œ
+Context_GameDataSubmenu: × ×ª×•× ×™ ×ž×©×—×§
+Context_ManageGameStats: × ×”×œ ×¡×˜×˜×™×¡×˜×™×§×•×ª ×ž×©×—×§
+Context_Game_CopySettingsFrom: ×”×¢×ª×§ ×”×’×“×¨×•×ª ×œ× ×•×›×—×™
+Context_Game_RestoreSettingsTo: ×©×—×–×¨ × ×ª×•× ×™ ×ž×©×—×§
+Context_Game_BackupData: × ×ª×•× ×™ ×ž×©×—×§ ×”×’×™×‘×•×™
+Context_CopyOtherSubmenu: ×”×¢×ª×§ ××—×¨
+Context_HidePlatform: ×”×¡×ª×¨ ×¤×œ×˜×¤×•×¨×ž×”
+Context_ExportAccList: ×™×™×¦×•× ×¨×©×™×ž×ª ×—×©×‘×•× ×•×ª
+Context_RunAdmin: ×”×¤×¢×œ ×›×ž× ×”×œ
+Context_Hide: ×œ×”×ª×—×‘×
+ProfileImage_ToggleText: ×”×©×ª×ž×© ×‘×ª×ž×•× ×” ×›×ª×ž×•× ×ª ×—×©×‘×•×Ÿ
+Title_Platforms_Settings: ×ž×¢×‘×™×¨ ×—×©×‘×•×Ÿ PolarWolves - ×”×’×“×¨×•×ª ×¤×œ×˜×¤×•×¨×ž×”
+Title_Settings_TestCss: ×ž×¢×‘×™×¨ ×—×©×‘×•×Ÿ PolarWolves - ×‘×“×™×§×ª ×¢×™×¦×•×‘ CSS
+Title_AccountsList: ×ž×¢×‘×™×¨ ×—×©×‘×•×Ÿ PolarWolves - {platform}
+Title_TextEditor: ×ž×¢×‘×™×¨ ×—×©×‘×•×Ÿ PolarWolves - ×¢×•×¨×š ×˜×§×¡×˜
+Title_Settings: ×ž×¢×‘×™×¨ ×—×©×‘×•×Ÿ PolarWolves - ×”×’×“×¨×•×ª
+Title_Steam_Cleaning: ×ž×¢×‘×™×¨ ×—×©×‘×•×Ÿ PolarWolves - × ×™×§×•×™ ××“×™×
+Title_Steam_Settings: ×ž×¢×‘×™×¨ ×—×©×‘×•×Ÿ PolarWolves - ×”×’×“×¨×•×ª ×§×™×˜×•×¨
+Title_Template_Settings: PolarWolves - {platformName} ×”×’×“×¨×•×ª
+Title_Login: ×ž×¢×‘×™×¨ ×—×©×‘×•×Ÿ PolarWolves - ×”×ª×—×‘×¨×•×ª
+Installer_Downloading: ×ž×•×¨×™×“ {file}
+Installer_DownloadFinished: ×”×”×•×¨×“×” ×”×¡×ª×™×™×ž×” {file}
+Installer_Installing: "×ž×ª×§×™×Ÿ: {runtime}"
+Installer_RuntimeTitle: ×ž×¢×‘×™×¨ ×—×©×‘×•×Ÿ PolarWolves - ×ž×ª×§×™×Ÿ ×–×ž×Ÿ ×¨×™×¦×”
+Installer_Welcome: ×‘×¨×•×›×™× ×”×‘××™× ×œ×ž×—×œ×£ ×”×—×©×‘×•×Ÿ PolarWolves - ×ž×ª×§×™×Ÿ ×–×ž×Ÿ ×¨×™×¦×”
+Installer_InstalledRuntimes: "×–×ž× ×™ ×¨×™×¦×” ×ž×•×ª×§× ×™× ×›×¨×’×¢:"
+Installer_ErrorRuntime: "×–×ž×Ÿ ×¨×™×¦×” ××—×“ ××• ×™×•×ª×¨ ×œ× ×”×•×ª×§× ×•:"
+Installer_RuntimeNote: "[~{size1} MB +~{size2} MB ×‘×–×ž×Ÿ ×”×”×ª×§× ×”]"
+Installer_TotalSize: "×’×•×“×œ ×”×•×¨×“×” ×›×•×œ×œ: ~{size} MB"
+Installer_AnyKeyStart: ×”×§×© ×¢×œ ×ž×§×© ×›×œ×©×”×• ×›×“×™ ×œ×”×ª×—×™×œ ×‘×”×•×¨×“×”...
+Runtime_WebView2: ×–×ž×Ÿ ×¨×™×¦×” ×©×œ Microsoft WebView2
+Runtime_Desktop: Microsoft .NET 5 Desktop Runtime
+Runtime_ASP: ×–×ž×Ÿ ×¨×™×¦×” ×©×œ Microsoft Microsoft ASP.NET Core {version}
+Installer_FailedFolder: "×™×¦×™×¨×ª ×”×ª×™×§×™×™×” × ×›×©×œ×”:"
+Installer_FailedWV: "×”×”×•×¨×“×” ×•×”×”×ª×§× ×” ×©×œ Microsoft WebView2 Runtime × ×›×©×œ×”. ×œ×”×•×¨×“×”: 1. ×œ×—×¥ ×¢×œ ×”×§×™×©×•×¨ ×”×‘×: {link} 2. ×œ×—×¥ ×¢×œ '×”×•×¨×“ ×—×‘×™×œ×ª ××™×¨×•×—' ×ž×ª×—×ª ×œ××¤×œ×™×§×¦×™×•×ª ×©×¨×ª ×”×¨×¦×”."
+Installer_FailedDR: "×”×”×•×¨×“×” ×•×”×”×ª×§× ×” ×©×œ .NET 5 Desktop Runtime × ×›×©×œ×”. ×× × ×”×•×¨×“ ××•×ª×• ×›××Ÿ:"
+Installed_FailedASP: "×”×”×•×¨×“×” ×•×”×”×ª×§× ×” ×©×œ ASP.NET Core {version} Runtime × ×›×©×œ×•. ×œ×”×•×¨×“×”: 1. ×œ×—×¥ ×¢×œ ×”×§×™×©×•×¨ ×œ×ž×˜×”: {link} 2. ×œ×—×¥ ×¢×œ '×”×•×¨×“ x64' ×ª×—×ª ×”×¤×¢×œ ×™×™×©×•×ž×™ ×©×•×œ×—×Ÿ ×¢×‘×•×“×”."
+Installer_Ready: "××—×“ ××• ×™×•×ª×¨ ×ž×•×›× ×™× ×œ×”×ª×§× ×”. ×× ×•×›××©×¨ ×ª×ª×‘×§×© ×œ×”×ª×§×™×Ÿ, ×œ×—×¥ ×¢×œ '×›×Ÿ '."
+Installer_PressStart: ×”×§×© ×¢×œ ×ž×§×© ×›×œ×©×”×• ×›×“×™ ×œ×”×ª×—×™×œ ×‘×”×ª×§× ×”...
+Installer_VerifyMin: "×•×“× ×©××ª×” ×¢×•×ž×“ ×‘×“×¨×™×©×•×ª ×”×ž×™× ×™×ž×œ×™×•×ª ×”×ž×•×ž×œ×¦×•×ª:"
+Installer_VerifyAlready: "×–×” × ×¨××” ×›××™×œ×• ×”×›×œ ×ž×•×ª×§×Ÿ. ×•×“× ×©××ª×” ×¢×•×ž×“ ×‘×“×¨×™×©×•×ª ×”×ž×™× ×™×ž×œ×™×•×ª ×”×ž×•×ž×œ×¦×•×ª:"
+Installer_Complete: ×–×” ×¦×¨×™×š ×œ×”×™×•×ª ×”×›×œ. ×”×ª×•×›× ×™×ª ×”×¨××©×™×ª, PolarWolves.exe, ×ª×¤×¢×œ ××•×˜×•×ž×˜×™×ª.
+Installer_Complete2: "×× ×–×” ×œ× ×¢×•×‘×“, ×× × ×¢×™×™×Ÿ ×‘×”×•×¨××•×ª ×”×”×ª×§× ×”, ×›××Ÿ: {link}"
+Tray_Error: ×©×’×™××ª ×ž×’×©
+Tray_NoAccs: "×œ× × ×ž×¦××• ×—×©×‘×•× ×•×ª.\n× ×¡×” ×§×•×“× ×œ×”×—×œ×™×£ ×—×©×‘×•× ×•×ª, ××• ××ª×¨ ××ª 'Tray_Users.json'"
+Tray_Switch: "×¢×‘×•×¨ ×œ: {account}"
+Tray_CantOpenExe: "×œ× × ×™×ª×Ÿ ×œ×¤×ª×•×— ××ª .exe ×”×¨××©×™. ×•×“× ×©×”×•× ×§×™×™×.\n\n× ×™×¡×™×ª×™ ×œ×¤×ª×•×—:"
+Tray_LaunchFail: "×ž×¢×‘×™×¨ ×—×©×‘×•×Ÿ PolarWolves - ×”×©×§×ª ×ž×’×© × ×›×©×œ×”"
+Updater_Duplicate: ×–×•×”×” ×ž×•×¤×¢ × ×•×¡×£ ×©×œ ×ž×—×œ×™×£ ×¢×“×›×•×Ÿ PolarWolves ×œ×—×©×‘×•×Ÿ.
+Updater_Unknown: "××¨×’×•×ž× ×˜ ×œ× ×™×“×•×¢: {arg}"
+Updater_NeedsAdmin: ×ª×•×›× ×™×ª ×–×• ×—×™×™×‘×ª ×œ×”×™×•×ª ×ž×•×¤×¢×œ×ª ×›×ž× ×”×œ!
+Updater_StatusChecking: ×‘×“×™×§×ª ×’×™×¨×¡×”
+Updater_FailedVersionCheck: "×œ× × ×™×ª×Ÿ ×œ×§×‘×œ ×’×¨×¡×”. ×œ×—×¥ ×¢×œ \"××ž×ª\" ×›×“×™ ×œ×¢×“×›×Ÿ ×•×œ××ž×ª ×§×‘×¦×™×"
+Updater_PressBelow: ×œ×—×¥ ×¢×œ ×”×œ×—×¦×Ÿ ×œ×ž×˜×”!
+Updater_PressBelowStart: ×œ×—×¥ ×¢×œ ×”×œ×—×¦×Ÿ ×œ×ž×˜×” ×›×“×™ ×œ×”×ª×—×™×œ ××ª ×”×¢×“×›×•×Ÿ.
+Updater_PatchApplied: ×”×ª×™×§×•×Ÿ ×”×•×—×œ!
+Updater_UpdatingAppData: ×ž×¢×“×›×Ÿ ×§×‘×¦×™× ×‘ - AppData!
+Updater_Complete: ×›×œ ×”×¢×“×›×•× ×™× ×”×•×©×œ×ž×•!
+Updater_Checking: ×‘×•×“×§ ×× ×™×© ×¢×“×›×•× ×™×
+Updater_UpdateToVerify: ×›×“×™ ×œ××ž×ª ×§×‘×¦×™× ×¢×œ×™×š ×œ×¢×“×›×Ÿ ×ª×—×™×œ×”.
+Updater_ClosingPolarWolves: ×¡×’×™×¨×ª TcN No Account Switcher ×ž×•×¤×¢×™× (×× ×‘×›×œ×œ).
+Updater_Downloading: "×¢×“×›×•×Ÿ ×”×•×¨×“×”: {version}"
+Updater_Downloaded: ×”×”×•×¨×“×” ×”×•×©×œ×ž×”.
+Updater_CantExtract: × ×›×©×œ ×‘×—×™×œ×•×¥ ×”×¢×“×›×•×Ÿ.
+Updater_Verify: ××™×ž×•×ª ×§×‘×¦×™×
+Updater_Verifying: ×ž××ž×ª...
+Updater_VerifySkip: ××™×ž×•×ª ×§×‘×¦×™× ×›×“×™ ×œ×“×œ×’ ×¢×œ ×›×œ ×”×¢×“×›×•× ×™× ×”×§×˜× ×™×, ×•×¤×©×•×˜ ×œ×§×¤×•×¥ ××œ ×”×¢×“×›×•× ×™× ×”××—×¨×•× ×™×.
+Updater_NoConnection: "×œ× × ×™×ª×Ÿ ×œ×”×ª×—×‘×¨ ××œ discord.gg/PLR ×›×“×™ ×œ××ž×ª ×§×‘×¦×™×. × ×™×ª×Ÿ ×œ× ×¡×•×ª ×œ×”×•×¨×™×“ ××ª ×”×ž×ª×§×™×Ÿ ×‘××•×¤×Ÿ ×™×“× ×™ ×ž×”×“×£ GitHub ×•×œ×”×ª×§×™×Ÿ ×ž×—×“×© ×›×“×™ ×œ×¢×“×›×Ÿ.\n\n×©×’×™××”:"
+Updater_NoServer: ×œ× × ×™×ª×Ÿ ×œ×”×’×™×¢ ×œ×©×¨×ª ×”×¢×“×›×•×Ÿ
+Updater_Hashlist: ×ž×•×¨×™×“ ××ª ×¨×©×™×ž×ª ×”××© ×”××—×¨×•× ×”...
+Updater_CantCheck: ×œ× × ×™×ª×Ÿ ×œ×‘×“×•×§ ×× ×™×© ×¢×“×›×•× ×™×
+Updater_Failed: "×©×’×™××”: ×—×œ×§ ×ž×”×§×‘×¦×™× × ×ž×¦××™× ×‘×©×™×ž×•×© ×•×œ× × ×™×ª×Ÿ ×œ×¢×“×›×Ÿ ××•×ª×.\n\n1. ×™×© ×œ×•×•×“× ×©×›×œ ×ª×”×œ×™×›×™ ×” - PolarWolves ×¡×’×•×¨×™× ×œ×—×œ×•×˜×™×Ÿ\n(××• ×œ×”×¤×¢×™×œ ×ž×—×“×© ××ª ×”×ž×—×©×‘)\n\n. ×œ××—×¨ ×ž×›×Ÿ ×œ×—×¥ ×¢×œ ××ž×ª ×œ×”×œ×Ÿ, ××• ×× ×”×¤×¢×œ×ª ×ž×—×“×©:\n-   ×¤×ª×— ×ž×¢×“×›×Ÿ ×–×” ×•××ž×ª ×§×‘×¦×™×\n    (×ž×ž×•×§× ×‘×ª×™×§×™×™×” '×ž×¢×“×›×Ÿ' ×‘×¡×¤×¨×™×™×ª ×”×”×ª×§× ×”)"
+Updater_Missing: "×§×•×‘×¥ ×—×¡×¨: {file}"
+Updater_FileMismatch: "×§×•×‘×¥: {file} ×™×© MD5: {md5} ×¦×¤×•×™: {value}"
+Updater_DownloadingWeb: ×ž×•×¨×™×“ ×§×•×‘×¥ ×ž×”××ª×¨...
+Updater_UnpackingAppData: ×ž×¢×ª×™×§ ×§×‘×¦×™× ×œ %AppData%/PolarWolves ×ž×—×œ×™×£ ×—×©×‘×•×Ÿ... (××œ× ×× ×›×Ÿ ×”×•×’×“×¨ ××—×¨×ª)
+Updater_VerifyComplete: ×§×‘×¦×™× ××•×ž×ª×•!
+Updater_UpdateFound: "× ×ž×¦× ×¢×“×›×•×Ÿ: {name} [{updateSize}]"
+Updater_TotalFound: "×¡×š ×›×œ ×”×¢×“×›×•× ×™× ×©× ×ž×¦××•: {x}"
+Updater_TotalSize: "×’×•×“×œ ×›×•×œ×œ: {size}"
+Updater_AwaitingUser: ×ž×ž×ª×™×Ÿ ×œ×§×œ×˜ ×”×ž×©×ª×ž×©...
+Updater_UpToDate: "××ª×” ×ž×¢×•×“×›×Ÿ.\n:)"
+Updater_FailedDecode: ×¡×‘×™×¨ ×œ×”× ×™×— ×©×–×” × ×•×‘×¢ ×ž×›×š ×©×× ×™ (PolarWolves Team) ×“×—×¤×ª×™ ×¢×“×›×•×Ÿ, ×•×‘×™×¦×¢×ª×™ ×©×’×™××ª ×”×§×œ×“×” ×©×©×‘×¨×” ××ª ×§×•×‘×¥ ×”×¢×“×›×•×Ÿ ×©×œ json. ×ª×•×“×™×¢ ×œ×™:)
+Updater_FailedDecodeTitle: ×¤×¢× ×•×— ×¨×©×™×ž×ª ×”×¢×“×›×•× ×™× × ×›×©×œ
+Updater_Extracting: ×ž×—×œ×¥ ×§×‘×¦×™ ×ª×™×§×•×Ÿ
+Updater_Applying: ×ž×—×™×œ ×˜×œ××™...
+Updater_Moving: ×ž×¢×‘×™×¨ ×§×‘×¦×™×...
+Updater_Title: PolarWolves ×ž×¢×“×›×Ÿ ×ž×—×œ×™×£ ×—×©×‘×•×Ÿ
+Updater_Started: ×”×ª×—×™×œ
+Updater_Start: ×”×¤×¢×œ ××ª ×ž×—×œ×™×£ ×”×—×©×‘×•×Ÿ PolarWolves
+Updater_Begin: ×”×ª×—×œ ×¢×“×›×•×Ÿ
+Updater_Exit: ×™×¦×™××”
+FatalError: ××™×¨×¢×” ×©×’×™××” ×§×˜×œ× ×™×ª!
+Online: ××•× ×œ×™×™×Ÿ
+OnlineDefault: ×ž×§×•×•×Ÿ (×‘×¨×™×¨×ª ×ž×—×“×œ)
+Offline: ×‘×ž×¦×‘ ×œ× ×ž×§×•×•×Ÿ
+Invisible: ×‘×œ×ª×™ × ×¨××”
+Busy: ×¢×¡×•×§
+Away: Away
+Snooze: ×”×©×”×™×” ×–×ž× ×™×ª
+LookingToTrade: ×ž×—×¤×© ×œ×¡×—×•×¨
+LookingToPlay: ×ž×—×¤×© ×œ× ×’×Ÿ
+Unrecognized_EPersonaState: ePersonaState ×œ× ×ž×–×•×”×”
+Reg_DoesntExist: "{subKey} ××™× ×• ×§×™×™×."
+Reg_DoesntContain: "{subKey} ××™× ×• ×ž×›×™×œ {val}"
+Reg_Removing: ×ž×¡×™×¨ {subKey}\\{val}
+PngInvalid_Format: ×ª×‘× ×™×ª ×”×¤×™×§×¡×œ ×”× ×“×¨×©×ª ×”×™× PixelFormat.{x}.
+PngRequired: ×¤×•×¨×ž×˜ ×”×ª×ž×•× ×” ×”× ×“×¨×© ×”×•× ×’×¨×¤×™ ×¨×©×ª × ×™×™×“ (png).
+PngDimensions: ×”×ž×ž×“×™× ×—×™×™×‘×™× ×œ×”×™×•×ª ×§×˜× ×™× ××• ×©×•×•×™× ×œ - {MaxIconWidth}x{MaxIconHeight}
+ThemeSyntaxAnd: "××™×¨×¢×” ×©×’×™××” ×ª×—×‘×™×¨×™×ª (×¤×¨×˜×™× × ×•×¡×¤×™× ×‘×”×ž×©×š)! ×•×›×Ÿ:"
+ThemesNotFound: "×œ× × ×™×ª×Ÿ ×œ×ž×¦×•× ××ª ×ª×™×§×™×™×ª \"×¢×¨×›×•×ª ×¢×™×¦×•×‘\" ×‘×¡×¤×¨×™×™×” ×©×œ ×ž×—×œ×™×£ ×”×—×©×‘×•×Ÿ ×©×œ PolarWolves. ×ª×™×§×™×™×” ×–×• (×‘×ž×™×•×—×“ ×”×ª×™×§×™×™×” 'Dracula_Cyan ') × ×“×¨×©×ª ×›×“×™ ×©×ª×•×›× ×” ×–×• ×ª×¤×¢×œ.\n×‘××¤×©×¨×•×ª×š ×œ×”×¤×¢×™×œ ××ª ×”×¢×“×›×•×Ÿ ×‘×ª×™×§×™×™×” \"updateater\" ×›×“×™ ×œ××ž×ª ×§×‘×¦×™× ×•×œ×©×—×–×¨ ×§×‘×¦×™× ×—×¡×¨×™× ××œ×”."
+Yes: "- ×›×Ÿ."
+No: "- ×œ×."
+Save: ×©×ž×•×¨
+NoDefault: ×œ× (×‘×¨×™×¨×ª ×ž×—×“×œ)
+Ok: "×‘×¡×“×¨."
+Submit: ×©×œ×™×—×”
+Forget: ×ª×©×›×— ×ž×–×”.
+Notice: ×”×•×“×¢×”
+Notes: ×”×¢×¨×•×ª
+Error: ×©×’×™××”
+ErrorDetails: "×©×’×™××”: {ex}"
+Failed: × ×›×©×œ
+Success: ×”×¦×œ×—×”
+NotFound: ×œ× × ×ž×¦×
+Done: ×‘×•×¦×¢
+Edit: ×¢×¨×™×›×”
+Refresh: ×¨×¢× ×Ÿ
+Working: ×¢×•×‘×“...
+ForName: "×¢×‘×•×¨: {name}"
+DeletedFiles: ×§×‘×¦×™× ×©× ×ž×—×§×•
+FileFoldersToClear: "×¨×©×™×ž×ª ×§×‘×¦×™×/×ª×™×§×™×•×ª ×œ× ×™×§×•×™:"
+CouldNotFindX: ×œ× × ×™×ª×Ÿ ×œ×ž×¦×•× {x}
+CouldNotCloseX: ×œ× × ×™×ª×Ÿ ×œ×¡×’×•×¨ {x}!
+CouldNotReadFile: ×œ× ×™×›×•×œ ×œ×§×¨×•× {file}!
+DirectoryNotFound: ×”×¡×¤×¨×™×” ×œ× × ×ž×¦××”
+DirectoryNotFoundFolder: "×”×¡×¤×¨×™×” ×œ× × ×ž×¦××”: {folder}"
+DeletingFile: "×ž×—×™×§×”: {file}"
+DeletingFolder: "×ž×—×™×§×ª ×ª×™×§×™×™×”: "
+CouldntDeleteX: "×©×’×™××”: ×œ× × ×™×ª×Ÿ ×œ×ž×—×•×§: {x}"
+CouldntDeleteUndefined: "×©×’×™××”: ×œ× × ×™×ª×Ÿ ×œ×ž×—×•×§ ×§×•×‘×¥ ×œ× ×ž×•×’×“×¨"
+CouldntModifyX: "×œ× × ×™×ª×Ÿ ×œ×©× ×•×ª ××ª {file}. ×©×’×™××” ×‘×”×¨×©××ª ×§×•×‘×¥, ××• ×©×”×§×•×‘×¥ × ×ž×¦× ×‘×©×™×ž×•×©."
+Prompt_RestartAsAdmin: "<h3><bold>×ª×•×›× ×™×ª ×–×• ×ª×ª×—×™×œ ×ž×—×“×© ×›×ž× ×”×œ ×ž×¢×¨×›×ª</bold></h3><p>×œ×—×¥ ×¢×œ \"×›×Ÿ\" ×‘ - UAC ×›××©×¨ ×ª×ª×‘×§×© ×œ× ×”×œ.</p>"
+Prompt_ForgetSteam: >
+  <h3 style='color:red'>××ª×” ×¢×•×ž×“ ×œ×©×›×•×— ×—×©×‘×•×Ÿ!</h3> <h4>×ž×” ×–×” ××•×ž×¨?</h4> <p>- ×œ-Steam ×›×‘×¨ ×œ× ×™×”×™×” ×”×—×©×‘×•×Ÿ ×”×¨×©×•× ×‘×ž×¦×‘ Big Picture ×•×œ× ×™×–×›×•×¨ ××ª ×”×¡×™×¡×ž×”.<br/> - PolarWolves ×’× ×œ× ×™×¦×™×’ ×™×•×ª×¨ ××ª ×”×—×©×‘×•×Ÿ, ×¢×“ ×©×™×™×›× ×¡ ×©×•×‘ ×“×¨×š Steam.</p> <p>×”×—×©×‘×•×Ÿ ×©×œ×š ×œ× ×™×™×¤×’×¢. ×–×” ×¤×©×•×˜ × ×©×›×— ×‘×ž×—×©×‘ ×”×–×”.</p><h4>××ª×” ×ž×‘×™×Ÿ?</h4>
+Prompt_ForgetAccount: >
+  <h3 style='color:red'>××ª×” ×¢×•×ž×“ ×œ×©×›×•×— ×—×©×‘×•×Ÿ!</h3> <h4>×ž×” ×–×” ××•×ž×¨?</h4> <p>PolarWolves ×’× ×œ× ×™×¦×™×’ ×™×•×ª×¨ ××ª ×”×—×©×‘×•×Ÿ,<br/> ×¢×“ ×©×”×•× ×™×™×›× ×¡ ×©×•×‘ ×“×¨×š {platform}, ×•×™×ª×•×•×¡×£ ×œ×¨×©×™×ž×”.</p> <p>×”×—×©×‘×•×Ÿ ×©×œ×š ×œ× ×™×™×¤×’×¢. ×–×” ×¤×©×•×˜ × ×©×›×— ×‘×ž×—×©×‘ ×”×–×”.</p> <h4>××ª×” ×ž×‘×™×Ÿ?</h4>
+Prompt_ClearStats: >
+  <h3 style='color:red'>××ª×” ×¢×•×ž×“ ×œ× ×§×•×ª ××ª ×”×¡×˜×˜×™×¡×˜×™×§×” ×©×œ×š!</h3> <p>×œ× × ×™×ª×Ÿ ×œ×‘×˜×œ ×¤×¢×•×œ×” ×–×•.</p>
+Platform_DiscordPasteHint: ×”×“×‘×§ ×‘×§×•× ×¡×•×œ×ª Discord ×•×œ××—×¨ ×ž×›×Ÿ ×”×“×‘×§ ××ª ×”×ª×•×¦××” ×‘×§×œ×˜!
+Platform_ClearCache: × ×§×” ×ž×˜×ž×•×Ÿ
+Platform_ClearCacheTotal: × ×™×§×•×™ {totalFileCount} ×§×‘×¦×™× ({totalSizeMB})
+Platform_DeleteFail: ×œ× × ×™×ª×Ÿ ×œ×ž×—×•×§ ×—×œ×§ ×ž×”×§×‘×¦×™× (×™×™×ª×›×Ÿ ×©×”×ª×•×›× ×™×ª ×¤×•×¢×œ×ª?)
+Platform_CouldNotDeleteLog: ×œ× × ×™×ª×Ÿ ×œ×ž×—×•×§ ××ª ×”×§×•×‘×¥! ×‘×“×•×§ {logPath}
+Error_FileAccessDenied: ×”×’×™×©×” ×œ×§×•×‘×¥ × ×›×©×œ×”! ×‘×“×•×§ {logPath}
+Error_RequiredFileVerify: ×§×•×‘×¥ ×—×•×‘×” ×œ× × ×ž×¦×. ×™×© ×œ×•×•×“× ×©×”×ª×™×§×™×•×ª x64 ×• - x86 ×§×™×™×ž×•×ª ×‘×¡×¤×¨×™×™×ª ×”×”×ª×§× ×”. ×× ×œ× ×œ×”×¤×¢×™×œ ××ª PolarWolves - Acc - SWitcher - Updater.exe ×•×œ××ž×ª ×§×‘×¦×™×.
+Tooltip_Settings: ×”×’×“×¨×•×ª
+Tooltip_Info: ×ž×™×“×¢
+Tooltip_ManagePlatforms: ×”×¦×’ ××• ×”×¡×ª×¨ ×¤×œ×˜×¤×•×¨×ž×•×ª ××—×¨×•×ª
+Tooltip_ExpandShortcuts: ×”×¨×—×‘ ××ª ×‘×—×™×¨×ª ×”×ž×©×—×§×™× ×•×§×™×¦×•×¨×™ ×”×“×¨×š
+Tooltip_ShortcutFolder: ×¤×ª×— ××ª ×ª×™×§×™×™×ª ×§×™×¦×•×¨×™ ×”×“×¨×š. ×”×¦×‘ ×©× ×§×™×¦×•×¨×™ ×“×¨×š ×•××ª ×ž×—×œ×™×£ ×”×—×©×‘×•×Ÿ PolarWolves ×›×“×™ ×œ×¨××•×ª ××•×ª×.
+Tooltip_Backup: ×’×™×‘×•×™ ×§×‘×¦×™/×ª×™×§×™×•×ª ×ª×¦×•×¨×”, ×›×¤×™ ×©×”×•×’×“×¨ ×‘×”×’×“×¨×•×ª ×”×¤×œ×˜×¤×•×¨×ž×”.
+Tooltip_BackupAll: ×’×‘×” ××ª ×›×œ ×§×‘×¦×™/×ª×™×§×™×•×ª ×”×ª×¦×•×¨×”, ×›×•×œ×œ ×ª×ž×•× ×•×ª ×•×§×‘×¦×™× ×’×“×•×œ×™× ××—×¨×™×.
+Tooltip_ClosingMethod: "×”×›×™ ×˜×•×‘ ×œ×©×œ×‘. × ×™×¡×™×•× ×•×ª ×¡×’×™×¨×” ×™×©×™×¨×•×ª ×“×¨×š ×¤×•× ×§×¦×™×” ×§×¨×•×‘×” ×• - TaskKill ×ž×©×ª×ž×© ×‘ - CMD (×”×›×™ ×˜×•×‘ ×× ×©×™×œ×•×‘ ×œ× ×¢×•×‘×“)"
+Tooltip_StartingMethod: "×‘×¨×™×¨×ª ×”×ž×—×“×œ ×”×™× ×”×˜×•×‘×” ×‘×™×•×ª×¨. ×œ - Direct ××™×Ÿ ×©×œ×™×˜×” ×¢×œ ×¨×ž×ª ×”× ×™×”×•×œ ××• ×¢×œ UAC. ×–×” ×™×ª×—×™×œ ×‘××•×ª×” ×¨×ž×” (××• ×’×‘×•×”×” ×™×•×ª×¨ - ××‘×œ ×œ× × ×ž×•×›×” ×™×•×ª×¨) ×ž×ž×—×œ×£ ×—×©×‘×•×Ÿ ×–×”"
+Tooltip_CurrentAccount: ××ª×” ×ž×—×•×‘×¨ ×›×¨×’×¢ ×œ×—×©×‘×•×Ÿ ×–×”.
+Tooltip_Restore: ×œ×—×¥ ×›×“×™ ×œ×‘×—×•×¨ ×§×•×‘×¥ 7z, ××• ×’×¨×•×¨ ××•×ª×• ×œ×œ×—×¦×Ÿ ×–×”.
+Tooltip_DisabledGlobally: ×¤×¨×™×˜ ×–×” ×ž×•×¡×ª×¨ ×œ×›×œ ×”×—×©×‘×•× ×•×ª. × ×™×ª×Ÿ ×œ×©× ×•×ª ×–××ª ×‘×”×’×“×¨×•×ª ×”×¤×œ×˜×¤×•×¨×ž×”.
+Discord_Status: ×›×¨×’×¢ ×ž×—×œ×™×£ ×—×©×‘×•× ×•×ª.
+Discord_StatusDetails: "×—×©×‘×•× ×•×ª ×©×”×•×—×œ×¤×•: {number}"
+Website: ××ª×¨ ××™× ×˜×¨× ×˜
+Preview_Platforms: ×ª×¦×•×’×” ×ž×§×“×™×ž×” ×©×œ ×¤×œ×˜×¤×•×¨×ž×•×ª
+Preview_Accounts: ×ª×¦×•×’×” ×ž×§×“×™×ž×” ×©×œ ×—×©×‘×•× ×•×ª
+Preview_Notifications: ×ª×¦×•×’×” ×ž×§×“×™×ž×” ×©×œ ×”×ª×¨××•×ª ×˜×•×¡×˜
+Preview_Settings: ×ª×¦×•×’×” ×ž×§×“×™×ž×” ×©×œ ×”×”×’×“×¨×•×ª
+Preview_Modals: ×ª×¦×•×’×” ×ž×§×“×™×ž×” ×©×œ ×ž×•×“×œ×™×
+
+
+
+

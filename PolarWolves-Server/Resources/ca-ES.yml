@@ -1,0 +1,513 @@
+﻿---
+Update: ActualitzaciÃ³ disponible! Feu clic aquÃ­ per comenÃ§ar.
+Header_ChooseLanguage: 'Trieu la llengua:'
+Steam_ShowSteamID: SteamID
+Steam_ShowVac: Estat del VAC
+Steam_ShowLastLogin: Ãšltima hora d'inici de sessiÃ³
+Steam_ShowLimited: Estat limitat
+Steam_ShowAccUsername: Nom d'usuari del compte
+Steam_Tray_AccountName: Mostra el nom del compte [not friend name]
+Steam_CheckVac: Comprova l'estat del compte de VAC
+Steam_OverrideDefaultState: "Substitueix l'estat d'inici de sessiÃ³ per defecte:"
+Steam_StartSilent: "Obriu el vapor a la safata de tasques al commutador (inicieu el vapor amb Â«-silenciÃ³sÂ»)"
+Steam_OldUi: "Utilitza la interfÃ­cie d'usuari antiga a Steam (-vgui)"
+Steam_CollectInfo: Recull imatges de perfil i estat de prohibiciÃ³ de VAC de Steam
+Button_AddNew: Afegeix nou
+Button_SaveCurrent: Desa l'actual
+Button_SaveFile: Desa el fitxer
+Button_Cancel: CancelÂ·la
+Button_Login: Inicia sessiÃ³
+Button_Close: Tanca
+Button_RefreshImages: Actualitza les imatges
+Button_ResetSettings: Restableix els parÃ metres
+Button_AdvancedCleaning: Neteja avanÃ§ada...
+Button_ClearLog: Neteja el registre
+Button_WikiInfo: MÃ©s informaciÃ³ (Wiki)
+Button_ManagePlatforms: Gestiona les plataformes
+Button_Backup: CÃ²pia de seguretat
+Button_BackupAll: Fes una cÃ²pia de seguretat de tot
+Button_Restore: Restaurar
+Button_OpenBackup: Obriu la carpeta de cÃ²pia de seguretat
+Button_Back: Enrere
+Button_RestartAdmin: Reinicia com a administrador
+Button_SetPassword: Estableix la contrasenya de l'aplicaciÃ³
+Settings_SteamCollectInfo: Recolliu la imatge de perfil i l'estat de VAC de Steam
+Settings_Shortcut: '{platform} Drecera d''escriptori del commutador'
+Settings_Admin: Executa {platform} com a administrador
+Settings_ImageExpiry: 'Dies abans que caduquin les imatges del perfil:'
+Settings_SteamAPIKey: "Clau de l'API web de Steam (opcional)"
+Settings_SteamAPIKey_Note: Si establiu una clau d'API, es mostrarÃ  l'indicador Limitat (vora groga) per als comptes que estan bloquejats per la comunitat.
+Settings_Header_AppWide: ConfiguraciÃ³ de tota l'aplicaciÃ³
+Settings_Header_GeneralSettings: ParÃ metres generals
+Settings_Header_AccountDisplay: ConfiguraciÃ³ de la visualitzaciÃ³ del compte
+Settings_Header_ExtraPlatforms: ConfiguraciÃ³ de la plataforma
+Settings_Header_GeneralTools: Eines generals
+Settings_Header_OtherTools: Altres eines
+Settings_Header_TraySettings: Arranjament de la safata
+Settings_Header_OpenGameFolders: Obre les carpetes del joc
+Settings_Header_BackupRestore: CÃ²pia de seguretat i restauraciÃ³ de la configuraciÃ³ de la plataforma
+Settings_Header_Language: Llengua
+Settings_Header_System: 'Sistema @ info: whatsthis'
+Settings_Header_Theme: TemaComment
+Settings_Header_Program: Programa
+Settings_Header_StatsSharing: EstadÃ­stiques i comparticiÃ³
+Settings_Header_Platform: "{platformName} parÃ metres"
+Settings_Header_GameStats: ConfiguraciÃ³ de les estadÃ­stiques globals del joc
+Settings_GameStats: Qualsevol cosa marcada aquÃ­ NO es mostrarÃ  sota el teu nom d'usuari per a cap compte. Utilitzeu aquesta opciÃ³ si sovint oculteu elements especÃ­fics de les estadÃ­stiques del joc.
+Settings_TrayMax: 'Nombre mÃ xim de comptes a recordar:'
+Settings_ExtraPlatformsDisabled: Plataformes desactivades. Feu clic per habilitar-les.
+Settings_ExtraPlatformsEnabled: Plataformes visibles. Feu clic per desactivar-les.
+Settings_RTL: Mostra el text com a de dreta a esquerra
+Settings_CollectStats: Recull estadÃ­stiques
+Settings_ShareStats: Comparteix estadÃ­stiques de manera anÃ²nima (recomanat)
+Settings_DiscordRpc: PresÃ¨ncia rica en discÃ²rdies (RPC)
+Settings_DiscordRpcShare: Comparteix els commutadors totals
+Settings_ViewStats: Mostra les estadÃ­stiques
+Preview: Vista prÃ¨via
+Settings_ClearStats: Restablir
+Settings_CurrentLocation: 'LocalitzaciÃ³ actual d''instalÂ·laciÃ³: {path}'
+Settings_CurrentDataLocation: 'UbicaciÃ³ actual de les dades de l''usuari: {path}'
+Settings_SetDataLocation: "[Estableix la ubicaciÃ³ personalitzada de les dades d'usuari]"
+Settings_PickFolder: Tria la carpeta {platform}
+Settings_OpenFolder: Obre la carpeta {platform}
+Settings_ClearForgotten: Neteja oblidat
+Settings_ClearAccounts: Neteja els comptes
+Settings_StreamerMode: Habilita el mode streamer
+Settings_ExitToTray: La sortida minimitza a la safata
+Settings_DesktopShortcut: Drecera de l'escriptori
+Settings_StartMenu_ProgramTray: Programa i safata
+Settings_StartMenu_Platform: Plataforma
+Settings_Tray_StartWindows: Inicia la safata amb Windows
+Settings_Tray_StartNow: '[Inicia la safata ara]'
+Settings_CurrentStyle: Estil actual
+Settings_ThemeBackground: '[Estableix fons]'
+Settings_ThemeOpenFolder: '[Obre la carpeta del tema]'
+Settings_Protocol: 'Activa el protocol PolarWolves: \\ (recomanat)'
+Settings_StartCentered: Inicia el programa centrat
+Settings_OfflineMode: Mode fora de lÃ­nia (sense activitat de xarxa)
+Settings_WindowsAccent: Utilitza el color accentuat de Windows
+Settings_HelpTranslate: "[Ajuda a traduir]"
+Settings_ViewTranslators: "[Credits]"
+Settings_Header_ActiveBrowser: "(AvanÃ§at) Estableix el motor de representaciÃ³:"
+Settings_Header_ClosingMethod: "(AvanÃ§at) Estableix el mÃ¨tode a {platform}"
+Settings_Header_StartingMethod: "(AvanÃ§at) Estableix el mÃ¨tode a {platform}"
+Settings_AutoStart: "Inicia automÃ ticament {platform} en el canvi de compte"
+Settings_ShowSteamSwitcher: "Mostra el commutador de comptes de Steam (NO ho feu servir o podria trencar el commutador de comptes de PolarWolves)"
+Settings_NoPlatforms: Actualment no hi ha plataformes habilitades. Marqueu les plataformes opcionals a continuaciÃ³ per activar-les o desmarqueu les plataformes desactivades.
+Settings_MinimizeOnSwitch: Minimitza el commutador en el commutador de compte
+Settings_ShowShortNotes: PrevisualitzaciÃ³ de la nota sota el nom d'usuari
+Settings_Header_AppPassword: "Deixa d'utilitzar el commutador:"
+PreviewCss: Previsualitza CSS
+Settings_PreviewCss: Aquesta Ã©s la pÃ gina de previsualitzaciÃ³ de CSS. Podeu veure alguns elements que apareixen al programa i veure com es veuen amb el tema. Aquesta pÃ gina Ã©s Ãºtil per crear temes!
+Settings_PreviewCssHeader: PÃ gina de previsualitzaciÃ³ CSS
+Settings_AutoUpdatePlatforms: ActualitzaciÃ³ automÃ tica de la llista de plataformes
+Settings_CheckForUpdates: Comproveu si hi ha actualitzacions al llanÃ§ament
+Stats_Disabled: "La recollida d'estadÃ­stiques estÃ  desactivada."
+Stats_InDepth: Desglossament estadÃ­stic en profunditat
+Stats_ShareEnabled: "Aquestes estadÃ­stiques es comparteixen de forma anÃ²nima i s'afegiran al total de <a onclick=\"{WebsiteLink}\" class=\"fancyLink\">aquÃ­</a>."
+Stats_ShareDisabled: "Aquestes estadÃ­stiques NO es comparteixen de forma anÃ²nima i NO s'afegiran al total de <a onclick=\"{WebsiteLink}\" class=\"fancyLink\">aquÃ­</a>."
+Stats_OperatingSystem: "Sistema operatiu: "
+Stats_FirstLaunch: "Primer llanÃ§ament: "
+Stats_LaunchCount: "Comptador d'inici: "
+Stats_CrashCount: "Comptat d'errors: "
+Stats_MostUsedPlatform: "Plataforma mÃ©s utilitzada: "
+Stats_TotalTime: "Temps total dedicat a l'aplicaciÃ³: "
+Stats_TotalSwitches: "Total de canvis de compte: "
+Stats_TotalGamesLaunched: "Total d'aplicacions/jocs iniciats mitjanÃ§ant el commutador: "
+Stats_UniqueDaysLong: "Dies Ãºnics amb comptes canviats: "
+Stats_LastUpload: "Darrera cÃ rrega: "
+Stats_SwitcherStats: "EstadÃ­stiques del commutador: "
+Stats_PageStats: "EstadÃ­stiques de la pÃ gina: "
+Stats_VisitsTotalTime: "{visits} visites totals, {hours} temps total"
+Stats_Accounts: "Comptes: "
+Stats_Switches: "Interruptors: "
+Stats_FirstActive: "Primer actiu: "
+Stats_LastActive: "Ãšltim actiu: "
+Stats_UniqueDays: "Dies Ãºnics: "
+Stats_GameShortcuts: "Dreceres de joc: "
+Stats_GameShortcutsHotbar: "Dreceres de joc (a la barra d'accÃ©s): "
+Stats_GamesLaunched: "Jocs llanÃ§ats: "
+Stats_MetricsToShow: "MÃ¨triques mostrades:"
+Stats_AccountId: "Identificador del compte:"
+Auth_LoginRequired: PrÃ¨viament s'ha establert una contrasenya i Ã©s necessÃ ria. IntroduÃ¯u la contrasenya a continuaciÃ³.
+Auth_EnterPassword: "IntroduÃ¯u la contrasenya:"
+Auth_PassIncorrect: La contrasenya Ã©s incorrecta.
+Locked: Bloquejat
+Cleaning_Header_StartMenuShortcuts: 'Dreceres per al menÃº d''inici:'
+Cleaning_Header_General: Neteja general
+Cleaning_Header_LoginHistory: Neteja el meu historial d'inici de sessiÃ³
+Cleaning_Header_PlatformCleaning: 'Commutador {platform}'
+Cleaning_ImportantInfoHeader: 'InformaciÃ³ important:'
+Cleaning_ImportantInfo: >
+  Si feu clic a un botÃ³, s'esborraran els fitxers relacionats de la vostra instalÂ·laciÃ³ de Steam.<br /> Si suprimiu loginusers.vdf, aquest commutador de compte no mostrarÃ  cap compte.<br /> Haureu d'iniciar la sessiÃ³ amb Steam per recuperar-los.
+Cleaning_Button_KillProcess: Assassina el procÃ©s {platform}
+Cleaning_Button_ForgottenBackups: CÃ²pies de seguretat del compte oblidades
+Cleaning_Understand: Entenc el que fan aquests botons.
+Restore_Info: >
+  Si prÃ¨viament heu "oblidat" un compte, podeu restaurar-lo aquÃ­.<br /> AixÃ² els afegeix de nou al vostre fitxer loginusers.vdf, permetent-vos canviar a ells.
+Restore_Button_Restore: Restaura la selecciÃ³
+Ignored_RemoveAccounts: Elimina els comptes de la llista d'ignorÃ ncia
+Ignored_Description: Si prÃ¨viament heu "ignorat" un compte, podeu tornar-lo a mostrar aquÃ­
+Ignored_Stop: Deixa d'ignorar la selecciÃ³
+Toast_UpdatesDownloading: Les actualitzacions es descarreguen en segon pla. Podeu continuar utilitzant el programa.
+Toast_UpdatesDownloaded: Les actualitzacions s'han acabat de baixar. Tanca aquesta aplicaciÃ³ per comenÃ§ar a actualitzar.
+Toast_DataLocationCopying: (1/2) S'estÃ  copiant els fitxers existents a la nova carpeta de dades d'usuari!
+Toast_DataLocationNotCopying: (1/2) La carpeta ja tÃ© fitxers! No migrarÃ  les dades d'usuari.
+Toast_DataLocationSet: (2/2) Reinicieu el commutador de comptes per utilitzar la carpeta nova!
+Toast_PlaceShortcutFiles: S'estÃ  obrint una carpeta. ColÂ·loqueu les dreceres del joc en aquesta carpeta i reinicieu el commutador de comptes.
+Toast_TrayStarted: Ha comenÃ§at la safata!
+Toast_TrayRunning: La safata ja estÃ  oberta
+Toast_TrayUsersMissing: No s'ha desat cap usuari de safata
+Toast_TrayFail: No s'ha pogut iniciar l'aplicaciÃ³ de safata!
+Toast_TrayPosition: "En fer clic al botÃ³ Surt: EstarÃ© a la safata de Windows! (Barra dreta d'inici)"
+Toast_TrayHint: "Consell: Ctrl+Feu clic a la Â«XÂ» per tancar-me completament, o bÃ© a travÃ©s de la safata > Â«SurtÂ»"
+Toast_Copied: Copiat
+Toast_AlreadyProcessing: Ja s'estan processant els comptes...
+Toast_FailedRestore: No s'ha pogut restaurar els comptes (vegeu la consola)
+Toast_Restored: Comptes restaurats!
+Toast_ProtocolEnabled: 'Aquest programa ara respondrÃ  a PolarWolves: \\ al Windows'
+Toast_ProtocolEnabledTitle: Protocol afegit
+Toast_ProtocolDisabled: 'Aquest programa ja no respondrÃ  a PolarWolves: \\'
+Toast_ProtocolDisabledTitle: S'ha eliminat el protocol
+Toast_RestartAsAdmin: Inicieu com a administrador i torneu-ho a provar.
+Toast_RestartAfterClose: Reinicieu el programa desprÃ©s de fer clic a Tanca.
+Toast_RestartAfterCloseTitle: Color de l'accent inhabilitat
+Toast_RestartRequired: Reinicia per aplicar els canvis
+Toast_LoadStylesheetFailed: No s'ha pogut carregar el full d'estil! Consulteu la carpeta de dades de l'usuari per obtenir mÃ©s informaciÃ³.
+Toast_LoadingStats: Un o mÃ©s perfils sÃ³n estadÃ­stiques actualitzadores. Espereu.
+Toast_ItemNotFound: "No s'ha trobat {item}"
+Toast_DeletedTotal: "{files} d' {totalFiles} esborrat. Total: {totalSize}"
+Toast_CantChangeUsername: No s'ha pogut canviar el nom d'usuari
+Toast_CantClearLoginFiles: No s'han pogut esborrar els fitxers d'inici de sessiÃ³ antics
+Toast_AccountIdReg: No s'ha pogut obtenir l'identificador del compte del registre!
+Toast_RegFailWrite: No s'ha pogut escriure al registre de Windows!
+Toast_RegFailRead: No s'ha pogut llegir des del registre de Windows!
+Toast_RegFailReadSaved: No s'ha pogut llegir l'entrada de registre desada. Intenta eliminar el compte i afegir-lo de nou si no ho aconsegueix.
+Toast_RegSaveMissing: No s'ha pogut trobar o llegir dades dels fitxers de registre desats!
+Toast_DuplicateNames: No s'ha pogut intercanviar. Comptes duplicats amb el mateix nom d'usuari?
+Toast_MissingUserId: "No s'ha pogut intercanviar. Falta l'identificador d'usuari. Comprova Wiki 'Errors comuns'."
+Toast_CouldNotLocate: No s'ha pogut localitzar l'usuari que ha iniciat la sessiÃ³
+Toast_StreamerModeHint: La informaciÃ³ privada estÃ  oculta! - Veure configuraciÃ³
+Toast_StreamerModeTitle: Mode de streamer
+Toast_AddAccountsFirst: Obre la plataforma des de la llista i afegeix uns quants comptes primer
+Toast_AddAccountsFirstTitle: No s'han desat comptes
+Toast_CantFindImage: No s'ha pogut trobar la imatge dels usuaris.
+Toast_CantCreateShortcut: No es pot crear la drecera
+Toast_ShortcutCreated: Drecera creada!
+Toast_SettingsCopied: La configuraciÃ³ s'ha copiat correctament al compte actual.
+Toast_GameDataRestored: S'han restaurat correctament les dades del joc per a aquest compte.
+Toast_NoValidSteamId: No s'ha pogut trobar un identificador de Steam vÃ lid.
+Toast_FailedUpdateCheck: No s'han pogut comprovar les actualitzacions
+Toast_UpdateVerifyFail: No es poden verificar els fitxers d'actualitzaciÃ³. Descarrega la versiÃ³ mÃ©s recent i reemplaÃ§a els fitxers del directori.
+Toast_StartedGame: S'ha iniciat {program}
+Toast_SteamCantLoadXml: No s'ha pogut obtenir la informaciÃ³ XML per a {steamId}. Consulteu el registre per a mÃ©s detalls.
+Toast_Steam_VacCleared: S'ha netejat l'estat del VAC per als comptes
+Toast_Steam_CantDeleteVacCache: No s'ha pogut suprimir 'LoginCache/Steam/VACCache/SteamVACCache.json'
+Toast_NoFindSteamUserdata: No s'ha pogut trobar la carpeta Steam\\ userdata
+Toast_NoFindGameBackup: No s'ha pogut trobar la carpeta de dades del joc de cÃ²pia de seguretat per a aquest compte.
+Toast_GameBackupDone: "S'ha fet una cÃ²pia de seguretat de la carpeta de dades del joc amb Ã¨xit: {folderLocation}"
+Toast_Steam_VdfLast: S'ha pogut carregar des de vdf_last. Ã‰s possible que faltin alguns comptes.
+Toast_PartiallyFixed: S'ha solucionat parcialment
+Toast_Steam_FailedLoginusers: No s'ha pogut carregar Steam/config/loginusers.vdf
+Toast_Steam_CantLocateLoginusers: No es pot localitzar '.../Steam/config/loginusers.vdf'. Prova d'iniciar la sessiÃ³ en un compte primer.
+Toast_CantClearImages: No s'han pogut netejar les imatges
+Toast_RefreshedImages: Imatges actualitzades
+Toast_ClearForgottenCheck: Esteu segur que voleu netejar les cÃ²pies de seguretat dels comptes oblidats?
+Toast_ForgotAccount: He oblidat el compte
+Toast_ClearedPlatformSettings: "S'han esborrat {platform} parÃ metres del commutador"
+Toast_ClearedImages: "Imatges esborrades"
+Toast_SavedItem: "Desat: {item}"
+Toast_ChangedUsername: S'ha canviat el nom d'usuari
+Toast_SetUsername: Estableix el nom d'usuari
+Toast_AlreadyLoggedIn: Ja heu iniciat sessiÃ³ amb aquest compte! (No s'han realitzat canvis)
+Toast_BackupCopy: (1/3) S'estan copiant fitxers a una ubicaciÃ³ temporal...
+Toast_BackupCompress: (2/3) Comprimint fitxers ({size}). AixÃ² trigarÃ  un temps...
+Toast_BackupComplete: (3/3) S'ha acabat de comprimir! ({size} a {compressedSize})
+Toast_BackupProgress: "CÃ²pia de seguretat en curs (mida comprimida: {compressedSize})"
+Toast_BackupFail: Ha fallat la cÃ²pia de seguretat - Vegeu el registre!
+Toast_BackupBusy: CÃ²pia de seguretat ja en curs!
+Toast_RestoreBusy: La restauraciÃ³ ja estÃ  en curs!
+Toast_RestoreExt: ExtracciÃ³ de l'arxiu.
+Toast_RestoreCopying: Tornant a moure fitxers a la plataforma
+Toast_RestoreDeleting: EliminaciÃ³ de fitxers temporals
+Toast_RestoreComplete: S'ha acabat la restauraciÃ³!
+Toast_FailedLoad: No s'ha pogut carregar {platform}! Feu clic a la plataforma per veure l'error.
+Toast_FailedPlatformsLoad: No s'ha pogut carregar Platforms.json! Si us plau, verifiqueu que aquest fitxer existeix.
+Toast_FailedLoadSettings: "No s'ha pogut carregar la configuraciÃ³! S'estÃ  carregant la configuraciÃ³ per defecte. S'estÃ  afegint Â«anticÂ» al nom de fitxer de parÃ metres existents."
+Toast_FailedLoadStats: "No s'han pogut carregar les estadÃ­stiques! ComenÃ§ant de nou."
+Toast_FailedStatsLoad: No s'ha pogut carregar GameStats.json! Comproveu que aquest fitxer existeix.
+Toast_GameStatsLoadFail: "No s'han pogut obtenir les estadÃ­stiques del joc des del web durant {Game}"
+Toast_GameStatsEmpty: "No s'han trobat estadÃ­stiques de joc al lloc web per a {Game}. Creus que Ã©s un error? Comproveu la carpeta de dades d'usuari i \"temp\\download-{AccoundId}-{Game}.html\" per veure si la pÃ gina tenia un error!"
+Toast_FileCopyFail: No s'han pogut copiar els fitxers! Consulteu el registre per obtenir mÃ©s informaciÃ³.
+Toast_UserDataLoadFail: No s'han pogut carregar les dades d'usuari {UserData}\\WindowSettings.json. CÃ²pia de seguretat i restabliment! S'ha desat un error al registre.
+Toast_UpdateCheckFail: No s'ha pogut contactar amb https://discord.gg/PLR/ per comprovar si hi ha actualitzacions. Aquest missatge es mostrarÃ  una vegada al dia.
+Toast_FailedCreateIcon: No s'ha pogut crear la icona. Consulteu el registre per obtenir mÃ©s informaciÃ³.
+Toast_SameAccount: No es poden copiar fitxers al/des del mateix compte. Prova amb un altre compte o consulta Wiki per obtenir mÃ©s informaciÃ³.
+Toast_Steam_DownloadingAppIds: S'estÃ  baixant la llista Steam AppId...
+Toast_Steam_DownloadingAppIdsComplete: S'ha fet la baixada. S'ha actualitzat el submenÃº de dades del joc.
+Toast_SteamWebKeyInvalid: Sembla que la clau de l'API web de Steam no Ã©s vÃ lida. Estableix-ne una de nova.
+Toast_DownloadingProfileData: S'estan baixant les dades del perfil
+Toast_PasswordChanged: S'ha canviat la contrasenya
+Toast_JsonFailModify: No s'ha pogut modificar el fitxer JSON. Vegeu el registre.
+Toast_DifferentClosingMethod: "El 'MÃ¨tode de tancament' Ã©s diferent al predeterminat. Si els jocs es tanquen i mÃ©s, comproveu si canviar aquesta opciÃ³ ajuda. Per defecte: {defaultMethod}, Actual: {currentMethod}"
+Toast_NameEmpty: El nom d'usuari no pot estar buit (i nomÃ©s pot contenir espais)
+Toast_NewPlatforms: "Actualitzat! S'han afegit noves plataformes: {listOfNames}. Feu clic per ignorar."
+Toast_FoundExeViaShortcut: "Hem trobat la ruta instalÂ·lada des d'una drecera del menÃº Inici. Si us plau, verifiqueu la seva ubicaciÃ³ fent clic a ConfiguraciÃ³ ara. Feu clic per ignorar."
+Modal_Crowdin_Header: Traductors crowdin
+Modal_Crowdin_Info: "AquÃ­ teniu tots els que han ajudat a traduir aquest programari.<br>Els usuaris amb idiomes al costat van ajudar molt en la traducciÃ³ (rol de corrector)."
+Modal_Info_Creator: Creat per PolarWolves Team [Wesley Pyburn]
+Modal_Info_Version: VersiÃ³
+Modal_Info_ViewGitHub: Visualitza a GitHub
+Modal_Info_ViewPatreon: Suport a travÃ©s de Patreon
+Modal_Info_ViewKofi: Suport mitjanÃ§ant Ko-Fi
+Modal_Info_BugReport: Informe d'errors/solÂ·licitud de funciÃ³
+Modal_Info_VisitSite: Visita discord.gg/PLR
+Modal_Info_Disclaimer: Renuncia de responsabilitat
+Modal_Title_Info: PolarWolves hi ha informaciÃ³ del commutador de compte
+Modal_Title_ChangeUsername: Canvia el nom d'usuari
+Modal_Title_ConfirmAction: PolarWolves Confirm Action
+Modal_Title_LocatePlatform: Si us plau, localitzeu el directori {platform}
+Modal_Title_AddNew: Afegeix un nou compte {platform}
+Modal_Title_Background: Estableix una imatge de fons
+Modal_Title_Userdata: Estableix la carpeta de dades de l'usuari
+Modal_Title_GameStats: Habilita/inhabilita les estadÃ­stiques del joc
+Modal_GameStats_Header: "Habilita/inhabilita les estadÃ­stiques del joc per a: {accountName}"
+Modal_Title_Stats: Les teves estadÃ­stiques
+Modal_Title_GameVars: "Dades d'entrada per a {game}"
+Modal_GameVars_Header: "IntroduÃ¯u les segÃ¼ents dades per al vostre compte {game} , {username} sobre {platform}"
+Modal_Title_AccountNotes: "Notes del compte per a: {accountName}"
+Modal_Title_SetPassword: Estableix la contrasenya
+Modal_SetBackground: 'Seleccioneu una imatge o introduÃ¯u un URL a continuaciÃ³.<br>Deixa en blanc i configura per restablir.<br>(Per a un control mÃ©s avanÃ§at, vegeu la Theming a la Viqui):'
+Modal_SetBackground_Button: Estableix el fons
+Modal_SetBackground_ChooseImage: Trieu la imatge local
+Modal_SetUserdata: IntroduÃ¯u una ruta de carpeta a continuaciÃ³ i feu clic a Configura.
+Modal_SetUserdata_ChooseFolder: Seleccioneu una carpeta
+Modal_SetUserdata_Button: Estableix les dades d'usuari
+Modal_ChangeUsername: IntroduÃ¯u un nom d'usuari nou per al vostre compte
+Modal_ChangeUsernameType: Canvia {platform} nom d'usuari
+Modal_SetPassword: IntroduÃ¯u una contrasenya per al commutador de comptes PolarWolves
+Modal_SetPassword_Button: Estableix la contrasenya
+Modal_SetPassword_Info: "NOTA: aixÃ² no xifra els vostres comptes. Canviar de compte Ã©s tan senzill com substituir fitxers o canviar un nom d'usuari en un fitxer. La contrasenya tambÃ© es pot restablir editant el text en un fitxer. AixÃ² Ã©s simple seguretat. Atura l'accÃ©s senzill a la IU. Podeu posar aquesta aplicaciÃ³ en un USB extraÃ¯ble, establir la carpeta UserData en el mateix USB i eliminar-la fÃ­sicament per obtenir mÃ©s seguretat. <a class=\"fancyLink\" onclick=\"OpenLinkInBrowser('{link}');return false;\" href=\"\">Mou't a una guia de la unitat externa</a><br><br>Per esborrar, deixeu la carpeta anterior buida i feu clic a Defineix."
+Modal_EnterDirectory: "IntroduÃ¯u el directori de {platform}, com ara: C:\\ Fitxers de programa\\{platform}"
+Modal_LocatePlatform: Localitza {platformExe}
+Modal_LocatePlatformFolder: Seleccioneu la carpeta {platform}
+Modal_ConfirmAction: Confirma l'acciÃ³
+Modal_AddNew: Introdueix un nom per al compte {platform} al qual has iniciat la sessiÃ³.
+Modal_AddCurrentAccount: Afegeix el compte {platform} actual
+Modal_SetImageHeader: Estableix la imatge de perfil
+Modal_SetImage: Establir imatge
+Status_SelectedAccount: "Seleccionat: {name}"
+Status_Init: "Estat: inicialitzant"
+Status_ClosingPlatform: Tancament {platform}
+Status_ClosingPlatformFailed: No s'ha pogut tancar {platform}
+Status_StartingPlatform: ComenÃ§ant {platform}
+Toast_StartingPlatformFailed: No s'ha pogut iniciar {platform}! Consulteu el registre per a mÃ©s detalls.
+Toast_UrlAdminErr: No podeu executar fitxers .url com a administrador. Prova un altre tipus de drecera. LlanÃ§ament com a usuari normal.
+Status_UpdatingFile: "ActualitzaciÃ³ {file}"
+Status_UpdatingRegistry: ActualitzaciÃ³ del registre de Windows
+Status_FailedLog: L'acciÃ³ ha fallat. Consulteu el registre per obtenir mÃ©s informaciÃ³.
+Status_WaitingForClose: "Esperant que {processName} per tancar ({timeout}{timeLimit})"
+Status_WaitingForMultipleClose: "S'estÃ  esperant que {processName} i {count} mÃ©s es{timeLimit} {timeout})"
+Status_GetUniqueId: Recollida d'ID d'usuari Ãºnic
+Status_CopyingFiles: S'estan copiant els fitxers d'usuari...
+Status_HandlingImage: GestiÃ³ de la imatge del perfil del compte
+Context_SwapTo: Canvia al compte
+Context_CreateShortcut: Crea una drecera
+Context_ChangeImage: Canvia la imatge
+Context_ChangeName: Canvia el nom del commutador
+Context_LoginAsSubmenu: Inicia la sessiÃ³ com a
+Context_UsernameSubmenu: Nom d 'usuari
+Context_RefreshName: Actualitza el nom
+Context_CopySubmenu: Copia
+Context_DataSubmenu: Dades
+Context_CopyProfileSubmenu: Copia el perfil
+Context_CommunityUrl: URL de la comunitat
+Context_CommunityUsername: Nom d'usuari de la comunitat
+Context_LoginUsername: Nom d'usuari d'inici de sessiÃ³
+Context_CopySteamIdSubmenu: Copia el SteamID
+Context_Steam_Id: SteamID [STEAM0:~]
+Context_Steam_Id3: SteamID3 [U:1:~]
+Context_Steam_Id32: SteamID32
+Context_Steam_Id64: SteamID64 7656~
+Context_Steam_OpenUserdata: Obre les dades d 'usuari
+Context_ManageSubmenu: Gestiona
+Context_GameDataSubmenu: Dades del joc
+Context_ManageGameStats: Gestiona les estadÃ­stiques del joc
+Context_Game_CopySettingsFrom: Copia els parÃ metres a l'actual
+Context_Game_RestoreSettingsTo: Restaura les dades del joc
+Context_Game_BackupData: CÃ²pia de seguretat de les dades del joc
+Context_CopyOtherSubmenu: CÃ²pia d'altres
+Context_HidePlatform: Amaga la plataforma
+Context_ExportAccList: Exporta la llista de comptes
+Context_RunAdmin: Executar com a administrador
+Context_Hide: Amaga
+ProfileImage_ToggleText: Utilitza la imatge com a imatge del compte
+Title_Platforms_Settings: PolarWolves - ConfiguraciÃ³ de la plataforma
+Title_Settings_TestCss: PolarWolves - Test CSS Styling
+Title_AccountsList: PolarWolves - {platform}
+Title_TextEditor: PolarWolves - Text Editor
+Title_Settings: PolarWolves - ConfiguraciÃ³
+Title_Steam_Cleaning: PolarWolves - Neteja a vapor
+Title_Steam_Settings: PolarWolves - ConfiguraciÃ³ de Steam
+Title_Template_Settings: Commutador de comptes PolarWolves - {platformName} ConfiguraciÃ³
+Title_Login: PolarWolves - Inicia sessiÃ³
+Installer_Downloading: S'estÃ  baixant {file}
+Installer_DownloadFinished: S'ha acabat de baixar {file}
+Installer_Installing: "InstalÂ·laciÃ³: {runtime}"
+Installer_RuntimeTitle: PolarWolves - InstalÂ·lador en temps d'execuciÃ³
+Installer_Welcome: Benvingut al PolarWolves - InstalÂ·lador en temps d'execuciÃ³
+Installer_InstalledRuntimes: "Temps d'execuciÃ³ instalÂ·lat actualment:"
+Installer_ErrorRuntime: "No s'han instalÂ·lat un o mÃ©s temps d'execuciÃ³:"
+Installer_RuntimeNote: "[~{size1} MB + ~{size2} MB durant la instalÂ·laciÃ³]"
+Installer_TotalSize: "Mida total de la baixada: ~{size} MB"
+Installer_AnyKeyStart: Premeu qualsevol tecla per iniciar la baixada...
+Runtime_WebView2: Temps d'execuciÃ³ de Microsoft WebView2
+Runtime_Desktop: Microsoft .NET 5 Desktop Runtime
+Runtime_ASP: Temps d'execuciÃ³ de Microsoft Microsoft ASP.NET Core {version}
+Installer_FailedFolder: "No s'ha pogut crear la carpeta:"
+Installer_FailedWV: "No s'ha pogut descarregar i instalÂ·lar Microsoft WebView2 Runtime. Per descarregar: 1. Feu clic a l'enllaÃ§ segÃ¼ent: {link} 2. Feu clic a \"Baixa el paquet d'allotjament\" a Executa les aplicacions del servidor."
+Installer_FailedDR: "No s'ha pogut descarregar i instalÂ·lar .NET 5 Desktop Runtime. Si us plau, baixeu-lo aquÃ­:"
+Installed_FailedASP: "No s'ha pogut descarregar i instalÂ·lar ASP.NET Core {version} Runtime. Per descarregar: 1. Feu clic a l'enllaÃ§ segÃ¼ent: {link} 2. Feu clic a \"Descarrega x64\" a Executar aplicacions d'escriptori."
+Installer_Ready: "Un o mÃ©s estan preparats per a la instalÂ·laciÃ³. Si i quan se us demani si voleu instalÂ·lar-lo, feu clic a Â«SÃ­Â»."
+Installer_PressStart: Premeu qualsevol tecla per iniciar la instalÂ·laciÃ³...
+Installer_VerifyMin: "Comprova que compleixes els requisits mÃ­nims recomanats:"
+Installer_VerifyAlready: "Sembla que tot estÃ  instalÂ·lat. Comprova que compleixes els requisits mÃ­nims recomanats:"
+Installer_Complete: AixÃ² hauria de ser tot. El programa principal, PolarWolves.exe, s'executarÃ  automÃ ticament.
+Installer_Complete2: "Si no funciona, consulteu les instruccions d'instalÂ·laciÃ³, aquÃ­: {link}"
+Tray_Error: Error de safata
+Tray_NoAccs: "No s'han trobat comptes.\nProva de canviar de compte primer, o localitza 'Tray_Users.json'"
+Tray_Switch: "Canvia a: {account}"
+Tray_CantOpenExe: "No s'ha pogut obrir el .exe principal. Assegureu-vos que existeix.\n\nHe intentat obrir:"
+Tray_LaunchFail: "Commutador de compte PolarWolves - Error en iniciar la safata"
+Updater_Duplicate: S'ha detectat una altra instÃ ncia de PolarWolves Updater.
+Updater_Unknown: "Argument desconegut: {arg}"
+Updater_NeedsAdmin: Aquest programa s'ha d'executar com a administrador!
+Updater_StatusChecking: S'estÃ  comprovant la versiÃ³
+Updater_FailedVersionCheck: "No s'ha pogut obtenir la versiÃ³. Feu clic a \"Verificar\" per actualitzar i verificar els fitxers"
+Updater_PressBelow: Premeu el botÃ³ de sota!
+Updater_PressBelowStart: Feu clic al botÃ³ de sota per iniciar l'actualitzaciÃ³.
+Updater_PatchApplied: S'ha aplicat el pedaÃ§!
+Updater_UpdatingAppData: S'estan actualitzant els fitxers a AppData!
+Updater_Complete: S'han completat totes les actualitzacions!
+Updater_Checking: S'estan comprovant les actualitzacions
+Updater_UpdateToVerify: Per verificar els fitxers heu d'actualitzar-los primer.
+Updater_ClosingPolarWolves: S'estan tancant les instÃ ncies del PolarWolves (si n'hi ha).
+Updater_Downloading: "S'estÃ  baixant l'actualitzaciÃ³: {version}"
+Updater_Downloaded: Baixada completa.
+Updater_CantExtract: No s'ha pogut extreure l'actualitzaciÃ³.
+Updater_Verify: Verifica els fitxers
+Updater_Verifying: S'estÃ  verificant...
+Updater_VerifySkip: S'estan verificant els fitxers per ometre totes les petites actualitzacions i nomÃ©s cal que aneu a la darrera.
+Updater_NoConnection: "No s'ha pogut connectar a discord.gg/PLR per verificar els fitxers. Podeu provar de descarregar manualment l'instalÂ·lador des de la pÃ gina de GitHub i reinstalÂ·lar-lo per actualitzar-lo.\n\nError:"
+Updater_NoServer: No s'ha pogut arribar al servidor d'actualitzacions
+Updater_Hashlist: S'estÃ  baixant la darrera llista de hash...
+Updater_CantCheck: No s'han pogut comprovar les actualitzacions
+Updater_Failed: "ERROR: Alguns dels fitxers estan en Ãºs i no es poden actualitzar.\n\n1. Assegureu-vos que tots els processos PolarWolves estiguin completament tancats\n(o reinicieu el vostre PC)\n\n2. A continuaciÃ³, feu clic a Verifica a continuaciÃ³ o si heu reiniciat:\n-   Obriu aquest actualitzador i verifiqueu els fitxers\n    (situats a la carpeta 'Actualitzador' del directori d'instalÂ·laciÃ³)"
+Updater_Missing: "FALTA EL FITXER: {file}"
+Updater_FileMismatch: "El fitxer: {file} tÃ© MD5: {md5} ESPERAT: {value}"
+Updater_DownloadingWeb: S'estÃ  baixant el fitxer des del lloc web...
+Updater_UnpackingAppData: S'estan copiant els fitxers a %AppData%/PolarWolves... (llevat que s'estableixi el contrari)
+Updater_VerifyComplete: S'han verificat els fitxers!
+Updater_UpdateFound: "ActualitzaciÃ³ trobada: {name} [{updateSize}]"
+Updater_TotalFound: "Actualitzacions totals trobades: {x}"
+Updater_TotalSize: "Mida total: {size}"
+Updater_AwaitingUser: S'estÃ  esperant l'entrada de l'usuari...
+Updater_UpToDate: "EstÃ s al dia.:\n)"
+Updater_FailedDecode: Ã‰s molt probable que aixÃ² es degui a que jo (PolarWolves Team) vaig introduir una actualitzaciÃ³ i vaig fer un error tipogrÃ fic que va trencar el fitxer d'actualitzaciÃ³ .json. No m'ho facis saber :)
+Updater_FailedDecodeTitle: No s'ha pogut descodificar la llista d'actualitzacions
+Updater_Extracting: S'estan extraient els fitxers de parxÃ­s
+Updater_Applying: S'estÃ  aplicant el pedaÃ§...
+Updater_Moving: S'estan movent els fitxers...
+Updater_Title: PolarWolves Updater
+Updater_Started: S'ha iniciat
+Updater_Start: Inicia el commutador de comptes PolarWolves
+Updater_Begin: Inicia l'actualitzaciÃ³
+Updater_Exit: Surt
+FatalError: S'ha produÃ¯t un error fatal!
+Online: En lÃ­nia
+OnlineDefault: En lÃ­nia (per defecte)
+Offline: Fora de lÃ­nia
+Invisible: Invisible
+Busy: 'Ocupat @ info: whatsthis'
+Away: Lluny
+Snooze: Snooze
+LookingToTrade: Buscant comerÃ§
+LookingToPlay: Teniu ganes de jugar
+Unrecognized_EPersonaState: ePersonaState no reconegut
+Reg_DoesntExist: "{subKey} no existeix."
+Reg_DoesntContain: "{subKey} no contÃ© {val}"
+Reg_Removing: S'estÃ  suprimint {subKey}\\{val}
+PngInvalid_Format: El format de pÃ­xel necessari Ã©s PixelFormat.{x}.
+PngRequired: El format d'imatge necessari Ã©s una xarxa grÃ fica portÃ til (png).
+PngDimensions: Les dimensions han de ser inferiors o iguals a {MaxIconWidth}x{MaxIconHeight}
+ThemeSyntaxAnd: "S'ha trobat un error de sintaxi (mÃ©s detalls a continuaciÃ³) I:"
+ThemesNotFound: "No s'ha pogut trobar la carpeta \"temes\" al directori del commutador de comptes PolarWolves. AixÃ² (especialment la carpeta Â«Dracula_CyanÂ») Ã©s necessari perquÃ¨ aquest programari s'executi.\nPodeu executar l'actualitzador a la carpeta Â«ActualitzadorÂ» per verificar els fitxers i restaurar els fitxers que falten."
+Yes: "SÃ­"
+No: "No"
+Save: Desa
+NoDefault: Sense (per defecte)
+Ok: "D'acord"
+Submit: Envia
+Forget: Oblida
+Notice: AvÃ­s
+Notes: Notes
+Error: S'ha produÃ¯t un error
+ErrorDetails: "ERROR: {ex}"
+Failed: Ha fallat
+Success: Ãˆxit
+NotFound: No s'ha trobat
+Done: Fet
+Edit: 'Edita @ info: whatsthis'
+Refresh: Actualitza
+Working: Treball...
+ForName: "Per a: {name}"
+DeletedFiles: Fitxers suprimits
+FileFoldersToClear: "Llista de fitxers/carpetes a esborrar:"
+CouldNotFindX: No s'ha pogut trobar {x}
+CouldNotCloseX: No s'ha pogut tancar {x}!
+CouldNotReadFile: No s'ha pogut llegir {file}!
+DirectoryNotFound: No s'ha trobat el directori
+DirectoryNotFoundFolder: "No s'ha trobat el directori: {folder}"
+DeletingFile: "S'estÃ  suprimint: {file}"
+DeletingFolder: "S'estÃ  suprimint la carpeta: "
+CouldntDeleteX: "ERROR: NO S'HA POGUT SUPRIMIR: {x}"
+CouldntDeleteUndefined: "S'HA PRODUÃT UN ERROR: NO S'HA POGUT SUPRIMIR EL FITXER NO DEFINIT"
+CouldntModifyX: "No s'ha pogut modificar {file}. Error de permÃ­s del fitxer o el fitxer estÃ  en Ãºs."
+Prompt_RestartAsAdmin: "<h3><bold>Aquest programa es reiniciarÃ  com a Admin</bold></h3><p>Premeu \"SÃ­\" a la UAC quan se li demani admin</p>."
+Prompt_ForgetSteam: >
+  <h3 style='color:red'>EstÃ s a punt d'oblidar un compte!</h3> <h4>QuÃ¨ vol dir aixÃ²?</h4> <p>- Steam ja no tindrÃ  el compte llistat en el mode d'imatge gran i no recordarÃ  la contrasenya.<br/> - PolarWolves tampoc mostrarÃ  el compte fins que no torni a iniciar la sessiÃ³ a travÃ©s de Steam.</p> <p>El vostre compte no es tocarÃ . NomÃ©s s'ha oblidat en aquest ordinador.</p><h4>Ho entens?</h4>
+Prompt_ForgetAccount: >
+  <h3 style='color:red'>EstÃ s a punt d'oblidar un compte!</h3> <h4>QuÃ¨ vol dir aixÃ²?</h4> <p>PolarWolves tampoc mostrarÃ  el compte,<br/> fins que torni a iniciar la sessiÃ³ a travÃ©s de {platform}, i s'afegeixi a la llista.</p> <p>El teu compte romandrÃ  intacte. S'acaba d'oblidar en aquest ordinador.</p> <h4>Ho entens?</h4>
+Prompt_ClearStats: >
+  <h3 style='color:red'>EstÃ s a punt d'esborrar les teves estadÃ­stiques!</h3> <p>No pots desfer aquesta acciÃ³.</p>
+Platform_DiscordPasteHint: Enganxeu a la consola de Discord i, a continuaciÃ³, enganxeu el resultat a l'entrada!
+Platform_ClearCache: Netejar memÃ²ria cau
+Platform_ClearCacheTotal: Esborrant {totalFileCount} fitxers ({totalSizeMB})
+Platform_DeleteFail: No s'han pogut suprimir alguns fitxers (el programa pot estar en execuciÃ³?)
+Platform_CouldNotDeleteLog: No s'ha pogut suprimir el fitxer! Comprova {logPath}
+Error_FileAccessDenied: No s'ha pogut accedir al fitxer! Comprova {logPath}
+Error_RequiredFileVerify: No s'ha trobat el fitxer necessari. Assegureu-vos que les carpetes x64 i x86 existeixen al directori d'instalÂ·laciÃ³. Si no Ã©s aixÃ­, executeu PolarWolves-Updater.exe i verifiqueu els fitxers.
+Tooltip_Settings: ConfiguraciÃ³
+Tooltip_Info: InformaciÃ³
+Tooltip_ManagePlatforms: Mostra o amaga altres plataformes
+Tooltip_ExpandShortcuts: Amplieu la selecciÃ³ de jocs i dreceres
+Tooltip_ShortcutFolder: Obre la carpeta de dreceres. ColÂ·loqueu dreceres allÃ  i el commutador de comptes de PolarWolves per veure-les.
+Tooltip_Backup: CÃ²pia de seguretat dels fitxers/carpetes de configuraciÃ³, tal com es defineix a la configuraciÃ³ de la plataforma.
+Tooltip_BackupAll: Feu una cÃ²pia de seguretat de TOTS els fitxers/carpetes de configuraciÃ³, incloses les imatges i altres fitxers grans.
+Tooltip_ClosingMethod: "Combinat Ã©s millor. Tanca els intents de tancar directament a travÃ©s d'una funciÃ³ de tancament i TaskKill utilitza CMD (millor si combinat no funciona)"
+Tooltip_StartingMethod: "Per defecte Ã©s el millor. Direct no tÃ© control sobre el nivell d'administraciÃ³ ni sobre la UAC. ComenÃ§arÃ  com el mateix nivell (o superior - perÃ² no inferior) que aquest commutador de compte"
+Tooltip_CurrentAccount: En aquests moments estÃ s connectat a aquest compte.
+Tooltip_Restore: Feu clic per seleccionar un fitxer 7z o arrossegueu-lo a aquest botÃ³.
+Tooltip_DisabledGlobally: Aquest element estÃ  ocult per a tots els comptes. Pots canviar-ho a la configuraciÃ³ de la plataforma.
+Discord_Status: Actualment s'estan canviant els comptes.
+Discord_StatusDetails: "Comptes canviats: {number}"
+Website: PÃ gina web
+Preview_Platforms: Vista prÃ¨via de les plataformes
+Preview_Accounts: Vista prÃ¨via dels comptes
+Preview_Notifications: Vista prÃ¨via de les notificacions de brindis
+Preview_Settings: Vista prÃ¨via de la configuraciÃ³
+Preview_Modals: Vista prÃ¨via de modal
+
+
+
+

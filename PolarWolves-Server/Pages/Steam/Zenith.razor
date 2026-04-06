@@ -1,0 +1,182 @@
+@*PolarWolves - A Super fast account switcher
+    Copyright (C) 2019-2025 PolarWolves Team (Wesley Pyburn)
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses />.*@
+
+@page "/Steam/"
+@page "/Steam/Zenith/"
+@using PolarWolves_Server.Data
+@using PolarWolves_Server.Data.Settings
+@using PolarWolves_Server.Pages.General
+@using System.IO
+@using PolarWolves_Globals
+@using PolarWolves_Server.Shared.Accounts
+@using PolarWolves_Server.Shared.ContextMenu
+@inject AppData AData
+@inject IJSRuntime JsRuntime
+@{ AData.SetActiveIJsRuntime(JsRuntime); }
+@inject NavigationManager NavManager
+@{ AData.SetActiveNavMan(NavManager); }
+
+<link href="css/steam-zenith.css?@Globals.GetUnixTime()" rel="stylesheet" />
+<style>@(AppSettings.GetCssBlock())</style>
+<style>@(Steam.GetSteamIdCssBlock())</style>
+@inject Lang Locale
+<ContextMenu MenuItems="@Steam.Menu" ContextMenuId="AccOrPlatList" @ref="SteamContextMenu" />
+<ContextMenu MenuItems="@Basic.ContextMenuShortcutItems" ContextMenuId="Shortcuts" />
+<ContextMenu MenuItems="@Basic.ContextMenuPlatformItems" ContextMenuId="Platform" />
+
+<div class="steam-rework steam-zenith">
+    <div class="steam-zenith__noise" aria-hidden="true"></div>
+    <div class="steam-zenith__scan" aria-hidden="true"></div>
+    <div class="steam-zenith__glow steam-zenith__glow--left" aria-hidden="true"></div>
+    <div class="steam-zenith__glow steam-zenith__glow--right" aria-hidden="true"></div>
+
+    <header class="steam-zenith__topbar">
+        <div class="steam-zenith__top-left">
+            <div class="steam-zenith__kernel">
+                <span class="steam-zenith__kernel-led"></span>
+                <span>Steam Node</span>
+            </div>
+        </div>
+
+        <div class="steam-zenith__title">
+            <h1>PolarWolves</h1>
+            <p>Zenith Interface</p>
+        </div>
+
+        <div class="steam-zenith__session">
+            <span>Current Platform</span>
+            <strong>Steam</strong>
+        </div>
+    </header>
+
+    <main class="steam-zenith__main">
+        <div class="steam-zenith__filterbar">
+            <button class="steam-zenith__filterchip">
+                <i class="fas fa-layer-group"></i>
+                <span>All Accounts</span>
+                <small>@Steam.Accounts.Count</small>
+            </button>
+            <div class="steam-zenith__filtermeta">
+                <span>Zenith Edition Active</span>
+            </div>
+        </div>
+
+        <section class="steam-zenith__accountwrap">
+            <AccountList AccountItems="@Steam.Accounts" AccountNotes="Steam.AccountNotes" @ref="SteamAccountList" />
+        </section>
+
+        <div class="shortcutDropdown gameShortcuts" id="shortcutDropdown" style="display: none">
+            <div class="shortcutDropdownItems">
+                @foreach (var (i, shortcut) in Steam.Shortcuts)
+                {
+                    @if (i >= 0)
+                    {
+                        <button class="HasContextMenu" id="@(shortcut)" @onclick='() => Basic.RunShortcut(shortcut, "LoginCache\\Steam\\Shortcuts", platform: "Steam")' data-toggle="tooltip" title="@(PlatformFuncs.RemoveShortcutExt(shortcut))">
+                            <img src="@(Steam.GetShortcutImagePath(shortcut))" alt="@(shortcut[0])"/>
+                        </button>
+                    }
+                }
+            </div>
+            <button id="btnOpenShortcutFolder" @onclick="() => Basic.OpenFolder(Path.GetFullPath(Steam.ShortcutFolder))" data-toggle="tooltip" title="@(Locale["Tooltip_ShortcutFolder"])" data-placement="right"><i class="fas fa-plus"></i></button>
+        </div>
+
+        <div class="acc_list_actionbar steam-zenith__actionbar">
+            <div class="statusBar">
+                <div></div>
+                <input id="CurrentStatus" @bind="@AData.CurrentStatus" spellcheck="false" disabled>
+            </div>
+            <div class="gameShortcuts">
+                <div class="shortcuts">
+                    @foreach (var (i, shortcut) in Steam.Shortcuts)
+                    {
+                        @if (i < 0)
+                        {
+                            <button class="HasContextMenu" id="@(shortcut)" @onclick='() => Basic.RunShortcut(shortcut, "LoginCache\\Steam\\Shortcuts", platform: "Steam")' data-toggle="tooltip" title="@(PlatformFuncs.RemoveShortcutExt(shortcut))">
+                                <img src="@(Steam.GetShortcutImagePath(shortcut))" alt="@(shortcut[0])"/>
+                            </button>
+                        }
+                    }
+                </div>
+
+                <button id="btnAccountGames" onclick="showSteamOwnedGamesModal()" data-toggle="tooltip" title="Account games for selected user" data-placement="right">
+                    <i class="fas fa-question-circle footerIcoInline"></i>
+                    <span>Account Games</span>
+                </button>
+
+                <button id="btnStartPlat" @onclick='() => Basic.RunPlatform(Steam.Exe(), Steam.Admin, "", "Steam", Steam.StartingMethod)' data-toggle="tooltip" title="Steam">
+                    <img src="@(Steam.GetShortcutImagePath("Steam"))" alt="Start platform"/>
+                </button>
+
+                <button id="btnAddNew" onclick="newLogin()">
+                    <i class="fas fa-plus footerIcoInline"></i>
+                    <span>@Locale["Button_AddNew"]</span>
+                </button>
+                <button id="btnAddCatalog" onclick="addCatalogButtonClick()">
+                    <i class="fas fa-folder-plus footerIcoInline"></i>
+                    <span>Add Catalog</span>
+                </button>
+                <button class="btn_login" id="btnLogin" onclick="swapTo(-1, event)">
+                    <span>@Locale["Button_Login"]</span>
+                    <i class="fas fa-caret-right footerIcoInline"></i>
+                </button>
+
+                <button id="btnSettings" onclick="location = '/Steam/Settings/'" data-toggle="tooltip" title="@(Locale["Tooltip_Settings"])">
+                    <i class="fas fa-cog footerIcoSettings"></i>
+                </button>
+                <button id="btnHelp" onclick="showModal('info');" data-toggle="tooltip" title="@(Locale["Tooltip_Info"])">
+                    <i class="fas fa-question footerIcoQuestion"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="steam-zenith__footer">
+        <div class="steam-zenith__ticker">
+            <span>POLARWOLVES ZENITH ACTIVE</span>
+            <span>ACCOUNT SWITCH CORE READY</span>
+            <span>STEAM AUTO LOGIN ONLINE</span>
+            <span>POLARWOLVES ZENITH ACTIVE</span>
+            <span>ACCOUNT SWITCH CORE READY</span>
+            <span>STEAM AUTO LOGIN ONLINE</span>
+        </div>
+    </footer>
+</div>
+
+
+@code
+{
+    public static AccountList SteamAccountList;
+
+    public static ContextMenu SteamContextMenu;
+
+    protected override void OnParametersSet()
+    {
+        AppSettings.StreamerModeCheck();
+        BasicStats.SetCurrentPlatform("Steam");
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await GeneralFuncs.HandleFirstRender(firstRender, "Steam");
+        AppStats.NewNavigation("/Steam/Zenith/");
+        if (!firstRender) return;
+        _ = AppData.InvokeVoidAsync("initCopyHotKey");
+        _ = AppData.InvokeVoidAsync("showNoteTooltips");
+
+        var curAcc = SteamSwitcherFuncs.GetCurrentAccountId();
+        if (curAcc != "") _ = AppData.InvokeVoidAsync("highlightCurrentAccount", curAcc);
+
+        AppData.FirstLaunchCheck();
+    }
+}

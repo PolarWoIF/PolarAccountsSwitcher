@@ -1,0 +1,513 @@
+﻿---
+Update: AtualizaÃ§Ã£o disponÃ­vel! Clique aqui para transferir.
+Header_ChooseLanguage: 'Idioma:'
+Steam_ShowSteamID: SteamID
+Steam_ShowVac: Estado do VAC
+Steam_ShowLastLogin: Ãšltima vez online
+Steam_ShowLimited: Estado limitado
+Steam_ShowAccUsername: Nome de utilizador
+Steam_Tray_AccountName: Mostrar nome da conta [not friend name]
+Steam_CheckVac: Verificar o estado VAC da conta
+Steam_OverrideDefaultState: "Substituir inÃ­cio de sessÃ£o predefinido:"
+Steam_StartSilent: "Ao alternar abrir a Steam na Ãrea de NotificaÃ§Ã£o (Iniciar a Steam com '-silent')"
+Steam_OldUi: "Utilizar a interface do utilizador antiga no Steam (-vgui)"
+Steam_CollectInfo: Colete imagens de perfil e status de banimento do VAC do Steam
+Button_AddNew: Adicionar Novo
+Button_SaveCurrent: Guardar atual
+Button_SaveFile: Guardar ficheiro
+Button_Cancel: Cancelar
+Button_Login: Iniciar sessÃ£o
+Button_Close: Fechar
+Button_RefreshImages: Atualizar imagens
+Button_ResetSettings: Redefinir definiÃ§Ãµes
+Button_AdvancedCleaning: Limpeza avanÃ§ada...
+Button_ClearLog: Limpar arquivo de registos
+Button_WikiInfo: Mais informaÃ§Ãµes (Wiki)
+Button_ManagePlatforms: Gerir Plataformas
+Button_Backup: CÃ³pia de seguranÃ§a
+Button_BackupAll: Fazer cÃ³pia de seguranÃ§a completa
+Button_Restore: Restaurar
+Button_OpenBackup: Abrir pasta de cÃ³pia de seguranÃ§a
+Button_Back: Voltar
+Button_RestartAdmin: Reiniciar como administrador
+Button_SetPassword: Definir palavra-passe da aplicaÃ§Ã£o
+Settings_SteamCollectInfo: Colete a foto do perfil do Steam e o status do VAC do Steam
+Settings_Shortcut: '{platform} Atalho Switcher no ambiente de trabalho'
+Settings_Admin: Executar {platform} como Administrador
+Settings_ImageExpiry: 'Dias restantes atÃ© as imagens de perfil expirarem:'
+Settings_SteamAPIKey: "Chave API da Steam Web (opcional)"
+Settings_SteamAPIKey_Note: Definir uma chave de API farÃ¡ com que o indicador Limitado (borda amarela) seja exibido para contas Banidas pela Comunidade.
+Settings_Header_AppWide: DefiniÃ§Ãµes gerais da aplicaÃ§Ã£o
+Settings_Header_GeneralSettings: DefiniÃ§Ãµes gerais
+Settings_Header_AccountDisplay: DefiniÃ§Ãµes de apresentaÃ§Ã£o da conta
+Settings_Header_ExtraPlatforms: DefiniÃ§Ãµes da Plataforma
+Settings_Header_GeneralTools: Ferramentas
+Settings_Header_OtherTools: Outras Ferramentas
+Settings_Header_TraySettings: DefiniÃ§Ãµes da bandeja
+Settings_Header_OpenGameFolders: Abrir pasta do jogo
+Settings_Header_BackupRestore: ConfiguraÃ§Ãµes da plataforma de cÃ³pia de seguranÃ§a e restauro
+Settings_Header_Language: Lingua
+Settings_Header_System: Sistema
+Settings_Header_Theme: Tema
+Settings_Header_Program: Programa
+Settings_Header_StatsSharing: EstatÃ­sticas e Partilha
+Settings_Header_Platform: "{platformName} DefiniÃ§Ãµes"
+Settings_Header_GameStats: DefiniÃ§Ãµes de estatÃ­sticas de jogos
+Settings_GameStats: Qualquer coisa assinalada aqui NÃƒO serÃ¡ apresentada com o seu nome de utilizador para qualquer conta. Utilize isto se esconder frequentemente itens especÃ­ficos das suas estatÃ­sticas de jogo.
+Settings_TrayMax: 'NÃºmero mÃ¡ximo de contas guardadas:'
+Settings_ExtraPlatformsDisabled: Plataformas desativadas. Clique para habilitÃ¡-las.
+Settings_ExtraPlatformsEnabled: Plataformas visÃ­veis. Clique para desativÃ¡-las.
+Settings_RTL: Mostrar texto da direita para a esquerda
+Settings_CollectStats: Recolher estatÃ­sticas
+Settings_ShareStats: Compartilhe estatÃ­sticas anonimamente (recomendado)
+Settings_DiscordRpc: Discord Rich Presence (RPC)
+Settings_DiscordRpcShare: Compartilhar total de trocas
+Settings_ViewStats: Ver estatÃ­sticas
+Preview: PrÃ©-visualizar
+Settings_ClearStats: Redefinir
+Settings_CurrentLocation: 'Local de instalaÃ§Ã£o atual: {path}'
+Settings_CurrentDataLocation: 'LocalizaÃ§Ã£o atual dos dados de utilizador: {path}'
+Settings_SetDataLocation: "[Definir localizaÃ§Ã£o personalizada dos dados de utilizador]"
+Settings_PickFolder: Escolher pasta {platform}
+Settings_OpenFolder: Abrir pasta {platform}
+Settings_ClearForgotten: Apagar dados esquecidos
+Settings_ClearAccounts: Limpar lista de contas
+Settings_StreamerMode: Ativar modo streamer
+Settings_ExitToTray: Fechar o programa minimiza para a bandeja de aplicaÃ§Ãµes
+Settings_DesktopShortcut: Atalho de ambiente de trabalho
+Settings_StartMenu_ProgramTray: AplicaÃ§Ã£o e Bandeja de AplicaÃ§Ãµes
+Settings_StartMenu_Platform: Plataforma
+Settings_Tray_StartWindows: Iniciar a aplicaÃ§Ã£o com o Windows (bandeja de aplicaÃ§Ãµes)
+Settings_Tray_StartNow: '[Iniciar Bandeja agora]'
+Settings_CurrentStyle: Tema Atual
+Settings_ThemeBackground: '[Definir fundo]'
+Settings_ThemeOpenFolder: '[Abrir pasta de temas]'
+Settings_Protocol: 'Ativar polarwolves:\\\\ protocol (Recomendado)'
+Settings_StartCentered: Iniciar programa centralizado
+Settings_OfflineMode: Modo offline (sem atividade de rede)
+Settings_WindowsAccent: Usar a Cor de Realce do Windows
+Settings_HelpTranslate: "[Ajudar na traduÃ§Ã£o]"
+Settings_ViewTranslators: "[CrÃ©ditos]"
+Settings_Header_ActiveBrowser: "Definir mecanismo de renderizaÃ§Ã£o (AvanÃ§ado):"
+Settings_Header_ClosingMethod: "(AvanÃ§ado) Definir mÃ©todo para fechar {platform}"
+Settings_Header_StartingMethod: "(AvanÃ§ado) Definir mÃ©todo para iniciar {platform}"
+Settings_AutoStart: "Iniciar {platform} automaticamente ao trocar de conta"
+Settings_ShowSteamSwitcher: "Mostrar o alternador de contas do Steam (NÃƒO use isso ou pode quebrar o alternador de contas do PolarWolves)"
+Settings_NoPlatforms: No momento, nÃ£o hÃ¡ plataformas habilitadas. Marque as plataformas opcionais abaixo para habilitÃ¡-las ou desmarque as plataformas desabilitadas.
+Settings_MinimizeOnSwitch: Minimizar a aplicaÃ§Ã£o na alteraÃ§Ã£o de conta
+Settings_ShowShortNotes: PrÃ©-visualizaÃ§Ã£o de notas sob o nome de utilizador
+Settings_Header_AppPassword: "Impedir outros de usar a aplicaÃ§Ã£o:"
+PreviewCss: PrÃ©-visualizar CSS
+Settings_PreviewCss: Esta Ã© a pÃ¡gina de prÃ©-visualizaÃ§Ã£o do CSS. Pode visualizar alguns elementos que aparecem no programa e ver como eles se parecem com o seu tema. Esta pÃ¡gina Ã© Ãºtil para aqueles que criam temas!
+Settings_PreviewCssHeader: PÃ¡gina de prÃ©-visualizaÃ§Ã£o do CSS
+Settings_AutoUpdatePlatforms: Lista de plataformas de atualizaÃ§Ã£o automÃ¡tica
+Settings_CheckForUpdates: Verifique as atualizaÃ§Ãµes no lanÃ§amento
+Stats_Disabled: "Recolha de estatÃ­sticas estÃ¡ desativada."
+Stats_InDepth: AnÃ¡lise detalhada das estatÃ­sticas
+Stats_ShareEnabled: "Estas estatÃ­sticas sÃ£o compartilhadas anonimamente e serÃ£o adicionadas ao total <a onclick=\"{WebsiteLink}\" class=\"fancyLink\">aqui</a>."
+Stats_ShareDisabled: "Estas estatÃ­sticas NÃƒO sÃ£o compartilhadas anonimamente e NÃƒO irÃ£o adicionar ao total <a onclick=\"{WebsiteLink}\" class=\"fancyLink\">aqui</a>."
+Stats_OperatingSystem: "Sistema operativo: "
+Stats_FirstLaunch: "Primeira inicializaÃ§Ã£o: "
+Stats_LaunchCount: "NÃºmero de inicializaÃ§Ãµes: "
+Stats_CrashCount: "NÃºmero de falhas: "
+Stats_MostUsedPlatform: "Plataforma mais utilizada: "
+Stats_TotalTime: "Tempo total gasto na aplicaÃ§Ã£o: "
+Stats_TotalSwitches: "Total de trocas de conta: "
+Stats_TotalGamesLaunched: "Total de apps/jogos iniciados pelo switcher: "
+Stats_UniqueDaysLong: "Dias Ãºnicos com contas trocadas: "
+Stats_LastUpload: "Ãšltimo Upload: "
+Stats_SwitcherStats: "EstatÃ­sticas do switcher: "
+Stats_PageStats: "EstatÃ­sticas da pÃ¡gina: "
+Stats_VisitsTotalTime: "{visits} visitas totais, {hours} tempo total"
+Stats_Accounts: "Contas: "
+Stats_Switches: "Trocas: "
+Stats_FirstActive: "Primeira atividade: "
+Stats_LastActive: "Ãšltima atividade: "
+Stats_UniqueDays: "Dias Ãºnicos: "
+Stats_GameShortcuts: "Atalhos do jogo: "
+Stats_GameShortcutsHotbar: "Atalhos do jogo (na barra de atalho): "
+Stats_GamesLaunched: "Jogos iniciados: "
+Stats_MetricsToShow: "MÃ©tricas exibidas:"
+Stats_AccountId: "ID da Conta:"
+Auth_LoginRequired: Uma senha foi previamente definida e Ã© necessÃ¡ria. Introduza a palavra-passe abaixo.
+Auth_EnterPassword: "Introduza a palavra-passe:"
+Auth_PassIncorrect: Palavra-passe incorreta.
+Locked: Bloqueado
+Cleaning_Header_StartMenuShortcuts: 'Atalhos para o menu Iniciar:'
+Cleaning_Header_General: Limpeza Geral
+Cleaning_Header_LoginHistory: Limpar o meu histÃ³rico de inÃ­cio de sessÃ£o
+Cleaning_Header_PlatformCleaning: 'Trocador {platform}'
+Cleaning_ImportantInfoHeader: 'InformaÃ§Ãµes importantes:'
+Cleaning_ImportantInfo: >
+  Clicar em um botÃ£o irÃ¡ excluir o(s) arquivo(s) relacionado(s) Ã  sua instalaÃ§Ã£o da Steam.<br /> Apagar o arquivo loginusers.vdf farÃ¡ com que este trocador de contas nÃ£o mostre nenhuma conta.<br /> PrecisarÃ¡ acessar essas contas atravÃ©s do Steam para recuperÃ¡-las.
+Cleaning_Button_KillProcess: Terminar processo {platform}
+Cleaning_Button_ForgottenBackups: Backups de conta esquecidos
+Cleaning_Understand: Eu entendo o que esses botÃµes fazem.
+Restore_Info: >
+  Se anteriormente "esqueceste" uma conta, pode restaurÃ¡-la aqui.<br /> Isto a adiciona novamente ao arquivo loginusers.vdf, permitindo que troques para ela.
+Restore_Button_Restore: Restaurar selecionado
+Ignored_RemoveAccounts: Remover contas da lista de ignorados
+Ignored_Description: Se anteriormente "ignoraste" uma conta, pode mostrÃ¡-la novamente aqui
+Ignored_Stop: Parar de ignorar selecionado
+Toast_UpdatesDownloading: As atualizaÃ§Ãµes estÃ£o sendo baixadas em segundo plano. VocÃª pode continuar a usar o programa.
+Toast_UpdatesDownloaded: O download das atualizaÃ§Ãµes foi concluÃ­do. Feche este aplicativo para iniciar a atualizaÃ§Ã£o.
+Toast_DataLocationCopying: (1/2) Copiando arquivos existentes para a nova pasta de dados do usuÃ¡rio!
+Toast_DataLocationNotCopying: (1/2) A pasta jÃ¡ tem arquivos! NÃ£o migrarÃ¡ os dados do usuÃ¡rio.
+Toast_DataLocationSet: (2/2) Reinicie o alternador de contas para usar a nova pasta!
+Toast_PlaceShortcutFiles: Uma pasta estÃ¡ abrindo. Coloque os atalhos do jogo nessa pasta e reinicie o alternador de contas.
+Toast_TrayStarted: Bandeja iniciada!
+Toast_TrayRunning: Bandeja jÃ¡ aberta
+Toast_TrayUsersMissing: Nenhum utilizador da bandeja guardado
+Toast_TrayFail: NÃ£o foi possÃ­vel iniciar a aplicaÃ§Ã£o da bandeja!
+Toast_TrayPosition: "Ao clicar no botÃ£o Sair: Estarei na Bandeja do Windows! (Barra da direita de inÃ­cio)"
+Toast_TrayHint: "Dica: Ctrl+Clique no 'X' para me fechar completamente, ou atravÃ©s da Bandeja > 'Sair'"
+Toast_Copied: Copiado
+Toast_AlreadyProcessing: JÃ¡ a processar contas...
+Toast_FailedRestore: Falha ao restaurar contas (consulte o console)
+Toast_Restored: Contas restauradas!
+Toast_ProtocolEnabled: Este programa agora responderÃ¡ a polarwolves:\\\\ no Windows
+Toast_ProtocolEnabledTitle: Protocolo adicionado
+Toast_ProtocolDisabled: Este programa nÃ£o responderÃ¡ mais a polarwolves:\\\\
+Toast_ProtocolDisabledTitle: Protocolo removido
+Toast_RestartAsAdmin: Comece como Admin e tente novamente.
+Toast_RestartAfterClose: Reinicie o programa depois de clicar em Fechar.
+Toast_RestartAfterCloseTitle: Cor de destaque desactivada
+Toast_RestartRequired: Reiniciar para aplicar alteraÃ§Ãµes
+Toast_LoadStylesheetFailed: Falha ao carregar a folha de estilo! Consulte a pasta de dados do utilizador para obter detalhes.
+Toast_LoadingStats: Um ou mais perfis sÃ£o estatÃ­sticas refrescantes. Aguarde.
+Toast_ItemNotFound: "{item} nÃ£o foi encontrado"
+Toast_DeletedTotal: "{files} de {totalFiles} excluÃ­do. Total: {totalSize}"
+Toast_CantChangeUsername: NÃ£o foi possÃ­vel alterar o nome de utilizador
+Toast_CantClearLoginFiles: NÃ£o foi possÃ­vel limpar os ficheiros de inÃ­cio de sessÃ£o antigos
+Toast_AccountIdReg: Falha ao obter o ID da conta do Registro!
+Toast_RegFailWrite: Falha ao gravar no registro do Windows!
+Toast_RegFailRead: Falha ao ler do registro do Windows!
+Toast_RegFailReadSaved: Falha ao ler a entrada de registo guardada. Tente remover e adicionar a conta novamente se nÃ£o tiver Ãªxito.
+Toast_RegSaveMissing: Falha ao encontrar ou ler dados de arquivos de registro salvos!
+Toast_DuplicateNames: NÃ£o foi possÃ­vel trocar. Contas duplicadas com o mesmo nome de utilizador?
+Toast_MissingUserId: "NÃ£o foi possÃ­vel trocar. O ID do utilizador estÃ¡ em falta. Verifique os 'Erros Comuns' do Wiki."
+Toast_CouldNotLocate: NÃ£o foi possÃ­vel localizar o utilizador com sessÃ£o iniciada
+Toast_StreamerModeHint: InformaÃ§Ãµes privadas estÃ£o ocultas! - Ver configuraÃ§Ãµes
+Toast_StreamerModeTitle: Modo Streamer
+Toast_AddAccountsFirst: Abra a plataforma da lista e adicione algumas contas primeiro
+Toast_AddAccountsFirstTitle: Nenhuma conta salva
+Toast_CantFindImage: Falha ao encontrar a imagem dos utilizadores.
+Toast_CantCreateShortcut: NÃ£o Ã© possÃ­vel criar atalho
+Toast_ShortcutCreated: Atalho criado!
+Toast_SettingsCopied: DefiniÃ§Ãµes copiadas com sucesso para a conta corrente.
+Toast_GameDataRestored: Dados de jogo restaurados com sucesso para esta conta.
+Toast_NoValidSteamId: NÃ£o foi possÃ­vel encontrar um Steam ID vÃ¡lido.
+Toast_FailedUpdateCheck: Falha ao verificar se hÃ¡ atualizaÃ§Ãµes
+Toast_UpdateVerifyFail: NÃ£o Ã© possÃ­vel verificar os ficheiros do actualizador. Baixe a versÃ£o mais recente e substitua os arquivos no seu diretÃ³rio.
+Toast_StartedGame: Iniciado {program}
+Toast_SteamCantLoadXml: NÃ£o foi possÃ­vel obter informaÃ§Ãµes XML para {steamId}. Veja o registro para mais detalhes.
+Toast_Steam_VacCleared: O status do VAC para contas foi apagado
+Toast_Steam_CantDeleteVacCache: NÃ£o foi possÃ­vel excluir 'LoginCache/Steam/VACCache/SteamVACCache.json'
+Toast_NoFindSteamUserdata: NÃ£o foi possÃ­vel encontrar a pasta Steam\\userdata
+Toast_NoFindGameBackup: NÃ£o foi possÃ­vel encontrar a pasta de dados do jogo de backup para esta conta.
+Toast_GameBackupDone: "Pasta de dados do jogo copiada com sucesso: {folderLocation}"
+Toast_Steam_VdfLast: Foi possÃ­vel carregar a partir de vdf_last. Algumas contas podem estar faltando.
+Toast_PartiallyFixed: Parcialmente fixo
+Toast_Steam_FailedLoginusers: Falha ao carregar steam/config/loginusers.vdf
+Toast_Steam_CantLocateLoginusers: NÃ£o Ã© possÃ­vel localizar '.../Steam/config/loginusers.vdf'. Tente iniciar sessÃ£o numa conta primeiro.
+Toast_CantClearImages: NÃ£o foi possÃ­vel limpar as imagens
+Toast_RefreshedImages: Imagens actualizadas
+Toast_ClearForgottenCheck: Tem a certeza de que pretende limpar as cÃ³pias de seguranÃ§a de contas esquecidas?
+Toast_ForgotAccount: Esqueci a conta
+Toast_ClearedPlatformSettings: "Limpos {platform} configuraÃ§Ãµes do switcher"
+Toast_ClearedImages: "Imagens apagadas"
+Toast_SavedItem: "Salvo: {item}"
+Toast_ChangedUsername: Nome de usuÃ¡rio alterado
+Toast_SetUsername: Definir nome de usuÃ¡rio
+Toast_AlreadyLoggedIn: JÃ¡ estÃ¡ logado com esta conta! (Nenhuma alteraÃ§Ã£o realizada)
+Toast_BackupCopy: (1/3) Copiando arquivos para um local temporÃ¡rio...
+Toast_BackupCompress: (2/3) Compactando arquivos ({size}). Isso vai levar algum tempo...
+Toast_BackupComplete: (3/3) CompressÃ£o concluÃ­da! ({size} a {compressedSize})
+Toast_BackupProgress: "Backup em andamento (tamanho compactado: {compressedSize})"
+Toast_BackupFail: Backup falhou - Ver log!
+Toast_BackupBusy: Backup jÃ¡ em andamento!
+Toast_RestoreBusy: RestauraÃ§Ã£o jÃ¡ em andamento!
+Toast_RestoreExt: Extraindo arquivo.
+Toast_RestoreCopying: Movendo arquivos de volta para a plataforma
+Toast_RestoreDeleting: Excluindo arquivos temporÃ¡rios
+Toast_RestoreComplete: RestauraÃ§Ã£o concluÃ­da!
+Toast_FailedLoad: Falha ao carregar {platform}! Clique na plataforma para ver o erro.
+Toast_FailedPlatformsLoad: Falha ao carregar Platforms.json! Verifique se este arquivo existe.
+Toast_FailedLoadSettings: "Falha ao carregar as configuraÃ§Ãµes! A carregar as definiÃ§Ãµes predefinidas. A adicionar 'old' ao nome do ficheiro de definiÃ§Ãµes existente."
+Toast_FailedLoadStats: "Falha ao carregar estatÃ­sticas! ComeÃ§ando de novo."
+Toast_FailedStatsLoad: Falha ao carregar GameStats.json! Verifique se este ficheiro existe.
+Toast_GameStatsLoadFail: "Falha ao obter estatÃ­sticas de jogo da web para {Game}"
+Toast_GameStatsEmpty: "Nenhuma estatÃ­stica de jogo encontrada no site para {Game}. Achas que Ã© um erro? Verifique a pasta userdata e 'temp\\download-{AccoundId}-{Game}.html' para ver se a pÃ¡gina apresentou um erro!"
+Toast_FileCopyFail: Falha ao copiar arquivos! Veja o registo para mais detalhes.
+Toast_UserDataLoadFail: Falha ao carregar userdata {UserData}\\WindowSettings.json. Recuar e reiniciar! Erro guardado no registo.
+Toast_UpdateCheckFail: NÃ£o foi possÃ­vel chegar a https://discord.gg/PLR/ para verificar se hÃ¡ atualizaÃ§Ãµes. Esta mensagem serÃ¡ exibida uma vez por dia.
+Toast_FailedCreateIcon: Falha ao criar Ã­cone. Consulte o registo para obter detalhes.
+Toast_SameAccount: NÃ£o Ã© possÃ­vel copiar arquivos de/para a mesma conta. Experimente uma conta diferente ou consulte Wiki para obter mais informaÃ§Ãµes.
+Toast_Steam_DownloadingAppIds: A transferir a lista de aplicaÃ§Ãµes do Steam...
+Toast_Steam_DownloadingAppIdsComplete: ConcluÃ­do o download. O submenu de dados do jogo foi atualizado.
+Toast_SteamWebKeyInvalid: A chave da API da Web do Steam parece ser invÃ¡lida. Por favor, defina um novo.
+Toast_DownloadingProfileData: A transferir dados de perfil
+Toast_PasswordChanged: Senha alterada
+Toast_JsonFailModify: Falha ao modificar o ficheiro JSON. Veja o registo.
+Toast_DifferentClosingMethod: "O 'MÃ©todo de Encerramento' difere do padrÃ£o. Se os jogos fecham inesperadamente e mais, verifique se alterar esta opÃ§Ã£o ajuda. PadrÃ£o: {defaultMethod}, Atual: {currentMethod}"
+Toast_NameEmpty: O nome de usuÃ¡rio nÃ£o pode estar vazio (e nÃ£o pode conter apenas espaÃ§os)
+Toast_NewPlatforms: "Atualizado! Novas plataformas adicionadas: {listOfNames}. Clique para descartar."
+Toast_FoundExeViaShortcut: "Encontramos o caminho instalado a partir de um atalho do Menu Iniciar. Verifique sua localizaÃ§Ã£o clicando em ConfiguraÃ§Ãµes agora. Clique para descartar."
+Modal_Crowdin_Header: Tradutores Crowdin
+Modal_Crowdin_Info: "Aqui estÃ£o todos que ajudaram a traduzir este software.<br>UsuÃ¡rios com idiomas prÃ³ximos a eles ajudaram muito na traduÃ§Ã£o (funÃ§Ã£o de revisor)."
+Modal_Info_Creator: Criado por PolarWolves Team [Wesley Pyburn]
+Modal_Info_Version: 'VersÃ£o @ item: inlistbox'
+Modal_Info_ViewGitHub: Ver no GitHub
+Modal_Info_ViewPatreon: Suporte via Patreon
+Modal_Info_ViewKofi: Suporte via Ko-Fi
+Modal_Info_BugReport: RelatÃ³rio de erros/SolicitaÃ§Ã£o de recursos
+Modal_Info_VisitSite: Visite discord.gg/PLR
+Modal_Info_Disclaimer: IsenÃ§Ã£o de responsabilidade
+Modal_Title_Info: InformaÃ§Ãµes do Comutador de Conta PolarWolves
+Modal_Title_ChangeUsername: Alterar nome de utilizador
+Modal_Title_ConfirmAction: PolarWolves Confirmar aÃ§Ã£o
+Modal_Title_LocatePlatform: Por favor, localize a pasta {platform}
+Modal_Title_AddNew: Adicionar nova conta {platform}
+Modal_Title_Background: Defina uma imagem de fundo
+Modal_Title_Userdata: Defina a pasta de dados do usuÃ¡rio
+Modal_Title_GameStats: Activar/Desactivar estatÃ­sticas do jogo
+Modal_GameStats_Header: "Ativar/Desativar estatÃ­sticas do jogo para: {accountName}"
+Modal_Title_Stats: As suas estatÃ­sticas
+Modal_Title_GameVars: "Detalhes de entrada para {game}"
+Modal_GameVars_Header: "Introduza os seguintes detalhes para a sua conta {game} , {username} em {platform}"
+Modal_Title_AccountNotes: "Notas da conta para: {accountName}"
+Modal_Title_SetPassword: Definir Senha
+Modal_SetBackground: 'Selecione uma imagem ou insira um URL abaixo.<br>Deixe em branco e defina para reiniciar.<br>(Para um controle mais avanÃ§ado, consulte Theming on the Wiki):'
+Modal_SetBackground_Button: Definir plano de fundo
+Modal_SetBackground_ChooseImage: Escolha a imagem local
+Modal_SetUserdata: Digite um caminho de pasta abaixo e clique em definir.
+Modal_SetUserdata_ChooseFolder: Selecione uma pasta
+Modal_SetUserdata_Button: Definir dados do usuÃ¡rio
+Modal_ChangeUsername: Insira um novo nome de usuÃ¡rio para sua conta
+Modal_ChangeUsernameType: Alterar {platform} nome de usuÃ¡rio
+Modal_SetPassword: Digite uma senha para o Switcher de Conta PolarWolves
+Modal_SetPassword_Button: Definir palavra-passe
+Modal_SetPassword_Info: "NOTA: Isto nÃ£o encripta as suas contas. Trocar contas Ã© tÃ£o simples como substituir ficheiros ou alterar um nome de utilizador num ficheiro. A palavra-passe tambÃ©m pode ser reposta editando texto num ficheiro. Isto Ã© seguranÃ§a simples. Ele interrompe o acesso simples Ã  interface do usuÃ¡rio. VocÃª pode colocar este aplicativo em um USB removÃ­vel, definir a pasta UserData para o mesmo USB e removÃª-lo fisicamente para maior seguranÃ§a. <a class=\"fancyLink\" onclick=\"OpenLinkInBrowser('{link}');return false;\" href=\"\">Movendo-se para um guia de unidade externa</a><br><br>Para limpar, deixe o vazio acima e clique em Definir."
+Modal_EnterDirectory: "Indique por favor a pasta do {platform}, como tal: C:\\Program Files\\{platform}"
+Modal_LocatePlatform: Localizar {platformExe}
+Modal_LocatePlatformFolder: Seleccionar a pasta {platform}
+Modal_ConfirmAction: Confirmar acÃ§Ã£o
+Modal_AddNew: Introduza um nome para a conta {platform} na qual iniciou sessÃ£o.
+Modal_AddCurrentAccount: Adicionar conta {platform} actual
+Modal_SetImageHeader: Definir imagem do perfil
+Modal_SetImage: Definir imagem
+Status_SelectedAccount: "Seleccionado: {name}"
+Status_Init: "Status: inicializando"
+Status_ClosingPlatform: Fechando {platform}
+Status_ClosingPlatformFailed: Falha ao fechar {platform}
+Status_StartingPlatform: A partir de {platform}
+Toast_StartingPlatformFailed: Falha ao iniciar {platform}! Veja log para mais detalhes.
+Toast_UrlAdminErr: VocÃª nÃ£o pode executar arquivos .url como administrador. Tente outro tipo de atalho. Iniciando como usuÃ¡rio normal.
+Status_UpdatingFile: "Atualizando {file}"
+Status_UpdatingRegistry: Atualizando o registro do Windows
+Status_FailedLog: 'AÃ§Ã£o: falhou. Consulte o registro para obter detalhes.'
+Status_WaitingForClose: "Aguardando {processName} fechar{timeLimit} {timeout})"
+Status_WaitingForMultipleClose: "Aguardando {processName} e {count} outros fecharem{timeLimit} {timeout})"
+Status_GetUniqueId: Coletando ID de usuÃ¡rio exclusivo
+Status_CopyingFiles: Copiando arquivos do usuÃ¡rio...
+Status_HandlingImage: Manipulando a imagem do perfil da conta
+Context_SwapTo: Trocar para conta
+Context_CreateShortcut: Criar atalho
+Context_ChangeImage: Alterar imagem
+Context_ChangeName: Alterar o nome do comutador
+Context_LoginAsSubmenu: Iniciar sessÃ£o como
+Context_UsernameSubmenu: Nome de utilizador
+Context_RefreshName: Actualizar nome
+Context_CopySubmenu: CÃ³pia
+Context_DataSubmenu: Dados
+Context_CopyProfileSubmenu: Copiar Perfil
+Context_CommunityUrl: URL da comunidade
+Context_CommunityUsername: Nome de utilizador da comunidade
+Context_LoginUsername: Nome de utilizador de inÃ­cio de sessÃ£o
+Context_CopySteamIdSubmenu: Copiar SteamID
+Context_Steam_Id: SteamID [STEAM0:~]
+Context_Steam_Id3: SteamID3 [U:1:~]
+Context_Steam_Id32: SteamID32
+Context_Steam_Id64: SteamID64 7656~
+Context_Steam_OpenUserdata: Abrir userdata
+Context_ManageSubmenu: Gerir
+Context_GameDataSubmenu: Dados do jogo
+Context_ManageGameStats: Gerir estatÃ­sticas do jogo
+Context_Game_CopySettingsFrom: Copiar as definiÃ§Ãµes para o actual
+Context_Game_RestoreSettingsTo: Restaurar dados do jogo
+Context_Game_BackupData: Backup de dados do jogo
+Context_CopyOtherSubmenu: Copiar outro
+Context_HidePlatform: Ocultar plataforma
+Context_ExportAccList: Exportar lista de contas
+Context_RunAdmin: Executar como administrador
+Context_Hide: Esconder
+ProfileImage_ToggleText: Usar imagem como imagem da conta
+Title_Platforms_Settings: PolarWolves - ConfiguraÃ§Ãµes da plataforma
+Title_Settings_TestCss: PolarWolves - Testar estilo CSS
+Title_AccountsList: Comutador de Conta PolarWolves - {platform}
+Title_TextEditor: Comutador de Conta PolarWolves - Editor de Texto
+Title_Settings: PolarWolves - DefiniÃ§Ãµes
+Title_Steam_Cleaning: PolarWolves - Limpeza a vapor
+Title_Steam_Settings: PolarWolves - DefiniÃ§Ãµes do Steam
+Title_Template_Settings: Alternador de conta PolarWolves - {platformName} ConfiguraÃ§Ãµes
+Title_Login: PolarWolves - Login
+Installer_Downloading: A descarregar {file}
+Installer_DownloadFinished: ConcluÃ­do o download {file}
+Installer_Installing: "A instalar: {runtime}"
+Installer_RuntimeTitle: PolarWolves - Instalador em tempo de execuÃ§Ã£o
+Installer_Welcome: Bem-vindo ao Switcher de Conta PolarWolves - Instalador de tempo de execuÃ§Ã£o
+Installer_InstalledRuntimes: "Tempos de execuÃ§Ã£o atualmente instalados:"
+Installer_ErrorRuntime: "Um ou mais tempos de execuÃ§Ã£o nÃ£o foram instalados:"
+Installer_RuntimeNote: "[~{size1} MB + ~{size2} MB durante a instalaÃ§Ã£o]"
+Installer_TotalSize: "Tamanho total do download: ~{size} MB"
+Installer_AnyKeyStart: Pressione qualquer tecla para iniciar o download...
+Runtime_WebView2: Tempo de execuÃ§Ã£o do Microsoft WebView2
+Runtime_Desktop: Microsoft .NET 5 Desktop Runtime
+Runtime_ASP: Tempo de execuÃ§Ã£o do Microsoft Microsoft ASP.NET Core {version}
+Installer_FailedFolder: "Falha ao criar pasta:"
+Installer_FailedWV: "Falha ao baixar e instalar o Microsoft WebView2 Runtime. Para baixar: 1. Clique no link abaixo: {link} 2. Clique em 'Download Hosting Bundle' em Executar aplicativos de servidor."
+Installer_FailedDR: "Falha ao baixar e instalar o .NET 5 Desktop Runtime. FaÃ§a o download aqui:"
+Installed_FailedASP: "Falha ao baixar e instalar o ASP.NET Core {version} Runtime. Para baixar: 1. Clique no link abaixo: {link} 2. Clique em 'Baixar x64' em Executar aplicativos da Ã¡rea de trabalho."
+Installer_Ready: "Um ou mais estÃ£o prontos para instalaÃ§Ã£o. Se e quando lhe for perguntado se deseja instalar, clique em \"Sim\"."
+Installer_PressStart: Pressione qualquer tecla para iniciar a instalaÃ§Ã£o...
+Installer_VerifyMin: "Verifique se cumpre os requisitos mÃ­nimos recomendados:"
+Installer_VerifyAlready: "Parece que estÃ¡ tudo instalado. Verifique se cumpre os requisitos mÃ­nimos recomendados:"
+Installer_Complete: Isso deveria ser tudo. O programa principal, PolarWolves.exe, serÃ¡ executado automaticamente.
+Installer_Complete2: "Se nÃ£o funcionar, consulte as instruÃ§Ãµes de instalaÃ§Ã£o, aqui: {link}"
+Tray_Error: Erro na Bandeja
+Tray_NoAccs: "NÃ£o foram encontradas contas.\nTente mudar de conta primeiro ou localize 'Tray_Users.json'"
+Tray_Switch: "Mudar para: {account}"
+Tray_CantOpenExe: "NÃ£o foi possÃ­vel abrir o .exe principal. Certifique-se de que ele existe.\n\nEu tentei abrir:"
+Tray_LaunchFail: "PolarWolves - Falha no lanÃ§amento da bandeja"
+Updater_Duplicate: Foi detectada outra instÃ¢ncia do PolarWolves Updater.
+Updater_Unknown: "Argumento desconhecido: {arg}"
+Updater_NeedsAdmin: Este programa deve ser executado como administrador!
+Updater_StatusChecking: VersÃ£o de verificaÃ§Ã£o
+Updater_FailedVersionCheck: "NÃ£o foi possÃ­vel obter a versÃ£o. Clique em \"Verificar\" para atualizar e verificar os arquivos"
+Updater_PressBelow: Pressione o botÃ£o abaixo!
+Updater_PressBelowStart: Clique no botÃ£o abaixo para iniciar a atualizaÃ§Ã£o.
+Updater_PatchApplied: Patch aplicado!
+Updater_UpdatingAppData: A actualizar ficheiros no AppData!
+Updater_Complete: Todas as atualizaÃ§Ãµes concluÃ­das!
+Updater_Checking: A verificar se hÃ¡ atualizaÃ§Ãµes
+Updater_UpdateToVerify: Para verificar os ficheiros, tem de atualizar primeiro.
+Updater_ClosingPolarWolves: Fechando instÃ¢ncias do PolarWolves (se houver).
+Updater_Downloading: "A transferir actualizaÃ§Ã£o: {version}"
+Updater_Downloaded: Download concluÃ­do.
+Updater_CantExtract: Falha ao extrair a actualizaÃ§Ã£o.
+Updater_Verify: Verificar ficheiros
+Updater_Verifying: A verificar...
+Updater_VerifySkip: Verificando arquivos para pular todas as pequenas atualizaÃ§Ãµes e apenas pular para a Ãºltima.
+Updater_NoConnection: "NÃ£o foi possÃ­vel ligar a discord.gg/PLR para verificar os ficheiros. VocÃª pode tentar baixar manualmente o instalador da pÃ¡gina do GitHub e reinstalar para atualizar.\n\nErro:"
+Updater_NoServer: NÃ£o foi possÃ­vel aceder ao servidor de actualizaÃ§Ã£o
+Updater_Hashlist: A transferir a lista de hash mais recente...
+Updater_CantCheck: NÃ£o Ã© possÃ­vel verificar se hÃ¡ atualizaÃ§Ãµes
+Updater_Failed: "ERRO: Alguns dos ficheiros estÃ£o em uso e nÃ£o podem ser actualizados.\n\n1. Certifique-se de que todos os processos do PolarWolves estÃ£o completamente fechados\n(ou reinicie o seu PC)\n\n2. Em seguida, clique em Verificar abaixo, ou se reiniciou:\n-   Abra este actualizador e verifique os ficheiros\n    (localizados na pasta 'actualizador' no directÃ³rio de instalaÃ§Ã£o)"
+Updater_Missing: "FICHEIRO EM FALTA: {file}"
+Updater_FileMismatch: "Arquivo: {file} tem MD5: {md5} ESPERADO: {value}"
+Updater_DownloadingWeb: A transferir o ficheiro do Web site...
+Updater_UnpackingAppData: Copiando arquivos para %AppData%/PolarWolves... (a menos que definido de outra forma)
+Updater_VerifyComplete: Arquivos verificados!
+Updater_UpdateFound: "AtualizaÃ§Ã£o encontrada: {name} [{updateSize}]"
+Updater_TotalFound: "Total de atualizaÃ§Ãµes encontradas: {x}"
+Updater_TotalSize: "Tamanho total: {size}"
+Updater_AwaitingUser: A aguardar a entrada do utilizador...
+Updater_UpToDate: "EstÃ¡ actualizado.\n:)"
+Updater_FailedDecode: Isto Ã© provavelmente devido a mim (PolarWolves Team) empurrar uma atualizaÃ§Ã£o, e fazer um erro de digitaÃ§Ã£o que quebrou o arquivo de atualizaÃ§Ã£o .json. Avise-me :)
+Updater_FailedDecodeTitle: Falha ao decodificar a lista de atualizaÃ§Ãµes
+Updater_Extracting: Extrair ficheiros patch
+Updater_Applying: A aplicar o patch...
+Updater_Moving: A mover os ficheiros...
+Updater_Title: Atualizador do Comutador de Conta PolarWolves
+Updater_Started: Iniciado
+Updater_Start: Iniciar PolarWolves
+Updater_Begin: Iniciar actualizaÃ§Ã£o
+Updater_Exit: Sair
+FatalError: Ocorreu um erro fatal!
+Online: Online
+OnlineDefault: Online (PadrÃ£o)
+Offline: Offline
+Invisible: InvisÃ­vel
+Busy: Ocupado (a)
+Away: Longe
+Snooze: Pausa
+LookingToTrade: Olhando para a negociaÃ§Ã£o
+LookingToPlay: Procurando Jogar
+Unrecognized_EPersonaState: EPersonaState nÃ£o reconhecido
+Reg_DoesntExist: "{subKey} nÃ£o existe."
+Reg_DoesntContain: "{subKey} nÃ£o contÃ©m {val}"
+Reg_Removing: Remover {subKey}\\{val}
+PngInvalid_Format: Formato de pixel necessÃ¡rio Ã© PixelFormat.{x}.
+PngRequired: O formato de imagem necessÃ¡rio Ã© um grÃ¡fico de rede portÃ¡til (png).
+PngDimensions: As dimensÃµes devem ser menores ou iguais a {MaxIconWidth}x{MaxIconHeight}
+ThemeSyntaxAnd: "Foi encontrado um erro de sintaxe (mais detalhes abaixo)! E:"
+ThemesNotFound: "NÃ£o foi possÃ­vel encontrar a pasta \"temas\" no diretÃ³rio do PolarWolves. Isto (especialmente a pasta 'Dracula_Cyan') Ã© necessÃ¡rio para que este software seja executado.\nVocÃª pode executar o Updater na pasta \"updater\" para verificar arquivos e restaurar esses arquivos ausentes."
+Yes: "- Sim."
+No: "NÃ£o, nÃ£o."
+Save: Guardar
+NoDefault: NÃ£o (PadrÃ£o)
+Ok: "EstÃ¡ bem."
+Submit: Submeter
+Forget: EsqueÃ§a.
+Notice: Aviso prÃ©vio
+Notes: ObservaÃ§Ãµes
+Error: 'Erro @ info: whatsthis'
+ErrorDetails: "ERRO: {ex}"
+Failed: Reprovado
+Success: Sucesso
+NotFound: NÃ£o Encontrado
+Done: Feito
+Edit: 'Editar @ info: whatsthis'
+Refresh: Actualizar
+Working: Trabalhando...
+ForName: "Para: {name}"
+DeletedFiles: Arquivos excluÃ­dos
+FileFoldersToClear: "Lista de arquivos/pastas para limpar:"
+CouldNotFindX: NÃ£o foi possÃ­vel encontrar {x}
+CouldNotCloseX: NÃ£o foi possÃ­vel fechar {x}!
+CouldNotReadFile: NÃ£o foi possÃ­vel ler {file}!
+DirectoryNotFound: Pasta nÃ£o encontrada
+DirectoryNotFoundFolder: "Pasta nÃ£o encontrada: {folder}"
+DeletingFile: "ExclusÃ£o: {file}"
+DeletingFolder: "Apagar a Pasta: "
+CouldntDeleteX: "ERRO: NÃƒO FOI POSSÃVEL EXCLUIR: {x}"
+CouldntDeleteUndefined: "ERRO: NÃƒO FOI POSSÃVEL EXCLUIR O ARQUIVO INDEFINIDO"
+CouldntModifyX: "NÃ£o foi possÃ­vel modificar {file}. Erro de permissÃ£o de arquivo ou o arquivo estÃ¡ em uso."
+Prompt_RestartAsAdmin: "<h3><bold>Este programa serÃ¡ reiniciado como Admin</bold></h3><p>Clique em \"Sim\" no UAC quando solicitado para admin.</p>"
+Prompt_ForgetSteam: >
+  <h3 style='color:red'>VocÃª estÃ¡ prestes a esquecer uma conta!</h3> <h4>O que isso significa?</h4> <p>- O Steam nÃ£o terÃ¡ mais a conta listada no Big Picture Mode e nÃ£o lembrarÃ¡ a senha.<br/> - O PolarWolves tambÃ©m nÃ£o mostrarÃ¡ mais a conta, atÃ© que ela seja conectada novamente atravÃ©s do Steam.</p> <p>Sua conta permanecerÃ¡ intacta. Ã‰ apenas esquecido neste computador.</p><h4>VocÃª entende?</h4>
+Prompt_ForgetAccount: >
+  <h3 style='color:red'>VocÃª estÃ¡ prestes a esquecer uma conta!</h3> <h4>O que isso significa?</h4> <p>O PolarWolves tambÃ©m nÃ£o mostrarÃ¡ mais a conta,<br/> atÃ© que ela seja conectada novamente atravÃ©s das {platform}e adicionada Ã  lista.</p> <p>Sua conta permanecerÃ¡ intacta. Ã‰ apenas esquecido neste computador.</p> <h4>VocÃª entende?</h4>
+Prompt_ClearStats: >
+  <h3 style='color:red'>VocÃª estÃ¡ prestes a limpar as suas estatÃ­sticas!</h3> <p>VocÃª nÃ£o pode desfazer esta aÃ§Ã£o.</p>
+Platform_DiscordPasteHint: Cole no console do Discord e cole o resultado na entrada!
+Platform_ClearCache: Limpar cache
+Platform_ClearCacheTotal: Limpando {totalFileCount} arquivos ({totalSizeMB})
+Platform_DeleteFail: NÃ£o foi possÃ­vel excluir alguns arquivos (O programa pode estar em execuÃ§Ã£o?)
+Platform_CouldNotDeleteLog: NÃ£o foi possÃ­vel excluir o arquivo! Cheque {logPath}
+Error_FileAccessDenied: Falha ao acessar o arquivo! Cheque {logPath}
+Error_RequiredFileVerify: NÃ£o foi encontrado um ficheiro obrigatÃ³rio. Certifique-se de que as pastas x64 e x86 existem no directÃ³rio de instalaÃ§Ã£o. Se nÃ£o executar PolarWolves-Updater.exe e verificar arquivos.
+Tooltip_Settings: ConfiguraÃ§Ãµes
+Tooltip_Info: InformaÃ§Ãµes
+Tooltip_ManagePlatforms: Mostrar ou ocultar outras plataformas
+Tooltip_ExpandShortcuts: Expandir a seleÃ§Ã£o de jogos e atalhos
+Tooltip_ShortcutFolder: Abra a pasta de atalho. Coloque atalhos lÃ¡ e o PolarWolves para vÃª-los.
+Tooltip_Backup: Arquivos/pastas de configuraÃ§Ã£o de backup, conforme definido nas configuraÃ§Ãµes da plataforma.
+Tooltip_BackupAll: FaÃ§a backup de TODOS os arquivos/pastas de configuraÃ§Ã£o, incluindo imagens e outros arquivos grandes.
+Tooltip_ClosingMethod: "Combinar Ã© o melhor. Tentativas de fechar diretamente atravÃ©s de uma funÃ§Ã£o de fechamento e TaskKill usa CMD (Melhor se combinado nÃ£o funciona)"
+Tooltip_StartingMethod: "O padrÃ£o Ã© o melhor. Direct nÃ£o tem controle sobre o nÃ­vel de administraÃ§Ã£o ou UAC. ComeÃ§arÃ¡ como o mesmo nÃ­vel (ou superior - mas nÃ£o inferior) que este comutador de conta"
+Tooltip_CurrentAccount: De momento, tem sessÃ£o iniciada nesta conta.
+Tooltip_Restore: Clique para selecionar um arquivo 7z ou arraste-o para este botÃ£o.
+Tooltip_DisabledGlobally: Este item estÃ¡ oculto para todas as contas. Pode alterar isto nas definiÃ§Ãµes da plataforma.
+Discord_Status: Actualmente a mudar de conta.
+Discord_StatusDetails: "Contas Alteradas: {number}"
+Website: SÃ­tio Web
+Preview_Platforms: PrÃ©-visualizaÃ§Ã£o de plataformas
+Preview_Accounts: VisualizaÃ§Ã£o de contas
+Preview_Notifications: PrÃ©-visualizaÃ§Ã£o das notificaÃ§Ãµes de brinde
+Preview_Settings: PrÃ©-visualizaÃ§Ã£o das definiÃ§Ãµes
+Preview_Modals: VisualizaÃ§Ã£o dos modais
+
+
+
+

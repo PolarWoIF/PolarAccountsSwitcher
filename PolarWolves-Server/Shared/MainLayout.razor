@@ -1,0 +1,124 @@
+﻿@*PolarWolves - A Super fast account switcher
+    Copyright (C) 2019-2025 PolarWolves Team (Wesley Pyburn)
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses />.*@
+
+@inherits LayoutComponentBase
+@implements IDisposable
+
+@using PolarWolves_Server.Data
+@inject IJSRuntime JsRuntime
+@{ AData.SetActiveIJsRuntime(JsRuntime); }
+@inject NavigationManager NavManager
+@{ AData.SetActiveNavMan(NavManager); }
+@inject AppData AData
+
+@if (_isZenithRootPage)
+{
+    <div class="headerbar headerbarZenithOverlay">
+        <Headerbar />
+    </div>
+    <div class="programMain programMainZenithOnly">
+        @Body
+    </div>
+}
+else
+{
+    <div class="headerbar">
+        <Headerbar />
+    </div>
+    <div class="resizeLeft"></div>
+    <div class="resizeRight"></div>
+    <div class="resizeBottom"></div>
+    <div class="resizeBottomRight"></div>
+    <div class="resizeBottomLeft"></div>
+    <div class="programMain">
+        <Modal />
+        @Body
+    </div>
+}
+<DynamicStylesheet />
+
+<style>
+    .programMain.programMainZenithOnly {
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        max-height: 100vh;
+        overflow: hidden;
+        background: #020914;
+    }
+
+    .headerbar.headerbarZenithOverlay {
+        position: absolute;
+        inset: 0 0 auto 0;
+        z-index: 1200;
+        background: transparent;
+        height: 32px;
+    }
+
+    .headerbar.headerbarZenithOverlay #window-title {
+        background: transparent;
+        min-height: 32px;
+    }
+
+    .headerbar.headerbarZenithOverlay #window-title > span,
+    .headerbar.headerbarZenithOverlay #btnBack {
+        display: none !important;
+    }
+
+    .headerbar.headerbarZenithOverlay #window-controls {
+        display: grid !important;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 32px;
+        z-index: 1300;
+        background: transparent;
+    }
+</style>
+
+@code{
+    private bool _isZenithRootPage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+        RefreshLayoutMode();
+        NavManager.LocationChanged += HandleLocationChanged;
+
+        if (AppSettings.PasswordHash != "" && AppSettings.PasswordCurrent != AppSettings.PasswordHash)
+        {
+            if (!NavManager.Uri.Contains("/login")) NavManager.NavigateTo($"/login?returnUrl={Uri.EscapeDataString(NavManager.Uri)}");
+        }
+    }
+
+    private void HandleLocationChanged(object sender, LocationChangedEventArgs e)
+    {
+        var before = _isZenithRootPage;
+        RefreshLayoutMode();
+        if (before != _isZenithRootPage)
+            _ = InvokeAsync(StateHasChanged);
+    }
+
+    private void RefreshLayoutMode()
+    {
+        var uri = NavManager.ToAbsoluteUri(NavManager.Uri);
+        var cleanPath = uri.AbsolutePath.Trim('/');
+        _isZenithRootPage = string.IsNullOrEmpty(cleanPath);
+    }
+
+    public void Dispose()
+    {
+        NavManager.LocationChanged -= HandleLocationChanged;
+    }
+}
