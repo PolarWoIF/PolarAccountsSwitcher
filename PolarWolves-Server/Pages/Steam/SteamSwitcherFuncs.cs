@@ -942,9 +942,10 @@ namespace PolarWolves_Server.Pages.Steam
         /// <param name="steamId">(Optional) User's SteamID</param>
         /// <param name="ePersonaState">(Optional) Persona state for user [0: Offline, 1: Online...]</param>
         /// <param name="args">Starting arguments</param>
-        public static void SwapSteamAccounts(string steamId = "", int ePersonaState = -1, string args = "")
+        /// <param name="accountOffline">(Optional) Force account login offline mode independent of persona state</param>
+        public static void SwapSteamAccounts(string steamId = "", int ePersonaState = -1, string args = "", bool? accountOffline = null)
         {
-            Globals.DebugWriteLine($@"[Func:Steam\SteamSwitcherFuncs.SwapSteamAccounts] Swapping to: hidden. ePersonaState={ePersonaState}");
+            Globals.DebugWriteLine($@"[Func:Steam\SteamSwitcherFuncs.SwapSteamAccounts] Swapping to: hidden. ePersonaState={ePersonaState}, accountOffline={(accountOffline.HasValue ? accountOffline.Value.ToString() : "null")}");
             if (steamId != "" && !VerifySteamId(steamId))
             {
                 return;
@@ -963,7 +964,7 @@ namespace PolarWolves_Server.Pages.Steam
                 return;
             }
 
-            if (OperatingSystem.IsWindows()) UpdateLoginUsers(steamId, ePersonaState);
+            if (OperatingSystem.IsWindows()) UpdateLoginUsers(steamId, ePersonaState, accountOffline);
 
             _ = AppData.InvokeVoidAsync("updateStatus", Lang["Status_StartingPlatform", new { platform = "Steam" }]);
             if (SteamSettings.AutoStart)
@@ -975,9 +976,8 @@ namespace PolarWolves_Server.Pages.Steam
                 var started = StartSteamWithFallbacks(launchArgs);
                 if (started) BringSteamToFrontSoon();
 
-                _ = started
-                    ? GeneralInvocableFuncs.ShowToast("info", Lang["Status_StartingPlatform", new {platform = "Steam"}], renderTo: "toastarea")
-                    : GeneralInvocableFuncs.ShowToast("error", Lang["Toast_StartingPlatformFailed", new {platform = "Steam"}], renderTo: "toastarea");
+                if (!started)
+                    _ = GeneralInvocableFuncs.ShowToast("error", Lang["Toast_StartingPlatformFailed", new {platform = "Steam"}], renderTo: "toastarea");
             }
 
             if (SteamSettings.AutoStart && AppSettings.MinimizeOnSwitch) _ = AppData.InvokeVoidAsync("hideWindow");
@@ -1141,10 +1141,11 @@ namespace PolarWolves_Server.Pages.Steam
         /// </summary>
         /// <param name="selectedSteamId">Steam ID64 to switch to</param>
         /// <param name="pS">[PersonaState]0-7 custom persona state [0: Offline, 1: Online...]</param>
+        /// <param name="accountOffline">(Optional) Force account login offline mode independent from persona state</param>
         [SupportedOSPlatform("windows")]
-        public static void UpdateLoginUsers(string selectedSteamId, int pS)
+        public static void UpdateLoginUsers(string selectedSteamId, int pS, bool? accountOffline = null)
         {
-            Globals.DebugWriteLine($@"[Func:Steam\SteamSwitcherFuncs.UpdateLoginUsers] Updating loginusers: selectedSteamId={(selectedSteamId.Length > 0 ? selectedSteamId.Substring(selectedSteamId.Length - 4, 4) : "")}, pS={pS}");
+            Globals.DebugWriteLine($@"[Func:Steam\SteamSwitcherFuncs.UpdateLoginUsers] Updating loginusers: selectedSteamId={(selectedSteamId.Length > 0 ? selectedSteamId.Substring(selectedSteamId.Length - 4, 4) : "")}, pS={pS}, accountOffline={(accountOffline.HasValue ? accountOffline.Value.ToString() : "null")}");
             var userAccounts = GetSteamUsers(SteamSettings.LoginUsersVdf());
             // -----------------------------------
             // ----- Manage "loginusers.vdf" -----
@@ -1160,11 +1161,20 @@ namespace PolarWolves_Server.Pages.Steam
                 {
                     u.MostRec = "1";
                     u.RememberPass = "1";
-                    u.OfflineMode = pS == -1 ? u.OfflineMode : (pS > 1 ? "0" : pS == 1 ? "0" : "1");
-                    u.SkipOfflineModeWarning = pS == -1 ? u.OfflineMode : (pS > 1 ? "0" : pS == 1 ? "0" : "1");
-                    // u.OfflineMode: Set ONLY if defined above
-                    // If defined & > 1, it's custom, therefor: Online
-                    // Otherwise, invert [0 == Offline => Online, 1 == Online => Offline]
+                    var offlineModeValue = u.OfflineMode;
+                    if (accountOffline.HasValue)
+                    {
+                        // Explicit account login mode selection from UI.
+                        offlineModeValue = accountOffline.Value ? "1" : "0";
+                    }
+                    else if (pS != -1)
+                    {
+                        // Backwards-compatible behavior for older callers that only pass persona state.
+                        offlineModeValue = (pS > 1 || pS == 1) ? "0" : "1";
+                    }
+
+                    u.OfflineMode = offlineModeValue;
+                    u.SkipOfflineModeWarning = offlineModeValue;
                 });
             }
             catch (InvalidOperationException)
@@ -1300,8 +1310,11 @@ namespace PolarWolves_Server.Pages.Steam
             // Find index of range needing to be changed.
             var positionOfVar = localConfigText.IndexOf("ePersonaState", StringComparison.Ordinal); // Find where the variable is being set
             if (positionOfVar == -1) return;
-            var indexOfBefore = localConfigText.IndexOf(":", positionOfVar, StringComparison.Ordinal) + 1; // Find where the start of the variable's value is
+            var indexOfBefore = localConfigText.IndexOf(":", positionOfVar, StringComparison.Ordinal); // Find where the start of the variable's value is
+            if (indexOfBefore == -1) return;
+            indexOfBefore += 1;
             var indexOfAfter = localConfigText.IndexOf(",", positionOfVar, StringComparison.Ordinal); // Find where the end of the variable's value is
+            if (indexOfAfter == -1 || indexOfAfter <= indexOfBefore) return;
 
             // The variable is now in-between the above numbers. Remove it and insert something different here.
             var sb = new StringBuilder(localConfigText);

@@ -34,12 +34,13 @@
 
 .acc_list_shell > .toastarea {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 18px;
+  right: 24px;
   z-index: 60;
-  width: min(420px, 100% - 20px);
+  width: min(420px, 100% - 48px);
   pointer-events: none;
-  gap: 8px;
+  gap: 12px;
+  align-items: flex-end;
 }
 
 .acc_list_shell > .toastarea .notification {
@@ -301,8 +302,9 @@ label h6 svg {
 }
 
 .steam-rework .acc_list_shell > .toastarea {
-  top: 58px;
-  right: 8px;
+  top: 72px;
+  right: 28px;
+  z-index: 240;
 }
 
 .steam-rework .catalog_rail {

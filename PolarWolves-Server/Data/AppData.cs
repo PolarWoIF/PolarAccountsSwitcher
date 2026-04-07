@@ -109,9 +109,25 @@ namespace PolarWolves_Server.Data
 
             var timestamp = Timestamps.Now;
             const string discordServerUrl = "https://discord.gg/PLR";
-            const string discordApplicationId = "973188269405765682";
+            const string bundledDiscordApplicationId = "1360646415872950415";
+            var discordApplicationId = Environment.GetEnvironmentVariable("POLAR_DISCORD_APPLICATION_ID")?.Trim();
+            if (string.IsNullOrWhiteSpace(discordApplicationId))
+                discordApplicationId = bundledDiscordApplicationId;
             const string presenceTitle = "Polar Account Switcher";
-            const string discordLargeImageKey = "img_9024";
+            var discordLargeImageKey = Environment.GetEnvironmentVariable("POLAR_DISCORD_IMAGE_KEY")?.Trim();
+
+            // Discord controls the displayed app name from the Application ID.
+            // Never fall back to an old/upstream Application ID; leave RPC off until Polar has its own ID.
+            if (string.IsNullOrWhiteSpace(discordApplicationId) || discordApplicationId == "973188269405765682")
+            {
+                if (DiscordClient is { IsInitialized: true }) DiscordClient.Deinitialize();
+                DiscordClient = null;
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(discordLargeImageKey))
+                discordLargeImageKey = "img_9024";
+            const string presenceState = "Switch accounts faster with Polar.";
 
             DiscordClient ??= new DiscordRpcClient(discordApplicationId)
             {
@@ -120,18 +136,9 @@ namespace PolarWolves_Server.Data
             if (!DiscordClient.IsInitialized) DiscordClient.Initialize();
             else timestamp = DiscordClient.CurrentPresence.Timestamps;
 
-            var state = "";
-            if (AppSettings.StatsEnabled && AppSettings.DiscordRpcShare)
-            {
-                AppStats.GenerateTotals();
-                state = Lang["Discord_StatusDetails", new { number = AppStats.SwitcherStats["_Total"].Switches }];
-            }
-
-
             DiscordClient.SetPresence(new RichPresence
             {
-                Details = presenceTitle,
-                State = state,
+                State = presenceState,
                 Timestamps = timestamp,
                 Buttons = new Button[]
                 { new() {

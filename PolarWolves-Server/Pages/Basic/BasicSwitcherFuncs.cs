@@ -102,10 +102,9 @@ namespace PolarWolves_Server.Pages.Basic
                             _ = GeneralInvocableFuncs.ShowToast("info", Lang["Toast_AlreadyLoggedIn"], renderTo: "toastarea");
                             if (BasicSettings.AutoStart)
                             {
-                                _ = Globals.StartProgram(BasicSettings.Exe(), BasicSettings.Admin, args,
-                                    CurrentPlatform.StartingMethod)
-                                    ? GeneralInvocableFuncs.ShowToast("info", Lang["Status_StartingPlatform", new {platform = CurrentPlatform.SafeName}], renderTo: "toastarea")
-                                    : GeneralInvocableFuncs.ShowToast("error", Lang["Toast_StartingPlatformFailed", new {platform = CurrentPlatform.SafeName}], renderTo: "toastarea");
+                                if (!Globals.StartProgram(BasicSettings.Exe(), BasicSettings.Admin, args,
+                                        CurrentPlatform.StartingMethod))
+                                    _ = GeneralInvocableFuncs.ShowToast("error", Lang["Toast_StartingPlatformFailed", new {platform = CurrentPlatform.SafeName}], renderTo: "toastarea");
                             }
                             _ = AppData.InvokeVoidAsync("updateStatus", Lang["Done"]);
 

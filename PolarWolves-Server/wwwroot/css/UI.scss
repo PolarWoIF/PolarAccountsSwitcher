@@ -576,6 +576,10 @@ button .caret, .button .caret {
     align-self: end;
 }
 
+.toastarea .notification {
+    transform-origin: top right;
+}
+
 .accNotesContainer {
     position: relative;
 

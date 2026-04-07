@@ -225,22 +225,20 @@ namespace PolarWolves_Server.Data.Settings
 
         public static void RunPlatform(string exePath, bool admin, string args, string platName, string startingMethod = "Default")
         {
-            _ = Globals.StartProgram(exePath, admin, args, startingMethod)
-                ? GeneralInvocableFuncs.ShowToast("info", Lang["Status_StartingPlatform", new {platform = platName}], renderTo: "toastarea")
-                : GeneralInvocableFuncs.ShowToast("error", Lang["Toast_StartingPlatformFailed", new {platform = platName}], renderTo: "toastarea");
+            if (!Globals.StartProgram(exePath, admin, args, startingMethod))
+                _ = GeneralInvocableFuncs.ShowToast("error", Lang["Toast_StartingPlatformFailed", new {platform = platName}], renderTo: "toastarea");
         }
 
 
         public static void RunPlatform(bool admin)
         {
-            _ = Globals.StartProgram(Exe(), admin, CurrentPlatform.ExeExtraArgs, CurrentPlatform.StartingMethod)
-                ? GeneralInvocableFuncs.ShowToast("info", Lang["Status_StartingPlatform", new {platform = CurrentPlatform.SafeName}], renderTo: "toastarea")
-                : GeneralInvocableFuncs.ShowToast("error", Lang["Toast_StartingPlatformFailed", new {platform = CurrentPlatform.SafeName}], renderTo: "toastarea");
+            if (!Globals.StartProgram(Exe(), admin, CurrentPlatform.ExeExtraArgs, CurrentPlatform.StartingMethod))
+                _ = GeneralInvocableFuncs.ShowToast("error", Lang["Toast_StartingPlatformFailed", new {platform = CurrentPlatform.SafeName}], renderTo: "toastarea");
         }
         public static void RunPlatform()
         {
-            Globals.StartProgram(Exe(), Admin, CurrentPlatform.ExeExtraArgs, CurrentPlatform.StartingMethod);
-            _ = GeneralInvocableFuncs.ShowToast("info", Lang["Status_StartingPlatform", new { platform = CurrentPlatform.SafeName }], renderTo: "toastarea");
+            if (!Globals.StartProgram(Exe(), Admin, CurrentPlatform.ExeExtraArgs, CurrentPlatform.StartingMethod))
+                _ = GeneralInvocableFuncs.ShowToast("error", Lang["Toast_StartingPlatformFailed", new { platform = CurrentPlatform.SafeName }], renderTo: "toastarea");
         }
         public static void RunShortcut(string s, string shortcutFolder = "", bool admin = false, string platform = "")
         {
@@ -277,7 +275,6 @@ namespace PolarWolves_Server.Data.Settings
             try
             {
                 proc.Start();
-                _ = GeneralInvocableFuncs.ShowToast("info", Lang["Status_StartingPlatform", new { platform = PlatformFuncs.RemoveShortcutExt(s) }], renderTo: "toastarea");
             }
             catch (Exception e)
             {
