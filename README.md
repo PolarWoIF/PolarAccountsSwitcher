@@ -4,6 +4,18 @@ Fast desktop app for switching game/platform accounts from one place.
 
 ![Program Preview](docs/images/program-preview.jpg)
 
+## Download
+
+- Latest release page: <https://github.com/PolarWoIF/PolarAccountsSwitcher/releases/latest>
+- Releases list: <https://github.com/PolarWoIF/PolarAccountsSwitcher/releases>
+
+Release assets include:
+
+- `Polar Account Switcher - Installer.exe`
+- `PolarWolves.7z`
+- `PolarWolves.zip`
+- `PolarWolves_and_CEF.7z`
+
 ## What This Repo Contains
 
 This repository is intentionally cleaned and kept minimal:
@@ -46,8 +58,14 @@ The full release packaging pipeline is driven by:
 
 This path creates the installer and release archives.
 
+## Automated Releases
+
+GitHub Actions workflow `.github/workflows/release.yml` can build and publish release assets.
+
+- Trigger by pushing a tag like `v2026.04.07`
+- Or run manually from **Actions -> Release Build & Publish**
+
 ## Notes
 
 - Repository default branch: `main`
 - GitHub Actions CI validates build on Windows
-

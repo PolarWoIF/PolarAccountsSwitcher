@@ -1,0 +1,116 @@
+name: Release Build & Publish
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+    inputs:
+      tag_name:
+        description: "Release tag (example: v2026.04.07)"
+        required: true
+        type: string
+      release_name:
+        description: "Release title"
+        required: false
+        default: ""
+        type: string
+      prerelease:
+        description: "Mark as prerelease"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: windows-latest
+    env:
+      SKIP_POSTBUILD_UPDATE: "true"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "9.0.x"
+
+      - name: Install NSIS and 7-Zip
+        shell: powershell
+        run: |
+          choco install nsis 7zip -y --no-progress
+
+      - name: Restore
+        run: dotnet restore .\PolarWolves-Client\PolarWolves-Client.csproj
+
+      - name: Build Release (x64)
+        run: dotnet build .\PolarWolves-Client\PolarWolves-Client.csproj -c Release -p:Platform=x64 --no-restore
+
+      - name: Ensure ZIP Asset Exists
+        shell: powershell
+        run: |
+          $releaseDir = Join-Path $env:GITHUB_WORKSPACE 'PolarWolves-Client\bin\x64\Release'
+          $zipPath = Join-Path $releaseDir 'PolarWolves.zip'
+          if (Test-Path $zipPath) {
+            Write-Host "ZIP asset already exists."
+            exit 0
+          }
+
+          $folderPath = Join-Path $releaseDir 'PolarWolves'
+          if (Test-Path $folderPath) {
+            Compress-Archive -Path "$folderPath\*" -DestinationPath $zipPath -Force
+            Write-Host "Created ZIP from folder: $zipPath"
+            exit 0
+          }
+
+          $sevenZipPath = Join-Path $releaseDir 'PolarWolves.7z'
+          if (-not (Test-Path $sevenZipPath)) {
+            throw "Neither PolarWolves.zip nor PolarWolves folder nor PolarWolves.7z was found in $releaseDir"
+          }
+
+          $tmpUnzip = Join-Path $releaseDir 'PolarWolvesUnzipped'
+          if (Test-Path $tmpUnzip) { Remove-Item -LiteralPath $tmpUnzip -Recurse -Force }
+          New-Item -ItemType Directory -Path $tmpUnzip | Out-Null
+          & 'C:\Program Files\7-Zip\7z.exe' x $sevenZipPath "-o$tmpUnzip" -y | Out-Null
+          Compress-Archive -Path "$tmpUnzip\*" -DestinationPath $zipPath -Force
+          Remove-Item -LiteralPath $tmpUnzip -Recurse -Force
+          Write-Host "Created ZIP from 7z: $zipPath"
+
+      - name: Resolve Release Metadata
+        id: meta
+        shell: powershell
+        run: |
+          if ("${{ github.event_name }}" -eq "workflow_dispatch") {
+            $tag = "${{ inputs.tag_name }}"
+            $name = "${{ inputs.release_name }}"
+            if ([string]::IsNullOrWhiteSpace($name)) { $name = "Release $tag" }
+            $pre = "${{ inputs.prerelease }}"
+          } else {
+            $tag = "${{ github.ref_name }}"
+            $name = "Release $tag"
+            $pre = "false"
+          }
+
+          "tag=$tag" | Out-File -FilePath $env:GITHUB_OUTPUT -Append -Encoding utf8
+          "name=$name" | Out-File -FilePath $env:GITHUB_OUTPUT -Append -Encoding utf8
+          "pre=$pre" | Out-File -FilePath $env:GITHUB_OUTPUT -Append -Encoding utf8
+
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.meta.outputs.tag }}
+          target_commitish: main
+          name: ${{ steps.meta.outputs.name }}
+          prerelease: ${{ steps.meta.outputs.pre }}
+          generate_release_notes: true
+          files: |
+            PolarWolves-Client/bin/x64/Release/Polar Account Switcher - Installer.exe
+            PolarWolves-Client/bin/x64/Release/PolarWolves.7z
+            PolarWolves-Client/bin/x64/Release/PolarWolves.zip
+            PolarWolves-Client/bin/x64/Release/PolarWolves_and_CEF.7z
+          if_no_files_found: error
