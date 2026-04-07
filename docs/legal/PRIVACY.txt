@@ -1,0 +1,15 @@
+Polar Account Switcher Privacy Notice
+====================================
+
+This repository does not include a hosted privacy policy page by default.
+
+If you distribute this app publicly, provide a privacy policy that clearly
+explains:
+
+- What telemetry or diagnostics are collected (if any)
+- What network endpoints are used
+- How update checks are performed
+- How users can disable optional data sharing
+
+You are responsible for ensuring your distributed build is compliant with
+local privacy regulations.

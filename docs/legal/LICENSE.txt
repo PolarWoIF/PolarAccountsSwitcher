@@ -1,0 +1,11 @@
+Polar Account Switcher License Notice
+====================================
+
+This project includes software and assets that remain under their original
+licenses and notices from the upstream codebase and dependencies.
+
+Before distributing production builds, review all third-party licenses in:
+
+- PolarWolves-Server/Additional Licenses.txt
+
+and confirm your intended usage/distribution complies with those licenses.
