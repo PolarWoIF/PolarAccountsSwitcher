@@ -4,7 +4,7 @@ set SkipSign=true
 set SkipCEF=false
 set SkipInstaller=false
 
-REM SkipSign true while no certificate. SignPath can help, but requires GitHub build action, like AppVeyor. See AppVeyor branch.
+REM SkipSign true while no certificate. SignPath can be wired into CI when a signing cert is available.
 REM SkipFEC and SkipInstaller should be false for full normal build.
 
 echo -----------------------------------

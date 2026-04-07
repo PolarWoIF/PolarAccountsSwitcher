@@ -534,7 +534,7 @@ namespace PolarWolves_Updater
                 proc.WaitForExit();
             }
 
-            // Download CEF files from polarwolves.co
+            // Download CEF files from the configured update endpoint
             SetStatusAndLog("Preparing to install Chrome Embedded Framework");
             SetStatus("Checking latest version number");
             var client = new WebClient();

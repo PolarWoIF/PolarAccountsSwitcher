@@ -1,0 +1,27 @@
+name: Build Validation
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "9.0.x"
+
+      - name: Restore
+        run: dotnet restore .\PolarWolves-Client\PolarWolves-Client.csproj
+
+      - name: Build (Release, x64, skip post-build packaging)
+        run: dotnet build .\PolarWolves-Client\PolarWolves-Client.csproj -c Release -p:Platform=x64 -p:SkipPolarPostBuild=true --no-restore
+

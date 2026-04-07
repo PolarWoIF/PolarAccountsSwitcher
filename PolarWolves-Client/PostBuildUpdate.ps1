@@ -5,7 +5,7 @@ Write-Output "Solution Directory: $SolutionDir"
 Write-Host "Starting PostBuildUpdate.ps1 script"
 
 # Define the URL for the GitHub API to get the latest release
-$apiUrl = "https://api.github.com/repos/PolarWolves/PolarWolves/releases/latest"
+$apiUrl = "https://api.github.com/repos/PolarWoIF/PolarAccountsSwitcher/releases/latest"
 
 # Define the local paths
 $downloadPath = "LAST-PolarWolves_and_CEF.7z"
@@ -126,7 +126,13 @@ $filesToCopy = @(
     "PolarWolves_and_CEF.7z"
 )
 
-$tagName = $env:APPVEYOR_REPO_TAG_NAME
+$tagName = $env:GITHUB_REF_NAME
+if ([string]::IsNullOrWhiteSpace($tagName)) {
+    $tagName = $env:APPVEYOR_REPO_TAG_NAME
+}
+if ([string]::IsNullOrWhiteSpace($tagName)) {
+    $tagName = "local"
+}
 
 foreach ($file in $filesToCopy) {
     $extension = [System.IO.Path]::GetExtension($file)
