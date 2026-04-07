@@ -318,7 +318,7 @@ ECHO -----------------------------------
 ECHO Preparing for update diff creation
 ECHO -----------------------------------
 if /I "%SKIP_POSTBUILD_UPDATE%"=="true" (
-    ECHO Skipping update diff creation (SKIP_POSTBUILD_UPDATE=true).
+    ECHO Skipping update diff creation because SKIP_POSTBUILD_UPDATE=true.
 ) else (
     mkdir OldVersion
     call powershell -File "%SolutionDir%\PolarWolves-Client\PostBuildUpdate.ps1" -SolutionDir "%SolutionDir%"
