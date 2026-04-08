@@ -20825,7 +20825,7 @@ Accounts inside it will return to All Accounts.`) ||
   }, [o, ue, ownedGames]);
   return T.jsxs("div", {
     className:
-      "h-screen bg-[#05080d] text-white font-sans overflow-hidden flex flex-col relative select-none rtl",
+      "polar-app-shell h-screen bg-[#05080d] text-white font-sans overflow-hidden flex flex-col relative select-none rtl",
     dir: "rtl",
     children: [
       T.jsx("div", {
@@ -20854,13 +20854,13 @@ Accounts inside it will return to All Accounts.`) ||
       }),
       T.jsxs("header", {
         className:
-          "relative h-20 flex items-center justify-between px-12 z-10 bg-black/60 backdrop-blur-2xl border-b border-white/5",
+          "polar-topbar relative h-20 flex items-center justify-between px-12 z-10 bg-black/60 backdrop-blur-2xl border-b border-white/5",
         children: [
           a === "accounts" &&
             T.jsxs("button", {
               onClick: () => l("platforms"),
               className:
-                "absolute left-12 top-1/2 -translate-y-1/2 flex items-center gap-3 text-cyan-400 hover:text-cyan-300 transition-all font-black text-[10px] tracking-[0.3em] group z-20",
+                "polar-return-button absolute left-12 top-1/2 -translate-y-1/2 flex items-center gap-3 text-cyan-400 hover:text-cyan-300 transition-all font-black text-[10px] tracking-[0.3em] group z-20",
               children: [
                 T.jsx(Ip, {
                   size: 18,
@@ -20871,7 +20871,7 @@ Accounts inside it will return to All Accounts.`) ||
             }),
           T.jsxs("div", {
             className:
-              "absolute left-1/2 -translate-x-1/2 flex flex-col items-center group cursor-default",
+              "polar-brand absolute left-1/2 -translate-x-1/2 flex flex-col items-center group cursor-default",
             children: [
               T.jsx("div", {
                 className:
@@ -20889,7 +20889,7 @@ Accounts inside it will return to All Accounts.`) ||
       }),
       T.jsx("main", {
         className:
-          "flex-1 flex flex-col items-center justify-center px-16 z-10 overflow-y-auto custom-scrollbar",
+          "polar-main flex-1 flex flex-col items-center justify-center px-16 z-10 overflow-y-auto custom-scrollbar",
         children: T.jsx(ca, {
           mode: "wait",
           children:
@@ -20901,12 +20901,12 @@ Accounts inside it will return to All Accounts.`) ||
                     initial: "hidden",
                     animate: "visible",
                     exit: { opacity: 0, scale: 0.95, filter: "blur(10px)" },
-                    className: "w-full max-w-7xl py-12 space-y-12",
+                    className: "polar-platforms-page w-full max-w-7xl py-12 space-y-12",
                     children: [
                       T.jsxs(Jt.div, {
                         variants: Wi,
                         className:
-                          "relative bg-gradient-to-br from-[#0d1520]/80 to-[#060b13]/80 border border-white/5 p-12 rounded-[4rem] backdrop-blur-3xl shadow-[0_40px_80px_rgba(0,0,0,0.6)] overflow-hidden group",
+                          "polar-hero relative bg-gradient-to-br from-[#0d1520]/80 to-[#060b13]/80 border border-white/5 p-12 rounded-[4rem] backdrop-blur-3xl shadow-[0_40px_80px_rgba(0,0,0,0.6)] overflow-hidden group",
                         children: [
                           T.jsx("div", {
                             className:
@@ -20930,7 +20930,7 @@ Accounts inside it will return to All Accounts.`) ||
                                 }),
                                 T.jsx("h2", {
                                   className:
-                                    "text-6xl font-black tracking-normal bg-gradient-to-b from-white via-white to-white/20 bg-clip-text text-transparent uppercase",
+                                    "polar-hero-title text-6xl font-black tracking-normal bg-gradient-to-b from-white via-white to-white/20 bg-clip-text text-transparent uppercase",
                                   dir: "ltr",
                                   style: {
                                     unicodeBidi: "isolate",
@@ -20956,7 +20956,7 @@ Accounts inside it will return to All Accounts.`) ||
                       T.jsx(Jt.div, {
                         variants: Pi,
                         className:
-                          "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-10",
+                          "polar-platform-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-10",
                         children: (platformManagerOpen ? Qi : $o).map((E) =>
                           T.jsxs(
                             Jt.button,
@@ -20978,7 +20978,7 @@ Accounts inside it will return to All Accounts.`) ||
                               onDragEnd: () => !platformManagerOpen && Fa(),
                               onClick: () =>
                                 platformManagerOpen ? tu(E.id) : yn(E.id),
-                              className: `relative aspect-[4/5.5] bg-gradient-to-br from-[#121b26] to-[#080d14] border rounded-[3.5rem] p-12 flex flex-col items-center justify-center gap-12 group overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.4)] ${platformManagerOpen ? (Gt.includes(E.id) ? "border-cyan-400/60 cursor-pointer" : "border-white/5 opacity-35 cursor-pointer") : Un === E.id ? "border-cyan-400/60 opacity-70 cursor-grabbing" : "border-white/5 cursor-grab"}`,
+                              className: `polar-platform-card relative aspect-[4/5.5] bg-gradient-to-br from-[#121b26] to-[#080d14] border rounded-[3.5rem] p-12 flex flex-col items-center justify-center gap-12 group overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.4)] ${platformManagerOpen ? (Gt.includes(E.id) ? "border-cyan-400/60 cursor-pointer" : "border-white/5 opacity-35 cursor-pointer") : Un === E.id ? "border-cyan-400/60 opacity-70 cursor-grabbing" : "border-white/5 cursor-grab"}`,
                               children: [
                                 T.jsx("div", {
                                   className:
@@ -21055,11 +21055,11 @@ Accounts inside it will return to All Accounts.`) ||
                     initial: { opacity: 0, scale: 0.98 },
                     animate: { opacity: 1, scale: 1 },
                     exit: { opacity: 0, scale: 0.98 },
-                    className: "w-full h-full flex flex-col gap-6 py-6",
+                    className: "polar-accounts-page w-full h-full flex flex-col gap-6 py-6",
                     children: [
                       T.jsxs("div", {
                         className:
-                          "flex items-center justify-between gap-4 bg-[#0d1520]/40 border border-white/5 p-4 rounded-2xl backdrop-blur-xl",
+                          "polar-account-toolbar flex items-center justify-between gap-4 bg-[#0d1520]/40 border border-white/5 p-4 rounded-2xl backdrop-blur-xl",
                         children: [
                           T.jsxs("div", {
                             className: "flex items-center gap-3 flex-wrap",
@@ -21136,7 +21136,7 @@ Accounts inside it will return to All Accounts.`) ||
                           }),
                           o === "steam"
                             ? T.jsxs("div", {
-                                className: "flex items-center gap-3",
+                                className: "polar-account-action-buttons flex items-center gap-3",
                                 children: [
                                   xt
                                     ? T.jsx("span", {
@@ -21186,7 +21186,7 @@ Accounts inside it will return to All Accounts.`) ||
                               })
                             : T.jsx("div", {
                                 className:
-                                  "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6",
+                                  "polar-account-grid grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6",
                                 children: $e.map((E, O) => {
                                   const K = E.id === x,
                                     $ = Ji(E.name),
@@ -21259,7 +21259,7 @@ Accounts inside it will return to All Accounts.`) ||
                       }),
                       T.jsxs("div", {
                         className:
-                          "flex items-center justify-between bg-[#0d1520]/40 border border-white/5 p-4 rounded-2xl backdrop-blur-xl mt-auto",
+                          "polar-account-actions flex items-center justify-between bg-[#0d1520]/40 border border-white/5 p-4 rounded-2xl backdrop-blur-xl mt-auto",
                         children: [
                           T.jsx("div", {
                             className:
@@ -21278,7 +21278,7 @@ Accounts inside it will return to All Accounts.`) ||
                             }),
                           }),
                           T.jsxs("div", {
-                            className: "flex items-center gap-3",
+                            className: "polar-account-action-buttons flex items-center gap-3",
                             children: [
                               T.jsxs("button", {
                                 onClick: () => {
@@ -21353,11 +21353,11 @@ Accounts inside it will return to All Accounts.`) ||
         }),
       }),
       T.jsxs("footer", {
-        className: "z-20 bg-black/80 backdrop-blur-3xl border-t border-white/5",
+        className: "polar-footer z-20 bg-black/80 backdrop-blur-3xl border-t border-white/5",
         children: [
           T.jsx("div", {
             className:
-              "h-10 bg-cyan-500/5 border-b border-white/5 flex items-center overflow-hidden whitespace-nowrap",
+              "polar-ticker h-10 bg-cyan-500/5 border-b border-white/5 flex items-center overflow-hidden whitespace-nowrap",
             children: T.jsx("div", {
               className: "flex items-center gap-12 animate-ticker px-12",
               children: [1, 2, 3].map((E) =>
@@ -21401,14 +21401,14 @@ Accounts inside it will return to All Accounts.`) ||
             }),
           }),
           T.jsxs("div", {
-            className: "h-28 px-16 flex items-center justify-between",
+            className: "polar-footer-nav h-28 px-16 flex items-center justify-between",
             children: [
               T.jsx("div", { className: "flex items-center gap-16" }),
               T.jsxs("div", {
-                className: "flex items-center gap-8",
+                className: "polar-footer-actions flex items-center gap-8",
                 children: [
                   T.jsxs("div", {
-                    className: "flex items-center gap-4 mr-8",
+                    className: "polar-footer-icons flex items-center gap-4 mr-8",
                     children: [
                       T.jsx("button", {
                         onClick: nu,
@@ -21447,7 +21447,7 @@ Accounts inside it will return to All Accounts.`) ||
                         l("platforms");
                     },
                     className:
-                      "relative group flex items-center gap-8 px-12 py-6 bg-cyan-500 text-black rounded-[2rem] overflow-hidden transition-all active:scale-95 shadow-[0_0_50px_rgba(6,182,212,0.3)]",
+                      "polar-manage-button relative group flex items-center gap-8 px-12 py-6 bg-cyan-500 text-black rounded-[2rem] overflow-hidden transition-all active:scale-95 shadow-[0_0_50px_rgba(6,182,212,0.3)]",
                     children: [
                       T.jsx("div", {
                         className:
@@ -22246,3 +22246,5 @@ Accounts inside it will return to All Accounts.`) ||
 hv.createRoot(document.getElementById("root")).render(
   T.jsx(U.StrictMode, { children: T.jsx(Y4, {}) }),
 );
+
+

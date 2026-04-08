@@ -27,6 +27,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Interop;
+using System.Windows.Media;
 using CefSharp;
 using CefSharp.Wpf;
 using Microsoft.Web.WebView2.Core;
@@ -49,6 +50,33 @@ namespace PolarWolves_Client
         private static readonly Thread Server = new(RunServer);
         private static string _address = "";
         private readonly string _mainBrowser = AppSettings.ActiveBrowser; // <CEF/WebView>
+        private const int WmNcHitTest = 0x0084;
+        private const int HtLeft = 10;
+        private const int HtRight = 11;
+        private const int HtTop = 12;
+        private const int HtTopLeft = 13;
+        private const int HtTopRight = 14;
+        private const int HtBottom = 15;
+        private const int HtBottomLeft = 16;
+        private const int HtBottomRight = 17;
+        private const int ResizeBorderPixels = 8;
+        private const int DwmwaUseImmersiveDarkModeBefore20H1 = 19;
+        private const int DwmwaUseImmersiveDarkMode = 20;
+        private const int DwmwaBorderColor = 34;
+        private const int DwmwaCaptionColor = 35;
+        private const int DwmwaTextColor = 36;
+        private const uint DwmColorNone = 0xFFFFFFFE;
+        // DWM uses COLORREF (0x00BBGGRR), so #05080D becomes 0x000D0805.
+        private const uint ShellFrameColor = 0x000D0805;
+        private const uint ShellFrameTextColor = 0x00FFFFFF;
+        private static readonly SolidColorBrush ShellBackground = new(System.Windows.Media.Color.FromRgb(5, 8, 13));
+        private static readonly uint ShellBackgroundCef = Cef.ColorSetARGB(255, 5, 8, 13);
+
+        [DllImport("dwmapi.dll")]
+        private static extern int DwmSetWindowAttribute(IntPtr hwnd, int dwAttribute, ref int pvAttribute, int cbAttribute);
+
+        [DllImport("dwmapi.dll")]
+        private static extern int DwmSetWindowAttribute(IntPtr hwnd, int dwAttribute, ref uint pvAttribute, int cbAttribute);
 
         private static void RunServer()
         {
@@ -120,11 +148,13 @@ namespace PolarWolves_Client
                 _cefView.Load("http://localhost:" + AppSettings.ServerPort + "/");
             }
 
-            MainBackground.Background = App.GetStylesheetColor("headerbarBackground", "#253340");
+            Background = ShellBackground;
+            MainBackground.Background = ShellBackground;
 
             Width = AppSettings.WindowSize.X;
             Height = AppSettings.WindowSize.Y;
-            AllowsTransparency = AppSettings.AllowTransparency;
+            // Keep the shell opaque so resizing never exposes the desktop through the WebView.
+            AllowsTransparency = false;
             StateChanged += WindowStateChange;
             // Each window in the program would have its own size. IE Resize for Steam, and more.
 
@@ -136,6 +166,87 @@ namespace PolarWolves_Client
 
         private ChromiumWebBrowser _cefView;
         private WebView2 _mView2;
+
+        protected override void OnSourceInitialized(EventArgs e)
+        {
+            base.OnSourceInitialized(e);
+            var hwnd = new WindowInteropHelper(this).Handle;
+            ApplyDarkWindowFrame(hwnd);
+            var source = HwndSource.FromHwnd(hwnd);
+            if (source?.CompositionTarget is not null)
+                source.CompositionTarget.BackgroundColor = System.Windows.Media.Color.FromRgb(5, 8, 13);
+            source?.AddHook(WindowProc);
+        }
+
+        private static void ApplyDarkWindowFrame(IntPtr hwnd)
+        {
+            if (hwnd == IntPtr.Zero) return;
+
+            TrySetDwmInt(hwnd, DwmwaUseImmersiveDarkMode, 1);
+            TrySetDwmInt(hwnd, DwmwaUseImmersiveDarkModeBefore20H1, 1);
+            TrySetDwmColor(hwnd, DwmwaBorderColor, DwmColorNone);
+            TrySetDwmColor(hwnd, DwmwaCaptionColor, ShellFrameColor);
+            TrySetDwmColor(hwnd, DwmwaTextColor, ShellFrameTextColor);
+        }
+
+        private static void TrySetDwmInt(IntPtr hwnd, int attribute, int value)
+        {
+            try
+            {
+                _ = DwmSetWindowAttribute(hwnd, attribute, ref value, Marshal.SizeOf<int>());
+            }
+            catch
+            {
+                // Older Windows builds may not support every DWM attribute.
+            }
+        }
+
+        private static void TrySetDwmColor(IntPtr hwnd, int attribute, uint color)
+        {
+            try
+            {
+                _ = DwmSetWindowAttribute(hwnd, attribute, ref color, Marshal.SizeOf<uint>());
+            }
+            catch
+            {
+                // Keep startup safe if the OS ignores newer frame color APIs.
+            }
+        }
+
+        private IntPtr WindowProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+        {
+            if (msg != WmNcHitTest || WindowState == WindowState.Maximized || ResizeMode == ResizeMode.NoResize)
+                return IntPtr.Zero;
+
+            var raw = lParam.ToInt64();
+            var screenPoint = new System.Windows.Point((short)(raw & 0xFFFF), (short)((raw >> 16) & 0xFFFF));
+            var point = PointFromScreen(screenPoint);
+            var dpi = VisualTreeHelper.GetDpi(this);
+            var border = ResizeBorderPixels / Math.Max(dpi.DpiScaleX, dpi.DpiScaleY);
+
+            var left = point.X >= 0 && point.X <= border;
+            var right = point.X <= ActualWidth && point.X >= ActualWidth - border;
+            var top = point.Y >= 0 && point.Y <= border;
+            var bottom = point.Y <= ActualHeight && point.Y >= ActualHeight - border;
+
+            if (top && left) return HitTestResult(HtTopLeft, ref handled);
+            if (top && right) return HitTestResult(HtTopRight, ref handled);
+            if (bottom && left) return HitTestResult(HtBottomLeft, ref handled);
+            if (bottom && right) return HitTestResult(HtBottomRight, ref handled);
+            if (left) return HitTestResult(HtLeft, ref handled);
+            if (right) return HitTestResult(HtRight, ref handled);
+            if (top) return HitTestResult(HtTop, ref handled);
+            if (bottom) return HitTestResult(HtBottom, ref handled);
+
+            return IntPtr.Zero;
+        }
+
+        private static IntPtr HitTestResult(int hitTest, ref bool handled)
+        {
+            handled = true;
+            return new IntPtr(hitTest);
+        }
+
         private void BrowserInit()
         {
             switch (_mainBrowser)
@@ -150,6 +261,12 @@ namespace PolarWolves_Client
 
                     InitializeChromium();
                     _cefView = new ChromiumWebBrowser();
+                    _cefView.Background = ShellBackground;
+                    _cefView.BrowserSettings = new BrowserSettings
+                    {
+                        BackgroundColor = ShellBackgroundCef,
+                        WindowlessFrameRate = 60
+                    };
                     _cefView.JavascriptMessageReceived += CefView_OnJavascriptMessageReceived;
                     _cefView.AddressChanged += CefViewOnAddressChanged;
                     _cefView.PreviewMouseUp += MainBackgroundOnPreviewMouseUp;
@@ -216,8 +333,16 @@ namespace PolarWolves_Client
 
         private void AddBrowser()
         {
-            if (_mainBrowser == "WebView") MainBackground.Children.Add(_mView2);
-            else if (_mainBrowser == "CEF") MainBackground.Children.Add(_cefView);
+            if (_mainBrowser == "WebView")
+            {
+                _mView2.DefaultBackgroundColor = System.Drawing.Color.FromArgb(255, 5, 8, 13);
+                MainBackground.Children.Add(_mView2);
+            }
+            else if (_mainBrowser == "CEF")
+            {
+                _cefView.Background = ShellBackground;
+                MainBackground.Children.Add(_cefView);
+            }
         }
 
         #region CEF
@@ -230,7 +355,8 @@ namespace PolarWolves_Client
                 {
                     CachePath = Path.Join(Globals.UserDataFolder, "CEF\\Cache"),
                     UserAgent = "PolarWolves-CEF 1.0",
-                    WindowlessRenderingEnabled = true
+                    WindowlessRenderingEnabled = true,
+                    BackgroundColor = ShellBackgroundCef
                 };
                 settings.CefCommandLineArgs.Add("-off-screen-rendering-enabled", "0");
                 settings.CefCommandLineArgs.Add("--off-screen-frame-rate", "60");
@@ -401,7 +527,11 @@ namespace PolarWolves_Client
             {
                 var env = await CoreWebView2Environment.CreateAsync(null, Globals.UserDataFolder);
                 await _mView2.EnsureCoreWebView2Async(env);
+                _mView2.DefaultBackgroundColor = System.Drawing.Color.FromArgb(255, 5, 8, 13);
                 _mView2.CoreWebView2.Settings.UserAgent = "PolarWolves 1.0";
+                _ = await _mView2.CoreWebView2.CallDevToolsProtocolMethodAsync(
+                    "Emulation.setDefaultBackgroundColorOverride",
+                    "{\"color\":{\"r\":5,\"g\":8,\"b\":13,\"a\":1}}");
 
                 _mView2.Source = new Uri($"http://localhost:{AppSettings.ServerPort}/{App.StartPage}");
                 MViewAddForwarders();
@@ -495,7 +625,23 @@ namespace PolarWolves_Client
         {
             // Reset refresh counter on successful navigation
             if (e.IsSuccess)
+            {
                 _refreshFixAttempts = 0;
+                _ = _mView2.CoreWebView2.ExecuteScriptAsync("""
+                    (() => {
+                      const dark = '#05080d';
+                      document.documentElement.style.background = dark;
+                      document.documentElement.style.backgroundColor = dark;
+                      document.body.style.background = dark;
+                      document.body.style.backgroundColor = dark;
+                      const root = document.getElementById('root');
+                      if (root) {
+                        root.style.background = dark;
+                        root.style.backgroundColor = dark;
+                      }
+                    })();
+                    """);
+            }
 
             if (!_firstLoad) return;
             _mView2.Visibility = Visibility.Hidden;

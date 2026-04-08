@@ -18,14 +18,18 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.-->
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="Polar Account Switcher" Height="450" Width="800"
+        Title="Polar Account Switcher" Height="650" Width="1100"
         MinHeight="450" MinWidth="800"
+        Background="#05080D"
+        Opacity="1"
+        UseLayoutRounding="True"
+        SnapsToDevicePixels="True"
         WindowStyle="None"
-        AllowsTransparency="True"
-        ResizeMode="CanResizeWithGrip"
+        AllowsTransparency="False"
+        ResizeMode="CanResize"
 		>
     <!--<Grid x:Name="MainBackground" Background="#28293A">-->
-    <Grid x:Name="MainBackground">
+    <Grid x:Name="MainBackground" Background="#05080D">
         <!--<wpf1:ChromiumWebBrowser x:Name="CefView" IsBrowserInitializedChanged="CefView_OnIsBrowserInitializedChanged" JavascriptMessageReceived="CefView_OnJavascriptMessageReceived" Visibility="Hidden"/>
         <wpf:WebView2 x:Name="MView2" Initialized="MView2_OnInitialised" NavigationCompleted="MView2_OnNavigationCompleted" Visibility="Hidden"/>-->
     </Grid>
