@@ -134,12 +134,19 @@ namespace PolarWolves_Globals
 
         public static void ClearWebCache()
         {
-            var cache = Path.Join(UserDataFolder, "EBWebView\\Default\\Cache");
-            var codeCache = Path.Join(UserDataFolder, "EBWebView\\Default\\Code Cache");
+            var cacheFolders = new[]
+            {
+                Path.Join(UserDataFolder, "EBWebView\\Default\\Cache"),
+                Path.Join(UserDataFolder, "EBWebView\\Default\\Code Cache"),
+                Path.Join(UserDataFolder, "EBWebView\\Default\\Service Worker"),
+                Path.Join(UserDataFolder, "CEF\\Cache"),
+                Path.Join(UserDataFolder, "CEF\\Code Cache")
+            };
+
             try
             {
-                 RecursiveDelete(cache, true);
-                 RecursiveDelete(codeCache, true);
+                foreach (var cache in cacheFolders)
+                    RecursiveDelete(cache, true);
             }
             catch (Exception)
             {

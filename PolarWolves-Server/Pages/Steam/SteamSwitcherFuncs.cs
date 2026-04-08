@@ -277,8 +277,6 @@ namespace PolarWolves_Server.Pages.Steam
                 return;
             }
 
-            _ = GeneralInvocableFuncs.ShowToast("info", Lang["Toast_Steam_DownloadingAppIds"], renderTo: "toastarea");
-
             try
             {
                 // Save to file
@@ -296,7 +294,6 @@ namespace PolarWolves_Server.Pages.Steam
                 Globals.DebugWriteLine($@"Error downloading Steam app list: {e}");
             }
 
-            _ = GeneralInvocableFuncs.ShowToast("info", Lang["Toast_Steam_DownloadingAppIdsComplete"], renderTo: "toastarea");
         }
 
         /// <summary>

@@ -171,9 +171,8 @@ namespace PolarWolves_Client
                 Directory.Move("newUpdater", "updater");
             }
 
-            //// Clear WebView2 cache
-            //// This is disabled for now in hopes of fixing cache errors in console, causing it to launch with some issues.
-            //Globals.ClearWebCache();
+            // Make sure users never get stale UI bundles from an older install.
+            Globals.ClearWebCache();
 
             // Show window (Because no command line commands were parsed)
             try
