@@ -20293,8 +20293,16 @@ function Y4() {
     Fa = () => {
       ki(null);
     },
+    launchPlatformCard = (E) => {
+      E &&
+        E !== "steam" &&
+        fetch(`/api/platform-launchers/${encodeURIComponent(E)}`, {
+          method: "POST",
+          cache: "no-store",
+        }).catch(() => {});
+    },
     yn = (E) => {
-      u(E), C(null), l("accounts");
+      E === "steam" ? (u(E), C(null), l("accounts")) : launchPlatformCard(E);
     },
     Pa = (E) => {
       C(E);
