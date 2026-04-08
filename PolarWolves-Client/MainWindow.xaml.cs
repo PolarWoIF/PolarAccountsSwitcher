@@ -49,7 +49,7 @@ namespace PolarWolves_Client
     {
         private static readonly Thread Server = new(RunServer);
         private static string _address = "";
-        private readonly string _mainBrowser = AppSettings.ActiveBrowser; // <CEF/WebView>
+        private string _mainBrowser = "WebView"; // <CEF/WebView>
         private const int WmNcHitTest = 0x0084;
         private const int HtLeft = 10;
         private const int HtRight = 11;
@@ -112,7 +112,10 @@ namespace PolarWolves_Client
             Globals.CreateDataFolder(false);
             if (!Directory.Exists(Globals.UserDataFolder))
                 Directory.CreateDirectory(Globals.UserDataFolder);
-            Directory.SetCurrentDirectory(Globals.UserDataFolder);
+            // Keep the working directory on the install folder so browser runtimes can load
+            // their native files from the packaged layout even on first launch.
+            Directory.SetCurrentDirectory(Globals.AppDataFolder);
+            _mainBrowser = ResolvePreferredBrowser();
 
             if (Directory.Exists(Path.Join(Globals.AppDataFolder, "wwwroot")))
             {
@@ -131,26 +134,14 @@ namespace PolarWolves_Client
             Server.IsBackground = true;
             Server.Start();
 
-            // Initialize correct browser
+            // Initialize the selected browser without touching optional runtimes from the wrong code path.
             BrowserInit();
 
             // Initialise and connect to web server above
             InitializeComponent();
             AddBrowser();
 
-            if (_mainBrowser == "WebView")
-            {
-                // Attempt to fix window showing as blank.
-                // See https://github.com/MicrosoftEdge/WebView2Feedback/issues/1077#issuecomment-856222593593
-                _mView2.Visibility = Visibility.Hidden;
-                _mView2.Visibility = Visibility.Visible;
-            }
-            else
-            {
-                _cefView.BrowserSettings.WindowlessFrameRate = 60;
-                _cefView.Visibility = Visibility.Visible;
-                _cefView.Load("http://localhost:" + AppSettings.ServerPort + "/");
-            }
+            FinishBrowserStartup();
 
             Background = ShellBackground;
             MainBackground.Background = ShellBackground;
@@ -168,8 +159,9 @@ namespace PolarWolves_Client
             Top = (SystemParameters.PrimaryScreenHeight / 2) - (Height / 2);
         }
 
-        private ChromiumWebBrowser _cefView;
+        private object _cefView;
         private WebView2 _mView2;
+        private ChromiumWebBrowser CefView => (ChromiumWebBrowser)_cefView;
 
         protected override void OnSourceInitialized(EventArgs e)
         {
@@ -251,33 +243,109 @@ namespace PolarWolves_Client
             return new IntPtr(hitTest);
         }
 
+        private static bool HasCefRuntimeFiles()
+        {
+            string[] cefFiles =
+            {
+                "libcef.dll",
+                "icudtl.dat",
+                "resources.pak",
+                "libGLESv2.dll",
+                "d3dcompiler_47.dll",
+                "vk_swiftshader.dll",
+                "chrome_elf.dll",
+                "CefSharp.BrowserSubprocess.Core.dll"
+            };
+
+            foreach (var cefFile in cefFiles)
+            {
+                var path = Path.Join(Globals.AppDataFolder, "runtimes\\win-x64\\native\\", cefFile);
+                if (!File.Exists(path) || new FileInfo(path).Length <= 10)
+                    return false;
+            }
+
+            return true;
+        }
+
+        private static string ResolvePreferredBrowser()
+        {
+            var preferredBrowser = AppSettings.ActiveBrowser;
+            if (string.Equals(preferredBrowser, "CEF", StringComparison.OrdinalIgnoreCase) && !HasCefRuntimeFiles())
+            {
+                Globals.WriteToLog("CEF was selected but runtime files were missing. Falling back to WebView.");
+                AppSettings.ActiveBrowser = "WebView";
+                AppSettings.SaveSettings();
+                return "WebView";
+            }
+
+            if (string.Equals(preferredBrowser, "CEF", StringComparison.OrdinalIgnoreCase))
+                return "CEF";
+
+            if (!string.Equals(preferredBrowser, "WebView", StringComparison.OrdinalIgnoreCase))
+            {
+                AppSettings.ActiveBrowser = "WebView";
+                AppSettings.SaveSettings();
+            }
+
+            return "WebView";
+        }
+
         private void BrowserInit()
         {
             switch (_mainBrowser)
             {
                 case "WebView":
-                    _mView2 = new WebView2();
-                    _mView2.Initialized += MView2_OnInitialised;
-                    _mView2.NavigationCompleted += MView2_OnNavigationCompleted;
+                    InitialiseWebViewBrowser();
                     break;
                 case "CEF":
-                    CheckCefFiles();
-
-                    InitializeChromium();
-                    _cefView = new ChromiumWebBrowser();
-                    _cefView.Background = ShellBackground;
-                    _cefView.BrowserSettings = new BrowserSettings
-                    {
-                        BackgroundColor = ShellBackgroundCef,
-                        WindowlessFrameRate = 60
-                    };
-                    _cefView.JavascriptMessageReceived += CefView_OnJavascriptMessageReceived;
-                    _cefView.AddressChanged += CefViewOnAddressChanged;
-                    _cefView.PreviewMouseUp += MainBackgroundOnPreviewMouseUp;
-                    _cefView.ConsoleMessage += CefViewOnConsoleMessage;
-                    _cefView.KeyboardHandler = new CefKeyboardHandler();
-                    _cefView.MenuHandler = new CefMenuHandler();
+                    InitialiseCefBrowser();
                     break;
+            }
+        }
+
+        private void InitialiseWebViewBrowser()
+        {
+            _mView2 = new WebView2();
+            _mView2.Initialized += MView2_OnInitialised;
+            _mView2.NavigationCompleted += MView2_OnNavigationCompleted;
+        }
+
+        private void InitialiseCefBrowser()
+        {
+            CheckCefFiles();
+
+            InitializeChromium();
+            _cefView = new ChromiumWebBrowser();
+            CefView.Background = ShellBackground;
+            CefView.BrowserSettings = new BrowserSettings
+            {
+                BackgroundColor = ShellBackgroundCef,
+                WindowlessFrameRate = 60
+            };
+            CefView.JavascriptMessageReceived += CefView_OnJavascriptMessageReceived;
+            CefView.AddressChanged += CefViewOnAddressChanged;
+            CefView.PreviewMouseUp += MainBackgroundOnPreviewMouseUp;
+            CefView.ConsoleMessage += CefViewOnConsoleMessage;
+            CefView.KeyboardHandler = new CefKeyboardHandler();
+            CefView.MenuHandler = new CefMenuHandler();
+        }
+
+        private void FinishBrowserStartup()
+        {
+            if (_mainBrowser == "WebView")
+            {
+                // Attempt to fix window showing as blank.
+                // See https://github.com/MicrosoftEdge/WebView2Feedback/issues/1077#issuecomment-856222593593
+                _mView2.Visibility = Visibility.Hidden;
+                _mView2.Visibility = Visibility.Visible;
+                return;
+            }
+
+            if (_mainBrowser == "CEF")
+            {
+                CefView.BrowserSettings.WindowlessFrameRate = 60;
+                CefView.Visibility = Visibility.Visible;
+                CefView.Load("http://localhost:" + AppSettings.ServerPort + "/");
             }
         }
 
@@ -302,7 +370,7 @@ namespace PolarWolves_Client
                 _refreshFixAttempts++;
                 if (_refreshFixAttempts < 5)
                 {
-                    _cefView.Reload();
+                    CefView.Reload();
                 }
                 else
                 {
@@ -332,21 +400,31 @@ namespace PolarWolves_Client
             if (e.ChangedButton != MouseButton.XButton1 && e.ChangedButton != MouseButton.XButton2) return;
             // Back
             e.Handled = true;
-            _cefView.ExecuteScriptAsync("btnBack_Click()");
+            CefView.ExecuteScriptAsync("btnBack_Click()");
         }
 
         private void AddBrowser()
         {
             if (_mainBrowser == "WebView")
             {
-                _mView2.DefaultBackgroundColor = System.Drawing.Color.FromArgb(255, 5, 8, 13);
-                MainBackground.Children.Add(_mView2);
+                AddWebViewBrowser();
             }
             else if (_mainBrowser == "CEF")
             {
-                _cefView.Background = ShellBackground;
-                MainBackground.Children.Add(_cefView);
+                AddCefBrowser();
             }
+        }
+
+        private void AddWebViewBrowser()
+        {
+            _mView2.DefaultBackgroundColor = System.Drawing.Color.FromArgb(255, 5, 8, 13);
+            MainBackground.Children.Add(_mView2);
+        }
+
+        private void AddCefBrowser()
+        {
+            CefView.Background = ShellBackground;
+            MainBackground.Children.Add(CefView);
         }
 
         #region CEF
@@ -372,22 +450,16 @@ namespace PolarWolves_Client
                 //CefView.FrameLoadEnd += OnFrameLoadEnd;
             } catch (Exception ex) {
                 Globals.WriteToLog(ex);
-                // Give warning, and open Updater with downloadCef.
-                var result = MessageBox.Show("CEF (Chrome Embedded Framework) failed to load. Do you want to use WebView2 instead? (Less compatibility, more performance)\nChoosing No will verify & update PolarWolves.\n\nIf this issue persists, open Discord: https://discord.gg/PLR.\r\n", "Missing/Outdated/Broken files!", MessageBoxButton.YesNo, MessageBoxImage.Error);
-                if (result == MessageBoxResult.Yes)
-                {
-                    AppSettings.ActiveBrowser = "WebView";
-                    AppSettings.SaveSettings();
-                    Restart();
-                }
-                else
-                {
-                    if (AppSettings.OfflineMode)
-                        _ = MessageBox.Show("You are in offline mode, this feature cannot be used.", "Offline Mode", MessageBoxButton.OK, MessageBoxImage.Error);
-                    else
-                        AppSettings.AutoStartUpdaterAsAdmin("verify");
-                    Environment.Exit(1);
-                }
+                // Fresh installs should recover automatically instead of sending users to the updater.
+                AppSettings.ActiveBrowser = "WebView";
+                AppSettings.SaveSettings();
+                _ = MessageBox.Show(
+                    "CEF failed to load. Polar Account Switcher will switch to WebView2 automatically.",
+                    "CEF fallback",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Information);
+                Restart();
+                Environment.Exit(1);
             }
         }
 
@@ -396,25 +468,13 @@ namespace PolarWolves_Client
         /// </summary>
         private static void CheckCefFiles()
         {
-            string[] cefFiles = { "libcef.dll", "icudtl.dat", "resources.pak", "libGLESv2.dll", "d3dcompiler_47.dll", "vk_swiftshader.dll", "chrome_elf.dll", "CefSharp.BrowserSubprocess.Core.dll" };
-            foreach (var cefFile in cefFiles)
-            {
-                var path = Path.Join(Globals.AppDataFolder, "runtimes\\win-x64\\native\\", cefFile);
-                if (File.Exists(path) && new FileInfo(path).Length > 10) continue;
+            if (HasCefRuntimeFiles()) return;
 
-                var result = MessageBox.Show("CEF files not found. Download? (No reverts to WebView2, which requires WebView2 Runtime to be installed)", "Required runtime not found!", MessageBoxButton.YesNo, MessageBoxImage.Error);
-                if (result == MessageBoxResult.Yes)
-                {
-                    AppSettings.AutoStartUpdaterAsAdmin("downloadCEF");
-                    Environment.Exit(1);
-                }
-                else
-                {
-                    AppSettings.ActiveBrowser = "WebView";
-                    AppSettings.SaveSettings();
-                    Restart();
-                }
-            }
+            Globals.WriteToLog("CEF files were missing at startup. Falling back to WebView.");
+            AppSettings.ActiveBrowser = "WebView";
+            AppSettings.SaveSettings();
+            Restart();
+            Environment.Exit(1);
         }
 
         private void CefView_OnJavascriptMessageReceived(object? sender, JavascriptMessageReceivedEventArgs e)
@@ -752,8 +812,15 @@ namespace PolarWolves_Client
                 WindowState.Normal => "remove",
                 _ => ""
             };
-            if (_mainBrowser == "WebView") _ = _mView2.ExecuteScriptAsync("document.body.classList." + state + "('maximised')");
-            else if (_mainBrowser == "CEF") _cefView.ExecuteScriptAsync("document.body.classList." + state + "('maximised')");
+            if (_mainBrowser == "WebView")
+                _ = _mView2.ExecuteScriptAsync("document.body.classList." + state + "('maximised')");
+            else if (_mainBrowser == "CEF")
+                UpdateCefWindowState(state);
+        }
+
+        private void UpdateCefWindowState(string state)
+        {
+            CefView.ExecuteScriptAsync("document.body.classList." + state + "('maximised')");
         }
 
         /// <summary>

@@ -264,17 +264,12 @@ echo Creating .7z archive
 echo Done!
 
 if "%SkipInstaller%"=="true" goto NSISSTEP
+goto NSISSTEP
 	ECHO -----------------------------------
 	ECHO Creating installer
 	ECHO -----------------------------------
-	set NSIS_FLAGS=
-	if exist "%ProgramFiles(x86)%\NSIS\Plugins\x86-unicode\nsis7z.dll" (
-		ECHO Nsis7z plugin found. Building installer with 7z extraction.
-		set NSIS_FLAGS=%NSIS_FLAGS% /DUSE_NSIS7Z=1
-	) else (
-		ECHO Nsis7z plugin not found. Falling back to direct file install mode.
-		set NSIS_FLAGS=%NSIS_FLAGS% /DUSE_NSIS7Z=0
-	)
+	set NSIS_FLAGS=/DUSE_NSIS7Z=0
+	ECHO Building installer from the full release folder to keep CEF included.
 
 	if NOT "%INSTALLER_ICON%"=="" (
 		set NSIS_FLAGS=%NSIS_FLAGS% /DINSTALLER_ICON="%INSTALLER_ICON%"
@@ -312,6 +307,31 @@ if "%SkipCEF%"=="true" goto COMPRESSEDCOMBINED
 	ECHO -----------------------------------
 	"%zip%" a -t7z -mmt24 -mx9  "PolarWolves_and_CEF.7z" ".\PolarWolves\*"
 :COMPRESSEDCOMBINED
+
+if "%SkipInstaller%"=="true" goto POSTINSTALLER
+	ECHO -----------------------------------
+	ECHO Creating installer (full CEF bundle)
+	ECHO -----------------------------------
+	set NSIS_FLAGS=/DUSE_NSIS7Z=0
+	ECHO Building installer from the full release folder to keep CEF included.
+
+	if NOT "%INSTALLER_ICON%"=="" (
+		set NSIS_FLAGS=%NSIS_FLAGS% /DINSTALLER_ICON="%INSTALLER_ICON%"
+	)
+	if NOT "%INSTALLER_HEADER_BMP%"=="" (
+		set NSIS_FLAGS=%NSIS_FLAGS% /DINSTALLER_HEADER_BMP="%INSTALLER_HEADER_BMP%"
+	)
+	if NOT "%INSTALLER_SIDEBANNER_BMP%"=="" (
+		set NSIS_FLAGS=%NSIS_FLAGS% /DINSTALLER_SIDEBANNER_BMP="%INSTALLER_SIDEBANNER_BMP%"
+	)
+
+	"%NSIS%" %NSIS_FLAGS% "%SolutionDir%\other\NSIS\nsis-build-x64.nsi"
+	echo Done. Moving...
+	move /Y "%SolutionDir%\other\NSIS\Polar Account Switcher - Installer.exe" "Polar Account Switcher - Installer.exe"
+	if "%SkipSign%"=="false" (
+		"%SIGNTOOL%" sign /tr http://timestamp.sectigo.com?td=sha256 /td SHA256 /fd SHA256 /a "Polar Account Switcher - Installer.exe"
+	)
+:POSTINSTALLER
 
 
 ECHO -----------------------------------
@@ -365,3 +385,5 @@ echo -----------------------------------
 echo DONE BUILDING DEBUG
 echo -----------------------------------
 goto :eof
+
+

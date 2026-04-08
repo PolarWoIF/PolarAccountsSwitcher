@@ -74,7 +74,9 @@ namespace PolarWolves_Client
             // Remove leftover files from previous operations
             CleanupAppFolder();
 
-            Directory.SetCurrentDirectory(Globals.UserDataFolder);
+            // Keep the process working directory on the install folder so optional browser runtimes
+            // can resolve their side-by-side native files correctly on first launch.
+            Directory.SetCurrentDirectory(Globals.AppDataFolder);
 
             // Crash handler
             AppDomain.CurrentDomain.UnhandledException += Globals.CurrentDomain_UnhandledException;
@@ -182,6 +184,7 @@ namespace PolarWolves_Client
             }
             catch (FileNotFoundException ex)
             {
+                Globals.WriteToLog("MainWindow startup hit FileNotFoundException.", ex);
                 // Check if CEF issue, and download if missing.
                 if (!ex.ToString().Contains("CefSharp")) throw;
                 AppSettings.AutoStartUpdaterAsAdmin("downloadCEF");
