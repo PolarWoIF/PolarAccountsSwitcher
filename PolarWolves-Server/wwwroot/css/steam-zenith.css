@@ -413,31 +413,6 @@
     100% { transform: translateX(-40%); }
 }
 
-.maximised .steam-zenith__ticker {
-    animation: none !important;
-}
-
-.maximised .steam-zenith__noise {
-    opacity: 0.02;
-}
-
-.maximised .steam-zenith__scan {
-    opacity: 0.015;
-}
-
-.maximised .steam-zenith__topbar {
-    backdrop-filter: none;
-}
-
-.maximised .steam-zenith label.acc img {
-    box-shadow: 0 7px 12px rgba(0, 0, 0, 0.32);
-}
-
-.maximised .steam-zenith .acc_list_item:hover label.acc,
-.maximised .steam-zenith .acc_list_item.is-pointer-active label.acc {
-    box-shadow: 0 0 0 1px rgba(126, 219, 255, 0.18), 0 14px 22px rgba(0, 0, 0, 0.34);
-}
-
 @media (max-width: 1150px) {
     .steam-zenith__session {
         display: none;

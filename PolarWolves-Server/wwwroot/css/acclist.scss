@@ -1,4 +1,4 @@
-﻿/* ReSharper disable CssNotResolved */
+/* ReSharper disable CssNotResolved */
 
 /* DISABLED DRAGGING ON ITEMS: */
 
@@ -553,7 +553,7 @@ label h6 svg {
     justify-content: flex-start;
     gap: 2px;
     transform-style: preserve-3d;
-    will-change: transform, box-shadow, border-color, filter;
+    backface-visibility: hidden;
     transform: perspective(760px) rotateX(var(--card-tilt-x)) rotateY(var(--card-tilt-y)) translateY(var(--card-lift));
     transition: transform 220ms cubic-bezier(0.22, 0.61, 0.36, 1), border-color 190ms ease, box-shadow 190ms ease, background 190ms ease, filter 190ms ease;
 
@@ -913,53 +913,6 @@ label h6 svg {
     }
     to {
         background-position: 10% 8%, 88% 10%;
-    }
-}
-
-.maximised {
-    .steam-rework__grain {
-        opacity: 0.08;
-        mix-blend-mode: normal;
-    }
-
-    .steam-rework .acc_list::before,
-    .steam-rework .acc_list::after,
-    .steam-rework .acc_list_item,
-    .steam-rework .acc_list_item.is-switch-origin label.acc,
-    .steam-rework .acc_list_item.is-switch-target label.acc {
-        animation: none !important;
-    }
-
-    .steam-rework .acc_list::before {
-        opacity: 0.18;
-        mix-blend-mode: normal;
-    }
-
-    .steam-rework .acc_list::after {
-        opacity: 0.18;
-    }
-
-    .steam-rework .catalog_chip,
-    .steam-rework label.acc,
-    .steam-rework .acc_list_actionbar button {
-        transform: none !important;
-        transition: border-color 190ms ease, box-shadow 190ms ease, background 190ms ease, filter 190ms ease !important;
-    }
-
-    .steam-rework label.acc {
-        will-change: auto;
-    }
-
-    .steam-rework label.acc::after {
-        mix-blend-mode: normal;
-    }
-
-    .steam-rework .acc_list_actionbar {
-        backdrop-filter: none;
-    }
-
-    .steam-rework .acc_list_actionbar button:hover {
-        transform: none;
     }
 }
 

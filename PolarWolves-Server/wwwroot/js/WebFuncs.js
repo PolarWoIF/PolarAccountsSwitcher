@@ -18,6 +18,10 @@ async function getCurrentPageFullname() {
 
 window.addEventListener("load", () => {
     initTooltips();
+    if (typeof initPlatformCardMotion === "function") {
+        initPlatformCardMotion();
+        return;
+    }
     initPlatformCardsMotion();
 });
 
@@ -34,7 +38,24 @@ function initPlatformCardsMotion() {
             currentY: 0.5,
             targetX: 0.5,
             targetY: 0.5,
-            rafId: 0
+            rafId: 0,
+            willChangeReset: 0
+        };
+
+        const enableMotionLayer = () => {
+            if (state.willChangeReset !== 0) {
+                clearTimeout(state.willChangeReset);
+                state.willChangeReset = 0;
+            }
+            card.style.willChange = "transform, box-shadow, filter, border-color";
+        };
+
+        const scheduleMotionLayerReset = () => {
+            if (state.willChangeReset !== 0) clearTimeout(state.willChangeReset);
+            state.willChangeReset = window.setTimeout(() => {
+                card.style.removeProperty("will-change");
+                state.willChangeReset = 0;
+            }, 180);
         };
 
         const resetCardVisuals = () => {
@@ -105,6 +126,7 @@ function initPlatformCardsMotion() {
 
         card.addEventListener("pointerenter", (event) => {
             if (event.pointerType === "touch") return;
+            enableMotionLayer();
             state.hovering = true;
             card.classList.add("is-pointer-active");
             capturePointer(event);
@@ -113,6 +135,7 @@ function initPlatformCardsMotion() {
 
         card.addEventListener("pointermove", (event) => {
             if (event.pointerType === "touch") return;
+            enableMotionLayer();
             if (!state.hovering) {
                 state.hovering = true;
                 card.classList.add("is-pointer-active");
@@ -128,6 +151,7 @@ function initPlatformCardsMotion() {
             card.classList.remove("is-pointer-active");
             card.classList.remove("is-pressing");
             ensureAnimation();
+            scheduleMotionLayerReset();
         });
 
         card.addEventListener("pointercancel", () => {
@@ -137,13 +161,18 @@ function initPlatformCardsMotion() {
             card.classList.remove("is-pointer-active");
             card.classList.remove("is-pressing");
             ensureAnimation();
+            scheduleMotionLayerReset();
         });
 
         card.addEventListener("pointerdown", (event) => {
             if (event.pointerType === "touch") return;
+            enableMotionLayer();
             card.classList.add("is-pressing");
         });
-        card.addEventListener("pointerup", () => card.classList.remove("is-pressing"));
+        card.addEventListener("pointerup", () => {
+            card.classList.remove("is-pressing");
+            if (!state.hovering) scheduleMotionLayerReset();
+        });
 
         resetCardVisuals();
     });

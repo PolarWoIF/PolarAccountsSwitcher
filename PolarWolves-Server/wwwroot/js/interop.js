@@ -578,6 +578,23 @@ function bindCardMotion(bindElement, motionElement = null, profileName = "defaul
 
     let rafId = 0;
     let lastPointerMove = null;
+    let willChangeReset = 0;
+
+    const enableMotionLayer = () => {
+        if (willChangeReset !== 0) {
+            clearTimeout(willChangeReset);
+            willChangeReset = 0;
+        }
+        target.style.willChange = "transform, box-shadow, filter, border-color";
+    };
+
+    const scheduleMotionLayerReset = () => {
+        if (willChangeReset !== 0) clearTimeout(willChangeReset);
+        willChangeReset = window.setTimeout(() => {
+            target.style.removeProperty("will-change");
+            willChangeReset = 0;
+        }, 180);
+    };
 
     const flushMove = () => {
         rafId = 0;
@@ -587,12 +604,14 @@ function bindCardMotion(bindElement, motionElement = null, profileName = "defaul
 
     bindElement.addEventListener("pointerenter", (event) => {
         if (event.pointerType === "touch") return;
+        enableMotionLayer();
         bindElement.classList.add("is-pointer-active");
         applyPlatformCardMotion(target, event.clientX, event.clientY, profileName);
     });
 
     bindElement.addEventListener("pointermove", (event) => {
         if (event.pointerType === "touch") return;
+        enableMotionLayer();
         lastPointerMove = event;
         if (rafId !== 0) return;
         rafId = requestAnimationFrame(flushMove);
@@ -600,6 +619,7 @@ function bindCardMotion(bindElement, motionElement = null, profileName = "defaul
 
     bindElement.addEventListener("pointerdown", (event) => {
         if (event.pointerType === "touch") return;
+        enableMotionLayer();
         bindElement.classList.add("is-pressing");
     });
 
@@ -607,10 +627,14 @@ function bindCardMotion(bindElement, motionElement = null, profileName = "defaul
         bindElement.classList.remove("is-pointer-active");
         bindElement.classList.remove("is-pressing");
         resetPlatformCardMotion(target);
+        scheduleMotionLayerReset();
     };
 
     bindElement.addEventListener("pointerleave", clearMotion);
-    bindElement.addEventListener("pointerup", () => bindElement.classList.remove("is-pressing"));
+    bindElement.addEventListener("pointerup", () => {
+        bindElement.classList.remove("is-pressing");
+        if (!bindElement.classList.contains("is-pointer-active")) scheduleMotionLayerReset();
+    });
     bindElement.addEventListener("pointercancel", clearMotion);
 }
 
@@ -618,8 +642,9 @@ function initPlatformCardMotion() {
     const cards = document.querySelectorAll(".main-platform-rework .platform_list_item");
     if (cards.length === 0) return;
 
-    cards.forEach((card) => {
+    cards.forEach((card, index) => {
         if (!(card instanceof HTMLElement)) return;
+        card.style.setProperty("--plat-order", `${Math.min(index, 18) * 62}ms`);
         bindCardMotion(card, card, "default");
     });
 }

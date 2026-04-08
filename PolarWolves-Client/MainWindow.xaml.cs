@@ -622,7 +622,19 @@ namespace PolarWolves_Client
                 var env = await CoreWebView2Environment.CreateAsync(null, Globals.UserDataFolder);
                 await _mView2.EnsureCoreWebView2Async(env);
                 _mView2.DefaultBackgroundColor = System.Drawing.Color.FromArgb(255, 5, 8, 13);
-                _mView2.CoreWebView2.Settings.UserAgent = "PolarWolves 1.0";
+                var settings = _mView2.CoreWebView2.Settings;
+                settings.UserAgent = "PolarWolves 1.0";
+                settings.AreDefaultContextMenusEnabled = false;
+                settings.AreBrowserAcceleratorKeysEnabled = false;
+                settings.IsStatusBarEnabled = false;
+                settings.IsZoomControlEnabled = false;
+                settings.IsSwipeNavigationEnabled = false;
+                settings.IsPinchZoomEnabled = false;
+                settings.IsGeneralAutofillEnabled = false;
+                settings.IsPasswordAutosaveEnabled = false;
+#if !DEBUG
+                settings.AreDevToolsEnabled = false;
+#endif
                 _ = await _mView2.CoreWebView2.CallDevToolsProtocolMethodAsync(
                     "Emulation.setDefaultBackgroundColorOverride",
                     "{\"color\":{\"r\":5,\"g\":8,\"b\":13,\"a\":1}}");
@@ -632,8 +644,10 @@ namespace PolarWolves_Client
                 _mView2.NavigationStarting += MViewUrlChanged;
                 _mView2.CoreWebView2.ProcessFailed += CoreWebView2OnProcessFailed;
 
+#if DEBUG
                 _mView2.CoreWebView2.GetDevToolsProtocolEventReceiver("Runtime.consoleAPICalled")
                     .DevToolsProtocolEventReceived += ConsoleMessage;
+#endif
                 _mView2.CoreWebView2.GetDevToolsProtocolEventReceiver("Runtime.exceptionThrown")
                     .DevToolsProtocolEventReceived += ConsoleMessage;
                 _ = await _mView2.CoreWebView2.CallDevToolsProtocolMethodAsync("Runtime.enable", "{}");
