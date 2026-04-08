@@ -70,7 +70,8 @@ namespace PolarWolves_Client
         private const uint ShellFrameColor = 0x000D0805;
         private const uint ShellFrameTextColor = 0x00FFFFFF;
         private static readonly SolidColorBrush ShellBackground = new(System.Windows.Media.Color.FromRgb(5, 8, 13));
-        private static readonly uint ShellBackgroundCef = Cef.ColorSetARGB(255, 5, 8, 13);
+        // Keep the packed ARGB value local so WebView-only installs don't need the CEF runtime during type init.
+        private const uint ShellBackgroundCef = 0xFF05080D;
 
         [DllImport("dwmapi.dll")]
         private static extern int DwmSetWindowAttribute(IntPtr hwnd, int dwAttribute, ref int pvAttribute, int cbAttribute);
@@ -107,7 +108,10 @@ namespace PolarWolves_Client
 
         public MainWindow()
         {
-            // Set working directory to documents folder
+            // Ensure first-run installs create their user data before touching the working directory.
+            Globals.CreateDataFolder(false);
+            if (!Directory.Exists(Globals.UserDataFolder))
+                Directory.CreateDirectory(Globals.UserDataFolder);
             Directory.SetCurrentDirectory(Globals.UserDataFolder);
 
             if (Directory.Exists(Path.Join(Globals.AppDataFolder, "wwwroot")))

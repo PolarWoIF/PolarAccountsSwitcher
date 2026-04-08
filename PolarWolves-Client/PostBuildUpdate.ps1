@@ -106,12 +106,21 @@ if (Test-Path $compressPath) {
 # -----------------------------------
 Write-Host "Preparing .zip version of .7z release files..."
 # -----------------------------------
+if (Test-Path "PolarWolvesUnzipped") {
+    Write-Host "- Removing previous extracted zip staging folder"
+    Remove-Item "PolarWolvesUnzipped" -Recurse -Force
+}
+if (Test-Path "PolarWolves.zip") {
+    Write-Host "- Removing stale PolarWolves.zip"
+    Remove-Item "PolarWolves.zip" -Force
+}
+
 Write-Host "- Extracting .7z"
 ExtractFile -filePath "PolarWolves.7z" -outputPath "PolarWolvesUnzipped"
 
 # Use 7z to compress the contents of PolarWolves
 Write-Host "- Compressing as .zip"
-Compress-Archive -Path "PolarWolvesUnzipped\*" -DestinationPath "PolarWolves.zip"
+Compress-Archive -Path "PolarWolvesUnzipped\*" -DestinationPath "PolarWolves.zip" -Force
 
 
 # -----------------------------------
