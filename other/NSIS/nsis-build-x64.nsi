@@ -66,6 +66,8 @@ VIAddVersionKey "FileVersion"  "${VERSION}"
 ;--------------------------------
 ;Build options
 Unicode True
+SetCompressor /SOLID lzma
+SetCompressorDictSize 64
 SetCompress off
 Name "${APP_NAME}"
 Caption "${APP_NAME}"
