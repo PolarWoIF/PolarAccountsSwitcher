@@ -5,6 +5,7 @@
     <TargetFramework>net9.0-windows7.0</TargetFramework>
     <RootNamespace>PolarWolves_Client</RootNamespace>
     <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>favicon.ico</ApplicationIcon>
     <Version>2025.11.20.03</Version>
     <Authors>PolarWolves Team</Authors>

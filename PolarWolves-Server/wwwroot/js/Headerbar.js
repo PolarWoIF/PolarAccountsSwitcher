@@ -59,6 +59,41 @@ function hideWindow() {
     else chrome.webview.hostObjects.sync.eventForwarder.HideWindow();
 }
 
+function findDragRegionTarget(target) {
+    let current = target;
+    while (current && current !== document.body) {
+        const appRegion = getComputedStyle(current)["-webkit-app-region"];
+        if (appRegion === "no-drag") return null;
+        if (appRegion === "drag") return current;
+        current = current.parentElement;
+    }
+
+    const bodyRegion = getComputedStyle(document.body)["-webkit-app-region"];
+    return bodyRegion === "drag" ? document.body : null;
+}
+
+function getDragRegionClass(target) {
+    let current = target;
+    while (current && current !== document.body) {
+        if (current.classList && current.classList.contains("headerbar")) return "headerbar";
+
+        if (current.classList) {
+            if (current.classList.contains("resizeTopLeft")) return "resizeTopLeft";
+            if (current.classList.contains("resizeTop")) return "resizeTop";
+            if (current.classList.contains("resizeTopRight")) return "resizeTopRight";
+            if (current.classList.contains("resizeRight")) return "resizeRight";
+            if (current.classList.contains("resizeBottomRight")) return "resizeBottomRight";
+            if (current.classList.contains("resizeBottom")) return "resizeBottom";
+            if (current.classList.contains("resizeBottomLeft")) return "resizeBottomLeft";
+            if (current.classList.contains("resizeLeft")) return "resizeLeft";
+        }
+
+        current = current.parentElement;
+    }
+
+    return "";
+}
+
 function handleWindowControls() {
     document.getElementById("btnBack").addEventListener("click", () => {
         btnBack_Click();
@@ -129,37 +164,26 @@ function handleWindowControls() {
     // https://github.com/MicrosoftEdge/WebView2Feedback/issues/200
     document.body.addEventListener("mousedown", (evt) => {
         // ES is actually 11, set in project file. This error can be ignored (if you see one about ES5)
-        const {
-            target
-        } = evt;
-        const appRegion = getComputedStyle(target)["-webkit-app-region"];
-        if (evt.button === 0 && appRegion === "drag") {
-            if (target.classList.length !== 0) {
-                const c = target.classList[0];
-                if (c === "headerbar" && navigator.appVersion.indexOf("PolarWolves-CEF") !== -1) {
-                    // User is dragging the title bar, and is on the CEF browser.
-                    CefSharp.PostMessage({ "action": "MouseDownDrag" });
-                    evt.preventDefault();
-                    evt.stopPropagation();
-                    return;
-                }
-                const value = (c === "resizeTopLeft" ? SysCommandSize.ScSizeHtTopLeft : (
-                    c === "resizeTop" ? SysCommandSize.ScSizeHtTop : (
-                        c === "resizeTopRight" ? SysCommandSize.ScSizeHtTopRight : (
-                            c === "resizeRight" ? SysCommandSize.ScSizeHtRight : (
-                                c === "resizeBottomRight" ? SysCommandSize.ScSizeHtBottomRight : (
-                                    c === "resizeBottom" ? SysCommandSize.ScSizeHtBottom : (
-                                        c === "resizeBottomLeft" ? SysCommandSize.ScSizeHtBottomLeft : (
-                                            c === "resizeLeft" ? SysCommandSize.ScSizeHtLeft : 0))))))));
+        const dragTarget = findDragRegionTarget(evt.target);
+        if (evt.button === 0 && dragTarget) {
+            const c = getDragRegionClass(dragTarget);
+            const value = (c === "resizeTopLeft" ? SysCommandSize.ScSizeHtTopLeft : (
+                c === "resizeTop" ? SysCommandSize.ScSizeHtTop : (
+                    c === "resizeTopRight" ? SysCommandSize.ScSizeHtTopRight : (
+                        c === "resizeRight" ? SysCommandSize.ScSizeHtRight : (
+                            c === "resizeBottomRight" ? SysCommandSize.ScSizeHtBottomRight : (
+                                c === "resizeBottom" ? SysCommandSize.ScSizeHtBottom : (
+                                    c === "resizeBottomLeft" ? SysCommandSize.ScSizeHtBottomLeft : (
+                                        c === "resizeLeft" ? SysCommandSize.ScSizeHtLeft : 0))))))));
 
-
-                if (navigator.appVersion.indexOf("PolarWolves-CEF") !== -1) {
-                     CefSharp.PostMessage({ "action": "MouseResizeDrag", "value": value });
-                }
-                else chrome.webview.hostObjects.sync.eventForwarder.MouseResizeDrag(value);
+            if (navigator.appVersion.indexOf("PolarWolves-CEF") !== -1) {
+                if (c === "headerbar" || value === 0) CefSharp.PostMessage({ "action": "MouseDownDrag" });
+                else CefSharp.PostMessage({ "action": "MouseResizeDrag", "value": value });
             }
-
-            if (navigator.appVersion.indexOf("PolarWolves-CEF") === -1) chrome.webview.hostObjects.sync.eventForwarder.MouseDownDrag(); // This breaks resize on CEFSharp for some reason (Drags window instead of resizing - VERY ANNOYING)
+            else {
+                if (value !== 0) chrome.webview.hostObjects.sync.eventForwarder.MouseResizeDrag(value);
+                else chrome.webview.hostObjects.sync.eventForwarder.MouseDownDrag();
+            }
 
             evt.preventDefault();
             evt.stopPropagation();

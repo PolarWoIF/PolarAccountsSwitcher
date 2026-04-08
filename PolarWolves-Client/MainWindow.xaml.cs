@@ -51,6 +51,7 @@ namespace PolarWolves_Client
         private static string _address = "";
         private string _mainBrowser = "WebView"; // <CEF/WebView>
         private const int WmNcHitTest = 0x0084;
+        private const int HtCaption = 2;
         private const int HtLeft = 10;
         private const int HtRight = 11;
         private const int HtTop = 12;
@@ -60,6 +61,9 @@ namespace PolarWolves_Client
         private const int HtBottomLeft = 16;
         private const int HtBottomRight = 17;
         private const int ResizeBorderPixels = 8;
+        private const double DragCaptionHeight = 52;
+        private const double DragCaptionLeftInset = 250;
+        private const double DragCaptionRightInset = 170;
         private const int DwmwaUseImmersiveDarkModeBefore20H1 = 19;
         private const int DwmwaUseImmersiveDarkMode = 20;
         private const int DwmwaBorderColor = 34;
@@ -72,6 +76,7 @@ namespace PolarWolves_Client
         private static readonly SolidColorBrush ShellBackground = new(System.Windows.Media.Color.FromRgb(5, 8, 13));
         // Keep the packed ARGB value local so WebView-only installs don't need the CEF runtime during type init.
         private const uint ShellBackgroundCef = 0xFF05080D;
+        private readonly TrayIconManager _trayIconManager;
 
         [DllImport("dwmapi.dll")]
         private static extern int DwmSetWindowAttribute(IntPtr hwnd, int dwAttribute, ref int pvAttribute, int cbAttribute);
@@ -145,6 +150,7 @@ namespace PolarWolves_Client
 
             Background = ShellBackground;
             MainBackground.Background = ShellBackground;
+            _trayIconManager = new TrayIconManager(this);
 
             Width = AppSettings.WindowSize.X;
             Height = AppSettings.WindowSize.Y;
@@ -233,14 +239,38 @@ namespace PolarWolves_Client
             if (right) return HitTestResult(HtRight, ref handled);
             if (top) return HitTestResult(HtTop, ref handled);
             if (bottom) return HitTestResult(HtBottom, ref handled);
+            if (IsNativeDragCaptionRegion(point)) return HitTestResult(HtCaption, ref handled);
 
             return IntPtr.Zero;
+        }
+
+        private bool IsNativeDragCaptionRegion(System.Windows.Point point)
+        {
+            if (point.Y < 0 || point.Y > DragCaptionHeight) return false;
+            if (point.X < DragCaptionLeftInset) return false;
+            if (point.X > ActualWidth - DragCaptionRightInset) return false;
+            return true;
         }
 
         private static IntPtr HitTestResult(int hitTest, ref bool handled)
         {
             handled = true;
             return new IntPtr(hitTest);
+        }
+
+        private void DragCaptionBar_OnMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton != MouseButton.Left) return;
+
+            try
+            {
+                DragMove();
+                e.Handled = true;
+            }
+            catch
+            {
+                // Ignore drag race conditions if the window state changes mid-drag.
+            }
         }
 
         private static bool HasCefRuntimeFiles()
@@ -829,8 +859,11 @@ namespace PolarWolves_Client
         protected override void OnClosing(CancelEventArgs e)
         {
             Globals.DebugWriteLine(@"[Func:(Client)MainWindow.xaml.cs.OnClosing]");
+            _trayIconManager?.HandleWindowClosing(e);
+            if (e.Cancel) return;
             AppSettings.WindowSize = new Point { X = Convert.ToInt32(Width), Y = Convert.ToInt32(Height) };
             AppSettings.SaveSettings();
+            _trayIconManager?.Dispose();
         }
 
         public static void Restart(string args = "", bool admin = false)

@@ -32,6 +32,13 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.-->
     <Grid x:Name="MainBackground" Background="#05080D">
         <!--<wpf1:ChromiumWebBrowser x:Name="CefView" IsBrowserInitializedChanged="CefView_OnIsBrowserInitializedChanged" JavascriptMessageReceived="CefView_OnJavascriptMessageReceived" Visibility="Hidden"/>
         <wpf:WebView2 x:Name="MView2" Initialized="MView2_OnInitialised" NavigationCompleted="MView2_OnNavigationCompleted" Visibility="Hidden"/>-->
+        <Border Panel.ZIndex="1000"
+                Background="Transparent"
+                Height="32"
+                Margin="46,0,138,0"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Stretch"
+                MouseLeftButtonDown="DragCaptionBar_OnMouseLeftButtonDown" />
     </Grid>
 
 </Window>

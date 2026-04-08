@@ -342,6 +342,7 @@ namespace PolarWolves_Globals
         public const int WmNclButtonDown = 0xA1;
         public const int WmSysCommand = 0x112;
         public const int HtCaption = 0x2;
+        public const int ScMove = 0xF010;
 
         readonly IntPtr _target;
 
@@ -353,7 +354,7 @@ namespace PolarWolves_Globals
         public void MouseDownDrag()
         {
             NativeMethods.ReleaseCapture();
-            NativeMethods.SendMessage(_target, WmNclButtonDown, HtCaption, 0);
+            NativeMethods.SendMessage(_target, WmSysCommand, ScMove + HtCaption, 0);
         }
 
         public void MouseResizeDrag(int wParam)
