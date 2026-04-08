@@ -54,8 +54,12 @@ VIAddVersionKey "FileVersion"  "${VERSION}"
 
 !define INSTALLER_NAME "Polar Account Switcher - Installer.exe"
 
+!ifndef INSTALLER_7Z
 !define INSTALLER_7Z "..\..\PolarWolves-Client\bin\x64\Release\PolarWolves.7z"
+!endif
+!ifndef INSTALLER_SOURCE_DIR
 !define INSTALLER_SOURCE_DIR "..\..\PolarWolves-Client\bin\x64\Release\PolarWolves"
+!endif
 !ifndef USE_NSIS7Z
 !define USE_NSIS7Z "0"
 !endif
@@ -68,7 +72,7 @@ VIAddVersionKey "FileVersion"  "${VERSION}"
 Unicode True
 SetCompressor /SOLID lzma
 SetCompressorDictSize 64
-SetCompress off
+SetCompress auto
 Name "${APP_NAME}"
 Caption "${APP_NAME}"
 OutFile "${INSTALLER_NAME}"
