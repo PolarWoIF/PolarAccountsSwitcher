@@ -19990,6 +19990,7 @@ function Y4() {
     [o, u] = U.useState(null),
     [c, h] = U.useState(!1),
     [d, m] = U.useState(!1),
+    [platformManagerOpen, setPlatformManagerOpen] = U.useState(!1),
     [g, p] = U.useState(() => {
       if (typeof window > "u") return Kl;
       try {
@@ -20325,7 +20326,7 @@ function Y4() {
             Kt(ve.message || "Steam switch failed.");
             return;
           }
-          Kt(st), C(K.id), await Ka(!0);
+          C(K.id), await Ka(!0);
         } catch {
           Kt("Failed to switch Steam account.");
         } finally {
@@ -20335,7 +20336,7 @@ function Y4() {
       }
       h(!0),
         window.setTimeout(() => {
-          h(!1), Kt(`Logged in as ${K.name}`);
+          h(!1);
         }, 1600);
     },
     openSteamGame = (E) => {
@@ -20626,12 +20627,26 @@ Accounts inside it will return to All Accounts.`) ||
         setSteamBackupPath(
           (O == null ? void 0 : O.backupPath) || steamBackupPath,
         ),
-          Kt(`Steam backup created: ${O.fileName || "ok"}`),
           await refreshSteamBackups();
       } catch {
         Kt("Failed to create Steam backup.");
       } finally {
         setBackupBusy(!1);
+      }
+    },
+    openSteamBackupFolder = async () => {
+      try {
+        const E = await fetch("/api/steam/backup/open-folder", {
+            method: "POST",
+          }),
+          O = await E.json();
+        if (!E.ok || !(O != null && O.success))
+          Kt(
+            (O == null ? void 0 : O.message) ||
+              "Failed to open Steam backup folder.",
+          );
+      } catch {
+        Kt("Failed to open Steam backup folder.");
       }
     },
     restoreSteamBackup = async () => {
@@ -20660,8 +20675,7 @@ Accounts inside it will return to All Accounts.`) ||
           );
           return;
         }
-        Kt("Steam backup restored into Steam config folder."),
-          o === "steam" && (await Ka(!0));
+        o === "steam" && (await Ka(!0));
       } catch {
         Kt("Failed to restore Steam backup.");
       } finally {
@@ -20692,8 +20706,7 @@ Accounts inside it will return to All Accounts.`) ||
           );
           return;
         }
-        Kt(st.message || "Steam config imported."),
-          o === "steam" && (await Ka(!0));
+        o === "steam" && (await Ka(!0));
         await refreshSteamBackups();
       } catch {
         Kt("Failed to import Steam config.");
@@ -20924,13 +20937,16 @@ Accounts inside it will return to All Accounts.`) ||
                                     whiteSpace: "nowrap",
                                     wordSpacing: "0.08em",
                                   },
-                                  children: "Polar Account Switcher",
+                                  children: platformManagerOpen
+                                    ? "Manage Platforms"
+                                    : "Polar Account Switcher",
                                 }),
                                 T.jsx("p", {
                                   className:
                                     "text-white/20 text-xs font-black tracking-[0.3em] uppercase",
-                                  children:
-                                    "To easily switch between accounts across platforms.",
+                                  children: platformManagerOpen
+                                    ? "Click a platform to show or hide it on the main screen."
+                                    : "To easily switch between accounts across platforms.",
                                 }),
                               ],
                             }),
@@ -20941,7 +20957,7 @@ Accounts inside it will return to All Accounts.`) ||
                         variants: Pi,
                         className:
                           "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-10",
-                        children: $o.map((E) =>
+                        children: (platformManagerOpen ? Qi : $o).map((E) =>
                           T.jsxs(
                             Jt.button,
                             {
@@ -20952,14 +20968,17 @@ Accounts inside it will return to All Accounts.`) ||
                               },
                               whileHover: { scale: 1.05, y: -15 },
                               whileTap: { scale: 0.95 },
-                              draggable: !0,
-                              onDragStart: (O) => Qa(E.id, O),
-                              onDragEnter: () => Ja(E.id),
+                              draggable: !platformManagerOpen,
+                              onDragStart: (O) =>
+                                !platformManagerOpen && Qa(E.id, O),
+                              onDragEnter: () =>
+                                !platformManagerOpen && Ja(E.id),
                               onDragOver: (O) => O.preventDefault(),
                               onDrop: (O) => O.preventDefault(),
-                              onDragEnd: Fa,
-                              onClick: () => yn(E.id),
-                              className: `relative aspect-[4/5.5] bg-gradient-to-br from-[#121b26] to-[#080d14] border rounded-[3.5rem] p-12 flex flex-col items-center justify-center gap-12 group overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.4)] ${Un === E.id ? "border-cyan-400/60 opacity-70 cursor-grabbing" : "border-white/5 cursor-grab"}`,
+                              onDragEnd: () => !platformManagerOpen && Fa(),
+                              onClick: () =>
+                                platformManagerOpen ? tu(E.id) : yn(E.id),
+                              className: `relative aspect-[4/5.5] bg-gradient-to-br from-[#121b26] to-[#080d14] border rounded-[3.5rem] p-12 flex flex-col items-center justify-center gap-12 group overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.4)] ${platformManagerOpen ? (Gt.includes(E.id) ? "border-cyan-400/60 cursor-pointer" : "border-white/5 opacity-35 cursor-pointer") : Un === E.id ? "border-cyan-400/60 opacity-70 cursor-grabbing" : "border-white/5 cursor-grab"}`,
                               children: [
                                 T.jsx("div", {
                                   className:
@@ -21008,7 +21027,13 @@ Accounts inside it will return to All Accounts.`) ||
                                 T.jsxs("div", {
                                   className:
                                     "absolute bottom-8 left-8 text-[8px] font-black text-white/5 tracking-widest",
-                                  children: [E.id.toUpperCase(), "_MOD_01"],
+                                  children: platformManagerOpen
+                                    ? [
+                                        Gt.includes(E.id)
+                                          ? "ENABLED"
+                                          : "DISABLED",
+                                      ]
+                                    : [E.id.toUpperCase(), "_MOD_01"],
                                 }),
                                 T.jsx("div", {
                                   className:
@@ -21304,7 +21329,9 @@ Accounts inside it will return to All Accounts.`) ||
                                 ],
                               }),
                               T.jsx("button", {
-                                onClick: () => m(!0),
+                                onClick: () => {
+                                  setPlatformManagerOpen(!1), m(!0);
+                                },
                                 className:
                                   "w-10 h-10 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center text-white/40 hover:text-white transition-all",
                                 children: T.jsx(ey, { size: 18 }),
@@ -21396,7 +21423,9 @@ Accounts inside it will return to All Accounts.`) ||
                         }),
                       }),
                       T.jsx("button", {
-                        onClick: () => m(!0),
+                        onClick: () => {
+                          setPlatformManagerOpen(!1), m(!0);
+                        },
                         className:
                           "p-5 bg-white/5 border border-white/5 rounded-2xl text-white/20 hover:text-white hover:bg-white/10 transition-all",
                         title: "Settings",
@@ -21412,7 +21441,11 @@ Accounts inside it will return to All Accounts.`) ||
                     ],
                   }),
                   T.jsxs("button", {
-                    onClick: () => m(!0),
+                    onClick: () => {
+                      m(!1),
+                        setPlatformManagerOpen((E) => !E),
+                        l("platforms");
+                    },
                     className:
                       "relative group flex items-center gap-8 px-12 py-6 bg-cyan-500 text-black rounded-[2rem] overflow-hidden transition-all active:scale-95 shadow-[0_0_50px_rgba(6,182,212,0.3)]",
                     children: [
@@ -21427,7 +21460,9 @@ Accounts inside it will return to All Accounts.`) ||
                       T.jsx("span", {
                         className:
                           "relative z-10 text-sm font-black tracking-[0.3em]",
-                        children: "MANAGE PLATFORMS",
+                        children: platformManagerOpen
+                          ? "DONE"
+                          : "MANAGE PLATFORMS",
                       }),
                     ],
                   }),
@@ -21446,26 +21481,29 @@ Accounts inside it will return to All Accounts.`) ||
       }),
       T.jsx(ca, {
         children:
-          d &&
+          false &&
+          platformManagerOpen &&
           T.jsx(Jt.div, {
             initial: { opacity: 0 },
             animate: { opacity: 1 },
             exit: { opacity: 0 },
             className:
-              "fixed inset-0 z-[200] flex items-center justify-center p-12 bg-black/90 backdrop-blur-3xl",
+              "polar-settings-overlay fixed inset-0 z-[210] flex items-center justify-center p-4 sm:p-8 lg:p-12 bg-black/90 backdrop-blur-3xl overflow-y-auto",
             children: T.jsxs(Jt.div, {
               initial: { scale: 0.9, y: 40, filter: "blur(20px)" },
               animate: { scale: 1, y: 0, filter: "blur(0px)" },
               exit: { scale: 0.9, y: 40, filter: "blur(20px)" },
+              dir: "ltr",
               className:
-                "w-full max-w-3xl bg-[#0d1520] border border-white/10 rounded-[4rem] p-12 shadow-[0_60px_120px_rgba(0,0,0,0.9)] space-y-12 relative overflow-hidden",
+                "polar-settings-modal w-full max-w-5xl max-h-[calc(100vh-2rem)] bg-[#0d1520] border border-white/10 rounded-[2.5rem] sm:rounded-[4rem] p-6 sm:p-10 lg:p-12 shadow-[0_60px_120px_rgba(0,0,0,0.9)] space-y-8 sm:space-y-10 relative overflow-hidden",
               children: [
                 T.jsx("div", {
                   className:
                     "absolute top-0 right-0 w-96 h-96 bg-cyan-500/5 blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2 pointer-events-none",
                 }),
                 T.jsxs("div", {
-                  className: "flex items-center justify-between relative z-10",
+                  className:
+                    "polar-settings-header flex items-center justify-between relative z-10",
                   children: [
                     T.jsxs("div", {
                       className: "flex items-center gap-6",
@@ -21478,14 +21516,144 @@ Accounts inside it will return to All Accounts.`) ||
                         T.jsxs("div", {
                           children: [
                             T.jsx("h3", {
-                              className: "text-3xl font-black tracking-tighter",
+                              className:
+                                "polar-settings-title text-3xl font-black tracking-tighter",
+                              children: "MANAGE PLATFORMS",
+                            }),
+                            T.jsx("p", {
+                              className:
+                                "text-white/20 text-[10px] font-black tracking-[0.4em] uppercase",
+                              children:
+                                "Choose which platforms appear on the main screen",
+                            }),
+                          ],
+                        }),
+                      ],
+                    }),
+                    T.jsx("button", {
+                      onClick: () => setPlatformManagerOpen(!1),
+                      className:
+                        "w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center text-white/20 hover:text-white hover:bg-red-500/20 transition-all group",
+                      children: T.jsx(Zl, {
+                        size: 28,
+                        className: "group-hover:rotate-90 transition-transform",
+                      }),
+                    }),
+                  ],
+                }),
+                T.jsxs("div", {
+                  className:
+                    "polar-settings-scroll custom-scrollbar space-y-6 relative z-10 max-h-[min(72vh,calc(100vh-14rem))] overflow-y-auto overflow-x-hidden pr-2",
+                  children: [
+                    T.jsx("div", {
+                      className: "grid grid-cols-1 sm:grid-cols-2 gap-4",
+                      children: Qi.map((E) => {
+                        const O = Gt.includes(E.id);
+                        return T.jsxs(
+                          "button",
+                          {
+                            type: "button",
+                            onClick: () => tu(E.id),
+                            className: `flex items-center justify-between p-5 rounded-[2rem] border transition-all group cursor-pointer text-left ${O ? "bg-white/5 border-cyan-500/30 hover:border-cyan-400/60" : "bg-black/20 border-white/10 hover:border-white/30"}`,
+                            children: [
+                              T.jsxs("div", {
+                                className: "flex items-center gap-5",
+                                children: [
+                                  T.jsx("div", {
+                                    className: `${O ? "text-cyan-400/70 group-hover:text-cyan-400" : "text-white/25 group-hover:text-white/60"} transition-all transform group-hover:scale-110`,
+                                    children: z0.cloneElement(E.icon, {
+                                      className: "w-8 h-8",
+                                    }),
+                                  }),
+                                  T.jsx("span", {
+                                    className:
+                                      "text-sm font-black tracking-[0.2em]",
+                                    children: E.name,
+                                  }),
+                                ],
+                              }),
+                              T.jsx("div", {
+                                className: `w-12 h-12 rounded-2xl flex items-center justify-center transition-all group-hover:scale-110 ${O ? "bg-cyan-500 text-black shadow-[0_0_20px_rgba(6,182,212,0.4)]" : "bg-transparent border border-white/20 text-white/20"}`,
+                                children: O
+                                  ? T.jsx(v4, { size: 24 })
+                                  : T.jsx("span", {
+                                      className:
+                                        "text-[9px] font-black tracking-widest",
+                                      children: "OFF",
+                                    }),
+                              }),
+                            ],
+                          },
+                          E.id,
+                        );
+                      }),
+                    }),
+                    T.jsxs("button", {
+                      onClick: () => setPlatformManagerOpen(!1),
+                      className:
+                        "w-full py-6 bg-white/5 border border-white/10 rounded-[2rem] font-black tracking-widest text-xs hover:bg-cyan-500 hover:text-black transition-all shadow-2xl relative overflow-hidden group",
+                      children: [
+                        T.jsx("div", {
+                          className:
+                            "absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500",
+                        }),
+                        T.jsx("span", {
+                          className: "relative z-10",
+                          children: "DONE",
+                        }),
+                      ],
+                    }),
+                  ],
+                }),
+              ],
+            }),
+          }),
+      }),
+      T.jsx(ca, {
+        children:
+          d &&
+          T.jsx(Jt.div, {
+            initial: { opacity: 0 },
+            animate: { opacity: 1 },
+            exit: { opacity: 0 },
+            className:
+              "polar-settings-overlay fixed inset-0 z-[200] flex items-center justify-center p-4 sm:p-8 lg:p-12 bg-black/90 backdrop-blur-3xl overflow-y-auto",
+            children: T.jsxs(Jt.div, {
+              initial: { scale: 0.9, y: 40, filter: "blur(20px)" },
+              animate: { scale: 1, y: 0, filter: "blur(0px)" },
+              exit: { scale: 0.9, y: 40, filter: "blur(20px)" },
+              dir: "ltr",
+              className:
+                "polar-settings-modal w-full max-w-4xl max-h-[calc(100vh-2rem)] bg-[#0d1520] border border-white/10 rounded-[2.5rem] sm:rounded-[4rem] p-6 sm:p-10 lg:p-12 shadow-[0_60px_120px_rgba(0,0,0,0.9)] space-y-8 sm:space-y-10 relative overflow-hidden",
+              children: [
+                T.jsx("div", {
+                  className:
+                    "absolute top-0 right-0 w-96 h-96 bg-cyan-500/5 blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2 pointer-events-none",
+                }),
+                T.jsxs("div", {
+                  className:
+                    "polar-settings-header flex items-center justify-between relative z-10",
+                  children: [
+                    T.jsxs("div", {
+                      className: "flex items-center gap-6",
+                      children: [
+                        T.jsx("div", {
+                          className:
+                            "w-16 h-16 bg-cyan-500/10 rounded-3xl flex items-center justify-center text-cyan-400 border border-cyan-500/20 shadow-[0_0_30px_rgba(6,182,212,0.2)]",
+                          children: T.jsx(zo, { size: 32 }),
+                        }),
+                        T.jsxs("div", {
+                          children: [
+                            T.jsx("h3", {
+                              className:
+                                "polar-settings-title text-3xl font-black tracking-tighter",
                               children: "POLAR CONFIGURATION",
                             }),
                             T.jsx("p", {
                               className:
                                 "text-white/20 text-[10px] font-black tracking-[0.4em] uppercase",
                               children:
-                                "Steam backup, restore, and platform controls",
+                                "Steam backup, restore, and recovery tools",
                             }),
                           ],
                         }),
@@ -21504,70 +21672,11 @@ Accounts inside it will return to All Accounts.`) ||
                 }),
                 T.jsxs("div", {
                   className:
-                    "space-y-8 relative z-10 max-h-[64vh] overflow-y-auto pr-2",
+                    "polar-settings-scroll custom-scrollbar space-y-6 relative z-10 max-h-[min(72vh,calc(100vh-14rem))] overflow-y-auto overflow-x-hidden pr-2",
                   children: [
                     T.jsxs("section", {
-                      className: "space-y-4",
-                      children: [
-                        T.jsxs("div", {
-                          children: [
-                            T.jsx("h4", {
-                              className:
-                                "text-sm font-black tracking-[0.35em] text-cyan-300 uppercase",
-                              children: "Active Platforms",
-                            }),
-                            T.jsx("p", {
-                              className: "text-white/35 text-xs mt-2",
-                              children:
-                                "Choose the platform modules that appear in the main screen.",
-                            }),
-                          ],
-                        }),
-                        T.jsx("div", {
-                          className: "grid grid-cols-1 sm:grid-cols-2 gap-4",
-                          children: Qi.map((E) => {
-                            const O = Gt.includes(E.id);
-                            return T.jsxs(
-                              "button",
-                              {
-                                type: "button",
-                                onClick: () => tu(E.id),
-                                className: `flex items-center justify-between p-5 rounded-[2rem] border transition-all group cursor-pointer text-left ${O ? "bg-white/5 border-cyan-500/30 hover:border-cyan-400/60" : "bg-black/20 border-white/10 hover:border-white/30"}`,
-                                children: [
-                                  T.jsxs("div", {
-                                    className: "flex items-center gap-5",
-                                    children: [
-                                      T.jsx("div", {
-                                        className: `${O ? "text-cyan-400/70 group-hover:text-cyan-400" : "text-white/25 group-hover:text-white/60"} transition-all transform group-hover:scale-110`,
-                                        children: z0.cloneElement(E.icon, {
-                                          className: "w-8 h-8",
-                                        }),
-                                      }),
-                                      T.jsx("span", {
-                                        className:
-                                          "text-sm font-black tracking-[0.2em]",
-                                        children: E.name,
-                                      }),
-                                    ],
-                                  }),
-                                  T.jsx("div", {
-                                    className: `w-12 h-12 rounded-2xl flex items-center justify-center transition-all group-hover:scale-110 ${O ? "bg-cyan-500 text-black shadow-[0_0_20px_rgba(6,182,212,0.4)]" : "bg-transparent border border-white/20 text-transparent"}`,
-                                    children: T.jsx(v4, {
-                                      size: 24,
-                                      className: O ? "" : "opacity-0",
-                                    }),
-                                  }),
-                                ],
-                              },
-                              E.id,
-                            );
-                          }),
-                        }),
-                      ],
-                    }),
-                    T.jsxs("section", {
                       className:
-                        "p-6 rounded-[2rem] border border-cyan-500/20 bg-cyan-500/[0.03] space-y-5",
+                        "polar-backup-panel p-7 sm:p-8 rounded-[2.5rem] border border-cyan-500/25 bg-cyan-500/[0.04] space-y-6 shadow-[0_24px_70px_rgba(0,0,0,0.35)]",
                       children: [
                         T.jsxs("div", {
                           children: [
@@ -21585,7 +21694,7 @@ Accounts inside it will return to All Accounts.`) ||
                             steamBackupPath
                               ? T.jsx("p", {
                                   className:
-                                    "text-cyan-200/60 text-[10px] leading-relaxed mt-3 break-all",
+                                    "text-cyan-200/65 text-[11px] leading-relaxed mt-4 break-all",
                                   dir: "ltr",
                                   children: `Backup location: ${steamBackupPath}`,
                                 })
@@ -21593,13 +21702,14 @@ Accounts inside it will return to All Accounts.`) ||
                           ],
                         }),
                         T.jsxs("div", {
-                          className: "grid grid-cols-1 md:grid-cols-3 gap-3",
+                          className:
+                            "polar-backup-actions grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4",
                           children: [
                             T.jsx("button", {
                               type: "button",
                               onClick: createSteamBackup,
                               disabled: backupBusy,
-                              className: `py-4 rounded-2xl bg-cyan-500 text-black text-[10px] font-black tracking-[0.25em] hover:bg-cyan-400 transition-all ${backupBusy ? "opacity-50 cursor-not-allowed" : ""}`,
+                              className: `polar-backup-action min-h-[64px] px-5 py-5 rounded-[1.5rem] bg-cyan-500 text-black text-[11px] font-black tracking-[0.22em] hover:bg-cyan-400 transition-all ${backupBusy ? "opacity-50 cursor-not-allowed" : ""}`,
                               children: backupBusy
                                 ? "WORKING..."
                                 : "CREATE BACKUP",
@@ -21608,15 +21718,22 @@ Accounts inside it will return to All Accounts.`) ||
                               type: "button",
                               onClick: openSteamConfigImport,
                               disabled: backupBusy,
-                              className: `py-4 rounded-2xl bg-white/5 border border-white/10 text-white text-[10px] font-black tracking-[0.25em] hover:border-cyan-500/50 hover:text-cyan-200 transition-all ${backupBusy ? "opacity-50 cursor-not-allowed" : ""}`,
+                              className: `polar-backup-action min-h-[64px] px-5 py-5 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-[11px] font-black tracking-[0.22em] hover:border-cyan-500/50 hover:text-cyan-200 transition-all ${backupBusy ? "opacity-50 cursor-not-allowed" : ""}`,
                               children: "IMPORT CONFIG",
                             }),
                             T.jsx("button", {
                               type: "button",
                               onClick: refreshSteamBackups,
                               disabled: backupBusy,
-                              className: `py-4 rounded-2xl bg-white/5 border border-white/10 text-white text-[10px] font-black tracking-[0.25em] hover:border-cyan-500/50 hover:text-cyan-200 transition-all ${backupBusy ? "opacity-50 cursor-not-allowed" : ""}`,
+                              className: `polar-backup-action min-h-[64px] px-5 py-5 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-[11px] font-black tracking-[0.22em] hover:border-cyan-500/50 hover:text-cyan-200 transition-all ${backupBusy ? "opacity-50 cursor-not-allowed" : ""}`,
                               children: "REFRESH LIST",
+                            }),
+                            T.jsx("button", {
+                              type: "button",
+                              onClick: openSteamBackupFolder,
+                              disabled: backupBusy,
+                              className: `polar-backup-action min-h-[64px] px-5 py-5 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-[11px] font-black tracking-[0.22em] hover:border-cyan-500/50 hover:text-cyan-200 transition-all ${backupBusy ? "opacity-50 cursor-not-allowed" : ""}`,
+                              children: "OPEN BACKUP FOLDER",
                             }),
                           ],
                         }),
@@ -21637,7 +21754,7 @@ Accounts inside it will return to All Accounts.`) ||
                                   onChange: (E) =>
                                     setSelectedSteamBackup(E.target.value),
                                   className:
-                                    "min-w-0 bg-black/40 border border-white/10 rounded-2xl px-4 py-4 text-sm outline-none focus:border-cyan-500/50 text-white",
+                                    "polar-restore-select min-h-[58px] min-w-0 bg-black/40 border border-white/10 rounded-2xl px-5 py-4 text-sm outline-none focus:border-cyan-500/50 text-white",
                                   children: [
                                     T.jsx("option", {
                                       value: "",
@@ -21661,7 +21778,7 @@ Accounts inside it will return to All Accounts.`) ||
                                   type: "button",
                                   onClick: restoreSteamBackup,
                                   disabled: backupBusy || !selectedSteamBackup,
-                                  className: `px-8 py-4 rounded-2xl border border-cyan-500/40 text-cyan-200 text-[10px] font-black tracking-[0.25em] hover:bg-cyan-500 hover:text-black transition-all ${backupBusy || !selectedSteamBackup ? "opacity-50 cursor-not-allowed" : ""}`,
+                                  className: `polar-restore-btn min-h-[58px] px-10 py-4 rounded-2xl border border-cyan-500/40 text-cyan-200 text-[11px] font-black tracking-[0.22em] hover:bg-cyan-500 hover:text-black transition-all ${backupBusy || !selectedSteamBackup ? "opacity-50 cursor-not-allowed" : ""}`,
                                   children: "RESTORE",
                                 }),
                               ],
@@ -21678,7 +21795,7 @@ Accounts inside it will return to All Accounts.`) ||
                     T.jsxs("button", {
                       onClick: () => m(!1),
                       className:
-                        "w-full py-7 bg-white/5 border border-white/10 rounded-[2rem] font-black tracking-[0.5em] text-xs hover:bg-cyan-500 hover:text-black transition-all shadow-2xl relative overflow-hidden group",
+                        "w-full py-6 bg-white/5 border border-white/10 rounded-[2rem] font-black tracking-widest text-xs hover:bg-cyan-500 hover:text-black transition-all shadow-2xl relative overflow-hidden group",
                       children: [
                         T.jsx("div", {
                           className:
@@ -21686,7 +21803,7 @@ Accounts inside it will return to All Accounts.`) ||
                         }),
                         T.jsx("span", {
                           className: "relative z-10",
-                          children: "SAVE SETTINGS",
+                          children: "DONE",
                         }),
                       ],
                     }),

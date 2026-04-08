@@ -306,6 +306,36 @@ public class SteamBridgeController : ControllerBase
         }
     }
 
+    [HttpPost("backup/open-folder")]
+    public IActionResult OpenSteamBackupFolder()
+    {
+        try
+        {
+            var backupRoot = GetSteamBackupRoot();
+            Directory.CreateDirectory(backupRoot);
+            Process.Start(new ProcessStartInfo
+            {
+                FileName = backupRoot,
+                UseShellExecute = true
+            });
+
+            return Ok(new SteamActionResponse
+            {
+                Success = true,
+                Message = "Steam backup folder opened."
+            });
+        }
+        catch (Exception ex)
+        {
+            Globals.WriteToLog("Failed to open Steam backup folder.", ex);
+            return Ok(new SteamActionResponse
+            {
+                Success = false,
+                Message = "Failed to open Steam backup folder."
+            });
+        }
+    }
+
     [HttpPost("backup/restore")]
     public IActionResult RestoreSteamBackup([FromBody] SteamRestoreRequest request)
     {
