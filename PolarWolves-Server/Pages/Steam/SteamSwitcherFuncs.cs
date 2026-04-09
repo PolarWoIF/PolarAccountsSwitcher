@@ -44,6 +44,10 @@ namespace PolarWolves_Server.Pages.Steam
     public class SteamSwitcherFuncs
     {
         private static readonly Lang Lang = Lang.Instance;
+        private static readonly object SteamAppsSync = new();
+        private static int _steamAppsDownloadInProgress;
+        private static DateTime _steamAppsNextRetryUtc = DateTime.MinValue;
+        private static readonly TimeSpan SteamAppsRetryDelay = TimeSpan.FromMinutes(10);
 
         #region STEAM_SWITCHER_MAIN
         // Checks if Steam path set properly, and can load.
@@ -291,9 +295,53 @@ namespace PolarWolves_Server.Pages.Steam
             }
             catch (Exception e)
             {
-                Globals.DebugWriteLine($@"Error downloading Steam app list: {e}");
+                if (Globals.VerboseMode)
+                    Globals.DebugWriteLine($@"Error downloading Steam app list: {e.GetType().Name}: {e.Message}");
             }
 
+        }
+
+        private static void QueueSteamAppsDownload(Dictionary<string, string> appIdsTarget)
+        {
+            var now = DateTime.UtcNow;
+            if (now < _steamAppsNextRetryUtc) return;
+            if (Interlocked.CompareExchange(ref _steamAppsDownloadInProgress, 1, 0) != 0) return;
+
+            _ = Task.Run(() =>
+            {
+                var success = false;
+                try
+                {
+                    DownloadSteamAppsData();
+                    if (!File.Exists(SteamSettings.SteamAppsListPath)) return;
+
+                    var names = ParseSteamAppsText(FetchSteamAppsData());
+                    if (names.Count <= 0) return;
+
+                    lock (SteamAppsSync)
+                    {
+                        foreach (var kv in names)
+                        {
+                            if (!appIdsTarget.ContainsKey(kv.Key))
+                                appIdsTarget.Add(kv.Key, kv.Value);
+                        }
+                    }
+
+                    success = true;
+                    SteamSettings.BuildContextMenu();
+                }
+                catch (Exception ex)
+                {
+                    if (Globals.VerboseMode)
+                        Globals.DebugWriteLine($@"Error processing downloaded Steam app list: {ex.GetType().Name}: {ex.Message}");
+                }
+                finally
+                {
+                    if (!success)
+                        _steamAppsNextRetryUtc = DateTime.UtcNow.Add(SteamAppsRetryDelay);
+                    Interlocked.Exchange(ref _steamAppsDownloadInProgress, 0);
+                }
+            });
         }
 
         /// <summary>
@@ -317,13 +365,16 @@ namespace PolarWolves_Server.Pages.Steam
             }
             catch (Exception e)
             {
-                Globals.DebugWriteLine($@"Error parsing Steam app list: {e}");
+                if (Globals.VerboseMode)
+                    Globals.DebugWriteLine($@"Error parsing Steam app list: {e.GetType().Name}: {e.Message}");
             }
             return appIds;
         }
 
         public static Dictionary<string, string> LoadAppNames()
         {
+            var appIds = new Dictionary<string, string>();
+
             // Check if cached Steam AppId list is downloaded
             // If not, skip. Download is handled in a background task.
             if (!File.Exists(SteamSettings.SteamAppsListPath))
@@ -332,28 +383,12 @@ namespace PolarWolves_Server.Pages.Steam
                 var folder = Path.Join(Globals.UserDataFolder, "LoginCache\\Steam\\");
                 Directory.CreateDirectory(folder);
 
-                // Download Steam AppId list if not already.
-                Task.Run(DownloadSteamAppsData).ContinueWith(_ =>
-                {
-                    var names = LoadAppNames();
-                    foreach (var kv in names)
-                    {
-                        try
-                        {
-                            SteamSettings.AppIds.Value.Add(kv.Key, kv.Value);
-                        }
-                        catch (Exception e)
-                        {
-                            Console.WriteLine(e.ToString());
-                        }
-                    }
-                    SteamSettings.BuildContextMenu();
-                });
-                return new Dictionary<string, string>();
+                // Queue one bounded background attempt. Avoid recursive re-queue loops.
+                QueueSteamAppsDownload(appIds);
+                return appIds;
             }
 
             var cacheFilePath = Path.Join(Globals.UserDataFolder, "LoginCache\\Steam\\AppIdsUser.json");
-            var appIds = new Dictionary<string, string>();
             var gameList = SteamSettings.InstalledGames.Value;
             try
             {
@@ -396,7 +431,8 @@ namespace PolarWolves_Server.Pages.Steam
             }
             catch (Exception e)
             {
-                Globals.DebugWriteLine($@"Error Loading names for Steam game IDs: {e}");
+                if (Globals.VerboseMode)
+                    Globals.DebugWriteLine($@"Error loading names for Steam game IDs: {e.GetType().Name}: {e.Message}");
             }
             return appIds;
         }
